@@ -13,6 +13,8 @@ fetch('https://raw.githubusercontent.com/Rchardon/RebirthItemTracker/master/item
 
     <>
       <h1> The Binding of Isaac: MiniGames</h1>
+      <h2>Guess the name of the item</h2>
+      <img src="" alt="" />
     </>
   )
 }
