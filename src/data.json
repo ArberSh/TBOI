@@ -1,0 +1,518 @@
+[
+  {
+    "id": 118,
+    "name": "Brimstone",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["devil_room", "curse_room"],
+    "effect": "Replaces tears with a chargeable blood laser that pierces all enemies.",
+    "stats": {
+      "damage_multiplier": 1.0,
+      "tear_delay": "replaced_with_charge"
+    },
+    "tags": ["laser", "piercing", "high_damage", "run_defining"]
+  },
+  {
+    "id": 114,
+    "name": "Mom's Knife",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["treasure_room", "devil_room"],
+    "effect": "Replaces tears with a controllable knife that deals high damage.",
+    "stats": {
+      "damage_multiplier": 2.0,
+      "tear_delay": "removed"
+    },
+    "tags": ["knife", "piercing", "high_damage", "charge"]
+  },
+  {
+    "id": 169,
+    "name": "Polyphemus",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["treasure_room"],
+    "effect": "Massively increases damage but lowers fire rate.",
+    "stats": {
+      "damage_multiplier": 4.0,
+      "tear_delay": "increased"
+    },
+    "tags": ["high_damage", "low_tears", "stat_modifier"]
+  },
+  {
+    "id": 182,
+    "name": "Sacred Heart",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["angel_room"],
+    "effect": "Grants homing tears and greatly increases damage.",
+    "stats": {
+      "damage_multiplier": 2.3,
+      "tear_delay": "slightly_increased"
+    },
+    "tags": ["homing", "high_damage", "angel_item"]
+  },
+  {
+    "id": 12,
+    "name": "Magic Mushroom",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["treasure_room"],
+    "effect": "All stats up and increases size.",
+    "stats": {
+      "all_stats_up": true
+    },
+    "tags": ["all_stats", "health_up", "damage_up"]
+  },
+  {
+    "id": 4,
+    "name": "Cricket's Head",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["treasure_room"],
+    "effect": "Increases damage significantly.",
+    "stats": {
+      "damage_multiplier": 1.5
+    },
+    "tags": ["damage_up", "multiplier"]
+  },
+  {
+    "id": 108,
+    "name": "The Wafer",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["angel_room"],
+    "effect": "Reduces all damage taken to half a heart.",
+    "stats": {
+      "damage_taken": "halved"
+    },
+    "tags": ["defense", "damage_reduction"]
+  },
+  {
+    "id": 245,
+    "name": "20/20",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["treasure_room"],
+    "effect": "Fires two tears at once with reduced damage.",
+    "stats": {
+      "tear_multiplier": 2,
+      "damage_multiplier": 0.8
+    },
+    "tags": ["double_shot", "tears_up"]
+  },
+  {
+    "id": 101,
+    "name": "The Halo",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["boss_room"],
+    "effect": "All stats up.",
+    "stats": {
+      "all_stats_up": true
+    },
+    "tags": ["all_stats", "balanced"]
+  },
+  {
+    "id": 50,
+    "name": "Steven",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["boss_room"],
+    "effect": "Greatly increases damage.",
+    "stats": {
+      "damage_up": true
+    },
+    "tags": ["damage_up", "boss_item"]
+  },
+  {
+    "id": 70,
+    "name": "Growth Hormones",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["boss_room"],
+    "effect": "Increases damage and speed.",
+    "stats": {
+      "damage_up": true,
+      "speed_up": true
+    },
+    "tags": ["damage_up", "speed_up"]
+  },
+  {
+    "id": 345,
+    "name": "Synthoil",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["boss_room"],
+    "effect": "Increases damage and range.",
+    "stats": {
+      "damage_up": true,
+      "range_up": true
+    },
+    "tags": ["damage_up", "range_up", "boss_item"]
+  },
+  {
+    "id": 237,
+    "name": "Death's Touch",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["devil_room"],
+    "effect": "Gives piercing scythe tears and increases damage.",
+    "stats": {
+      "damage_up": true,
+      "piercing": true
+    },
+    "tags": ["piercing", "damage_up", "scythe_tears", "devil_item"]
+  },
+  {
+    "id": 80,
+    "name": "The Pact",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["devil_room", "curse_room"],
+    "effect": "Grants 2 soul hearts, increases damage, and increases tears.",
+    "stats": {
+      "soul_hearts": 2,
+      "damage_up": true,
+      "tears_up": true
+    },
+    "tags": ["damage_up", "tears_up", "soul_hearts", "devil_item"]
+  },
+  {
+    "id": 51,
+    "name": "Pentagram",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["boss_room", "devil_room", "curse_room"],
+    "effect": "Increases damage and improves Devil Room chance.",
+    "stats": {
+      "damage_up": true
+    },
+    "tags": ["damage_up", "devil_room", "evil_item"]
+  },
+  {
+    "id": 90,
+    "name": "The Small Rock",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["tinted_rock"],
+    "effect": "Increases damage and tears, but lowers speed.",
+    "stats": {
+      "damage_up": true,
+      "tears_up": true,
+      "speed_down": true
+    },
+    "tags": ["damage_up", "tears_up", "speed_down", "rock_item"]
+  },
+  {
+    "id": 3,
+    "name": "Spoon Bender",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["treasure_room"],
+    "effect": "Gives homing tears.",
+    "stats": {
+      "homing": true
+    },
+    "tags": ["homing", "tear_modifier"]
+  },
+  {
+    "id": 221,
+    "name": "Rubber Cement",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["treasure_room"],
+    "effect": "Makes tears bounce off walls and obstacles.",
+    "stats": {
+      "bouncing_tears": true
+    },
+    "tags": ["bouncing_tears", "tear_modifier"]
+  },
+  {
+    "id": 68,
+    "name": "Technology",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["treasure_room"],
+    "effect": "Replaces tears with a laser shot.",
+    "stats": {
+      "laser": true
+    },
+    "tags": ["laser", "tear_replacement", "tech_item"]
+  },
+  {
+    "id": 152,
+    "name": "Technology 2",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["treasure_room"],
+    "effect": "Adds a continuous laser while Isaac still shoots tears.",
+    "stats": {
+      "laser": true,
+      "continuous_laser": true
+    },
+    "tags": ["laser", "continuous_laser", "tech_item"]
+  },
+  {
+    "id": 261,
+    "name": "Proptosis",
+    "category": "easy",
+    "type": "passive",
+    "pool": ["treasure_room"],
+    "effect": "Massively increases close-range tear damage, but damage falls off with distance.",
+    "stats": {
+      "damage_multiplier": 2.0,
+      "distance_falloff": true
+    },
+    "tags": ["high_damage", "close_range", "tear_modifier"]
+  }
+  ,
+{
+  "id": 149,
+  "name": "Ipecac",
+  "category": "easy",
+  "type": "passive",
+  "pool": ["treasure_room"],
+  "effect": "Fires explosive projectiles that deal massive damage but can hurt Isaac.",
+  "stats": {
+    "damage_multiplier": 40.0,
+    "explosive_tears": true
+  },
+  "tags": ["explosive", "high_damage", "self_damage", "tear_modifier"]
+},
+{
+  "id": 229,
+  "name": "Monstro's Lung",
+  "category": "easy",
+  "type": "passive",
+  "pool": ["treasure_room"],
+  "effect": "Fires a burst of tears in a shotgun-like spread after charging.",
+  "stats": {
+    "burst_fire": true,
+    "charge_shot": true
+  },
+  "tags": ["burst", "charge", "multi_shot"]
+},
+{
+  "id": 134,
+  "name": "Guppy's Head",
+  "category": "easy",
+  "type": "active",
+  "pool": ["devil_room", "curse_room"],
+  "effect": "Spawns 2–4 blue flies that deal damage to enemies.",
+  "stats": {
+    "recharge_rooms": 2
+  },
+  "tags": ["flies", "active_item", "guppy"]
+},
+{
+  "id": 133,
+  "name": "Guppy's Paw",
+  "category": "easy",
+  "type": "active",
+  "pool": ["devil_room", "curse_room"],
+  "effect": "Converts one red heart into three soul hearts.",
+  "stats": {
+    "recharge_rooms": 0
+  },
+  "tags": ["health_conversion", "soul_hearts", "active_item", "guppy"]
+},
+{
+  "id": 187,
+  "name": "Guppy's Tail",
+  "category": "easy",
+  "type": "passive",
+  "pool": ["devil_room", "curse_room"],
+  "effect": "Increases chest drops but reduces other pickups.",
+  "stats": {},
+  "tags": ["chests", "loot_modifier", "guppy"]
+},
+{
+  "id": 81,
+  "name": "Dead Cat",
+  "category": "easy",
+  "type": "passive",
+  "pool": ["devil_room", "curse_room"],
+  "effect": "Grants 9 lives but reduces health to 1 heart.",
+  "stats": {
+    "lives": 9
+  },
+  "tags": ["revive", "guppy", "health_down"]
+},
+{
+  "id": 83,
+  "name": "The Nail",
+  "category": "easy",
+  "type": "active",
+  "pool": ["devil_room"],
+  "effect": "Grants a temporary damage boost and gives a soul heart.",
+  "stats": {
+    "recharge_rooms": 6
+  },
+  "tags": ["damage_up", "soul_hearts", "active_item"]
+},
+{
+  "id": 34,
+  "name": "Book of Belial",
+  "category": "easy",
+  "type": "active",
+  "pool": ["devil_room", "library"],
+  "effect": "Temporarily increases damage and improves Devil Room chance.",
+  "stats": {
+    "recharge_rooms": 3
+  },
+  "tags": ["damage_up", "active_item", "devil_item"]
+},
+{
+  "id": 78,
+  "name": "Book of Revelations",
+  "category": "easy",
+  "type": "active",
+  "pool": ["library"],
+  "effect": "Gives a soul heart and increases Horsemen boss chance.",
+  "stats": {
+    "recharge_rooms": 6
+  },
+  "tags": ["soul_hearts", "active_item", "book"]
+},
+{
+  "id": 105,
+  "name": "The D6",
+  "category": "easy",
+  "type": "active",
+  "pool": ["treasure_room"],
+  "effect": "Rerolls items in the current room.",
+  "stats": {
+    "recharge_rooms": 6
+  },
+  "tags": ["reroll", "active_item"]
+},
+{
+  "id": 284,
+  "name": "The D100",
+  "category": "easy",
+  "type": "active",
+  "pool": ["treasure_room"],
+  "effect": "Rerolls all held items and pickups.",
+  "stats": {
+    "recharge_rooms": 6
+  },
+  "tags": ["reroll", "chaotic", "active_item"]
+},
+{
+  "id": 63,
+  "name": "The Battery",
+  "category": "easy",
+  "type": "passive",
+  "pool": ["shop"],
+  "effect": "Allows active items to store an extra charge.",
+  "stats": {},
+  "tags": ["charge", "active_item_upgrade"]
+},
+{
+  "id": 116,
+  "name": "9 Volt",
+  "category": "easy",
+  "type": "passive",
+  "pool": ["shop"],
+  "effect": "Fully recharges your active item when picked up and gives active items faster charging behavior.",
+  "stats": {},
+  "tags": ["charge", "active_item_upgrade", "shop_item"]
+},
+{
+  "id": 132,
+  "name": "A Lump of Coal",
+  "category": "easy",
+  "type": "passive",
+  "pool": ["krampus"],
+  "effect": "Tears gain more damage and size the farther they travel.",
+  "stats": {
+    "distance_damage_up": true
+  },
+  "tags": ["damage_up", "distance_scaling", "krampus_item"]
+},
+{
+  "id": 148,
+  "name": "Infestation",
+  "category": "easy",
+  "type": "passive",
+  "pool": ["treasure_room"],
+  "effect": "Spawns 1-3 blue flies whenever Isaac takes damage.",
+  "stats": {},
+  "tags": ["flies", "on_hit", "beelzebub"]
+},
+{
+  "id": 151,
+  "name": "The Mulligan",
+  "category": "easy",
+  "type": "passive",
+  "pool": ["treasure_room"],
+  "effect": "Tears have a chance to spawn a blue fly when they hit an enemy.",
+  "stats": {},
+  "tags": ["flies", "on_hit", "beelzebub"]
+},
+{
+  "id": 170,
+  "name": "Daddy Longlegs",
+  "category": "easy",
+  "type": "passive",
+  "pool": ["treasure_room"],
+  "effect": "A shadow stomps on enemies at random, dealing heavy damage.",
+  "stats": {},
+  "tags": ["familiar", "stomp_damage", "high_damage"]
+},
+{
+  "id": 223,
+  "name": "Pyromaniac",
+  "category": "easy",
+  "type": "passive",
+  "pool": ["treasure_room"],
+  "effect": "Grants +5 bombs and makes explosions heal Isaac instead of hurting him.",
+  "stats": {
+    "bombs_up": 5,
+    "explosion_immunity": true
+  },
+  "tags": ["bombs_up", "healing", "explosion_immunity"]
+},
+{
+  "id": 232,
+  "name": "Stop Watch",
+  "category": "easy",
+  "type": "passive",
+  "pool": ["shop"],
+  "effect": "In Rebirth, enemies and projectiles are slowed after Isaac gets hit in a room.",
+  "stats": {
+    "speed_up": true
+  },
+  "tags": ["slow", "defense", "shop_item"]
+},
+{
+  "id": 247,
+  "name": "BFFS!",
+  "category": "easy",
+  "type": "passive",
+  "pool": ["shop", "key_beggar"],
+  "effect": "Makes familiars larger and stronger.",
+  "stats": {},
+  "tags": ["familiar_upgrade", "shop_item"]
+},
+{
+  "id": 248,
+  "name": "Hive Mind",
+  "category": "easy",
+  "type": "passive",
+  "pool": ["shop"],
+  "effect": "Makes friendly blue spiders and flies larger and deal more damage.",
+  "stats": {},
+  "tags": ["flies", "spiders", "familiar_upgrade", "shop_item"]
+},
+{
+  "id": 313,
+  "name": "Holy Mantle",
+  "category": "easy",
+  "type": "passive",
+  "pool": ["treasure_room", "angel_room"],
+  "effect": "Negates the first instance of damage taken in each room.",
+  "stats": {},
+  "tags": ["shield", "defense", "angel_item"]
+}
+]
