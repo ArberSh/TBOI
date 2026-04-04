@@ -10,6 +10,7 @@
       "damage_multiplier": 1.0,
       "tear_delay": "replaced_with_charge"
     },
+    "image":"/public/images/items/Collectible_Brimstone_Rebirth_icon.webp",
     "tags": ["laser", "piercing", "high_damage", "run_defining"]
   },
   {
@@ -23,6 +24,7 @@
       "damage_multiplier": 2.0,
       "tear_delay": "removed"
     },
+    "image":"",
     "tags": ["knife", "piercing", "high_damage", "charge"]
   },
   {
@@ -36,6 +38,7 @@
       "damage_multiplier": 4.0,
       "tear_delay": "increased"
     },
+    "image":"",
     "tags": ["high_damage", "low_tears", "stat_modifier"]
   },
   {
@@ -49,6 +52,7 @@
       "damage_multiplier": 2.3,
       "tear_delay": "slightly_increased"
     },
+    "image":"",
     "tags": ["homing", "high_damage", "angel_item"]
   },
   {
@@ -61,6 +65,7 @@
     "stats": {
       "all_stats_up": true
     },
+    "image":"",
     "tags": ["all_stats", "health_up", "damage_up"]
   },
   {
@@ -73,6 +78,7 @@
     "stats": {
       "damage_multiplier": 1.5
     },
+    "image":"",
     "tags": ["damage_up", "multiplier"]
   },
   {
@@ -85,6 +91,7 @@
     "stats": {
       "damage_taken": "halved"
     },
+    "image":"",
     "tags": ["defense", "damage_reduction"]
   },
   {
@@ -98,6 +105,7 @@
       "tear_multiplier": 2,
       "damage_multiplier": 0.8
     },
+    "image":"",
     "tags": ["double_shot", "tears_up"]
   },
   {
@@ -110,6 +118,7 @@
     "stats": {
       "all_stats_up": true
     },
+    "image":"",
     "tags": ["all_stats", "balanced"]
   },
   {
@@ -122,6 +131,7 @@
     "stats": {
       "damage_up": true
     },
+    "image":"",
     "tags": ["damage_up", "boss_item"]
   },
   {
@@ -135,6 +145,7 @@
       "damage_up": true,
       "speed_up": true
     },
+    "image":"",
     "tags": ["damage_up", "speed_up"]
   },
   {
@@ -148,6 +159,7 @@
       "damage_up": true,
       "range_up": true
     },
+    "image":"",
     "tags": ["damage_up", "range_up", "boss_item"]
   },
   {
@@ -161,6 +173,7 @@
       "damage_up": true,
       "piercing": true
     },
+    "image":"",
     "tags": ["piercing", "damage_up", "scythe_tears", "devil_item"]
   },
   {
@@ -175,6 +188,7 @@
       "damage_up": true,
       "tears_up": true
     },
+    "image":"",
     "tags": ["damage_up", "tears_up", "soul_hearts", "devil_item"]
   },
   {
@@ -187,6 +201,7 @@
     "stats": {
       "damage_up": true
     },
+    "image":"",
     "tags": ["damage_up", "devil_room", "evil_item"]
   },
   {
@@ -201,6 +216,7 @@
       "tears_up": true,
       "speed_down": true
     },
+    "image":"",
     "tags": ["damage_up", "tears_up", "speed_down", "rock_item"]
   },
   {
@@ -213,6 +229,7 @@
     "stats": {
       "homing": true
     },
+    "image":"",
     "tags": ["homing", "tear_modifier"]
   },
   {
@@ -225,6 +242,7 @@
     "stats": {
       "bouncing_tears": true
     },
+    "image":"",
     "tags": ["bouncing_tears", "tear_modifier"]
   },
   {
@@ -237,6 +255,7 @@
     "stats": {
       "laser": true
     },
+    "image":"",
     "tags": ["laser", "tear_replacement", "tech_item"]
   },
   {
@@ -250,6 +269,7 @@
       "laser": true,
       "continuous_laser": true
     },
+    "image":"",
     "tags": ["laser", "continuous_laser", "tech_item"]
   },
   {
@@ -263,6 +283,7 @@
       "damage_multiplier": 2.0,
       "distance_falloff": true
     },
+    "image":"",
     "tags": ["high_damage", "close_range", "tear_modifier"]
   }
   ,
@@ -276,7 +297,8 @@
   "stats": {
     "damage_multiplier": 40.0,
     "explosive_tears": true
-  },
+},
+"image":"",
   "tags": ["explosive", "high_damage", "self_damage", "tear_modifier"]
 },
 {
@@ -289,7 +311,8 @@
   "stats": {
     "burst_fire": true,
     "charge_shot": true
-  },
+},
+"image":"",
   "tags": ["burst", "charge", "multi_shot"]
 },
 {
@@ -301,7 +324,8 @@
   "effect": "Spawns 2–4 blue flies that deal damage to enemies.",
   "stats": {
     "recharge_rooms": 2
-  },
+},
+"image":"",
   "tags": ["flies", "active_item", "guppy"]
 },
 {
@@ -313,7 +337,8 @@
   "effect": "Converts one red heart into three soul hearts.",
   "stats": {
     "recharge_rooms": 0
-  },
+},
+"image":"",
   "tags": ["health_conversion", "soul_hearts", "active_item", "guppy"]
 },
 {
@@ -324,6 +349,7 @@
   "pool": ["devil_room", "curse_room"],
   "effect": "Increases chest drops but reduces other pickups.",
   "stats": {},
+  "image":"",
   "tags": ["chests", "loot_modifier", "guppy"]
 },
 {
@@ -335,7 +361,8 @@
   "effect": "Grants 9 lives but reduces health to 1 heart.",
   "stats": {
     "lives": 9
-  },
+},
+"image":"",
   "tags": ["revive", "guppy", "health_down"]
 },
 {
@@ -347,7 +374,8 @@
   "effect": "Grants a temporary damage boost and gives a soul heart.",
   "stats": {
     "recharge_rooms": 6
-  },
+},
+"image":"",
   "tags": ["damage_up", "soul_hearts", "active_item"]
 },
 {
@@ -359,7 +387,8 @@
   "effect": "Temporarily increases damage and improves Devil Room chance.",
   "stats": {
     "recharge_rooms": 3
-  },
+},
+"image":"",
   "tags": ["damage_up", "active_item", "devil_item"]
 },
 {
@@ -371,7 +400,8 @@
   "effect": "Gives a soul heart and increases Horsemen boss chance.",
   "stats": {
     "recharge_rooms": 6
-  },
+},
+"image":"",
   "tags": ["soul_hearts", "active_item", "book"]
 },
 {
@@ -383,7 +413,8 @@
   "effect": "Rerolls items in the current room.",
   "stats": {
     "recharge_rooms": 6
-  },
+},
+"image":"",
   "tags": ["reroll", "active_item"]
 },
 {
@@ -395,7 +426,8 @@
   "effect": "Rerolls all held items and pickups.",
   "stats": {
     "recharge_rooms": 6
-  },
+},
+"image":"",
   "tags": ["reroll", "chaotic", "active_item"]
 },
 {
@@ -406,6 +438,7 @@
   "pool": ["shop"],
   "effect": "Allows active items to store an extra charge.",
   "stats": {},
+  "image":"",
   "tags": ["charge", "active_item_upgrade"]
 },
 {
@@ -416,6 +449,7 @@
   "pool": ["shop"],
   "effect": "Fully recharges your active item when picked up and gives active items faster charging behavior.",
   "stats": {},
+  "image":"",
   "tags": ["charge", "active_item_upgrade", "shop_item"]
 },
 {
@@ -427,7 +461,8 @@
   "effect": "Tears gain more damage and size the farther they travel.",
   "stats": {
     "distance_damage_up": true
-  },
+},
+"image":"",
   "tags": ["damage_up", "distance_scaling", "krampus_item"]
 },
 {
@@ -438,6 +473,7 @@
   "pool": ["treasure_room"],
   "effect": "Spawns 1-3 blue flies whenever Isaac takes damage.",
   "stats": {},
+  "image":"",
   "tags": ["flies", "on_hit", "beelzebub"]
 },
 {
@@ -448,6 +484,7 @@
   "pool": ["treasure_room"],
   "effect": "Tears have a chance to spawn a blue fly when they hit an enemy.",
   "stats": {},
+  "image":"",
   "tags": ["flies", "on_hit", "beelzebub"]
 },
 {
@@ -458,6 +495,7 @@
   "pool": ["treasure_room"],
   "effect": "A shadow stomps on enemies at random, dealing heavy damage.",
   "stats": {},
+  "image":"",
   "tags": ["familiar", "stomp_damage", "high_damage"]
 },
 {
@@ -470,7 +508,8 @@
   "stats": {
     "bombs_up": 5,
     "explosion_immunity": true
-  },
+},
+"image":"",
   "tags": ["bombs_up", "healing", "explosion_immunity"]
 },
 {
@@ -482,7 +521,8 @@
   "effect": "In Rebirth, enemies and projectiles are slowed after Isaac gets hit in a room.",
   "stats": {
     "speed_up": true
-  },
+},
+"image":"",
   "tags": ["slow", "defense", "shop_item"]
 },
 {
@@ -493,6 +533,7 @@
   "pool": ["shop", "key_beggar"],
   "effect": "Makes familiars larger and stronger.",
   "stats": {},
+  "image":"",
   "tags": ["familiar_upgrade", "shop_item"]
 },
 {
@@ -503,6 +544,7 @@
   "pool": ["shop"],
   "effect": "Makes friendly blue spiders and flies larger and deal more damage.",
   "stats": {},
+  "image":"",
   "tags": ["flies", "spiders", "familiar_upgrade", "shop_item"]
 },
 {
@@ -513,6 +555,7 @@
   "pool": ["treasure_room", "angel_room"],
   "effect": "Negates the first instance of damage taken in each room.",
   "stats": {},
+  "image":"",
   "tags": ["shield", "defense", "angel_item"]
 }
 ]

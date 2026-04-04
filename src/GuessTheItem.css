@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+.Container-all{
+
+ background-image: url("./assets/the-binding-of-isaac-wallpaper-preview.jpg");  
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 100vh; 
+}
