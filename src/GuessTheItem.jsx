@@ -63,7 +63,7 @@ function GuessTheItem() {
           <button onClick={handleCheckGuess}>Submit</button>
         </div>
 
-        {hasGuessedCorrectly && <h2>It's {dailyItem.name}!</h2>}
+        {hasGuessedCorrectly && <h2>It's ?{dailyItem.name}!</h2>}
       </div>
     </div>
   );
