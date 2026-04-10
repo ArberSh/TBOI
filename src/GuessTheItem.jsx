@@ -36,7 +36,11 @@ function GuessTheItem() {
     } else {
       alert("Try again!");
     }
+
+    
   };
+
+
 
   return (
     <div className='Container-all'>
