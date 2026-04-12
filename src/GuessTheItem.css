@@ -37,5 +37,15 @@ h1{
 }
 
 .image-item{
-    height: 6rem;
+    width: 192px;
+    height: 192px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.attempts-text {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5rem;
 }

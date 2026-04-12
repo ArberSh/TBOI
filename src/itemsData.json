@@ -1,0 +1,2018 @@
+[
+  {
+    "id": 1,
+    "name": "Item 1",
+    "image": "/images/items/collectibles_001_thesadonion.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "name": "Item 2",
+    "image": "/images/items/collectibles_002_theinnereye.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "name": "Item 3",
+    "image": "/images/items/collectibles_003_spoonbender.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 4,
+    "name": "Item 4",
+    "image": "/images/items/collectibles_004_cricketshead.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "name": "Item 5",
+    "image": "/images/items/collectibles_005_myreflection.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "name": "Item 6",
+    "image": "/images/items/collectibles_006_numberone.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "name": "Item 7",
+    "image": "/images/items/collectibles_007_bloodofthemartyr.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "name": "Item 8",
+    "image": "/images/items/collectibles_008_brotherbobby.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 9,
+    "name": "Item 9",
+    "image": "/images/items/collectibles_009_skatole.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 10,
+    "name": "Item 10",
+    "image": "/images/items/collectibles_010_haloofflies.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "name": "Item 11",
+    "image": "/images/items/collectibles_011_1up.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 12,
+    "name": "Item 12",
+    "image": "/images/items/collectibles_012_magicmushroom.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "name": "Item 13",
+    "image": "/images/items/collectibles_013_thevirus.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 14,
+    "name": "Item 14",
+    "image": "/images/items/collectibles_014_roidrage.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 15,
+    "name": "Item 15",
+    "image": "/images/items/collectibles_015_heart.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 16,
+    "name": "Item 16",
+    "image": "/images/items/collectibles_016_rawliver.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "name": "Item 17",
+    "image": "/images/items/collectibles_017_skeletonkey.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 18,
+    "name": "Item 18",
+    "image": "/images/items/collectibles_018_adollar.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 19,
+    "name": "Item 19",
+    "image": "/images/items/collectibles_019_boom.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 20,
+    "name": "Item 20",
+    "image": "/images/items/collectibles_020_transcendence.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 21,
+    "name": "Item 21",
+    "image": "/images/items/collectibles_021_thecompass.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 22,
+    "name": "Item 22",
+    "image": "/images/items/collectibles_022_lunch.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 23,
+    "name": "Item 23",
+    "image": "/images/items/collectibles_023_dinner.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 24,
+    "name": "Item 24",
+    "image": "/images/items/collectibles_024_dessert.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 25,
+    "name": "Item 25",
+    "image": "/images/items/collectibles_025_breakfast.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 26,
+    "name": "Item 26",
+    "image": "/images/items/collectibles_026_rottenmeat.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 27,
+    "name": "Item 27",
+    "image": "/images/items/collectibles_027_woodenspoon.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 28,
+    "name": "Item 28",
+    "image": "/images/items/collectibles_028_thebelt.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 29,
+    "name": "Item 29",
+    "image": "/images/items/collectibles_029_momsunderwear.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 30,
+    "name": "Item 30",
+    "image": "/images/items/collectibles_030_momsheels.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 31,
+    "name": "Item 31",
+    "image": "/images/items/collectibles_031_momslipstick.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 32,
+    "name": "Item 32",
+    "image": "/images/items/collectibles_032_wirecoathanger.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 33,
+    "name": "Item 33",
+    "image": "/images/items/collectibles_033_thebible.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 34,
+    "name": "Item 34",
+    "image": "/images/items/collectibles_034_thebookofbelial.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 35,
+    "name": "Item 35",
+    "image": "/images/items/collectibles_035_thenecronomicon.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 36,
+    "name": "Item 36",
+    "image": "/images/items/collectibles_036_thepoop.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 37,
+    "name": "Item 37",
+    "image": "/images/items/collectibles_037_mrboom.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 38,
+    "name": "Item 38",
+    "image": "/images/items/collectibles_038_tammyshead.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 39,
+    "name": "Item 39",
+    "image": "/images/items/collectibles_039_momsbra.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 40,
+    "name": "Item 40",
+    "image": "/images/items/collectibles_040_kamikaze.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 41,
+    "name": "Item 41",
+    "image": "/images/items/collectibles_041_momspad.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 42,
+    "name": "Item 42",
+    "image": "/images/items/collectibles_042_bobsrottenhead.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 44,
+    "name": "Item 44",
+    "image": "/images/items/collectibles_044_teleport.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 45,
+    "name": "Item 45",
+    "image": "/images/items/collectibles_045_yumheart.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 46,
+    "name": "Item 46",
+    "image": "/images/items/collectibles_046_luckyfoot.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 47,
+    "name": "Item 47",
+    "image": "/images/items/collectibles_047_doctorsremote.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 48,
+    "name": "Item 48",
+    "image": "/images/items/collectibles_048_cupidsarrow.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 49,
+    "name": "Item 49",
+    "image": "/images/items/collectibles_049_shoopdawhoop.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 50,
+    "name": "Item 50",
+    "image": "/images/items/collectibles_050_steven.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 51,
+    "name": "Item 51",
+    "image": "/images/items/collectibles_051_pentagram.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 52,
+    "name": "Item 52",
+    "image": "/images/items/collectibles_052_drfetus.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 53,
+    "name": "Item 53",
+    "image": "/images/items/collectibles_053_magneto.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 54,
+    "name": "Item 54",
+    "image": "/images/items/collectibles_054_treasuremap.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 55,
+    "name": "Item 55",
+    "image": "/images/items/collectibles_055_momseye.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 56,
+    "name": "Item 56",
+    "image": "/images/items/collectibles_056_lemonmishap.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 57,
+    "name": "Item 57",
+    "image": "/images/items/collectibles_057_distantadmiration.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 58,
+    "name": "Item 58",
+    "image": "/images/items/collectibles_058_bookofshadows.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 60,
+    "name": "Item 60",
+    "image": "/images/items/collectibles_060_theladder.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 62,
+    "name": "Item 62",
+    "image": "/images/items/collectibles_062_charmofthevampire.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 63,
+    "name": "Item 63",
+    "image": "/images/items/collectibles_063_thebattery.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 64,
+    "name": "Item 64",
+    "image": "/images/items/collectibles_064_steamsale.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 65,
+    "name": "Item 65",
+    "image": "/images/items/collectibles_065_anarchistcookbook.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 66,
+    "name": "Item 66",
+    "image": "/images/items/collectibles_066_thehourglass.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 67,
+    "name": "Item 67",
+    "image": "/images/items/collectibles_067_sistermaggy.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 68,
+    "name": "Item 68",
+    "image": "/images/items/collectibles_068_technology.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 69,
+    "name": "Item 69",
+    "image": "/images/items/collectibles_069_chocolatemilk.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 70,
+    "name": "Item 70",
+    "image": "/images/items/collectibles_070_growthhormones.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 71,
+    "name": "Item 71",
+    "image": "/images/items/collectibles_071_minimushroom.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 72,
+    "name": "Item 72",
+    "image": "/images/items/collectibles_072_rosary.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 73,
+    "name": "Item 73",
+    "image": "/images/items/collectibles_073_cubeofmeat.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 74,
+    "name": "Item 74",
+    "image": "/images/items/collectibles_074_aquarter.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 75,
+    "name": "Item 75",
+    "image": "/images/items/collectibles_075_phd.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 76,
+    "name": "Item 76",
+    "image": "/images/items/collectibles_076_xrayvision.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 77,
+    "name": "Item 77",
+    "image": "/images/items/collectibles_077_mylittleunicorn.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 78,
+    "name": "Item 78",
+    "image": "/images/items/collectibles_078_bookofrevelations.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 79,
+    "name": "Item 79",
+    "image": "/images/items/collectibles_079_themark.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 80,
+    "name": "Item 80",
+    "image": "/images/items/collectibles_080_thepact.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 81,
+    "name": "Item 81",
+    "image": "/images/items/collectibles_081_deadcat.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 82,
+    "name": "Item 82",
+    "image": "/images/items/collectibles_082_lordofthepit.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 83,
+    "name": "Item 83",
+    "image": "/images/items/collectibles_083_thenail.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 84,
+    "name": "Item 84",
+    "image": "/images/items/collectibles_084_weneedtogodeeper.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 85,
+    "name": "Item 85",
+    "image": "/images/items/collectibles_085_deckofcards.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 86,
+    "name": "Item 86",
+    "image": "/images/items/collectibles_086_monstrostooth.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 87,
+    "name": "Item 87",
+    "image": "/images/items/collectibles_087_lokishorns.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 88,
+    "name": "Item 88",
+    "image": "/images/items/collectibles_088_littlechubby.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 89,
+    "name": "Item 89",
+    "image": "/images/items/collectibles_089_spidersbite.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 90,
+    "name": "Item 90",
+    "image": "/images/items/collectibles_090_smallrock.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 91,
+    "name": "Item 91",
+    "image": "/images/items/collectibles_091_spelunkerhat.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 92,
+    "name": "Item 92",
+    "image": "/images/items/collectibles_092_superbandage.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 93,
+    "name": "Item 93",
+    "image": "/images/items/collectibles_093_thegamekid.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 94,
+    "name": "Item 94",
+    "image": "/images/items/collectibles_094_sackofpennies.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 95,
+    "name": "Item 95",
+    "image": "/images/items/collectibles_095_robobaby.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 96,
+    "name": "Item 96",
+    "image": "/images/items/collectibles_096_littlechad.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 97,
+    "name": "Item 97",
+    "image": "/images/items/collectibles_097_bookofsin.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 98,
+    "name": "Item 98",
+    "image": "/images/items/collectibles_098_therelic.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 99,
+    "name": "Item 99",
+    "image": "/images/items/collectibles_099_littlegish.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 100,
+    "name": "Item 100",
+    "image": "/images/items/collectibles_100_littlesteve.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 101,
+    "name": "Item 101",
+    "image": "/images/items/collectibles_101_thehalo.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 102,
+    "name": "Item 102",
+    "image": "/images/items/collectibles_102_momsbottleofpills.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 103,
+    "name": "Item 103",
+    "image": "/images/items/collectibles_103_thecommoncold.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 104,
+    "name": "Item 104",
+    "image": "/images/items/collectibles_104_theparasite.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 105,
+    "name": "Item 105",
+    "image": "/images/items/collectibles_105_dice.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 106,
+    "name": "Item 106",
+    "image": "/images/items/collectibles_106_mrmega.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 107,
+    "name": "Item 107",
+    "image": "/images/items/collectibles_107_pinkingshears.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 108,
+    "name": "Item 108",
+    "image": "/images/items/collectibles_108_thewafer.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 109,
+    "name": "Item 109",
+    "image": "/images/items/collectibles_109_moneyispower.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 110,
+    "name": "Item 110",
+    "image": "/images/items/collectibles_110_momscontacts.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 111,
+    "name": "Item 111",
+    "image": "/images/items/collectibles_111_thebean.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 112,
+    "name": "Item 112",
+    "image": "/images/items/collectibles_112_guardianangel.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 113,
+    "name": "Item 113",
+    "image": "/images/items/collectibles_113_demonbaby.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 114,
+    "name": "Item 114",
+    "image": "/images/items/collectibles_114_momsknife.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 115,
+    "name": "Item 115",
+    "image": "/images/items/collectibles_115_ouijaboard.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 116,
+    "name": "Item 116",
+    "image": "/images/items/collectibles_116_9volt.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 117,
+    "name": "Item 117",
+    "image": "/images/items/collectibles_117_deadbird.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 118,
+    "name": "Item 118",
+    "image": "/images/items/collectibles_118_brimstone.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 119,
+    "name": "Item 119",
+    "image": "/images/items/collectibles_119_bloodbag.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 120,
+    "name": "Item 120",
+    "image": "/images/items/collectibles_120_oddmushroomthin.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 121,
+    "name": "Item 121",
+    "image": "/images/items/collectibles_121_oddmushroomlarge.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 122,
+    "name": "Item 122",
+    "image": "/images/items/collectibles_122_whoreofbabylon.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 123,
+    "name": "Item 123",
+    "image": "/images/items/collectibles_123_monstermanual.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 124,
+    "name": "Item 124",
+    "image": "/images/items/collectibles_124_deadseascrolls.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 125,
+    "name": "Item 125",
+    "image": "/images/items/collectibles_125_bobbybomb.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 126,
+    "name": "Item 126",
+    "image": "/images/items/collectibles_126_razorblade.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 127,
+    "name": "Item 127",
+    "image": "/images/items/collectibles_127_forgetmenow.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 128,
+    "name": "Item 128",
+    "image": "/images/items/collectibles_128_foreveralone.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 129,
+    "name": "Item 129",
+    "image": "/images/items/collectibles_129_bucketoflard.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 130,
+    "name": "Item 130",
+    "image": "/images/items/collectibles_130_apony.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 131,
+    "name": "Item 131",
+    "image": "/images/items/collectibles_131_bombbag.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 132,
+    "name": "Item 132",
+    "image": "/images/items/collectibles_132_alumpofcoal.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 133,
+    "name": "Item 133",
+    "image": "/images/items/collectibles_133_guppyspaw.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 134,
+    "name": "Item 134",
+    "image": "/images/items/collectibles_134_guppystail.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 135,
+    "name": "Item 135",
+    "image": "/images/items/collectibles_135_ivbag.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 136,
+    "name": "Item 136",
+    "image": "/images/items/collectibles_136_bestfriend.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 137,
+    "name": "Item 137",
+    "image": "/images/items/collectibles_137_remotedetonator.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 138,
+    "name": "Item 138",
+    "image": "/images/items/collectibles_138_stigmata.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 139,
+    "name": "Item 139",
+    "image": "/images/items/collectibles_139_momspurse.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 140,
+    "name": "Item 140",
+    "image": "/images/items/collectibles_140_bobscurse.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 141,
+    "name": "Item 141",
+    "image": "/images/items/collectibles_141_pageantboy.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 142,
+    "name": "Item 142",
+    "image": "/images/items/collectibles_142_scapular.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 143,
+    "name": "Item 143",
+    "image": "/images/items/collectibles_143_speedball.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 144,
+    "name": "Item 144",
+    "image": "/images/items/collectibles_144_bumfriend.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 145,
+    "name": "Item 145",
+    "image": "/images/items/collectibles_145_guppyshead.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 146,
+    "name": "Item 146",
+    "image": "/images/items/collectibles_146_prayercard.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 147,
+    "name": "Item 147",
+    "image": "/images/items/collectibles_147_notchedaxe.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 148,
+    "name": "Item 148",
+    "image": "/images/items/collectibles_148_infestation.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 149,
+    "name": "Item 149",
+    "image": "/images/items/collectibles_149_ipecac.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 150,
+    "name": "Item 150",
+    "image": "/images/items/collectibles_150_toughlove.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 151,
+    "name": "Item 151",
+    "image": "/images/items/collectibles_151_themulligan.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 152,
+    "name": "Item 152",
+    "image": "/images/items/collectibles_152_technology2.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 153,
+    "name": "Item 153",
+    "image": "/images/items/collectibles_153_mutantspider.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 154,
+    "name": "Item 154",
+    "image": "/images/items/collectibles_154_chemicalpeel.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 155,
+    "name": "Item 155",
+    "image": "/images/items/collectibles_155_thepeeper.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 156,
+    "name": "Item 156",
+    "image": "/images/items/collectibles_156_habit.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 157,
+    "name": "Item 157",
+    "image": "/images/items/collectibles_157_bloodylust.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 158,
+    "name": "Item 158",
+    "image": "/images/items/collectibles_158_crystalball.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 159,
+    "name": "Item 159",
+    "image": "/images/items/collectibles_159_spiritofthenight.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 160,
+    "name": "Item 160",
+    "image": "/images/items/collectibles_160_crackthesky.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 161,
+    "name": "Item 161",
+    "image": "/images/items/collectibles_161_ankh.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 162,
+    "name": "Item 162",
+    "image": "/images/items/collectibles_162_celticcross.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 163,
+    "name": "Item 163",
+    "image": "/images/items/collectibles_163_ghostbaby.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 164,
+    "name": "Item 164",
+    "image": "/images/items/collectibles_164_bluecandle.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 165,
+    "name": "Item 165",
+    "image": "/images/items/collectibles_165_catoninetails.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 166,
+    "name": "Item 166",
+    "image": "/images/items/collectibles_166_d20.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 167,
+    "name": "Item 167",
+    "image": "/images/items/collectibles_167_harlequinbaby.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 168,
+    "name": "Item 168",
+    "image": "/images/items/collectibles_168_epicfetus.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 169,
+    "name": "Item 169",
+    "image": "/images/items/collectibles_169_polyphemus.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 170,
+    "name": "Item 170",
+    "image": "/images/items/collectibles_170_daddylonglegs.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 171,
+    "name": "Item 171",
+    "image": "/images/items/collectibles_171_spiderbutt.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 172,
+    "name": "Item 172",
+    "image": "/images/items/collectibles_172_sacrificialdagger.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 173,
+    "name": "Item 173",
+    "image": "/images/items/collectibles_173_mitre.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 174,
+    "name": "Item 174",
+    "image": "/images/items/collectibles_174_rainbowbaby.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 175,
+    "name": "Item 175",
+    "image": "/images/items/collectibles_175_dadskey.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 176,
+    "name": "Item 176",
+    "image": "/images/items/collectibles_176_stemcells.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 177,
+    "name": "Item 177",
+    "image": "/images/items/collectibles_177_portableslot.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 178,
+    "name": "Item 178",
+    "image": "/images/items/collectibles_178_holywater.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 179,
+    "name": "Item 179",
+    "image": "/images/items/collectibles_179_fate.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 180,
+    "name": "Item 180",
+    "image": "/images/items/collectibles_180_blackbean.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 181,
+    "name": "Item 181",
+    "image": "/images/items/collectibles_181_whitepony.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 182,
+    "name": "Item 182",
+    "image": "/images/items/collectibles_182_sacredheart.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 183,
+    "name": "Item 183",
+    "image": "/images/items/collectibles_183_toothpicks.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 184,
+    "name": "Item 184",
+    "image": "/images/items/collectibles_184_holygrail.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 185,
+    "name": "Item 185",
+    "image": "/images/items/collectibles_185_deaddove.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 186,
+    "name": "Item 186",
+    "image": "/images/items/collectibles_186_bloodrights.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 187,
+    "name": "Item 187",
+    "image": "/images/items/collectibles_187_guppyshairball.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 188,
+    "name": "Item 188",
+    "image": "/images/items/collectibles_188_abel.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 189,
+    "name": "Item 189",
+    "image": "/images/items/collectibles_189_smbsuperfan.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 190,
+    "name": "Item 190",
+    "image": "/images/items/collectibles_190_pyro.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 191,
+    "name": "Item 191",
+    "image": "/images/items/collectibles_191_3dollarbill.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 192,
+    "name": "Item 192",
+    "image": "/images/items/collectibles_192_telepathyfordummies.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 193,
+    "name": "Item 193",
+    "image": "/images/items/collectibles_193_meat.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 194,
+    "name": "Item 194",
+    "image": "/images/items/collectibles_194_magic8ball.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 195,
+    "name": "Item 195",
+    "image": "/images/items/collectibles_195_momscoinpurse.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 196,
+    "name": "Item 196",
+    "image": "/images/items/collectibles_196_squeezy.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 197,
+    "name": "Item 197",
+    "image": "/images/items/collectibles_197_jesusjuice.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 198,
+    "name": "Item 198",
+    "image": "/images/items/collectibles_198_box.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 199,
+    "name": "Item 199",
+    "image": "/images/items/collectibles_199_momskey.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 200,
+    "name": "Item 200",
+    "image": "/images/items/collectibles_200_momseyeshadow.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 201,
+    "name": "Item 201",
+    "image": "/images/items/collectibles_201_ironbar.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 202,
+    "name": "Item 202",
+    "image": "/images/items/collectibles_202_midastouch.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 203,
+    "name": "Item 203",
+    "image": "/images/items/collectibles_203_humblingbundle.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 204,
+    "name": "Item 204",
+    "image": "/images/items/collectibles_204_fannypack.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 205,
+    "name": "Item 205",
+    "image": "/images/items/collectibles_205_sharpplug.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 206,
+    "name": "Item 206",
+    "image": "/images/items/collectibles_206_guillotine.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 207,
+    "name": "Item 207",
+    "image": "/images/items/collectibles_207_ballofbandages.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 208,
+    "name": "Item 208",
+    "image": "/images/items/collectibles_208_championbelt.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 209,
+    "name": "Item 209",
+    "image": "/images/items/collectibles_209_buttbombs.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 210,
+    "name": "Item 210",
+    "image": "/images/items/collectibles_210_gnawedleaf.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 211,
+    "name": "Item 211",
+    "image": "/images/items/collectibles_211_spiderbaby.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 212,
+    "name": "Item 212",
+    "image": "/images/items/collectibles_212_guppyscollar.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 213,
+    "name": "Item 213",
+    "image": "/images/items/collectibles_213_lostcontact.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 214,
+    "name": "Item 214",
+    "image": "/images/items/collectibles_214_anemic.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 215,
+    "name": "Item 215",
+    "image": "/images/items/collectibles_215_goathead.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 216,
+    "name": "Item 216",
+    "image": "/images/items/collectibles_216_ceremonialrobes.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 217,
+    "name": "Item 217",
+    "image": "/images/items/collectibles_217_momswig.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 218,
+    "name": "Item 218",
+    "image": "/images/items/collectibles_218_placenta.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 219,
+    "name": "Item 219",
+    "image": "/images/items/collectibles_219_oldbandage.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 220,
+    "name": "Item 220",
+    "image": "/images/items/collectibles_220_sadbombs.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 221,
+    "name": "Item 221",
+    "image": "/images/items/collectibles_221_rubbercement.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 222,
+    "name": "Item 222",
+    "image": "/images/items/collectibles_222_antigravity.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 223,
+    "name": "Item 223",
+    "image": "/images/items/collectibles_223_pyromaniac.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 224,
+    "name": "Item 224",
+    "image": "/images/items/collectibles_224_cricketsbody.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 225,
+    "name": "Item 225",
+    "image": "/images/items/collectibles_225_gimpy.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 226,
+    "name": "Item 226",
+    "image": "/images/items/collectibles_226_blacklotus.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 227,
+    "name": "Item 227",
+    "image": "/images/items/collectibles_227_piggybank.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 228,
+    "name": "Item 228",
+    "image": "/images/items/collectibles_228_momsperfume.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 229,
+    "name": "Item 229",
+    "image": "/images/items/collectibles_229_monstroslung.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 230,
+    "name": "Item 230",
+    "image": "/images/items/collectibles_230_abaddon.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 231,
+    "name": "Item 231",
+    "image": "/images/items/collectibles_231_balloftar.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 232,
+    "name": "Item 232",
+    "image": "/images/items/collectibles_232_stopwatch.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 233,
+    "name": "Item 233",
+    "image": "/images/items/collectibles_233_tinyplanet.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 234,
+    "name": "Item 234",
+    "image": "/images/items/collectibles_234_infestation2.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 236,
+    "name": "Item 236",
+    "image": "/images/items/collectibles_236_ecoli.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 237,
+    "name": "Item 237",
+    "image": "/images/items/collectibles_237_deathstouch.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 238,
+    "name": "Item 238",
+    "image": "/images/items/collectibles_238_keypiece1.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 239,
+    "name": "Item 239",
+    "image": "/images/items/collectibles_239_keypiece2.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 240,
+    "name": "Item 240",
+    "image": "/images/items/collectibles_240_experimentaltreatment.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 241,
+    "name": "Item 241",
+    "image": "/images/items/collectibles_241_contractfrombelow.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 242,
+    "name": "Item 242",
+    "image": "/images/items/collectibles_242_infamy.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 243,
+    "name": "Item 243",
+    "image": "/images/items/collectibles_243_trinityshield.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 244,
+    "name": "Item 244",
+    "image": "/images/items/collectibles_244_techpointfive.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 245,
+    "name": "Item 245",
+    "image": "/images/items/collectibles_245_2020.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 246,
+    "name": "Item 246",
+    "image": "/images/items/collectibles_246_bluemap.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 247,
+    "name": "Item 247",
+    "image": "/images/items/collectibles_247_bffs.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 248,
+    "name": "Item 248",
+    "image": "/images/items/collectibles_248_hivemind.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 249,
+    "name": "Item 249",
+    "image": "/images/items/collectibles_249_theresoptions.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 250,
+    "name": "Item 250",
+    "image": "/images/items/collectibles_250_bogobombs.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 251,
+    "name": "Item 251",
+    "image": "/images/items/collectibles_251_starterdeck.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 252,
+    "name": "Item 252",
+    "image": "/images/items/collectibles_252_littlebaggy.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 253,
+    "name": "Item 253",
+    "image": "/images/items/collectibles_253_magicscab.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 254,
+    "name": "Item 254",
+    "image": "/images/items/collectibles_254_bloodclot.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 255,
+    "name": "Item 255",
+    "image": "/images/items/collectibles_255_screw.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 256,
+    "name": "Item 256",
+    "image": "/images/items/collectibles_256_hotbombs.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 257,
+    "name": "Item 257",
+    "image": "/images/items/collectibles_257_firemind.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 258,
+    "name": "Item 258",
+    "image": "/images/items/collectibles_258_missingno.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 259,
+    "name": "Item 259",
+    "image": "/images/items/collectibles_259_darkmatter.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 260,
+    "name": "Item 260",
+    "image": "/images/items/collectibles_260_blackcandle.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 261,
+    "name": "Item 261",
+    "image": "/images/items/collectibles_261_proptosis.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 262,
+    "name": "Item 262",
+    "image": "/images/items/collectibles_262_missingpage2.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 264,
+    "name": "Item 264",
+    "image": "/images/items/collectibles_264_smartfly.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 265,
+    "name": "Item 265",
+    "image": "/images/items/collectibles_265_drybaby.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 266,
+    "name": "Item 266",
+    "image": "/images/items/collectibles_266_juicysack.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 267,
+    "name": "Item 267",
+    "image": "/images/items/collectibles_267_robobaby2.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 268,
+    "name": "Item 268",
+    "image": "/images/items/collectibles_268_rottenbaby.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 269,
+    "name": "Item 269",
+    "image": "/images/items/collectibles_269_headlessbaby.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 270,
+    "name": "Item 270",
+    "image": "/images/items/collectibles_270_leech.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 271,
+    "name": "Item 271",
+    "image": "/images/items/collectibles_271_mysterysack.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 272,
+    "name": "Item 272",
+    "image": "/images/items/collectibles_272_bff.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 273,
+    "name": "Item 273",
+    "image": "/images/items/collectibles_273_bobsbrain.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 274,
+    "name": "Item 274",
+    "image": "/images/items/collectibles_274_bestbud.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 275,
+    "name": "Item 275",
+    "image": "/images/items/collectibles_275_lilbrimstone.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 276,
+    "name": "Item 276",
+    "image": "/images/items/collectibles_276_isaacsheart.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 277,
+    "name": "Item 277",
+    "image": "/images/items/collectibles_277_lilhaunt.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 278,
+    "name": "Item 278",
+    "image": "/images/items/collectibles_278_darkbum.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 279,
+    "name": "Item 279",
+    "image": "/images/items/collectibles_279_bigfan.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 280,
+    "name": "Item 280",
+    "image": "/images/items/collectibles_280_sissylonglegs.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 281,
+    "name": "Item 281",
+    "image": "/images/items/collectibles_281_punchingbag.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 282,
+    "name": "Item 282",
+    "image": "/images/items/collectibles_282_howtojump.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 283,
+    "name": "Item 283",
+    "image": "/images/items/collectibles_283_d100.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 284,
+    "name": "Item 284",
+    "image": "/images/items/collectibles_284_d4.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 285,
+    "name": "Item 285",
+    "image": "/images/items/collectibles_285_d10.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 286,
+    "name": "Item 286",
+    "image": "/images/items/collectibles_286_blankcard.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 287,
+    "name": "Item 287",
+    "image": "/images/items/collectibles_287_bookofsecrets.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 288,
+    "name": "Item 288",
+    "image": "/images/items/collectibles_288_boxofspiders.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 289,
+    "name": "Item 289",
+    "image": "/images/items/collectibles_289_redcandle.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 290,
+    "name": "Item 290",
+    "image": "/images/items/collectibles_290_thejar.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 291,
+    "name": "Item 291",
+    "image": "/images/items/collectibles_291_flush.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 292,
+    "name": "Item 292",
+    "image": "/images/items/collectibles_292_satanicbible.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 293,
+    "name": "Item 293",
+    "image": "/images/items/collectibles_293_headofkrampus.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 294,
+    "name": "Item 294",
+    "image": "/images/items/collectibles_294_butterbean.png",
+    "difficulty": "hard"
+  },
+  {
+    "id": 295,
+    "name": "Item 295",
+    "image": "/images/items/collectibles_295_magicfingers.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 296,
+    "name": "Item 296",
+    "image": "/images/items/collectibles_296_converter.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 297,
+    "name": "Item 297",
+    "image": "/images/items/collectibles_297_bluebox.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 298,
+    "name": "Item 298",
+    "image": "/images/items/collectibles_298_unicornstump.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 299,
+    "name": "Item 299",
+    "image": "/images/items/collectibles_299_taurus.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 300,
+    "name": "Item 300",
+    "image": "/images/items/collectibles_300_aries.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 301,
+    "name": "Item 301",
+    "image": "/images/items/collectibles_301_cancer.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 302,
+    "name": "Item 302",
+    "image": "/images/items/collectibles_302_leo.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 303,
+    "name": "Item 303",
+    "image": "/images/items/collectibles_303_virgo.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 304,
+    "name": "Item 304",
+    "image": "/images/items/collectibles_304_libra.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 305,
+    "name": "Item 305",
+    "image": "/images/items/collectibles_305_scorpio.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 306,
+    "name": "Item 306",
+    "image": "/images/items/collectibles_306_sagittarius.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 307,
+    "name": "Item 307",
+    "image": "/images/items/collectibles_307_capricorn.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 308,
+    "name": "Item 308",
+    "image": "/images/items/collectibles_308_aquarius.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 309,
+    "name": "Item 309",
+    "image": "/images/items/collectibles_309_pisces.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 310,
+    "name": "Item 310",
+    "image": "/images/items/collectibles_310_evesmascara.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 311,
+    "name": "Item 311",
+    "image": "/images/items/collectibles_311_judasshadow.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 312,
+    "name": "Item 312",
+    "image": "/images/items/collectibles_312_maggysbow.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 313,
+    "name": "Item 313",
+    "image": "/images/items/collectibles_313_holymantle.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 314,
+    "name": "Item 314",
+    "image": "/images/items/collectibles_314_thunderthighs.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 315,
+    "name": "Item 315",
+    "image": "/images/items/collectibles_315_strangeattractor.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 316,
+    "name": "Item 316",
+    "image": "/images/items/collectibles_316_cursedeye.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 317,
+    "name": "Item 317",
+    "image": "/images/items/collectibles_317_mysteriousliquid.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 318,
+    "name": "Item 318",
+    "image": "/images/items/collectibles_318_gemini.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 319,
+    "name": "Item 319",
+    "image": "/images/items/collectibles_319_cainseye.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 320,
+    "name": "Item 320",
+    "image": "/images/items/collectibles_320_bluebabysonlyfriend.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 321,
+    "name": "Item 321",
+    "image": "/images/items/collectibles_321_samsonschains.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 322,
+    "name": "Item 322",
+    "image": "/images/items/collectibles_322_mongobaby.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 323,
+    "name": "Item 323",
+    "image": "/images/items/collectibles_323_isaacstears.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 324,
+    "name": "Item 324",
+    "image": "/images/items/collectibles_324_undefined.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 325,
+    "name": "Item 325",
+    "image": "/images/items/collectibles_325_scissors.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 326,
+    "name": "Item 326",
+    "image": "/images/items/collectibles_326_breathoflife.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 327,
+    "name": "Item 327",
+    "image": "/images/items/collectibles_327_thepolaroid.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 328,
+    "name": "Item 328",
+    "image": "/images/items/collectibles_328_thenegative.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 329,
+    "name": "Item 329",
+    "image": "/images/items/collectibles_329_theludovicotechnique.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 330,
+    "name": "Item 330",
+    "image": "/images/items/collectibles_330_soymilk.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 331,
+    "name": "Item 331",
+    "image": "/images/items/collectibles_331_godhead.png",
+    "difficulty": "easy"
+  },
+  {
+    "id": 332,
+    "name": "Item 332",
+    "image": "/images/items/collectibles_332_lazarusrags.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 333,
+    "name": "Item 333",
+    "image": "/images/items/collectibles_333_mind.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 334,
+    "name": "Item 334",
+    "image": "/images/items/collectibles_334_body.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 335,
+    "name": "Item 335",
+    "image": "/images/items/collectibles_335_soul.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 336,
+    "name": "Item 336",
+    "image": "/images/items/collectibles_336_deadonion.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 337,
+    "name": "Item 337",
+    "image": "/images/items/collectibles_337_brokenwatch.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 338,
+    "name": "Item 338",
+    "image": "/images/items/collectibles_338_boomerang.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 339,
+    "name": "Item 339",
+    "image": "/images/items/collectibles_339_safetypin.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 340,
+    "name": "Item 340",
+    "image": "/images/items/collectibles_340_caffeinepill.png",
+    "difficulty": "medium"
+  },
+  {
+    "id": 341,
+    "name": "Item 341",
+    "image": "/images/items/collectibles_341_tornphoto.png",
+    "difficulty": "medium"
+  }
+]

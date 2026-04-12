@@ -1,73 +1,98 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import "./GuessTheItem.css";
+import ITEMS_DATABASE from "./itemsData.json";
 
-// 1. Move the data generation OUTSIDE the component
-const ITEMS_DATABASE = [];
-const rebirthItemCount = 341;
-
-for (let i = 1; i <= rebirthItemCount; i++) {
-    if ([43, 61, 263].includes(i)) continue;
-    ITEMS_DATABASE.push({
-        id: i,
-        name: "Item " + i, // In your real version, use the actual names
-        image: `/images/items/collectibles_${i.toString().padStart(3, '0')}.png` 
-    });
-}
+// Each number = how many pixels the image is rendered at (higher = more detail)
+const PIXEL_STEPS = [4, 8, 16, 16, 32, 64];
 
 function GuessTheItem() {
   const [userGuess, setUserGuess] = useState("");
   const [hasGuessedCorrectly, setHasGuessedCorrectly] = useState(false);
+  const [stepIndex, setStepIndex] = useState(0);
+  const canvasRef = useRef(null);
 
-  // 2. The "Wordle" Logic: Pick one item based on the date
   const dailyItem = useMemo(() => {
     const startDate = new Date("2024-01-01").getTime();
     const today = new Date().setHours(0, 0, 0, 0);
     const dayIndex = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
-    
-    // Use modulo to loop back if we run out of items
     return ITEMS_DATABASE[dayIndex % ITEMS_DATABASE.length];
   }, []);
 
+  const currentPixelSize = PIXEL_STEPS[stepIndex];
+  const gameOver = stepIndex === PIXEL_STEPS.length - 1 && !hasGuessedCorrectly;
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas || !dailyItem) return;
+
+    const img = new Image();
+    img.src = dailyItem.image;
+    img.onload = () => {
+      const ctx = canvas.getContext('2d');
+      const W = canvas.width;
+      const H = canvas.height;
+
+      ctx.clearRect(0, 0, W, H);
+
+      if (hasGuessedCorrectly) {
+        // Full crisp reveal on correct guess
+        ctx.imageSmoothingEnabled = true;
+        ctx.drawImage(img, 0, 0, W, H);
+      } else {
+        // Draw at low resolution then scale up pixelated
+        const res = currentPixelSize;
+        const offscreen = document.createElement('canvas');
+        offscreen.width = res;
+        offscreen.height = res;
+        const offCtx = offscreen.getContext('2d');
+        offCtx.imageSmoothingEnabled = false;
+        offCtx.drawImage(img, 0, 0, res, res);
+
+        ctx.imageSmoothingEnabled = false;
+        ctx.drawImage(offscreen, 0, 0, res, res, 0, 0, W, H);
+      }
+    };
+  }, [dailyItem, stepIndex, hasGuessedCorrectly, currentPixelSize]);
+
   const handleCheckGuess = () => {
-    // Basic sanitization: lowercase and remove spaces
     if (userGuess.toLowerCase().trim() === dailyItem.name.toLowerCase()) {
       setHasGuessedCorrectly(true);
-      alert("Correct! It was " + dailyItem.name);
-    } else {
-      alert("Try again!");
+    } else if (stepIndex < PIXEL_STEPS.length - 1) {
+      setStepIndex(prev => prev + 1);
     }
-
-    
+    setUserGuess("");
   };
 
-
+  const attemptsLeft = PIXEL_STEPS.length - 1 - stepIndex;
 
   return (
     <div className='Container-all'>
       <div className='Container'>
         <h1>Can you guess this item?</h1>
-        
+
         <div className='Container-image'>
-          {/* 3. The Source Path Fix */}
-          <img 
-            src={dailyItem.image} 
-            alt="Guess the item" 
-            style={{ filter: hasGuessedCorrectly ? 'none' : 'brightness(0)' }} 
-          />
-          {/* Tip: The brightness(0) makes it a silhouette like Pokemon! */}
+          <canvas ref={canvasRef} width={192} height={192} className="image-item" />
         </div>
 
-        <div>
-          <input 
-            type="text" 
-            value={userGuess}
-            onChange={(e) => setUserGuess(e.target.value)}
-            placeholder="Type item name..."
-          />
-          <button onClick={handleCheckGuess}>Submit</button>
-        </div>
+        {!hasGuessedCorrectly && !gameOver && (
+          <p className="attempts-text">Attempts left: {attemptsLeft}</p>
+        )}
 
-        {hasGuessedCorrectly && <h2>It's ?{dailyItem.name}!</h2>}
+        {!hasGuessedCorrectly && !gameOver && (
+          <div>
+            <input
+              type="text"
+              value={userGuess}
+              onChange={(e) => setUserGuess(e.target.value)}
+              onKeyDown={(e) => e.key === 'Enter' && handleCheckGuess()}
+              placeholder="Type item name..."
+            />
+            <button onClick={handleCheckGuess}>Submit</button>
+          </div>
+        )}
+
+        {hasGuessedCorrectly && <h2>Correct! It's {dailyItem.name}!</h2>}
+        {gameOver && <h2>It was {dailyItem.name}!</h2>}
       </div>
     </div>
   );
