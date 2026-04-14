@@ -2,14 +2,16 @@ import React, { useState, useMemo, useEffect, useRef } from 'react';
 import "./GuessTheItem.css";
 import ITEMS_DATABASE from "./itemsData.json";
 
-// Each number = how many pixels the image is rendered at (higher = more detail)
 const PIXEL_STEPS = [4, 8, 16, 16, 32, 64];
 
 function GuessTheItem() {
   const [userGuess, setUserGuess] = useState("");
   const [hasGuessedCorrectly, setHasGuessedCorrectly] = useState(false);
   const [stepIndex, setStepIndex] = useState(0);
+  const [wrongGuesses, setWrongGuesses] = useState([]);
+  const [shake, setShake] = useState(false);
   const canvasRef = useRef(null);
+  const inputRef = useRef(null);
 
   const dailyItem = useMemo(() => {
     const startDate = new Date("2024-01-01").getTime();
@@ -35,11 +37,9 @@ function GuessTheItem() {
       ctx.clearRect(0, 0, W, H);
 
       if (hasGuessedCorrectly) {
-        // Full crisp reveal on correct guess
         ctx.imageSmoothingEnabled = true;
         ctx.drawImage(img, 0, 0, W, H);
       } else {
-        // Draw at low resolution then scale up pixelated
         const res = currentPixelSize;
         const offscreen = document.createElement('canvas');
         offscreen.width = res;
@@ -55,44 +55,87 @@ function GuessTheItem() {
   }, [dailyItem, stepIndex, hasGuessedCorrectly, currentPixelSize]);
 
   const handleCheckGuess = () => {
-    if (userGuess.toLowerCase().trim() === dailyItem.name.toLowerCase()) {
+    const trimmed = userGuess.trim();
+    if (!trimmed) return;
+
+    if (trimmed.toLowerCase() === dailyItem.name.toLowerCase()) {
       setHasGuessedCorrectly(true);
-    } else if (stepIndex < PIXEL_STEPS.length - 1) {
-      setStepIndex(prev => prev + 1);
+    } else {
+      setWrongGuesses(prev => [...prev, trimmed]);
+      setShake(true);
+      setTimeout(() => setShake(false), 500);
+      if (stepIndex < PIXEL_STEPS.length - 1) {
+        setStepIndex(prev => prev + 1);
+      }
     }
     setUserGuess("");
+    inputRef.current?.focus();
   };
 
   const attemptsLeft = PIXEL_STEPS.length - 1 - stepIndex;
 
   return (
-    <div className='Container-all'>
-      <div className='Container'>
-        <h1>Can you guess this item?</h1>
+    <div className="page">
+      <div className="card">
 
-        <div className='Container-image'>
-          <canvas ref={canvasRef} width={192} height={192} className="image-item" />
+        <h1 className="title">Guess the Item</h1>
+        <p className="subtitle">Daily TBOI Challenge</p>
+
+        {/* Step progress dots */}
+        <div className="steps">
+          {PIXEL_STEPS.map((px, i) => (
+            <div
+              key={i}
+              className={`step-dot ${i < stepIndex ? 'step-done' : i === stepIndex ? 'step-active' : 'step-future'}`}
+              title={`${px}px`}
+            >
+              {px}
+            </div>
+          ))}
         </div>
 
+        {/* Image */}
+        <div className={`image-wrapper ${shake ? 'shake' : ''} ${hasGuessedCorrectly ? 'glow-correct' : ''}`}>
+          <canvas ref={canvasRef} width={180} height={180} className="item-canvas" />
+        </div>
+
+        {/* Status */}
         {!hasGuessedCorrectly && !gameOver && (
-          <p className="attempts-text">Attempts left: {attemptsLeft}</p>
+          <p className="hint-text">{attemptsLeft} hint{attemptsLeft !== 1 ? 's' : ''} remaining</p>
+        )}
+        {hasGuessedCorrectly && (
+          <p className="result-text correct">✓ {dailyItem.name}</p>
+        )}
+        {gameOver && (
+          <p className="result-text wrong">It was: {dailyItem.name}</p>
         )}
 
+        {/* Wrong guesses */}
+        {wrongGuesses.length > 0 && (
+          <div className="wrong-guesses">
+            {wrongGuesses.map((g, i) => (
+              <span key={i} className="wrong-tag">{g}</span>
+            ))}
+          </div>
+        )}
+
+        {/* Input */}
         {!hasGuessedCorrectly && !gameOver && (
-          <div>
+          <div className="input-row">
             <input
+              ref={inputRef}
               type="text"
               value={userGuess}
               onChange={(e) => setUserGuess(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleCheckGuess()}
               placeholder="Type item name..."
+              className="guess-input"
+              autoFocus
             />
-            <button onClick={handleCheckGuess}>Submit</button>
+            <button onClick={handleCheckGuess} className="guess-btn">Submit</button>
           </div>
         )}
 
-        {hasGuessedCorrectly && <h2>Correct! It's {dailyItem.name}!</h2>}
-        {gameOver && <h2>It was {dailyItem.name}!</h2>}
       </div>
     </div>
   );
