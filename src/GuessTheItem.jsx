@@ -297,6 +297,7 @@ function GuessTheItem() {
                     onMouseDown={() => handleCheckGuess(item.name)}
                     onMouseEnter={() => setHighlightedIndex(i)}
                   >
+                    <img src={item.image} alt="" className="suggestion-img" />
                     {item.name}
                   </li>
                 ))}

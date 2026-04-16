@@ -250,11 +250,23 @@ html, body {
 }
 
 .suggestion-item {
-  padding: 0.45rem 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 0.9rem;
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.88rem;
   cursor: pointer;
   transition: background 0.12s;
+}
+
+.suggestion-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  filter: grayscale(1);
+  flex-shrink: 0;
 }
 
 .suggestion-item:hover,
