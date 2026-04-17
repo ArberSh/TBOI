@@ -261,8 +261,8 @@ html, body {
 }
 
 .suggestion-img {
-  width: 28px;
-  height: 28px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
   image-rendering: pixelated;
   filter: grayscale(1);
