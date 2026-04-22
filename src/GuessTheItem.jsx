@@ -25,7 +25,8 @@ function createParticles(W, H) {
 }
 
 function GuessTheItem() {
-  const todayKey = new Date().toDateString();
+  const now = new Date();
+  const todayKey = `${now.getUTCFullYear()}-${now.getUTCMonth()}-${now.getUTCDate()}`;
 
   const loadGameState = () => {
     const saved = JSON.parse(localStorage.getItem('tboiGameState') || '{}');
@@ -40,19 +41,18 @@ function GuessTheItem() {
   const [shake, setShake] = useState(false);
   const [highlightedIndex, setHighlightedIndex] = useState(-1);
   const [streak, setStreak] = useState(() => {
-    const today = new Date().toDateString();
     const stored = JSON.parse(localStorage.getItem('tboiStreak') || '{}');
     const { lastPlayedDate, streak: saved = 0 } = stored;
-    if (lastPlayedDate === today) return saved;
-    const yesterday = new Date();
-    yesterday.setDate(yesterday.getDate() - 1);
-    return lastPlayedDate === yesterday.toDateString() ? saved : 0;
+    if (lastPlayedDate === todayKey) return saved;
+    const yesterday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() - 1));
+    const yesterdayKey = `${yesterday.getUTCFullYear()}-${yesterday.getUTCMonth()}-${yesterday.getUTCDate()}`;
+    return lastPlayedDate === yesterdayKey ? saved : 0;
   });
   const [playedToday, setPlayedToday] = useState(() => {
-    const today = new Date().toDateString();
     const stored = JSON.parse(localStorage.getItem('tboiStreak') || '{}');
-    return stored.lastPlayedDate === today;
+    return stored.lastPlayedDate === todayKey;
   });
+
   const canvasRef = useRef(null);
   const confettiRef = useRef(null);
   const inputRef = useRef(null);
@@ -61,9 +61,8 @@ function GuessTheItem() {
 
   const saveStreak = (currentStreak, alreadyPlayed) => {
     if (alreadyPlayed) return;
-    const today = new Date().toDateString();
     const newStreak = currentStreak + 1;
-    localStorage.setItem('tboiStreak', JSON.stringify({ lastPlayedDate: today, streak: newStreak }));
+    localStorage.setItem('tboiStreak', JSON.stringify({ lastPlayedDate: todayKey, streak: newStreak }));
     setStreak(newStreak);
     setPlayedToday(true);
   };
@@ -77,8 +76,8 @@ function GuessTheItem() {
   }, [userGuess]);
 
   const dailyItem = useMemo(() => {
-    const startDate = new Date("2024-01-01").getTime();
-    const today = new Date().setHours(0, 0, 0, 0);
+    const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+    const startDate = Date.UTC(2024, 0, 1);
     const dayIndex = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
     return ITEMS_DATABASE[dayIndex % ITEMS_DATABASE.length];
   }, []);
@@ -147,7 +146,7 @@ function GuessTheItem() {
         p.x += p.vx;
         p.y += p.vy;
         p.rot += p.rotV;
-        p.vy += 0.12; // gravity
+        p.vy += 0.12;
         p.alpha -= 0.007;
 
         if (p.alpha <= 0) return;
@@ -206,9 +205,12 @@ function GuessTheItem() {
       e.preventDefault();
       setHighlightedIndex(prev => (prev <= 0 ? suggestions.length - 1 : prev - 1));
     } else if (e.key === 'Enter') {
+      setUserGuess("");
       if (highlightedIndex >= 0) {
-        setUserGuess(suggestions[highlightedIndex].name);
+        handleCheckGuess(suggestions[highlightedIndex].name);
         setHighlightedIndex(-1);
+      } else if (suggestions.length > 0) {
+        handleCheckGuess(suggestions[0].name);
       } else {
         handleCheckGuess();
       }
@@ -222,17 +224,22 @@ function GuessTheItem() {
 
   return (
     <div className="page">
-      {/* Confetti overlay */}
       <canvas ref={confettiRef} className="confetti-canvas" />
+
+      {/* Fixed top-right streak */}
+      <div
+        className={`streak-top ${streak === 0 || gameOver ? 'streak-zero' : ''}`}
+        title="Daily streak"
+      >
+        🔥 {streak} day{streak !== 1 ? 's' : ''}
+      </div>
 
       <div className="card">
         <h1 className="title">Guess the Item</h1>
         <p className="subtitle">Daily TBOI Challenge</p>
+
         <div className="top-row">
           <span className={`difficulty-badge diff-${dailyItem.difficulty}`}>{dailyItem.difficulty}</span>
-          <span className="streak-badge" title="Daily streak">
-            🔥 {streak} day{streak !== 1 ? 's' : ''}
-          </span>
         </div>
 
         {/* Step progress dots */}
