@@ -68,12 +68,14 @@ function GuessTheItem() {
   };
 
   const suggestions = useMemo(() => {
-    if (!userGuess.trim()) return [];
-    const lower = userGuess.trim().toLowerCase();
-    return ITEMS_DATABASE.filter(item =>
-      item.name.toLowerCase().startsWith(lower)
-    ).slice(0, 8);
-  }, [userGuess]);
+  if (!userGuess.trim()) return [];
+  const lower = userGuess.trim().toLowerCase();
+  const guessed = new Set(wrongGuesses.map(g => g.toLowerCase()));
+  return ITEMS_DATABASE.filter(item =>
+    item.name.toLowerCase().startsWith(lower) &&
+    !guessed.has(item.name.toLowerCase())
+  ).slice(0, 8);
+}, [userGuess, wrongGuesses]);
 
   const dailyItem = useMemo(() => {
     const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
