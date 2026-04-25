@@ -35,6 +35,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background:
     linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url("./assets/7446.jpg") center / cover;
@@ -351,4 +352,66 @@ html, body {
 
 .guess-btn:active {
   background: rgba(240, 184, 64, 0.4);
+}
+
+.kofi-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 10px;
+  background: rgba(91, 214, 255, 0.18);
+  border: 1px solid rgba(91, 206, 255, 0.45);
+  color: #6bbfff;
+  font-size: 0.82rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  font-family: 'Upheaval', Arial, sans-serif;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.kofi-btn:hover {
+  background: rgba(91, 206, 255, 0.3);
+  box-shadow: 0 0 12px rgba(91, 206, 255, 0.3);
+}
+
+
+.hint-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.hint-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.78rem;
+  font-family: 'Upheaval', Arial, sans-serif;
+  letter-spacing: 0.08em;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.hint-btn:hover {
+  background: rgba(240, 184, 64, 0.12);
+  border-color: rgba(240, 184, 64, 0.35);
+  color: #f0b840;
+}
+
+.hint-revealed {
+  font-size: 1rem;
+  color: #f0b840;
+  background: rgba(240, 184, 64, 0.1);
+  border: 1px solid rgba(240, 184, 64, 0.25);
+  border-radius: 8px;
+  padding: 0.45rem 1rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.hint-revealed strong {
+  color: #fff;
 }

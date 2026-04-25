@@ -38,6 +38,7 @@ function GuessTheItem() {
   const [hasGuessedCorrectly, setHasGuessedCorrectly] = useState(() => loadGameState()?.hasGuessedCorrectly ?? false);
   const [stepIndex, setStepIndex] = useState(() => loadGameState()?.stepIndex ?? 0);
   const [wrongGuesses, setWrongGuesses] = useState(() => loadGameState()?.wrongGuesses ?? []);
+  const [hintRevealed, setHintRevealed] = useState(() => loadGameState()?.hintRevealed ?? false);
   const [shake, setShake] = useState(false);
   const [highlightedIndex, setHighlightedIndex] = useState(-1);
   const [streak, setStreak] = useState(() => {
@@ -68,14 +69,14 @@ function GuessTheItem() {
   };
 
   const suggestions = useMemo(() => {
-  if (!userGuess.trim()) return [];
-  const lower = userGuess.trim().toLowerCase();
-  const guessed = new Set(wrongGuesses.map(g => g.toLowerCase()));
-  return ITEMS_DATABASE.filter(item =>
-    item.name.toLowerCase().startsWith(lower) &&
-    !guessed.has(item.name.toLowerCase())
-  ).slice(0, 8);
-}, [userGuess, wrongGuesses]);
+    if (!userGuess.trim()) return [];
+    const lower = userGuess.trim().toLowerCase();
+    const guessed = new Set(wrongGuesses.map(g => g.toLowerCase()));
+    return ITEMS_DATABASE.filter(item =>
+      item.name.toLowerCase().includes(lower) &&
+      !guessed.has(item.name.toLowerCase())
+    ).slice(0, 12);
+  }, [userGuess, wrongGuesses]);
 
   const dailyItem = useMemo(() => {
     const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
@@ -128,8 +129,9 @@ function GuessTheItem() {
       hasGuessedCorrectly,
       stepIndex,
       wrongGuesses,
+      hintRevealed,
     }));
-  }, [hasGuessedCorrectly, stepIndex, wrongGuesses, todayKey]);
+  }, [hasGuessedCorrectly, stepIndex, wrongGuesses, hintRevealed, todayKey]);
 
   // Confetti animation
   useEffect(() => {
@@ -271,6 +273,21 @@ function GuessTheItem() {
           <p className="result-text wrong">It was: {dailyItem.name}</p>
         )}
 
+        {/* Hint */}
+        {!hasGuessedCorrectly && !gameOver && (
+          <div className="hint-row">
+            {hintRevealed ? (
+              <p className="hint-revealed">
+                 Starts with <strong>" {dailyItem.name[0]} "</strong> · {dailyItem.name.split(" ").length} word{dailyItem.name.split(" ").length !== 1 ? "s" : ""} · {dailyItem.name.length} letters
+              </p>
+            ) : (
+              <button className="hint-btn" onClick={() => setHintRevealed(true)}>
+                💡 Show Hint
+              </button>
+            )}
+          </div>
+        )}
+
         {/* Wrong guesses */}
         {wrongGuesses.length > 0 && (
           <div className="wrong-guesses">
@@ -315,6 +332,16 @@ function GuessTheItem() {
           </div>
         )}
       </div>
+
+      {/* Ko-fi button */}
+      <a 
+        href="https://ko-fi.com/YOUR_KOFI_USERNAME"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="kofi-btn"
+      >
+        ☕ Support on Ko-fi
+      </a>
     </div>
   );
 }
