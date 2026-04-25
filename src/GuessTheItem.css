@@ -78,6 +78,7 @@ html, body {
   gap: 1.2rem;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(6px);
+  /* margin-bottom: 2rem; */
 }
 
 /* ── Header ── */

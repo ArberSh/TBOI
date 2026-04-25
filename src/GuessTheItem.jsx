@@ -335,7 +335,7 @@ function GuessTheItem() {
 
       {/* Ko-fi button */}
       <a 
-        href="https://ko-fi.com/YOUR_KOFI_USERNAME"
+        href="https://ko-fi.com/arbershaska34991"
         target="_blank"
         rel="noopener noreferrer"
         className="kofi-btn"
