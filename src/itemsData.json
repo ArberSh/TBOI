@@ -1957,61 +1957,61 @@
   },
   {
     "id": 332,
-    "name": "Item 332",
+    "name": "Lazarus' Rags",
     "image": "/images/items/collectibles_332_lazarusrags.png",
     "difficulty": "medium"
   },
   {
-    "id": 333,
-    "name": "Item 333",
+  "id": 333,
+    "name": "The Mind",
     "image": "/images/items/collectibles_333_mind.png",
     "difficulty": "medium"
   },
   {
     "id": 334,
-    "name": "Item 334",
+    "name": "The Body",
     "image": "/images/items/collectibles_334_body.png",
     "difficulty": "medium"
   },
   {
     "id": 335,
-    "name": "Item 335",
+    "name": "The Soul",
     "image": "/images/items/collectibles_335_soul.png",
     "difficulty": "medium"
   },
   {
     "id": 336,
-    "name": "Item 336",
+    "name": "Dead Onion",
     "image": "/images/items/collectibles_336_deadonion.png",
     "difficulty": "medium"
   },
   {
     "id": 337,
-    "name": "Item 337",
+    "name": "Broken Watch",
     "image": "/images/items/collectibles_337_brokenwatch.png",
     "difficulty": "medium"
   },
   {
     "id": 338,
-    "name": "Item 338",
+    "name": "The Boomerang",
     "image": "/images/items/collectibles_338_boomerang.png",
     "difficulty": "medium"
   },
   {
     "id": 339,
-    "name": "Item 339",
+    "name": "Safety Pin",
     "image": "/images/items/collectibles_339_safetypin.png",
     "difficulty": "medium"
   },
   {
     "id": 340,
-    "name": "Item 340",
+    "name": "Caffeine Pill",
     "image": "/images/items/collectibles_340_caffeinepill.png",
     "difficulty": "medium"
   },
   {
     "id": 341,
-    "name": "Item 341",
+    "name": "Torn Photo",
     "image": "/images/items/collectibles_341_tornphoto.png",
     "difficulty": "medium"
   }

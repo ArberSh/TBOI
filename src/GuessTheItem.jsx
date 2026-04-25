@@ -264,7 +264,7 @@ function GuessTheItem() {
 
         {/* Status */}
         {!hasGuessedCorrectly && !gameOver && (
-          <p className="hint-text">{attemptsLeft} hint{attemptsLeft !== 1 ? 's' : ''} remaining</p>
+          <p className="hint-text">{attemptsLeft} attempt{attemptsLeft !== 1 ? 's' : ''} remaining</p>
         )}
         {hasGuessedCorrectly && (
           <p className="result-text correct">✓ {dailyItem.name}</p>

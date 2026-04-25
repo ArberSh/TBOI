@@ -416,3 +416,82 @@ html, body {
 .hint-revealed strong {
   color: #fff;
 }
+
+@media (max-width: 480px) {
+  .card {
+    width: 92vw;
+    padding: 1.4rem 1.2rem;
+    gap: 0.9rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 0.68rem;
+  }
+
+  .item-canvas {
+    width: 150px;
+    height: 150px;
+  }
+
+  .image-wrapper {
+    padding: 0.9rem;
+  }
+
+  .guess-input {
+    font-size: 0.85rem;
+    padding: 0.55rem 0.75rem;
+  }
+
+  .guess-btn {
+    font-size: 0.82rem;
+    padding: 0.55rem 0.85rem;
+  }
+
+  .suggestions-list {
+    max-height: 180px;
+  }
+
+  .suggestion-item {
+    font-size: 0.82rem;
+    padding: 0.4rem 0.75rem;
+  }
+
+  .suggestion-img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .streak-top {
+    font-size: 0.7rem;
+    padding: 0.45rem 0.8rem;
+    top: 0.6rem;
+    right: 0.7rem;
+  }
+
+  .difficulty-badge {
+    font-size: 0.7rem;
+    padding: 0.45rem 1rem;
+  }
+
+  .wrong-tag {
+    font-size: 0.68rem;
+  }
+
+  .hint-btn,
+  .hint-revealed {
+    font-size: 0.72rem;
+  }
+
+  .result-text {
+    font-size: 0.95rem;
+  }
+
+  .step-dot {
+    width: 10px;
+    height: 10px;
+  }
+}

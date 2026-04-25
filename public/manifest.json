@@ -1,0 +1,13 @@
+{
+  "name": "Guess the TBOI Item",
+  "short_name": "TBOI Daily",
+  "description": "Daily Binding of Isaac item guessing game",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0a14",
+  "theme_color": "#f0b840",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
