@@ -12,12 +12,10 @@
 }
 
 html, body {
-  min-height: 100%;
+  max-height: 100%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url("./assets/7446.jpg") center / cover;
-  
-  padding-bottom:2rem ;
 }
 
 .confetti-canvas {
@@ -34,19 +32,36 @@ html, body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   background:
     linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url("./assets/7446.jpg") center / cover;
   font-family: 'Upheaval', Arial, sans-serif;;
-  padding-bottom: 3rem;
+
+}
+
+.Buttons_Container{
+  padding: 0 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.Top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 1.4rem;
+}
+
+.logo{
+  width: 7rem;
 }
 
 .streak-top {
-  position: fixed;
-  top: 1rem;
-  right: 1.2rem;
   font-size: 0.82rem;
   font-weight: bold;
   letter-spacing: 0.08em;
@@ -493,5 +508,121 @@ html, body {
   .step-dot {
     width: 10px;
     height: 10px;
+  }
+
+    body{
+      overflow-x: hidden;
+    }
+
+  .page {
+    min-height: 100vh;
+    height: 100vh;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+
+  .card {
+    width: 80vw;
+    max-height: 92vh;
+    padding: 1rem 1.2rem;
+    gap: 0.6rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* hide scrollbar but still scrollable if needed */
+    scrollbar-width: none;
+  }
+
+  .card::-webkit-scrollbar {
+    display: none;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .subtitle {
+    font-size: 0.65rem;
+    margin-top: -0.4rem;
+  }
+
+  .item-canvas {
+    width: 130px;
+    height: 130px;
+  }
+
+  .image-wrapper {
+    padding: 0.7rem;
+  }
+
+  .step-dot {
+    width: 9px;
+    height: 9px;
+  }
+
+  .difficulty-badge {
+    font-size: 0.68rem;
+    padding: 0.4rem 0.9rem;
+  }
+
+  .streak-top {
+    font-size: 0.68rem;
+    padding: 0.4rem 0.7rem;
+    top: 0.5rem;
+    right: 0.6rem;
+  }
+
+  .hint-text {
+    font-size: 0.72rem;
+  }
+
+  .hint-btn,
+  .hint-revealed {
+    font-size: 0.7rem;
+    padding: 0.35rem 0.8rem;
+  }
+
+  .guess-input {
+    font-size: 0.82rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .guess-btn {
+    font-size: 0.78rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .suggestions-list {
+    max-height: 140px;
+  }
+
+  .suggestion-item {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.7rem;
+  }
+
+  .suggestion-img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .wrong-guesses {
+    max-height: 52px;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+
+  .wrong-guesses::-webkit-scrollbar {
+    display: none;
+  }
+
+  .wrong-tag {
+    font-size: 0.65rem;
+    padding: 0.15rem 0.5rem;
+  }
+
+  .result-text {
+    font-size: 0.9rem;
   }
 }

@@ -228,8 +228,10 @@ function GuessTheItem() {
 
   return (
     <div className="page">
-      <canvas ref={confettiRef} className="confetti-canvas" />
-
+      <div className='Top'>
+        <div>
+          <img className='logo' src="/logo.png" alt="logo" />
+        </div>
       {/* Fixed top-right streak */}
       <div
         className={`streak-top ${streak === 0 || gameOver ? 'streak-zero' : ''}`}
@@ -237,6 +239,9 @@ function GuessTheItem() {
       >
         🔥 {streak} day{streak !== 1 ? 's' : ''}
       </div>
+
+      </div>
+      <canvas ref={confettiRef} className="confetti-canvas" />
 
       <div className="card">
         <h1 className="title">Guess the Item</h1>
@@ -333,7 +338,9 @@ function GuessTheItem() {
         )}
       </div>
 
-      {/* Ko-fi button */}
+      
+      <div className="Buttons_Container">
+        {/* Ko-fi button */}
       <a 
         href="https://ko-fi.com/arbershaska34991"
         target="_blank"
@@ -342,6 +349,7 @@ function GuessTheItem() {
       >
         ☕ Support on Ko-fi
       </a>
+      </div>
     </div>
   );
 }

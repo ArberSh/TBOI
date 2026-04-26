@@ -919,7 +919,7 @@
   },
   {
     "id": 157,
-    "name": "Blood Rights",
+    "name": "Bloody Lust",
     "image": "/images/items/collectibles_157_bloodylust.png",
     "difficulty": "hard"
   },
@@ -1333,187 +1333,187 @@
   },
   {
     "id": 226,
-    "name": "Spider Mod",
+    "name": "Black Lotus",
     "image": "/images/items/collectibles_226_blacklotus.png",
     "difficulty": "medium"
   },
   {
     "id": 227,
-    "name": "There's Options",
+    "name": "Piggy Bank",
     "image": "/images/items/collectibles_227_piggybank.png",
     "difficulty": "medium"
   },
   {
     "id": 228,
-    "name": "Bogo Bombs",
+    "name": "Mom's Perfume",
     "image": "/images/items/collectibles_228_momsperfume.png",
     "difficulty": "medium"
   },
   {
     "id": 229,
-    "name": "Tear Detonator",
+    "name": "Monstro's Lung",
     "image": "/images/items/collectibles_229_monstroslung.png",
     "difficulty": "medium"
   },
   {
     "id": 230,
-    "name": "Little Bagy",
+    "name": "Abaddon",
     "image": "/images/items/collectibles_230_abaddon.png",
     "difficulty": "medium"
   },
   {
     "id": 231,
-    "name": "Blood Clot",
+    "name": "Ball of Tar",
     "image": "/images/items/collectibles_231_balloftar.png",
     "difficulty": "medium"
   },
   {
     "id": 232,
-    "name": "Abaddon",
+    "name": "Stop Watch",
     "image": "/images/items/collectibles_232_stopwatch.png",
     "difficulty": "easy"
   },
   {
     "id": 233,
-    "name": "Provine",
+    "name": "Tiny Planet",
     "image": "/images/items/collectibles_233_tinyplanet.png",
     "difficulty": "medium"
   },
   {
     "id": 234,
-    "name": "Piggy Bank",
+    "name": "Infestation 2",
     "image": "/images/items/collectibles_234_infestation2.png",
     "difficulty": "medium"
   },
   {
     "id": 236,
-    "name": "Mom's Perfume",
+    "name": "E. Coli",
     "image": "/images/items/collectibles_236_ecoli.png",
     "difficulty": "medium"
   },
   {
     "id": 237,
-    "name": "Monstro's Lung",
+    "name": "Death's Touch",
     "image": "/images/items/collectibles_237_deathstouch.png",
     "difficulty": "easy"
   },
   {
     "id": 238,
-    "name": "Abaddon",
+    "name": "Key Piece 1",
     "image": "/images/items/collectibles_238_keypiece1.png",
     "difficulty": "easy"
   },
   {
     "id": 239,
-    "name": "Ball of Tar",
+    "name": "Key Piece 2",
     "image": "/images/items/collectibles_239_keypiece2.png",
     "difficulty": "medium"
   },
   {
     "id": 240,
-    "name": "Stop Watch",
+    "name": "Experimental Treatment",
     "image": "/images/items/collectibles_240_experimentaltreatment.png",
     "difficulty": "easy"
   },
   {
     "id": 241,
-    "name": "Tiny Planet",
+    "name": "Contract from Below",
     "image": "/images/items/collectibles_241_contractfrombelow.png",
     "difficulty": "medium"
   },
   {
     "id": 242,
-    "name": "Infestation 2",
+    "name": "Infamy",
     "image": "/images/items/collectibles_242_infamy.png",
     "difficulty": "medium"
   },
   {
     "id": 243,
-    "name": "E. Coli",
+    "name": "Trinity Shield",
     "image": "/images/items/collectibles_243_trinityshield.png",
     "difficulty": "hard"
   },
   {
     "id": 244,
-    "name": "Death's Touch",
+    "name": "Tech.5",
     "image": "/images/items/collectibles_244_techpointfive.png",
     "difficulty": "easy"
   },
   {
     "id": 245,
-    "name": "Experimental Treatment",
+    "name": "20/20",
     "image": "/images/items/collectibles_245_2020.png",
     "difficulty": "medium"
   },
   {
     "id": 246,
-    "name": "Contract from Below",
+    "name": "Blue Map",
     "image": "/images/items/collectibles_246_bluemap.png",
     "difficulty": "medium"
   },
   {
     "id": 247,
-    "name": "Infamy",
+    "name": "BFFS!",
     "image": "/images/items/collectibles_247_bffs.png",
     "difficulty": "medium"
   },
   {
     "id": 248,
-    "name": "Trinity Shield",
+    "name": "Hive Mind",
     "image": "/images/items/collectibles_248_hivemind.png",
     "difficulty": "medium"
   },
   {
     "id": 249,
-    "name": "Tech.5",
+    "name": "There's Options",
     "image": "/images/items/collectibles_249_theresoptions.png",
     "difficulty": "medium"
   },
   {
     "id": 250,
-    "name": "20/20",
+    "name": "Bogo Bombs",
     "image": "/images/items/collectibles_250_bogobombs.png",
     "difficulty": "easy"
   },
   {
     "id": 251,
-    "name": "Blue Map",
+    "name": "Starter Deck",
     "image": "/images/items/collectibles_251_starterdeck.png",
     "difficulty": "medium"
   },
   {
     "id": 252,
-    "name": "BFFS!",
+    "name": "Little Baggy",
     "image": "/images/items/collectibles_252_littlebaggy.png",
     "difficulty": "easy"
   },
   {
     "id": 253,
-    "name": "Hive Mind",
+    "name": "Magic Scab",
     "image": "/images/items/collectibles_253_magicscab.png",
     "difficulty": "easy"
   },
   {
     "id": 254,
-    "name": "There's Options",
+    "name": "Blood Clot",
     "image": "/images/items/collectibles_254_bloodclot.png",
     "difficulty": "medium"
   },
   {
     "id": 255,
-    "name": "Bogo Bombs",
+    "name": "Screw",
     "image": "/images/items/collectibles_255_screw.png",
     "difficulty": "medium"
   },
   {
     "id": 256,
-    "name": "Baby-Vamp",
+    "name": "Hot Bombs",
     "image": "/images/items/collectibles_256_hotbombs.png",
     "difficulty": "medium"
   },
   {
     "id": 257,
-    "name": "Libra",
+    "name": "Fire Mind",
     "image": "/images/items/collectibles_257_firemind.png",
     "difficulty": "medium"
   },
@@ -1525,223 +1525,223 @@
   },
   {
     "id": 259,
-    "name": "Proptosis",
+    "name": "Dark Matter",
     "image": "/images/items/collectibles_259_darkmatter.png",
     "difficulty": "easy"
   },
   {
     "id": 260,
-    "name": "Missing Page 2",
+    "name": "Black Candle",
     "image": "/images/items/collectibles_260_blackcandle.png",
     "difficulty": "hard"
   },
   {
     "id": 261,
-    "name": "Smart Fly",
+    "name": "Proptosis",
     "image": "/images/items/collectibles_261_proptosis.png",
     "difficulty": "medium"
   },
   {
     "id": 262,
-    "name": "Dry Baby",
+    "name": "Missing Page 2",
     "image": "/images/items/collectibles_262_missingpage2.png",
     "difficulty": "medium"
   },
   {
     "id": 264,
-    "name": "Juicy Sack",
+    "name": "Smart Fly",
     "image": "/images/items/collectibles_264_smartfly.png",
     "difficulty": "medium"
   },
   {
     "id": 265,
-    "name": "Robo-Baby 2.0",
+    "name": "Dry Baby",
     "image": "/images/items/collectibles_265_drybaby.png",
     "difficulty": "medium"
   },
   {
     "id": 266,
-    "name": "Rotten Baby",
+    "name": "Juicy Sack",
     "image": "/images/items/collectibles_266_juicysack.png",
     "difficulty": "medium"
   },
   {
     "id": 267,
-    "name": "Headless Baby",
+    "name": "Robo-Baby 2.0",
     "image": "/images/items/collectibles_267_robobaby2.png",
     "difficulty": "medium"
   },
   {
     "id": 268,
-    "name": "Leech",
+    "name": "Rotten Baby",
     "image": "/images/items/collectibles_268_rottenbaby.png",
     "difficulty": "medium"
   },
   {
     "id": 269,
-    "name": "Mystery Sack",
+    "name": "Headless Baby",
     "image": "/images/items/collectibles_269_headlessbaby.png",
     "difficulty": "medium"
   },
   {
     "id": 270,
-    "name": "BBF",
+    "name": "Leech",
     "image": "/images/items/collectibles_270_leech.png",
     "difficulty": "medium"
   },
   {
     "id": 271,
-    "name": "Bob's Brain",
+    "name": "Mystery Sack",
     "image": "/images/items/collectibles_271_mysterysack.png",
     "difficulty": "easy"
   },
   {
     "id": 272,
-    "name": "Best Bud",
+    "name": "BBF",
     "image": "/images/items/collectibles_272_bff.png",
     "difficulty": "hard"
   },
   {
     "id": 273,
-    "name": "Lil' Brimstone",
+    "name": "Bob's Brain",
     "image": "/images/items/collectibles_273_bobsbrain.png",
     "difficulty": "easy"
   },
   {
     "id": 274,
-    "name": "Isaac's Heart",
+    "name": "Best Bud",
     "image": "/images/items/collectibles_274_bestbud.png",
     "difficulty": "easy"
   },
   {
     "id": 275,
-    "name": "Lil' Haunt",
+    "name": "Lil Brimstone",
     "image": "/images/items/collectibles_275_lilbrimstone.png",
     "difficulty": "medium"
   },
   {
     "id": 276,
-    "name": "Dark Bum",
+    "name": "Isaac's Heart",
     "image": "/images/items/collectibles_276_isaacsheart.png",
     "difficulty": "easy"
   },
   {
     "id": 277,
-    "name": "Big Fan",
+    "name": "Lil Haunt",
     "image": "/images/items/collectibles_277_lilhaunt.png",
     "difficulty": "medium"
   },
   {
     "id": 278,
-    "name": "Sissy Longlegs",
+    "name": "Dark Bum",
     "image": "/images/items/collectibles_278_darkbum.png",
     "difficulty": "easy"
   },
   {
     "id": 279,
-    "name": "Punching Bag",
+    "name": "Big Fan",
     "image": "/images/items/collectibles_279_bigfan.png",
     "difficulty": "medium"
   },
   {
     "id": 280,
-    "name": "How to Jump",
+    "name": "Sissy Longlegs",
     "image": "/images/items/collectibles_280_sissylonglegs.png",
     "difficulty": "medium"
   },
   {
     "id": 281,
-    "name": "D100",
+    "name": "Punching Bag",
     "image": "/images/items/collectibles_281_punchingbag.png",
     "difficulty": "medium"
   },
   {
     "id": 282,
-    "name": "D4",
+    "name": "How to Jump",
     "image": "/images/items/collectibles_282_howtojump.png",
     "difficulty": "medium"
   },
   {
     "id": 283,
-    "name": "D10",
+    "name": "D100",
     "image": "/images/items/collectibles_283_d100.png",
     "difficulty": "medium"
   },
   {
     "id": 284,
-    "name": "Blank Card",
+    "name": "D4",
     "image": "/images/items/collectibles_284_d4.png",
     "difficulty": "easy"
   },
   {
     "id": 285,
-    "name": "Book of Secrets",
+    "name": "D10",
     "image": "/images/items/collectibles_285_d10.png",
     "difficulty": "medium"
   },
   {
     "id": 286,
-    "name": "Box of Spiders",
+    "name": "Blank Card",
     "image": "/images/items/collectibles_286_blankcard.png",
     "difficulty": "medium"
   },
   {
     "id": 287,
-    "name": "Red Candle",
+    "name": "Book of Secrets",
     "image": "/images/items/collectibles_287_bookofsecrets.png",
     "difficulty": "medium"
   },
   {
     "id": 288,
-    "name": "The Jar",
+    "name": "Box of Spiders",
     "image": "/images/items/collectibles_288_boxofspiders.png",
     "difficulty": "medium"
   },
   {
     "id": 289,
-    "name": "Flush!",
+    "name": "Red Candle",
     "image": "/images/items/collectibles_289_redcandle.png",
     "difficulty": "hard"
   },
   {
     "id": 290,
-    "name": "Satanic Bible",
+    "name": "The Jar",
     "image": "/images/items/collectibles_290_thejar.png",
     "difficulty": "medium"
   },
   {
     "id": 291,
-    "name": "Head of Krampus",
+    "name": "Flush!",
     "image": "/images/items/collectibles_291_flush.png",
     "difficulty": "easy"
   },
   {
     "id": 292,
-    "name": "Butter Bean",
+    "name": "Satanic Bible",
     "image": "/images/items/collectibles_292_satanicbible.png",
     "difficulty": "hard"
   },
   {
     "id": 293,
-    "name": "Magic Fingers",
+    "name": "Head of Krampus",
     "image": "/images/items/collectibles_293_headofkrampus.png",
     "difficulty": "medium"
   },
   {
     "id": 294,
-    "name": "Converter",
+    "name": "Butter Bean",
     "image": "/images/items/collectibles_294_butterbean.png",
     "difficulty": "medium"
   },
   {
     "id": 295,
-    "name": "Blue Box",
+    "name": "Magic Fingers",
     "image": "/images/items/collectibles_295_magicfingers.png",
     "difficulty": "medium"
   },
   {
     "id": 296,
-    "name": "Spider's Bite",
+    "name": "Converter",
     "image": "/images/items/collectibles_296_converter.png",
     "difficulty": "medium"
   },
@@ -1873,85 +1873,85 @@
   },
   {
     "id": 318,
-    "name": "False Phalanx",
+    "name": "Gemini",
     "image": "/images/items/collectibles_318_gemini.png",
     "difficulty": "medium"
   },
   {
     "id": 319,
-    "name": "The Ludovico Technique",
+    "name": "Cain's Other Eye",
     "image": "/images/items/collectibles_319_cainseye.png",
     "difficulty": "easy"
   },
   {
     "id": 320,
-    "name": "Soy Milk",
+    "name": "Blue Baby's Only Friend",
     "image": "/images/items/collectibles_320_bluebabysonlyfriend.png",
     "difficulty": "easy"
   },
   {
     "id": 321,
-    "name": "Godhead",
+    "name": "Samson's Chains",
     "image": "/images/items/collectibles_321_samsonschains.png",
     "difficulty": "easy"
   },
   {
     "id": 322,
-    "name": "Lazarus' Rags",
+    "name": "Mongo Baby",
     "image": "/images/items/collectibles_322_mongobaby.png",
     "difficulty": "medium"
   },
   {
     "id": 323,
-    "name": "The Mind",
+    "name": "Isaac's Tears",
     "image": "/images/items/collectibles_323_isaacstears.png",
     "difficulty": "medium"
   },
   {
     "id": 324,
-    "name": "The Body",
+    "name": "Undefined",
     "image": "/images/items/collectibles_324_undefined.png",
     "difficulty": "medium"
   },
   {
     "id": 325,
-    "name": "The Soul",
+    "name": "Scissors",
     "image": "/images/items/collectibles_325_scissors.png",
     "difficulty": "medium"
   },
   {
     "id": 326,
-    "name": "Dead Onion",
+    "name": "Breath of Life",
     "image": "/images/items/collectibles_326_breathoflife.png",
     "difficulty": "medium"
   },
   {
     "id": 327,
-    "name": "Broken Watch",
+    "name": "The Polaroid",
     "image": "/images/items/collectibles_327_thepolaroid.png",
     "difficulty": "medium"
   },
   {
     "id": 328,
-    "name": "The Boomerang",
+    "name": "The Negative",
     "image": "/images/items/collectibles_328_thenegative.png",
     "difficulty": "medium"
   },
   {
     "id": 329,
-    "name": "Safety Pin",
+    "name": "The Ludovico Technique",
     "image": "/images/items/collectibles_329_theludovicotechnique.png",
     "difficulty": "medium"
   },
   {
     "id": 330,
-    "name": "Caffeine Pill",
+    "name": "Soy Milk",
     "image": "/images/items/collectibles_330_soymilk.png",
     "difficulty": "medium"
   },
   {
     "id": 331,
-    "name": "Torn Photo",
+    "name": "Godhead",
     "image": "/images/items/collectibles_331_godhead.png",
     "difficulty": "medium"
   },
@@ -1962,7 +1962,7 @@
     "difficulty": "medium"
   },
   {
-  "id": 333,
+    "id": 333,
     "name": "The Mind",
     "image": "/images/items/collectibles_333_mind.png",
     "difficulty": "medium"
@@ -2015,4 +2015,5 @@
     "image": "/images/items/collectibles_341_tornphoto.png",
     "difficulty": "medium"
   }
+
 ]
