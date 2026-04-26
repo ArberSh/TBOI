@@ -519,7 +519,6 @@ html, body {
     height: 100vh;
     padding: 0;
     align-items: center;
-    justify-content: center;
     overflow-x: hidden;
   }
 
@@ -624,5 +623,19 @@ html, body {
 
   .result-text {
     font-size: 0.9rem;
+  }
+  .input-wrapper {
+    position: static;
+  }
+
+  .suggestions-list {
+    position: fixed;
+    left: 4vw;
+    right: 4vw;
+    bottom: 5rem;
+    top: auto;
+    max-height: 45vh;
+    z-index: 200;
+    border-radius: 12px;
   }
 }
