@@ -60,13 +60,13 @@ function GuessTheItem() {
   const rafRef = useRef(null);
   const suggestionsRef = useRef(null);
 
-  const saveStreak = (currentStreak, alreadyPlayed) => {
-    if (alreadyPlayed) return;
-    const newStreak = currentStreak + 1;
-    localStorage.setItem('tboiStreak', JSON.stringify({ lastPlayedDate: todayKey, streak: newStreak }));
-    setStreak(newStreak);
-    setPlayedToday(true);
-  };
+  const saveStreak = (currentStreak, alreadyPlayed, won = true) => {
+  if (alreadyPlayed) return;
+  const newStreak = won ? currentStreak + 1 : 0;
+  localStorage.setItem('tboiStreak', JSON.stringify({ lastPlayedDate: todayKey, streak: newStreak }));
+  setStreak(newStreak);
+  setPlayedToday(true);
+};
 
   const suggestions = useMemo(() => {
   if (!userGuess.trim()) return [];
@@ -187,18 +187,18 @@ function GuessTheItem() {
     if (!trimmed) return;
 
     if (trimmed.toLowerCase() === dailyItem.name.toLowerCase()) {
-      setHasGuessedCorrectly(true);
-      saveStreak(streak, playedToday);
-    } else {
-      setWrongGuesses(prev => [...prev, trimmed]);
-      setShake(true);
-      setTimeout(() => setShake(false), 500);
-      if (stepIndex < PIXEL_STEPS.length - 1) {
-        setStepIndex(prev => prev + 1);
-      } else {
-        saveStreak(streak, playedToday);
-      }
-    }
+  setHasGuessedCorrectly(true);
+  saveStreak(streak, playedToday, true);   // ← won: true
+} else {
+  setWrongGuesses(prev => [...prev, trimmed]);
+  setShake(true);
+  setTimeout(() => setShake(false), 500);
+  if (stepIndex < PIXEL_STEPS.length - 1) {
+    setStepIndex(prev => prev + 1);
+  } else {
+    saveStreak(streak, playedToday, false); // ← won: false → resets to 0
+  }
+}
     setUserGuess("");
     setHighlightedIndex(-1);
     inputRef.current?.focus();
