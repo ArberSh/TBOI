@@ -85,12 +85,21 @@ function GuessTheItem() {
   return [...startsWith, ...rest].slice(0, 12);
 }, [userGuess, wrongGuesses]);
 
-  const dailyItem = useMemo(() => {
-    const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
-    const startDate = Date.UTC(2024, 0, 1);
-    const dayIndex = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
-    return ITEMS_DATABASE[dayIndex % ITEMS_DATABASE.length];
-  }, []);
+ const dailyItem = useMemo(() => {
+  const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+  const startDate = Date.UTC(2024, 0, 1);
+  const dayIndex = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+
+  const todayIdx     = dayIndex % ITEMS_DATABASE.length;
+  const yesterdayIdx = (dayIndex - 1) % ITEMS_DATABASE.length;
+
+  // If the cycle wraps and lands on the same item as yesterday, skip one forward
+  if (ITEMS_DATABASE[todayIdx].name === ITEMS_DATABASE[yesterdayIdx].name) {
+    return ITEMS_DATABASE[(todayIdx + 1) % ITEMS_DATABASE.length];
+  }
+
+  return ITEMS_DATABASE[todayIdx];
+}, []);
 
   const currentPixelSize = PIXEL_STEPS[stepIndex];
   const gameOver = stepIndex === PIXEL_STEPS.length - 1 && !hasGuessedCorrectly;
