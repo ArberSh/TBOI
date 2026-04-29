@@ -274,14 +274,12 @@ html, body {
 
 /* ── Input wrapper + autocomplete ── */
 .input-wrapper {
-  position: relative;
   width: 100%;
 }
 
 .input-row {
+  gap: 6px;
   display: flex;
-  gap: 0.5rem;
-  width: 100%;
 }
 
 .suggestions-list {
@@ -509,9 +507,15 @@ html, body {
     padding: 0.35rem 0.8rem;
   }
 
+  .input-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+
   .guess-input {
     font-size: 0.82rem;
     padding: 0.5rem 0.7rem;
+    width: 70%;
   }
 
   .guess-btn {
