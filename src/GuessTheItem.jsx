@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect, useRef } from 'react';
 import "./GuessTheItem.css";
 import ITEMS_DATABASE from "./itemsData.json";
 
-const PIXEL_STEPS = [4, 8, 16, 16, 32, 64];
+const PIXEL_STEPS = [8, 16, 16, 32, 32, 64];
 
 const CONFETTI_COLORS = [
   '#f0b840', '#5ddb6a', '#e05c5c', '#60c8f0', '#c86af0',
@@ -253,7 +253,7 @@ function GuessTheItem() {
         className={`streak-top ${streak === 0 || gameOver ? 'streak-zero' : ''}`}
         title="Daily streak"
       >
-        🔥 {streak} day{streak !== 1 ? 's' : ''}
+         {streak} day{streak !== 1 ? 's' : ''}
       </div>
 
       </div>
@@ -357,13 +357,17 @@ function GuessTheItem() {
       
       <div className="Buttons_Container">
         {/* Ko-fi button */}
-      <a 
+      {/* <a 
         href="https://ko-fi.com/arbershaska34991"
         target="_blank"
         rel="noopener noreferrer"
         className="kofi-btn"
       >
-        ☕ Support on Ko-fi
+        <img className='logoKo-fi' src='https://storage.ko-fi.com/cdn/kofi5.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+       
+      </a> */}
+      <a href='https://ko-fi.com/E1E81M8I3S' target='_blank'>
+      <img className='logoko-fi' src='https://storage.ko-fi.com/cdn/kofi5.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' />
       </a>
       </div>
     </div>

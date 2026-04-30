@@ -369,24 +369,18 @@ html, body {
 }
 
 .kofi-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.4rem;
-  border-radius: 10px;
-  background: rgba(91, 214, 255, 0.18);
-  border: 1px solid rgba(91, 206, 255, 0.45);
-  color: #6bbfff;
-  font-size: 0.82rem;
-  font-weight: bold;
-  letter-spacing: 0.08em;
-  text-decoration: none;
-  font-family: 'Upheaval', Arial, sans-serif;
-  transition: background 0.2s, box-shadow 0.2s;
+  height: 10rem;
 }
 
-.kofi-btn:hover {
+/* .kofi-btn:hover {
   background: rgba(91, 206, 255, 0.3);
   box-shadow: 0 0 12px rgba(91, 206, 255, 0.3);
+} */
+
+.logoko-fi{
+  height: 38px;
+  border: 0;
+  
 }
 
 
