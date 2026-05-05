@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import "./GuessTheItem.css";
 import ITEMS_DATABASE from "./itemsData.json";
+import fireImg from "./assets/fire.gif"
 
 const PIXEL_STEPS = [8, 16, 16, 32, 32, 64];
 
@@ -41,6 +42,7 @@ function GuessTheItem() {
   const [hintRevealed, setHintRevealed] = useState(() => loadGameState()?.hintRevealed ?? false);
   const [shake, setShake] = useState(false);
   const [highlightedIndex, setHighlightedIndex] = useState(-1);
+  const [showNameReveal, setShowNameReveal] = useState(() => loadGameState()?.hasGuessedCorrectly ?? false);
   const [streak, setStreak] = useState(() => {
     const stored = JSON.parse(localStorage.getItem('tboiStreak') || '{}');
     const { lastPlayedDate, streak: saved = 0 } = stored;
@@ -61,45 +63,44 @@ function GuessTheItem() {
   const suggestionsRef = useRef(null);
 
   const saveStreak = (currentStreak, alreadyPlayed, won = true) => {
-  if (alreadyPlayed) return;
-  const newStreak = won ? currentStreak + 1 : 0;
-  localStorage.setItem('tboiStreak', JSON.stringify({ lastPlayedDate: todayKey, streak: newStreak }));
-  setStreak(newStreak);
-  setPlayedToday(true);
-};
+    if (alreadyPlayed) return;
+    const newStreak = won ? currentStreak + 1 : 0;
+    localStorage.setItem('tboiStreak', JSON.stringify({ lastPlayedDate: todayKey, streak: newStreak }));
+    setStreak(newStreak);
+    setPlayedToday(true);
+  };
 
   const suggestions = useMemo(() => {
-  if (!userGuess.trim()) return [];
-  const lower = userGuess.trim().toLowerCase();
-  const guessed = new Set(wrongGuesses.map(g => g.toLowerCase()));
-  const available = ITEMS_DATABASE.filter(item =>
-    item.name.toLowerCase().includes(lower) &&
-    !guessed.has(item.name.toLowerCase())
-  );
-  const startsWith = available.filter(item =>
-    item.name.toLowerCase().startsWith(lower)
-  );
-  const rest = available.filter(item =>
-    !item.name.toLowerCase().startsWith(lower)
-  );
-  return [...startsWith, ...rest].slice(0, 12);
-}, [userGuess, wrongGuesses]);
+    if (!userGuess.trim()) return [];
+    const lower = userGuess.trim().toLowerCase();
+    const guessed = new Set(wrongGuesses.map(g => g.toLowerCase()));
+    const available = ITEMS_DATABASE.filter(item =>
+      item.name.toLowerCase().includes(lower) &&
+      !guessed.has(item.name.toLowerCase())
+    );
+    const startsWith = available.filter(item =>
+      item.name.toLowerCase().startsWith(lower)
+    );
+    const rest = available.filter(item =>
+      !item.name.toLowerCase().startsWith(lower)
+    );
+    return [...startsWith, ...rest].slice(0, 12);
+  }, [userGuess, wrongGuesses]);
 
- const dailyItem = useMemo(() => {
-  const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
-  const startDate = Date.UTC(2024, 0, 1);
-  const dayIndex = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+  const dailyItem = useMemo(() => {
+    const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+    const startDate = Date.UTC(2024, 0, 1);
+    const dayIndex = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
 
-  const todayIdx     = dayIndex % ITEMS_DATABASE.length;
-  const yesterdayIdx = (dayIndex - 1) % ITEMS_DATABASE.length;
+    const todayIdx     = dayIndex % ITEMS_DATABASE.length;
+    const yesterdayIdx = (dayIndex - 1) % ITEMS_DATABASE.length;
 
-  // If the cycle wraps and lands on the same item as yesterday, skip one forward
-  if (ITEMS_DATABASE[todayIdx].name === ITEMS_DATABASE[yesterdayIdx].name) {
-    return ITEMS_DATABASE[(todayIdx + 1) % ITEMS_DATABASE.length];
-  }
+    if (ITEMS_DATABASE[todayIdx].name === ITEMS_DATABASE[yesterdayIdx].name) {
+      return ITEMS_DATABASE[(todayIdx + 1) % ITEMS_DATABASE.length];
+    }
 
-  return ITEMS_DATABASE[todayIdx];
-}, []);
+    return ITEMS_DATABASE[todayIdx];
+  }, []);
 
   const currentPixelSize = PIXEL_STEPS[stepIndex];
   const gameOver = stepIndex === PIXEL_STEPS.length - 1 && !hasGuessedCorrectly;
@@ -117,14 +118,15 @@ function GuessTheItem() {
       const H = canvas.height;
       ctx.clearRect(0, 0, W, H);
 
+      // ── After a correct guess: render at 64 px (still pixelated) ──
       if (hasGuessedCorrectly) {
         const off = document.createElement('canvas');
-        off.width = 128; off.height = 128;
+        off.width = 64; off.height = 64;
         const offCtx = off.getContext('2d');
         offCtx.imageSmoothingEnabled = false;
-        offCtx.drawImage(img, 0, 0, 128, 128);
+        offCtx.drawImage(img, 0, 0, 64, 64);
         ctx.imageSmoothingEnabled = false;
-        ctx.drawImage(off, 0, 0, 128, 128, 0, 0, W, H);
+        ctx.drawImage(off, 0, 0, 64, 64, 0, 0, W, H);
       } else {
         const res = currentPixelSize;
         const off = document.createElement('canvas');
@@ -191,23 +193,48 @@ function GuessTheItem() {
     return () => cancelAnimationFrame(rafRef.current);
   }, [hasGuessedCorrectly]);
 
+  // Trigger the name-reveal animation shortly after winning
+  useEffect(() => {
+    if (!hasGuessedCorrectly) return;
+    const t = setTimeout(() => setShowNameReveal(true), 200);
+    return () => clearTimeout(t);
+  }, [hasGuessedCorrectly]);
+
   const handleCheckGuess = (overrideName) => {
     const trimmed = (overrideName ?? userGuess).trim();
     if (!trimmed) return;
 
+    const attemptsMade = stepIndex + 1;
+
     if (trimmed.toLowerCase() === dailyItem.name.toLowerCase()) {
-  setHasGuessedCorrectly(true);
-  saveStreak(streak, playedToday, true);   // ← won: true
-} else {
-  setWrongGuesses(prev => [...prev, trimmed]);
-  setShake(true);
-  setTimeout(() => setShake(false), 500);
-  if (stepIndex < PIXEL_STEPS.length - 1) {
-    setStepIndex(prev => prev + 1);
-  } else {
-    saveStreak(streak, playedToday, false); // ← won: false → resets to 0
-  }
-}
+      setHasGuessedCorrectly(true);
+      saveStreak(streak, playedToday, true);
+
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'game_completed', {
+          result: 'win',
+          attempts: attemptsMade,
+        });
+      }
+    } else {
+      setWrongGuesses(prev => [...prev, trimmed]);
+      setShake(true);
+      setTimeout(() => setShake(false), 500);
+
+      if (stepIndex < PIXEL_STEPS.length - 1) {
+        setStepIndex(prev => prev + 1);
+      } else {
+        saveStreak(streak, playedToday, false);
+
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'game_completed', {
+            result: 'loss',
+            attempts: PIXEL_STEPS.length,
+          });
+        }
+      }
+    }
+
     setUserGuess("");
     setHighlightedIndex(-1);
     inputRef.current?.focus();
@@ -248,14 +275,13 @@ function GuessTheItem() {
         <div>
           <img className='logo' src="/logo.png" alt="logo" />
         </div>
-      {/* Fixed top-right streak */}
-      <div
-        className={`streak-top ${streak === 0 || gameOver ? 'streak-zero' : ''}`}
-        title="Daily streak"
-      >
-         {streak} day{streak !== 1 ? 's' : ''}
-      </div>
-
+        <div
+          className={`streak-top ${streak === 0 || gameOver ? 'streak-zero' : ''}`}
+          title="Daily streak"
+        >
+          <img className='firepng' src={fireImg} alt="" />
+          <p className='centered'>{streak}</p>
+        </div>
       </div>
       <canvas ref={confettiRef} className="confetti-canvas" />
 
@@ -283,12 +309,19 @@ function GuessTheItem() {
           <canvas ref={canvasRef} width={180} height={180} className="item-canvas" />
         </div>
 
+        {/* ── Name reveal banner (fades in after correct guess) ── */}
+        {hasGuessedCorrectly && (
+          <div className={`name-reveal ${showNameReveal ? 'name-reveal--visible' : ''}`}>
+            {dailyItem.name}
+          </div>
+        )}
+
         {/* Status */}
         {!hasGuessedCorrectly && !gameOver && (
           <p className="hint-text">{attemptsLeft} attempt{attemptsLeft !== 1 ? 's' : ''} remaining</p>
         )}
         {hasGuessedCorrectly && (
-          <p className="result-text correct">✓ {dailyItem.name}</p>
+          <p className="result-text correct"> Correct!</p>
         )}
         {gameOver && (
           <p className="result-text wrong">It was: {dailyItem.name}</p>
@@ -299,11 +332,11 @@ function GuessTheItem() {
           <div className="hint-row">
             {hintRevealed ? (
               <p className="hint-revealed">
-                 Starts with <strong>" {dailyItem.name[0]} "</strong> · {dailyItem.name.split(" ").length} word{dailyItem.name.split(" ").length !== 1 ? "s" : ""} · {dailyItem.name.length} letters
+                Starts with <strong>" {dailyItem.name[0]} "</strong> · {dailyItem.name.split(" ").length} word{dailyItem.name.split(" ").length !== 1 ? "s" : ""} · {dailyItem.name.length} letters
               </p>
             ) : (
               <button className="hint-btn" onClick={() => setHintRevealed(true)}>
-                💡 Show Hint
+                Show Hint
               </button>
             )}
           </div>
@@ -354,21 +387,10 @@ function GuessTheItem() {
         )}
       </div>
 
-      
       <div className="Buttons_Container">
-        {/* Ko-fi button */}
-      {/* <a 
-        href="https://ko-fi.com/arbershaska34991"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="kofi-btn"
-      >
-        <img className='logoKo-fi' src='https://storage.ko-fi.com/cdn/kofi5.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' />
-       
-      </a> */}
-      <a href='https://ko-fi.com/E1E81M8I3S' target='_blank'>
-      <img className='logoko-fi' src='https://storage.ko-fi.com/cdn/kofi5.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' />
-      </a>
+        <a href='https://ko-fi.com/E1E81M8I3S' target='_blank'>
+          <img className='logoko-fi' src='https://storage.ko-fi.com/cdn/kofi5.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+        </a>
       </div>
     </div>
   );

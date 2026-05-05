@@ -14,7 +14,7 @@
 html, body {
   max-height: 100%;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
     url("./assets/7446.jpg") center / cover;
 }
 
@@ -35,7 +35,7 @@ html, body {
   justify-content: space-around;
   flex-direction: column;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
     url("./assets/7446.jpg") center / cover;
   font-family: 'Upheaval', Arial, sans-serif;;
 
@@ -62,22 +62,32 @@ html, body {
 }
 
 .streak-top {
+  position: relative;
+  text-align: center;
   font-size: 0.82rem;
   font-weight: bold;
-  letter-spacing: 0.08em;
-  padding: 0.55rem 1rem;
-  border-radius: 10px;
-  background: rgba(240, 100, 40, 0.18);
-  border: 1px solid rgba(240, 120, 40, 0.45);
-  color: #f07840;
   z-index: 100;
   font-family: 'Upheaval', Arial, sans-serif;
+  color: white;
+  -webkit-text-stroke:1px black;
+}
+
+.centered {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+
 }
 
 .streak-zero {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.15);
-  color: rgba(255, 255, 255, 0.3);
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke:1px black;
+}
+
+.firepng{
+  width: 4.2rem;
 }
 
 /* ── Card ── */
@@ -183,7 +193,7 @@ html, body {
 
 /* ── Status text ── */
 .hint-text {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.45);
 }
 
@@ -195,6 +205,23 @@ html, body {
 
 .result-text.correct {
   color: #5ddb6a;
+}
+
+.name-reveal {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #fafafa;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  margin: 8px 0 4px;
+}
+
+.name-reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .result-text.wrong {
@@ -378,7 +405,7 @@ html, body {
 } */
 
 .logoko-fi{
-  height: 36px;
+  height: 40px;
   border: 0;
   
 }
