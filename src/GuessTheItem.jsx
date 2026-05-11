@@ -1,9 +1,10 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import "./GuessTheItem.css";
 import ITEMS_DATABASE from "./itemsData.json";
-import fireImg from "./assets/fire.gif"
+import firegif from "./assets/fire.gif"
+import fireimg from "./assets/fireimg.png"
 
-const PIXEL_STEPS = [8, 16, 16, 32, 32, 64];
+const PIXEL_STEPS = [8, 12, 16, 16, 24, 32, 64];
 
 const CONFETTI_COLORS = [
   '#f0b840', '#5ddb6a', '#e05c5c', '#60c8f0', '#c86af0',
@@ -84,7 +85,7 @@ function GuessTheItem() {
     const rest = available.filter(item =>
       !item.name.toLowerCase().startsWith(lower)
     );
-    return [...startsWith, ...rest].slice(0, 12);
+    return [...startsWith, ...rest].slice(0, 7);
   }, [userGuess, wrongGuesses]);
 
   const dailyItem = useMemo(() => {
@@ -204,6 +205,15 @@ function GuessTheItem() {
     const trimmed = (overrideName ?? userGuess).trim();
     if (!trimmed) return;
 
+     const exists = ITEMS_DATABASE.some(
+    item => item.name.toLowerCase() === trimmed.toLowerCase()
+  );
+  if (!exists) {
+    setShake(true);
+    setTimeout(() => setShake(false), 500);
+    return;
+  }
+
     const attemptsMade = stepIndex + 1;
 
     if (trimmed.toLowerCase() === dailyItem.name.toLowerCase()) {
@@ -222,17 +232,21 @@ function GuessTheItem() {
       setTimeout(() => setShake(false), 500);
 
       if (stepIndex < PIXEL_STEPS.length - 1) {
-        setStepIndex(prev => prev + 1);
-      } else {
-        saveStreak(streak, playedToday, false);
+  const nextIndex = stepIndex + 1;
+  setStepIndex(nextIndex);
 
-        if (typeof window.gtag === 'function') {
-          window.gtag('event', 'game_completed', {
-            result: 'loss',
-            attempts: PIXEL_STEPS.length,
-          });
-        }
-      }
+  // Last step reached → game is now over, save the loss
+  if (nextIndex === PIXEL_STEPS.length - 1) {
+    saveStreak(streak, playedToday, false);
+
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'game_completed', {
+        result: 'loss',
+        attempts: PIXEL_STEPS.length,
+      });
+    }
+  }
+}
     }
 
     setUserGuess("");
@@ -279,7 +293,7 @@ function GuessTheItem() {
           className={`streak-top ${streak === 0 || gameOver ? 'streak-zero' : ''}`}
           title="Daily streak"
         >
-          <img className='firepng' src={fireImg} alt="" />
+          <img className='firepng' src={streak > 0 ? firegif : fireimg} alt="fire" style={{ width: '60px', height: '60px', objectFit: 'contain' }} /> 
           <p className='centered'>{streak}</p>
         </div>
       </div>
@@ -293,9 +307,9 @@ function GuessTheItem() {
           <span className={`difficulty-badge diff-${dailyItem.difficulty}`}>{dailyItem.difficulty}</span>
         </div>
 
-        {/* Step progress dots */}
+        {/* Step progress dots — one per attempt (skip index 0, the initial view) */}
         <div className="steps">
-          {PIXEL_STEPS.map((px, i) => (
+          {PIXEL_STEPS.slice(1).map((px, i) => (
             <div
               key={i}
               className={`step-dot ${i < stepIndex ? 'step-done' : i === stepIndex ? 'step-active' : 'step-future'}`}

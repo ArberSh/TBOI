@@ -93,8 +93,8 @@ html, body {
 /* ── Card ── */
 .card {
   background: rgba(15, 10, 20, 0.88);
-  border: 2px solid rgba(255, 255, 255, 0.221);
-  border-radius: 16px;
+  border: 3px solid #f0b840;
+  border-radius: 10px;
   padding: 2rem 2.5rem;
   width: 360px;
   display: flex;
@@ -103,19 +103,20 @@ html, body {
   gap: 1.2rem;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(6px);
+  
   /* margin-bottom: 2rem; */
 }
 
 /* ── Header ── */
 .title {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #fff;
   letter-spacing: 0.05em;
   text-align: center;
 }
 
 .subtitle {
-  font-size: 0.75rem;
+  font-size: 0.90rem;
   color: rgba(255, 255, 255, 0.4);
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -130,16 +131,16 @@ html, body {
 }
 
 .step-dot {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   transition: all 0.3s;
 }
 
 .step-done {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(187, 0, 0, 0.174);
   color: rgba(255, 255, 255, 0.557);
-  border: 1px solid rgba(255, 255, 255, 0.135);
+  border: 1px solid rgba(255, 0, 0, 0.594);
 }
 
 .step-active {
@@ -255,29 +256,23 @@ html, body {
 }
 
 .difficulty-badge {
-  font-size: 0.76rem;
+  font-size: 1.4rem;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  padding: 0.6rem 1.4rem;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.8rem;
   border-radius: 10px;
 }
 
 .diff-easy {
-  background: rgba(60, 200, 90, 0.2);
-  border: 1px solid rgba(60, 200, 90, 0.5);
   color: #5ddb6a;
 }
 
 .diff-medium {
-  background: rgba(240, 184, 64, 0.2);
-  border: 1px solid rgba(240, 184, 64, 0.5);
   color: #f0b840;
 }
 
 .diff-hard {
-  background: rgba(220, 60, 60, 0.2);
-  border: 1px solid rgba(220, 60, 60, 0.5);
   color: #e05c5c;
 }
 
@@ -296,11 +291,14 @@ html, body {
   color: rgba(255, 160, 160, 0.85);
   font-size: 0.72rem;
   padding: 0.2rem 0.6rem;
-  border-radius: 20px;
+  border-radius: 6px;
 }
 
 /* ── Input wrapper + autocomplete ── */
 .input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -377,17 +375,18 @@ html, body {
   padding: 0.6rem 1.1rem;
   border-radius: 8px;
   border: 1px solid rgba(240, 184, 64, 0.5);
-  background: rgba(240, 184, 64, 0.15);
-  color: #f0b840;
-  font-size: 0.9rem;
+  background: #e3b146;
+  color: #000000;
+  font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.2s, box-shadow 0.2s;
   white-space: nowrap;
+  letter-spacing: 0.05rem;
 }
 
 .guess-btn:hover {
-  background: rgba(240, 184, 64, 0.28);
+  background: rgba(255, 174, 0, 0.767);
   box-shadow: 0 0 10px rgba(240, 184, 64, 0.25);
 }
 
@@ -418,10 +417,10 @@ html, body {
 }
 
 .hint-btn {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 0.78rem;
+  background: rgba(134, 134, 134, 0.05);
+  border:none;
+  color: rgba(226, 226, 226, 0.445);
+  font-size: 1rem;
   font-family: 'Upheaval', Arial, sans-serif;
   letter-spacing: 0.08em;
   padding: 0.45rem 1rem;
