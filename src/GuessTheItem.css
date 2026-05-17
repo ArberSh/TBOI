@@ -30,15 +30,16 @@ html, body {
 
 .page {
   min-height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
+    linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.55)),
     url("./assets/7446.jpg") center / cover;
   font-family: 'Upheaval', Arial, sans-serif;;
-
+  background-attachment: fixed;
 }
 
 .Buttons_Container{
@@ -308,15 +309,12 @@ html, body {
 }
 
 .suggestions-list {
-  position: absolute;
-  top: calc(100% + 4px);
-  left: 0;
-  right: 0;
+  width: 360px;
   background: rgba(15, 10, 20, 0.97);
   border: 1px solid rgba(240, 184, 64, 0.35);
   border-radius: 8px;
   list-style: none;
-  margin: 0;
+  margin:0 0 2rem 0 ;
   padding: 0.3rem 0;
   z-index: 100;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);
@@ -386,7 +384,7 @@ html, body {
 }
 
 .guess-btn:hover {
-  background: rgba(255, 174, 0, 0.767);
+  background: rgba(255, 190, 48, 0.767);
   box-shadow: 0 0 10px rgba(240, 184, 64, 0.25);
 }
 
@@ -397,11 +395,6 @@ html, body {
 .kofi-btn {
   height: 10rem;
 }
-
-/* .kofi-btn:hover {
-  background: rgba(91, 206, 255, 0.3);
-  box-shadow: 0 0 12px rgba(91, 206, 255, 0.3);
-} */
 
 .logoko-fi{
   height: 40px;
@@ -448,6 +441,24 @@ html, body {
 
 .hint-revealed strong {
   color: #fff;
+}
+
+.share-btn {
+  margin-top: 12px;
+  padding: 8px 20px;
+  background: #f0b840;
+  color: #1a1a2e;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family:'Upheaval', Arial, sans-serif;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+.share-btn:hover {
+  background: #e0a830;
+  transform: scale(1.04);
 }
 
 @media (max-width: 480px) {

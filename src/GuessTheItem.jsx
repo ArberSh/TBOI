@@ -56,6 +56,7 @@ function GuessTheItem() {
     const stored = JSON.parse(localStorage.getItem('tboiStreak') || '{}');
     return stored.lastPlayedDate === todayKey;
   });
+  const [copied, setCopied] = useState(false);
 
   const canvasRef = useRef(null);
   const confettiRef = useRef(null);
@@ -283,6 +284,34 @@ function GuessTheItem() {
 
   const attemptsLeft = PIXEL_STEPS.length - 1 - stepIndex;
 
+ const handleShare = () => {
+  const totalAttempts = wrongGuesses.length + (hasGuessedCorrectly ? 1 : 0);
+  const maxAttempts = PIXEL_STEPS.length - 1; // 6
+
+  const grid = [
+    ...wrongGuesses.map(() => '🟥'),
+    hasGuessedCorrectly ? '🟩' : '🟥',
+  ].join('');
+
+  const resultLine = hasGuessedCorrectly
+    ? `${totalAttempts}/${maxAttempts}`
+    : `X/${maxAttempts}`;
+
+  const text = [
+    `🎮 Guess the TBOI Item — Daily Challenge`,
+    `${resultLine} ${streak > 1 ? `🔥 ${streak} day streak` : ''}`,
+    ``,
+    grid,
+    ``,
+    `https://isaacarcade.netlify.app`,
+  ].join('\n');
+
+  navigator.clipboard.writeText(text).then(() => {
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  });
+};
+
   return (
     <div className="page">
       <div className='Top'>
@@ -293,7 +322,7 @@ function GuessTheItem() {
           className={`streak-top ${streak === 0 || gameOver ? 'streak-zero' : ''}`}
           title="Daily streak"
         >
-          <img className='firepng' src={streak > 0 ? firegif : fireimg} alt="fire" style={{ width: '60px', height: '60px', objectFit: 'contain' }} /> 
+          <img className='firepng' src={streak > 0 ? firegif : fireimg} alt="fire" style={{ width: '70px', height: '70px', objectFit: 'contain' }} /> 
           <p className='centered'>{streak}</p>
         </div>
       </div>
@@ -346,7 +375,7 @@ function GuessTheItem() {
           <div className="hint-row">
             {hintRevealed ? (
               <p className="hint-revealed">
-                Starts with <strong>" {dailyItem.name[0]} "</strong> · {dailyItem.name.split(" ").length} word{dailyItem.name.split(" ").length !== 1 ? "s" : ""} · {dailyItem.name.length} letters
+                Starts with <strong>" {dailyItem.name[0]} "</strong> · {dailyItem.name.split(" ").length} word{dailyItem.name.split(" ").length !== 1 ? "s" : ""} · {dailyItem.name.replace(/\s/g, '').length} letters letters
               </p>
             ) : (
               <button className="hint-btn" onClick={() => setHintRevealed(true)}>
@@ -382,24 +411,32 @@ function GuessTheItem() {
               />
               <button onClick={() => handleCheckGuess()} className="guess-btn">Submit</button>
             </div>
-            {suggestions.length > 0 && (
-              <ul className="suggestions-list" ref={suggestionsRef}>
-                {suggestions.map((item, i) => (
-                  <li
-                    key={item.name}
-                    className={`suggestion-item ${i === highlightedIndex ? 'suggestion-highlighted' : ''}`}
-                    onMouseDown={() => handleCheckGuess(item.name)}
-                    onMouseEnter={() => setHighlightedIndex(i)}
-                  >
-                    <img src={item.image} alt="" className="suggestion-img" />
-                    {item.name}
-                  </li>
-                ))}
-              </ul>
-            )}
           </div>
         )}
+
+        {/* Share button — outside the game-active block */}
+        {(hasGuessedCorrectly || gameOver) && (
+          <button className="share-btn" onClick={handleShare}>
+            {copied ? '✅ Copied!' : '📋 Share Result'}
+          </button>
+        )}
       </div>
+        {suggestions.length > 0 && (
+          <ul className="suggestions-list" ref={suggestionsRef}>
+            {suggestions.map((item, i) => (
+              <li
+                key={item.name}
+                className={`suggestion-item ${i === highlightedIndex ? 'suggestion-highlighted' : ''}`}
+                onMouseDown={() => handleCheckGuess(item.name)}
+                onMouseEnter={() => setHighlightedIndex(i)}
+              >
+                <img src={item.image} alt="" className="suggestion-img" />
+                {item.name}
+              </li>
+            ))}
+          </ul>
+        )}
+
 
       <div className="Buttons_Container">
         <a href='https://ko-fi.com/E1E81M8I3S' target='_blank'>
