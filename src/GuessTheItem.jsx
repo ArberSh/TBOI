@@ -89,20 +89,20 @@ function GuessTheItem() {
     return [...startsWith, ...rest].slice(0, 7);
   }, [userGuess, wrongGuesses]);
 
-  const dailyItem = useMemo(() => {
-    const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
-    const startDate = Date.UTC(2024, 0, 1);
-    const dayIndex = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+ const dailyItem = useMemo(() => {
+  const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()); // ✅ number
+  const startDate = Date.UTC(2024, 0, 1);
+  const dayIndex = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
 
-    const todayIdx     = dayIndex % ITEMS_DATABASE.length;
-    const yesterdayIdx = (dayIndex - 1) % ITEMS_DATABASE.length;
+  const todayIdx     = dayIndex % ITEMS_DATABASE.length;
+  const yesterdayIdx = (dayIndex - 1 + ITEMS_DATABASE.length) % ITEMS_DATABASE.length;
 
-    if (ITEMS_DATABASE[todayIdx].name === ITEMS_DATABASE[yesterdayIdx].name) {
-      return ITEMS_DATABASE[(todayIdx + 1) % ITEMS_DATABASE.length];
-    }
+  if (ITEMS_DATABASE[todayIdx].name === ITEMS_DATABASE[yesterdayIdx].name) {
+    return ITEMS_DATABASE[(todayIdx + 1) % ITEMS_DATABASE.length];
+  }
 
-    return ITEMS_DATABASE[todayIdx];
-  }, []);
+  return ITEMS_DATABASE[todayIdx];
+}, []);
 
   const currentPixelSize = PIXEL_STEPS[stepIndex];
   const gameOver = stepIndex === PIXEL_STEPS.length - 1 && !hasGuessedCorrectly;
@@ -322,7 +322,7 @@ function GuessTheItem() {
           className={`streak-top ${streak === 0 || gameOver ? 'streak-zero' : ''}`}
           title="Daily streak"
         >
-          <img className='firepng' src={streak > 0 ? firegif : fireimg} alt="fire" style={{ width: '70px', height: '70px', objectFit: 'contain' }} /> 
+          <img className='firepng' src={streak > 0 ? firegif : fireimg} alt="fire" style={{ width: '4rem', objectFit: 'contain' }} /> 
           <p className='centered'>{streak}</p>
         </div>
       </div>
@@ -375,7 +375,7 @@ function GuessTheItem() {
           <div className="hint-row">
             {hintRevealed ? (
               <p className="hint-revealed">
-                Starts with <strong>" {dailyItem.name[0]} "</strong> · {dailyItem.name.split(" ").length} word{dailyItem.name.split(" ").length !== 1 ? "s" : ""} · {dailyItem.name.replace(/\s/g, '').length} letters letters
+                Starts with <strong>" {dailyItem.name[0]} "</strong> · {dailyItem.name.split(" ").length} word{dailyItem.name.split(" ").length !== 1 ? "s" : ""} · {dailyItem.name.replace(/\s/g, '').length} letters
               </p>
             ) : (
               <button className="hint-btn" onClick={() => setHintRevealed(true)}>

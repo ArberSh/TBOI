@@ -470,6 +470,10 @@ html, body {
     
   }
 
+  .Top{
+    padding: 0 0.6rem;
+  }
+
   .title{
     font-size: 1.2rem;
   }
@@ -523,7 +527,6 @@ html, body {
 
   .streak-top {
     font-size: 0.68rem;
-    padding: 0.4rem 0.7rem;
     top: 0.5rem;
     right: 0.6rem;
   }
@@ -579,5 +582,8 @@ html, body {
 
   .Buttons_Container{
     padding: 0 1.2rem;
+  }
+  .suggestions-list {
+    width: 80vw; /* matches your card width on mobile */
   }
 }
