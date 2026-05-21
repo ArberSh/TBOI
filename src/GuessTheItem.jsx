@@ -28,7 +28,8 @@ function createParticles(W, H) {
 
 function GuessTheItem() {
   const now = new Date();
-  const todayKey = `${now.getUTCFullYear()}-${now.getUTCMonth()}-${now.getUTCDate()}`;
+  const pad = n => String(n).padStart(2, '0');
+  const todayKey = `${now.getUTCFullYear()}-${pad(now.getUTCMonth() + 1)}-${pad(now.getUTCDate())}`;
 
   const loadGameState = () => {
     const saved = JSON.parse(localStorage.getItem('tboiGameState') || '{}');
@@ -49,7 +50,7 @@ function GuessTheItem() {
     const { lastPlayedDate, streak: saved = 0 } = stored;
     if (lastPlayedDate === todayKey) return saved;
     const yesterday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() - 1));
-    const yesterdayKey = `${yesterday.getUTCFullYear()}-${yesterday.getUTCMonth()}-${yesterday.getUTCDate()}`;
+    const yesterdayKey = `${yesterday.getUTCFullYear()}-${pad(yesterday.getUTCMonth() + 1)}-${pad(yesterday.getUTCDate())}`;
     return lastPlayedDate === yesterdayKey ? saved : 0;
   });
   const [playedToday, setPlayedToday] = useState(() => {
@@ -89,20 +90,19 @@ function GuessTheItem() {
     return [...startsWith, ...rest].slice(0, 7);
   }, [userGuess, wrongGuesses]);
 
- const dailyItem = useMemo(() => {
-  const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()); // ✅ number
-  const startDate = Date.UTC(2024, 0, 1);
-  const dayIndex = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+  const dailyItem = useMemo(() => {
+    const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+    const startDate = Date.UTC(2024, 0, 1);
+    const dayIndex = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
 
-  const todayIdx     = dayIndex % ITEMS_DATABASE.length;
-  const yesterdayIdx = (dayIndex - 1 + ITEMS_DATABASE.length) % ITEMS_DATABASE.length;
+    const todayIdx = dayIndex % ITEMS_DATABASE.length;
+    const yesterdayIdx = (dayIndex - 1 + ITEMS_DATABASE.length) % ITEMS_DATABASE.length;
 
-  if (ITEMS_DATABASE[todayIdx].name === ITEMS_DATABASE[yesterdayIdx].name) {
-    return ITEMS_DATABASE[(todayIdx + 1) % ITEMS_DATABASE.length];
-  }
-
-  return ITEMS_DATABASE[todayIdx];
-}, []);
+    if (ITEMS_DATABASE[todayIdx].name === ITEMS_DATABASE[yesterdayIdx].name) {
+      return ITEMS_DATABASE[(todayIdx + 1) % ITEMS_DATABASE.length];
+    }
+    return ITEMS_DATABASE[todayIdx];
+  }, []);
 
   const currentPixelSize = PIXEL_STEPS[stepIndex];
   const gameOver = stepIndex === PIXEL_STEPS.length - 1 && !hasGuessedCorrectly;
@@ -120,7 +120,6 @@ function GuessTheItem() {
       const H = canvas.height;
       ctx.clearRect(0, 0, W, H);
 
-      // ── After a correct guess: render at 64 px (still pixelated) ──
       if (hasGuessedCorrectly) {
         const off = document.createElement('canvas');
         off.width = 64; off.height = 64;
@@ -202,18 +201,27 @@ function GuessTheItem() {
     return () => clearTimeout(t);
   }, [hasGuessedCorrectly]);
 
+  // Sync canvas resolution to its CSS display size
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const size = canvas.offsetWidth;
+    canvas.width = size;
+    canvas.height = size;
+  }, []);
+
   const handleCheckGuess = (overrideName) => {
     const trimmed = (overrideName ?? userGuess).trim();
     if (!trimmed) return;
 
-     const exists = ITEMS_DATABASE.some(
-    item => item.name.toLowerCase() === trimmed.toLowerCase()
-  );
-  if (!exists) {
-    setShake(true);
-    setTimeout(() => setShake(false), 500);
-    return;
-  }
+    const exists = ITEMS_DATABASE.some(
+      item => item.name.toLowerCase() === trimmed.toLowerCase()
+    );
+    if (!exists) {
+      setShake(true);
+      setTimeout(() => setShake(false), 500);
+      return;
+    }
 
     const attemptsMade = stepIndex + 1;
 
@@ -233,21 +241,20 @@ function GuessTheItem() {
       setTimeout(() => setShake(false), 500);
 
       if (stepIndex < PIXEL_STEPS.length - 1) {
-  const nextIndex = stepIndex + 1;
-  setStepIndex(nextIndex);
+        const nextIndex = stepIndex + 1;
+        setStepIndex(nextIndex);
 
-  // Last step reached → game is now over, save the loss
-  if (nextIndex === PIXEL_STEPS.length - 1) {
-    saveStreak(streak, playedToday, false);
+        if (nextIndex === PIXEL_STEPS.length - 1) {
+          saveStreak(streak, playedToday, false);
 
-    if (typeof window.gtag === 'function') {
-      window.gtag('event', 'game_completed', {
-        result: 'loss',
-        attempts: PIXEL_STEPS.length,
-      });
-    }
-  }
-}
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'game_completed', {
+              result: 'loss',
+              attempts: PIXEL_STEPS.length,
+            });
+          }
+        }
+      }
     }
 
     setUserGuess("");
@@ -284,33 +291,35 @@ function GuessTheItem() {
 
   const attemptsLeft = PIXEL_STEPS.length - 1 - stepIndex;
 
- const handleShare = () => {
-  const totalAttempts = wrongGuesses.length + (hasGuessedCorrectly ? 1 : 0);
-  const maxAttempts = PIXEL_STEPS.length - 1; // 6
+  const handleShare = () => {
+    const totalAttempts = wrongGuesses.length + (hasGuessedCorrectly ? 1 : 0);
+    const maxAttempts = PIXEL_STEPS.length - 1;
 
-  const grid = [
-    ...wrongGuesses.map(() => '🟥'),
-    hasGuessedCorrectly ? '🟩' : '🟥',
-  ].join('');
+    const grid = [
+      ...wrongGuesses.map(() => '🟥'),
+      hasGuessedCorrectly ? '🟩' : '🟥',
+    ].join('');
 
-  const resultLine = hasGuessedCorrectly
-    ? `${totalAttempts}/${maxAttempts}`
-    : `X/${maxAttempts}`;
+    const resultLine = hasGuessedCorrectly
+      ? `${totalAttempts}/${maxAttempts}`
+      : `X/${maxAttempts}`;
 
-  const text = [
-    `🎮 Guess the TBOI Item — Daily Challenge`,
-    `${resultLine} ${streak > 1 ? `🔥 ${streak} day streak` : ''}`,
-    ``,
-    grid,
-    ``,
-    `https://isaacarcade.netlify.app`,
-  ].join('\n');
+    const text = [
+      `🎮 Guess the TBOI Item — Daily Challenge`,
+      `${resultLine} ${streak > 1 ? `🔥 ${streak} day streak` : ''}`,
+      ``,
+      grid,
+      ``,
+      `https://isaacarcade.netlify.app`,
+    ].join('\n');
 
-  navigator.clipboard.writeText(text).then(() => {
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  });
-};
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      })
+      .catch(() => {});
+  };
 
   return (
     <div className="page">
@@ -322,7 +331,7 @@ function GuessTheItem() {
           className={`streak-top ${streak === 0 || gameOver ? 'streak-zero' : ''}`}
           title="Daily streak"
         >
-          <img className='firepng' src={streak > 0 ? firegif : fireimg} alt="fire" style={{ width: '4rem', objectFit: 'contain' }} /> 
+          <img className='firepng' src={streak > 0 ? firegif : fireimg} alt="fire" style={{ width: '4rem', objectFit: 'contain' }} />
           <p className='centered'>{streak}</p>
         </div>
       </div>
@@ -336,7 +345,6 @@ function GuessTheItem() {
           <span className={`difficulty-badge diff-${dailyItem.difficulty}`}>{dailyItem.difficulty}</span>
         </div>
 
-        {/* Step progress dots — one per attempt (skip index 0, the initial view) */}
         <div className="steps">
           {PIXEL_STEPS.slice(1).map((px, i) => (
             <div
@@ -347,30 +355,26 @@ function GuessTheItem() {
           ))}
         </div>
 
-        {/* Image */}
         <div className={`image-wrapper ${shake ? 'shake' : ''} ${hasGuessedCorrectly ? 'glow-correct' : ''}`}>
-          <canvas ref={canvasRef} width={180} height={180} className="item-canvas" />
+          <canvas ref={canvasRef} className="item-canvas" />
         </div>
 
-        {/* ── Name reveal banner (fades in after correct guess) ── */}
         {hasGuessedCorrectly && (
           <div className={`name-reveal ${showNameReveal ? 'name-reveal--visible' : ''}`}>
             {dailyItem.name}
           </div>
         )}
 
-        {/* Status */}
         {!hasGuessedCorrectly && !gameOver && (
           <p className="hint-text">{attemptsLeft} attempt{attemptsLeft !== 1 ? 's' : ''} remaining</p>
         )}
         {hasGuessedCorrectly && (
-          <p className="result-text correct"> Correct!</p>
+          <p className="result-text correct">Correct!</p>
         )}
         {gameOver && (
           <p className="result-text wrong">It was: {dailyItem.name}</p>
         )}
 
-        {/* Hint */}
         {!hasGuessedCorrectly && !gameOver && (
           <div className="hint-row">
             {hintRevealed ? (
@@ -385,7 +389,6 @@ function GuessTheItem() {
           </div>
         )}
 
-        {/* Wrong guesses */}
         {wrongGuesses.length > 0 && (
           <div className="wrong-guesses">
             {wrongGuesses.map((g, i) => (
@@ -394,7 +397,6 @@ function GuessTheItem() {
           </div>
         )}
 
-        {/* Input */}
         {!hasGuessedCorrectly && !gameOver && (
           <div className="input-wrapper">
             <div className="input-row">
@@ -414,32 +416,36 @@ function GuessTheItem() {
           </div>
         )}
 
-        {/* Share button — outside the game-active block */}
+        {(hasGuessedCorrectly || gameOver) && (
+  <p className="hint-text" style={{textAlign:"center"}}> Come back tomorrow for a new item!</p>
+)}
+
         {(hasGuessedCorrectly || gameOver) && (
           <button className="share-btn" onClick={handleShare}>
             {copied ? '✅ Copied!' : '📋 Share Result'}
           </button>
         )}
+        
       </div>
-        {suggestions.length > 0 && (
-          <ul className="suggestions-list" ref={suggestionsRef}>
-            {suggestions.map((item, i) => (
-              <li
-                key={item.name}
-                className={`suggestion-item ${i === highlightedIndex ? 'suggestion-highlighted' : ''}`}
-                onMouseDown={() => handleCheckGuess(item.name)}
-                onMouseEnter={() => setHighlightedIndex(i)}
-              >
-                <img src={item.image} alt="" className="suggestion-img" />
-                {item.name}
-              </li>
-            ))}
-          </ul>
-        )}
 
+      {suggestions.length > 0 && (
+        <ul className="suggestions-list" ref={suggestionsRef}>
+          {suggestions.map((item, i) => (
+            <li
+              key={item.name}
+              className={`suggestion-item ${i === highlightedIndex ? 'suggestion-highlighted' : ''}`}
+              onMouseDown={() => handleCheckGuess(item.name)}
+              onMouseEnter={() => setHighlightedIndex(i)}
+            >
+              <img src={item.image} alt="" className="suggestion-img" />
+              {item.name}
+            </li>
+          ))}
+        </ul>
+      )}
 
       <div className="Buttons_Container">
-        <a href='https://ko-fi.com/E1E81M8I3S' target='_blank'>
+        <a href='https://ko-fi.com/E1E81M8I3S' target='_blank' rel='noopener noreferrer'>
           <img className='logoko-fi' src='https://storage.ko-fi.com/cdn/kofi5.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' />
         </a>
       </div>
