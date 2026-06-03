@@ -3,6 +3,7 @@ import "./GuessTheItem.css";
 import ITEMS_DATABASE from "./itemsData.json";
 import firegif from "./assets/fire.gif"
 import fireimg from "./assets/fireimg.png"
+import { supabase } from './supabase';
 
 const PIXEL_STEPS = [8, 12, 16, 16, 24, 32, 64];
 
@@ -10,6 +11,20 @@ const CONFETTI_COLORS = [
   '#f0b840', '#5ddb6a', '#e05c5c', '#60c8f0', '#c86af0',
   '#f07840', '#f0e040', '#40f0c8', '#f040a0'
 ];
+
+function getTimeUntilMidnightUTC() {
+  const now = new Date();
+  const midnight = new Date(Date.UTC(
+    now.getUTCFullYear(),
+    now.getUTCMonth(),
+    now.getUTCDate() + 1
+  ));
+  const diff = midnight - now;
+  const h = String(Math.floor(diff / 1000 / 60 / 60)).padStart(2, '0');
+  const m = String(Math.floor((diff / 1000 / 60) % 60)).padStart(2, '0');
+  const s = String(Math.floor((diff / 1000) % 60)).padStart(2, '0');
+  return `${h}:${m}:${s}`;
+}
 
 function createParticles(W, H) {
   return Array.from({ length: 120 }, () => ({
@@ -58,6 +73,8 @@ function GuessTheItem() {
     return stored.lastPlayedDate === todayKey;
   });
   const [copied, setCopied] = useState(false);
+  const [countdown, setCountdown] = useState(getTimeUntilMidnightUTC());
+  const [guessStats, setGuessStats] = useState({ wins: 0, total: 0 }); // ✅ moved inside component
 
   const canvasRef = useRef(null);
   const confettiRef = useRef(null);
@@ -210,7 +227,35 @@ function GuessTheItem() {
     canvas.height = size;
   }, []);
 
-  const handleCheckGuess = (overrideName) => {
+  // Countdown timer
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCountdown(getTimeUntilMidnightUTC());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  // Fetch today's guess stats from Supabase
+  useEffect(() => {
+    const fetchStats = async () => {
+      const { count: wins } = await supabase
+        .from('daily_guesses')
+        .select('*', { count: 'exact', head: true })
+        .eq('date', todayKey)
+        .eq('result', 'win');
+
+      const { count: total } = await supabase
+        .from('daily_guesses')
+        .select('*', { count: 'exact', head: true })
+        .eq('date', todayKey);
+
+      setGuessStats({ wins: wins || 0, total: total || 0 });
+    };
+
+    fetchStats();
+  }, [hasGuessedCorrectly, gameOver]);
+
+  const handleCheckGuess = async (overrideName) => {
     const trimmed = (overrideName ?? userGuess).trim();
     if (!trimmed) return;
 
@@ -229,6 +274,14 @@ function GuessTheItem() {
       setHasGuessedCorrectly(true);
       saveStreak(streak, playedToday, true);
 
+      // ✅ insert win AFTER we know it's correct
+      await supabase.from('daily_guesses').insert({
+        item_name: dailyItem.name,
+        date: todayKey,
+        result: 'win',
+        attempts: attemptsMade,
+      });
+
       if (typeof window.gtag === 'function') {
         window.gtag('event', 'game_completed', {
           result: 'win',
@@ -246,6 +299,14 @@ function GuessTheItem() {
 
         if (nextIndex === PIXEL_STEPS.length - 1) {
           saveStreak(streak, playedToday, false);
+
+          // ✅ insert loss only when last step reached
+          await supabase.from('daily_guesses').insert({
+            item_name: dailyItem.name,
+            date: todayKey,
+            result: 'loss',
+            attempts: PIXEL_STEPS.length,
+          });
 
           if (typeof window.gtag === 'function') {
             window.gtag('event', 'game_completed', {
@@ -292,33 +353,45 @@ function GuessTheItem() {
   const attemptsLeft = PIXEL_STEPS.length - 1 - stepIndex;
 
   const handleShare = () => {
-    const totalAttempts = wrongGuesses.length + (hasGuessedCorrectly ? 1 : 0);
-    const maxAttempts = PIXEL_STEPS.length - 1;
+  const totalAttempts = wrongGuesses.length + (hasGuessedCorrectly ? 1 : 0);
+  const maxAttempts = PIXEL_STEPS.length - 1;
 
-    const grid = [
-      ...wrongGuesses.map(() => '🟥'),
-      hasGuessedCorrectly ? '🟩' : '🟥',
-    ].join('');
+  const grid = wrongGuesses.map(() => '🟥').concat(hasGuessedCorrectly ? ['🟩'] : []).join(' ');
 
-    const resultLine = hasGuessedCorrectly
-      ? `${totalAttempts}/${maxAttempts}`
-      : `X/${maxAttempts}`;
+  const streakLine = streak > 1
+    ? `🔥 ${streak} days in a row. touch grass.`
+    : streak === 1
+    ? `day 1. don't get excited.`
+    : `💀 streak: DEAD. embarrassing.`;
 
-    const text = [
-      `🎮 Guess the TBOI Item — Daily Challenge`,
-      `${resultLine} ${streak > 1 ? `🔥 ${streak} day streak` : ''}`,
-      ``,
-      grid,
-      ``,
-      `https://isaacarcade.netlify.app`,
-    ].join('\n');
+  const resultLine = hasGuessedCorrectly
+    ? totalAttempts === 1
+      ? `1/${maxAttempts-1} — recognized it fully pixelated. actual isaac nerd.`
+      : totalAttempts === 2
+      ? `2/${maxAttempts-1} — needed one hint. respectable i guess.`
+      : totalAttempts <= 4
+      ? `${totalAttempts}/${maxAttempts} — needed it half unblurred. casual detected.`
+      : `${totalAttempts}/${maxAttempts} — waited until it was basically a photo. embarrassing.`
+   : `X/${maxAttempts} — fully revealed and still clueless. do you even play this game?`;
 
-    navigator.clipboard.writeText(text)
-      .then(() => {
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
-      })
-      .catch(() => {});
+  const text = [
+    `🎮 Guess the TBOI Item — Daily Challenge`,
+    ``,
+    resultLine,
+    streakLine,
+    ``,
+    grid,
+    ``,
+    `think you can do better? doubt it.`,
+    `https://isaacarcade.com/`,
+  ].join('\n');
+
+  navigator.clipboard.writeText(text)
+    .then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    })
+    .catch(() => {});
   };
 
   return (
@@ -375,19 +448,31 @@ function GuessTheItem() {
           <p className="result-text wrong">It was: {dailyItem.name}</p>
         )}
 
-        {!hasGuessedCorrectly && !gameOver && (
-          <div className="hint-row">
-            {hintRevealed ? (
-              <p className="hint-revealed">
-                Starts with <strong>" {dailyItem.name[0]} "</strong> · {dailyItem.name.split(" ").length} word{dailyItem.name.split(" ").length !== 1 ? "s" : ""} · {dailyItem.name.replace(/\s/g, '').length} letters
-              </p>
-            ) : (
-              <button className="hint-btn" onClick={() => setHintRevealed(true)}>
-                Show Hint
-              </button>
-            )}
-          </div>
-        )}
+        {/* Stats card as hint */}
+{!hasGuessedCorrectly && !gameOver && (
+  <div className="hint-row">
+    {hintRevealed ? (
+       <div className='stats-row'>
+                <div className='stat-description'>
+                  <h2 className='stat-subtitle'>Type</h2>
+                  <p className='stat-value'>{dailyItem.type ?? '—'}</p>
+                </div>
+                <div className='stat-description'>
+                  <h2 className='stat-subtitle'>Quality</h2>
+                  <p className='stat-value'>{dailyItem.quality ?? '—'}</p>
+                </div>
+                <div className='stat-description'>
+                  <h2 className='stat-subtitle'>Unlock.</h2>
+                  <p className='stat-value'>{dailyItem.unlockable ? 'Yes' : 'No'}</p>
+                </div>
+              </div>
+    ) : (
+      <button className="hint-btn" onClick={() => setHintRevealed(true)}>
+        Show Hint
+      </button>
+    )}
+  </div>
+)}
 
         {wrongGuesses.length > 0 && (
           <div className="wrong-guesses">
@@ -416,16 +501,28 @@ function GuessTheItem() {
           </div>
         )}
 
+        {(hasGuessedCorrectly || gameOver) && guessStats.total > 0 && (
+          <div className="guess-stats">
+            <p className="stats-line">
+               <strong style={{ color: '#ffffff' }}>
+                {Math.round((guessStats.wins / guessStats.total) * 100)}%
+              </strong> of {guessStats.total} players guessed today's item
+            </p>
+          </div>
+        )}
+
         {(hasGuessedCorrectly || gameOver) && (
-  <p className="hint-text" style={{textAlign:"center"}}> Come back tomorrow for a new item!</p>
-)}
+          <p className="next-item-text" style={{ textAlign: "center" }}>
+            Next item in <strong style={{ color: "#f0b840", letterSpacing: "1px" }}>{countdown}</strong>
+          </p>
+        )}
 
         {(hasGuessedCorrectly || gameOver) && (
           <button className="share-btn" onClick={handleShare}>
             {copied ? '✅ Copied!' : '📋 Share Result'}
           </button>
         )}
-        
+
       </div>
 
       {suggestions.length > 0 && (

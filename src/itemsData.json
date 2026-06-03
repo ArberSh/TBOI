@@ -3,2017 +3,3026 @@
     "id": 1,
     "name": "The Sad Onion",
     "image": "/images/items/collectibles_001_thesadonion.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 2,
     "name": "The Inner Eye",
     "image": "/images/items/collectibles_002_theinnereye.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 3,
     "name": "Spoon Bender",
     "image": "/images/items/collectibles_003_spoonbender.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 4,
     "name": "Cricket's Head",
     "image": "/images/items/collectibles_004_cricketshead.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
   },
   {
     "id": 5,
     "name": "My Reflection",
     "image": "/images/items/collectibles_005_myreflection.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 6,
     "name": "Number One",
     "image": "/images/items/collectibles_006_numberone.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 7,
     "name": "Blood of the Martyr",
     "image": "/images/items/collectibles_007_bloodofthemartyr.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 8,
     "name": "Brother Bobby",
     "image": "/images/items/collectibles_008_brotherbobby.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 9,
     "name": "Skatole",
     "image": "/images/items/collectibles_009_skatole.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 10,
     "name": "Halo of Flies",
     "image": "/images/items/collectibles_010_haloofflies.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 11,
     "name": "1up!",
     "image": "/images/items/collectibles_011_1up.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 12,
     "name": "Magic Mushroom",
     "image": "/images/items/collectibles_012_magicmushroom.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
   },
   {
     "id": 13,
     "name": "The Virus",
     "image": "/images/items/collectibles_013_thevirus.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 14,
     "name": "Roid Rage",
     "image": "/images/items/collectibles_014_roidrage.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 15,
     "name": "<3",
     "image": "/images/items/collectibles_015_heart.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 16,
     "name": "Raw Liver",
     "image": "/images/items/collectibles_016_rawliver.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 17,
     "name": "Skeleton Key",
     "image": "/images/items/collectibles_017_skeletonkey.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 18,
     "name": "A Dollar",
     "image": "/images/items/collectibles_018_adollar.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 19,
     "name": "Boom!",
     "image": "/images/items/collectibles_019_boom.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 0,
+    "unlockable": false
   },
   {
     "id": 20,
     "name": "Transcendence",
     "image": "/images/items/collectibles_020_transcendence.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 21,
     "name": "The Compass",
     "image": "/images/items/collectibles_021_thecompass.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 22,
     "name": "Lunch",
     "image": "/images/items/collectibles_022_lunch.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 23,
     "name": "Dinner",
     "image": "/images/items/collectibles_023_dinner.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 24,
     "name": "Dessert",
     "image": "/images/items/collectibles_024_dessert.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 25,
     "name": "Breakfast",
     "image": "/images/items/collectibles_025_breakfast.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 26,
     "name": "Rotten Meat",
     "image": "/images/items/collectibles_026_rottenmeat.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 27,
     "name": "Wooden Spoon",
     "image": "/images/items/collectibles_027_woodenspoon.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 28,
     "name": "The Belt",
     "image": "/images/items/collectibles_028_thebelt.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 29,
     "name": "Mom's Underwear",
     "image": "/images/items/collectibles_029_momsunderwear.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 30,
     "name": "Mom's Heels",
     "image": "/images/items/collectibles_030_momsheels.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 31,
     "name": "Mom's Lipstick",
     "image": "/images/items/collectibles_031_momslipstick.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 32,
     "name": "Wire Coat Hanger",
     "image": "/images/items/collectibles_032_wirecoathanger.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 33,
     "name": "The Bible",
     "image": "/images/items/collectibles_033_thebible.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 34,
     "name": "The Book of Belial",
     "image": "/images/items/collectibles_034_thebookofbelial.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 35,
     "name": "The Necronomicon",
     "image": "/images/items/collectibles_035_thenecronomicon.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": true
   },
   {
     "id": 36,
     "name": "The Poop",
     "image": "/images/items/collectibles_036_thepoop.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 0,
+    "unlockable": false
   },
   {
     "id": 37,
     "name": "Mr. Boom",
     "image": "/images/items/collectibles_037_mrboom.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 38,
     "name": "Tammy's Head",
     "image": "/images/items/collectibles_038_tammyshead.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 39,
     "name": "Mom's Bra",
     "image": "/images/items/collectibles_039_momsbra.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 40,
     "name": "Kamikaze!",
     "image": "/images/items/collectibles_040_kamikaze.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 0,
+    "unlockable": false
   },
   {
     "id": 41,
     "name": "Mom's Pad",
     "image": "/images/items/collectibles_041_momspad.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 42,
     "name": "Bob's Rotten Head",
     "image": "/images/items/collectibles_042_bobsrottenhead.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 44,
     "name": "Teleport!",
     "image": "/images/items/collectibles_044_teleport.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 45,
     "name": "Yum Heart",
     "image": "/images/items/collectibles_045_yumheart.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 46,
     "name": "Lucky Foot",
     "image": "/images/items/collectibles_046_luckyfoot.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 47,
     "name": "Doctor's Remote",
     "image": "/images/items/collectibles_047_doctorsremote.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 48,
     "name": "Cupid's Arrow",
     "image": "/images/items/collectibles_048_cupidsarrow.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 49,
     "name": "Shoop Da Whoop!",
     "image": "/images/items/collectibles_049_shoopdawhoop.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 50,
     "name": "Steven",
     "image": "/images/items/collectibles_050_steven.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 51,
     "name": "Pentagram",
     "image": "/images/items/collectibles_051_pentagram.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 52,
     "name": "Dr. Fetus",
     "image": "/images/items/collectibles_052_drfetus.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
   },
   {
     "id": 53,
     "name": "Magneto",
     "image": "/images/items/collectibles_053_magneto.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 54,
     "name": "Treasure Map",
     "image": "/images/items/collectibles_054_treasuremap.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 55,
     "name": "Mom's Eye",
     "image": "/images/items/collectibles_055_momseye.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 56,
     "name": "Lemon Mishap",
     "image": "/images/items/collectibles_056_lemonmishap.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 57,
     "name": "Distant Admiration",
     "image": "/images/items/collectibles_057_distantadmiration.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 58,
     "name": "Book of Shadows",
     "image": "/images/items/collectibles_058_bookofshadows.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 60,
     "name": "The Ladder",
     "image": "/images/items/collectibles_060_theladder.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 62,
     "name": "Charm of the Vampire",
     "image": "/images/items/collectibles_062_charmofthevampire.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 63,
     "name": "The Battery",
     "image": "/images/items/collectibles_063_thebattery.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 64,
     "name": "Steam Sale",
     "image": "/images/items/collectibles_064_steamsale.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 65,
     "name": "Anarchist Cookbook",
     "image": "/images/items/collectibles_065_anarchistcookbook.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 66,
     "name": "The Hourglass",
     "image": "/images/items/collectibles_066_thehourglass.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 67,
     "name": "Sister Maggy",
     "image": "/images/items/collectibles_067_sistermaggy.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 68,
     "name": "Technology",
     "image": "/images/items/collectibles_068_technology.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 69,
     "name": "Chocolate Milk",
     "image": "/images/items/collectibles_069_chocolatemilk.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 70,
     "name": "Growth Hormones",
     "image": "/images/items/collectibles_070_growthhormones.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 71,
     "name": "Mini Mush",
     "image": "/images/items/collectibles_071_minimushroom.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 72,
     "name": "Rosary",
     "image": "/images/items/collectibles_072_rosary.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 73,
     "name": "Cube of Meat",
     "image": "/images/items/collectibles_073_cubeofmeat.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 74,
     "name": "A Quarter",
     "image": "/images/items/collectibles_074_aquarter.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 75,
     "name": "PHD",
     "image": "/images/items/collectibles_075_phd.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 76,
     "name": "X-Ray Vision",
     "image": "/images/items/collectibles_076_xrayvision.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 77,
     "name": "My Little Unicorn",
     "image": "/images/items/collectibles_077_mylittleunicorn.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 78,
     "name": "Book of Revelations",
     "image": "/images/items/collectibles_078_bookofrevelations.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 79,
     "name": "The Mark",
     "image": "/images/items/collectibles_079_themark.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 80,
     "name": "The Pact",
     "image": "/images/items/collectibles_080_thepact.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 81,
     "name": "Dead Cat",
     "image": "/images/items/collectibles_081_deadcat.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 82,
     "name": "Lord of the Pit",
     "image": "/images/items/collectibles_082_lordofthepit.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 83,
     "name": "The Nail",
     "image": "/images/items/collectibles_083_thenail.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 84,
     "name": "We Need to Go Deeper!",
     "image": "/images/items/collectibles_084_weneedtogodeeper.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 85,
     "name": "Deck of Cards",
     "image": "/images/items/collectibles_085_deckofcards.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 86,
     "name": "Monstro's Tooth",
     "image": "/images/items/collectibles_086_monstrostooth.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": true
   },
   {
     "id": 87,
     "name": "Loki's Horns",
     "image": "/images/items/collectibles_087_lokishorns.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 88,
     "name": "Little Chubby",
     "image": "/images/items/collectibles_088_littlechubby.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 89,
     "name": "Spider Bite",
     "image": "/images/items/collectibles_089_spidersbite.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 90,
     "name": "The Small Rock",
     "image": "/images/items/collectibles_090_smallrock.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 91,
     "name": "Spelunker Hat",
     "image": "/images/items/collectibles_091_spelunkerhat.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 92,
     "name": "Super Bandage",
     "image": "/images/items/collectibles_092_superbandage.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 93,
     "name": "The Gamekid",
     "image": "/images/items/collectibles_093_thegamekid.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 94,
     "name": "Sack of Pennies",
     "image": "/images/items/collectibles_094_sackofpennies.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 95,
     "name": "Robo-Baby",
     "image": "/images/items/collectibles_095_robobaby.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 96,
     "name": "Little C.H.A.D.",
     "image": "/images/items/collectibles_096_littlechad.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 97,
     "name": "The Book of Sin",
     "image": "/images/items/collectibles_097_bookofsin.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 98,
     "name": "The Relic",
     "image": "/images/items/collectibles_098_therelic.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Familiar",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 99,
     "name": "Little Gish",
     "image": "/images/items/collectibles_099_littlegish.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 100,
     "name": "Little Steven",
     "image": "/images/items/collectibles_100_littlesteve.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 101,
     "name": "The Halo",
     "image": "/images/items/collectibles_101_thehalo.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 102,
     "name": "Mom's Bottle of Pills",
     "image": "/images/items/collectibles_102_momsbottleofpills.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 103,
     "name": "The Common Cold",
     "image": "/images/items/collectibles_103_thecommoncold.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 104,
     "name": "The Parasite",
     "image": "/images/items/collectibles_104_theparasite.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 105,
     "name": "The D6",
     "image": "/images/items/collectibles_105_dice.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 4,
+    "unlockable": true
   },
   {
     "id": 106,
     "name": "Mr. Mega",
     "image": "/images/items/collectibles_106_mrmega.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 107,
     "name": "The Pinking Shears",
     "image": "/images/items/collectibles_107_pinkingshears.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 108,
     "name": "The Wafer",
     "image": "/images/items/collectibles_108_thewafer.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
   },
   {
     "id": 109,
     "name": "Money = Power",
     "image": "/images/items/collectibles_109_moneyispower.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 110,
     "name": "Mom's Contacts",
     "image": "/images/items/collectibles_110_momscontacts.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 111,
     "name": "The Bean",
     "image": "/images/items/collectibles_111_thebean.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 0,
+    "unlockable": true
   },
   {
     "id": 112,
     "name": "Guardian Angel",
     "image": "/images/items/collectibles_112_guardianangel.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 113,
     "name": "Demon Baby",
     "image": "/images/items/collectibles_113_demonbaby.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 114,
     "name": "Mom's Knife",
     "image": "/images/items/collectibles_114_momsknife.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
   },
   {
     "id": 115,
     "name": "Ouija Board",
     "image": "/images/items/collectibles_115_ouijaboard.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 116,
     "name": "9 Volt",
     "image": "/images/items/collectibles_116_9volt.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 117,
     "name": "Dead Bird",
     "image": "/images/items/collectibles_117_deadbird.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 118,
     "name": "Brimstone",
     "image": "/images/items/collectibles_118_brimstone.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
   },
   {
     "id": 119,
     "name": "Blood Bag",
     "image": "/images/items/collectibles_119_bloodbag.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 120,
     "name": "Odd Mushroom (Thin)",
     "image": "/images/items/collectibles_120_oddmushroomthin.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 121,
     "name": "Odd Mushroom (Thick)",
     "image": "/images/items/collectibles_121_oddmushroomlarge.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 122,
     "name": "Whore of Babylon",
     "image": "/images/items/collectibles_122_whoreofbabylon.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 123,
     "name": "Monster Manual",
     "image": "/images/items/collectibles_123_monstermanual.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": true
   },
   {
     "id": 124,
     "name": "Dead Sea Scrolls",
     "image": "/images/items/collectibles_124_deadseascrolls.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 125,
     "name": "Bobby-Bomb",
     "image": "/images/items/collectibles_125_bobbybomb.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 126,
     "name": "Razor Blade",
     "image": "/images/items/collectibles_126_razorblade.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": true
   },
   {
     "id": 127,
     "name": "Forget Me Now",
     "image": "/images/items/collectibles_127_forgetmenow.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 128,
     "name": "Forever Alone",
     "image": "/images/items/collectibles_128_foreveralone.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 129,
     "name": "Bucket of Lard",
     "image": "/images/items/collectibles_129_bucketoflard.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 130,
     "name": "A Pony",
     "image": "/images/items/collectibles_130_apony.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": true
   },
   {
     "id": 131,
     "name": "Bomb Bag",
     "image": "/images/items/collectibles_131_bombbag.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 132,
     "name": "A Lump of Coal",
     "image": "/images/items/collectibles_132_alumpofcoal.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 133,
     "name": "Guppy's Paw",
     "image": "/images/items/collectibles_133_guppyspaw.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 134,
     "name": "Guppy's Tail",
     "image": "/images/items/collectibles_134_guppystail.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 135,
     "name": "IV Bag",
     "image": "/images/items/collectibles_135_ivbag.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": true
   },
   {
     "id": 136,
     "name": "Best Friend",
     "image": "/images/items/collectibles_136_bestfriend.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 137,
     "name": "Remote Detonator",
     "image": "/images/items/collectibles_137_remotedetonator.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 138,
     "name": "Stigmata",
     "image": "/images/items/collectibles_138_stigmata.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 139,
     "name": "Mom's Purse",
     "image": "/images/items/collectibles_139_momspurse.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 140,
     "name": "Bob's Curse",
     "image": "/images/items/collectibles_140_bobscurse.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 141,
     "name": "Pageant Boy",
     "image": "/images/items/collectibles_141_pageantboy.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 142,
     "name": "Scapular",
     "image": "/images/items/collectibles_142_scapular.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 143,
     "name": "Speed Ball",
     "image": "/images/items/collectibles_143_speedball.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 144,
     "name": "Bum Friend",
     "image": "/images/items/collectibles_144_bumfriend.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 145,
     "name": "Guppy's Head",
     "image": "/images/items/collectibles_145_guppyshead.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 146,
     "name": "Prayer Card",
     "image": "/images/items/collectibles_146_prayercard.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 147,
     "name": "Notched Axe",
     "image": "/images/items/collectibles_147_notchedaxe.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 148,
     "name": "Infestation",
     "image": "/images/items/collectibles_148_infestation.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 149,
     "name": "IPECAC",
     "image": "/images/items/collectibles_149_ipecac.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
   },
   {
     "id": 150,
     "name": "Tough Love",
     "image": "/images/items/collectibles_150_toughlove.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 151,
     "name": "The Mulligan",
     "image": "/images/items/collectibles_151_themulligan.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 152,
     "name": "Technology 2",
     "image": "/images/items/collectibles_152_technology2.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 153,
     "name": "Mutant Spider",
     "image": "/images/items/collectibles_153_mutantspider.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 154,
     "name": "Chemical Peel",
     "image": "/images/items/collectibles_154_chemicalpeel.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 155,
     "name": "The Peeper",
     "image": "/images/items/collectibles_155_thepeeper.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 156,
     "name": "Habit",
     "image": "/images/items/collectibles_156_habit.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 157,
     "name": "Bloody Lust",
     "image": "/images/items/collectibles_157_bloodylust.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 158,
     "name": "Crystal Ball",
     "image": "/images/items/collectibles_158_crystalball.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 159,
     "name": "Spirit of the Night",
     "image": "/images/items/collectibles_159_spiritofthenight.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 160,
     "name": "Crack the Sky",
     "image": "/images/items/collectibles_160_crackthesky.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 161,
     "name": "Ankh",
     "image": "/images/items/collectibles_161_ankh.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 162,
     "name": "Celtic Cross",
     "image": "/images/items/collectibles_162_celticcross.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 163,
     "name": "Ghost Baby",
     "image": "/images/items/collectibles_163_ghostbaby.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 164,
     "name": "The Candle",
     "image": "/images/items/collectibles_164_bluecandle.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 165,
     "name": "Cat-o-nine-tails",
     "image": "/images/items/collectibles_165_catoninetails.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 166,
     "name": "D20",
     "image": "/images/items/collectibles_166_d20.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 167,
     "name": "Harlequin Baby",
     "image": "/images/items/collectibles_167_harlequinbaby.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 168,
     "name": "Epic Fetus",
     "image": "/images/items/collectibles_168_epicfetus.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
   },
   {
     "id": 169,
     "name": "Polyphemus",
     "image": "/images/items/collectibles_169_polyphemus.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
   },
   {
     "id": 170,
     "name": "Daddy Longlegs",
     "image": "/images/items/collectibles_170_daddylonglegs.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 171,
     "name": "Spider Butt",
     "image": "/images/items/collectibles_171_spiderbutt.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 172,
     "name": "Sacrificial Dagger",
     "image": "/images/items/collectibles_172_sacrificialdagger.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 173,
     "name": "Mitre",
     "image": "/images/items/collectibles_173_mitre.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 174,
     "name": "Rainbow Baby",
     "image": "/images/items/collectibles_174_rainbowbaby.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 175,
     "name": "Dad's Key",
     "image": "/images/items/collectibles_175_dadskey.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": true
   },
   {
     "id": 176,
     "name": "Stem Cells",
     "image": "/images/items/collectibles_176_stemcells.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 177,
     "name": "Portable Slot",
     "image": "/images/items/collectibles_177_portableslot.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 0,
+    "unlockable": false
   },
   {
     "id": 178,
     "name": "Holy Water",
     "image": "/images/items/collectibles_178_holywater.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 179,
     "name": "Fate",
     "image": "/images/items/collectibles_179_fate.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 180,
     "name": "The Black Bean",
     "image": "/images/items/collectibles_180_blackbean.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 0,
+    "unlockable": false
   },
   {
     "id": 181,
     "name": "White Pony",
     "image": "/images/items/collectibles_181_whitepony.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 182,
     "name": "Sacred Heart",
     "image": "/images/items/collectibles_182_sacredheart.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
   },
   {
     "id": 183,
     "name": "Tooth Picks",
     "image": "/images/items/collectibles_183_toothpicks.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 184,
     "name": "Holy Grail",
     "image": "/images/items/collectibles_184_holygrail.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 185,
     "name": "Dead Dove",
     "image": "/images/items/collectibles_185_deaddove.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 186,
     "name": "Blood Rights",
     "image": "/images/items/collectibles_186_bloodrights.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": true
   },
   {
     "id": 187,
     "name": "Guppy's Hairball",
     "image": "/images/items/collectibles_187_guppyshairball.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": true
   },
   {
     "id": 188,
     "name": "Abel",
     "image": "/images/items/collectibles_188_abel.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": true
   },
   {
     "id": 189,
     "name": "SMB Super Fan",
     "image": "/images/items/collectibles_189_smbsuperfan.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 190,
     "name": "Pyro",
     "image": "/images/items/collectibles_190_pyro.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 191,
     "name": "3 Dollar Bill",
     "image": "/images/items/collectibles_191_3dollarbill.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 192,
     "name": "Telepathy for Dummies",
     "image": "/images/items/collectibles_192_telepathyfordummies.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 193,
     "name": "MEAT!",
     "image": "/images/items/collectibles_193_meat.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 194,
     "name": "Magic 8 Ball",
     "image": "/images/items/collectibles_194_magic8ball.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 195,
     "name": "Coin Purse",
     "image": "/images/items/collectibles_195_momscoinpurse.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 196,
     "name": "Squeezy",
     "image": "/images/items/collectibles_196_squeezy.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 197,
     "name": "Jesus Juice",
     "image": "/images/items/collectibles_197_jesusjuice.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 198,
     "name": "Box",
     "image": "/images/items/collectibles_198_box.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 199,
     "name": "Mom's Key",
     "image": "/images/items/collectibles_199_momskey.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 200,
     "name": "Mom's Eyeshadow",
     "image": "/images/items/collectibles_200_momseyeshadow.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 201,
     "name": "Iron Bar",
     "image": "/images/items/collectibles_201_ironbar.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 202,
     "name": "Midas' Touch",
     "image": "/images/items/collectibles_202_midastouch.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 203,
     "name": "Humbling Bundle",
     "image": "/images/items/collectibles_203_humblingbundle.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 204,
     "name": "Fanny Pack",
     "image": "/images/items/collectibles_204_fannypack.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 205,
     "name": "Sharp Plug",
     "image": "/images/items/collectibles_205_sharpplug.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 206,
     "name": "Guillotine",
     "image": "/images/items/collectibles_206_guillotine.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
   },
   {
     "id": 207,
     "name": "Ball of Bandages",
     "image": "/images/items/collectibles_207_ballofbandages.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 208,
     "name": "Champion Belt",
     "image": "/images/items/collectibles_208_championbelt.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 209,
     "name": "Butt Bombs",
     "image": "/images/items/collectibles_209_buttbombs.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 210,
     "name": "Gnawed Leaf",
     "image": "/images/items/collectibles_210_gnawedleaf.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 211,
     "name": "Spiderbaby",
     "image": "/images/items/collectibles_211_spiderbaby.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 212,
     "name": "Guppy's Collar",
     "image": "/images/items/collectibles_212_guppyscollar.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 213,
     "name": "Lost Contact",
     "image": "/images/items/collectibles_213_lostcontact.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 214,
     "name": "Anemic",
     "image": "/images/items/collectibles_214_anemic.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 215,
     "name": "Goat Head",
     "image": "/images/items/collectibles_215_goathead.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 216,
     "name": "Ceremonial Robes",
     "image": "/images/items/collectibles_216_ceremonialrobes.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 217,
     "name": "Mom's Wig",
     "image": "/images/items/collectibles_217_momswig.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 218,
     "name": "Placenta",
     "image": "/images/items/collectibles_218_placenta.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 219,
     "name": "Old Bandage",
     "image": "/images/items/collectibles_219_oldbandage.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 220,
     "name": "Sad Bombs",
     "image": "/images/items/collectibles_220_sadbombs.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 221,
     "name": "Rubber Cement",
     "image": "/images/items/collectibles_221_rubbercement.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 222,
     "name": "Anti-Gravity",
     "image": "/images/items/collectibles_222_antigravity.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 223,
     "name": "Pyromaniac",
     "image": "/images/items/collectibles_223_pyromaniac.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
   },
   {
     "id": 224,
     "name": "Cricket's Body",
     "image": "/images/items/collectibles_224_cricketsbody.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 225,
     "name": "Gimpy",
     "image": "/images/items/collectibles_225_gimpy.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 226,
     "name": "Black Lotus",
     "image": "/images/items/collectibles_226_blacklotus.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 227,
     "name": "Piggy Bank",
     "image": "/images/items/collectibles_227_piggybank.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 228,
     "name": "Mom's Perfume",
     "image": "/images/items/collectibles_228_momsperfume.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 229,
     "name": "Monstro's Lung",
     "image": "/images/items/collectibles_229_monstroslung.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 230,
     "name": "Abaddon",
     "image": "/images/items/collectibles_230_abaddon.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 231,
     "name": "Ball of Tar",
     "image": "/images/items/collectibles_231_balloftar.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 232,
     "name": "Stop Watch",
     "image": "/images/items/collectibles_232_stopwatch.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 233,
     "name": "Tiny Planet",
     "image": "/images/items/collectibles_233_tinyplanet.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 234,
     "name": "Infestation 2",
     "image": "/images/items/collectibles_234_infestation2.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 236,
     "name": "E. Coli",
     "image": "/images/items/collectibles_236_ecoli.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 237,
     "name": "Death's Touch",
     "image": "/images/items/collectibles_237_deathstouch.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
   },
   {
     "id": 238,
     "name": "Key Piece 1",
     "image": "/images/items/collectibles_238_keypiece1.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 0,
+    "unlockable": false
   },
   {
     "id": 239,
     "name": "Key Piece 2",
     "image": "/images/items/collectibles_239_keypiece2.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 0,
+    "unlockable": false
   },
   {
     "id": 240,
     "name": "Experimental Treatment",
     "image": "/images/items/collectibles_240_experimentaltreatment.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 241,
     "name": "Contract from Below",
     "image": "/images/items/collectibles_241_contractfrombelow.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 242,
     "name": "Infamy",
     "image": "/images/items/collectibles_242_infamy.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 243,
     "name": "Trinity Shield",
     "image": "/images/items/collectibles_243_trinityshield.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 244,
     "name": "Tech.5",
     "image": "/images/items/collectibles_244_techpointfive.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 245,
     "name": "20/20",
     "image": "/images/items/collectibles_245_2020.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
   },
   {
     "id": 246,
     "name": "Blue Map",
     "image": "/images/items/collectibles_246_bluemap.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 247,
     "name": "BFFS!",
     "image": "/images/items/collectibles_247_bffs.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 248,
     "name": "Hive Mind",
     "image": "/images/items/collectibles_248_hivemind.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 249,
     "name": "There's Options",
     "image": "/images/items/collectibles_249_theresoptions.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 250,
     "name": "Bogo Bombs",
     "image": "/images/items/collectibles_250_bogobombs.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 251,
     "name": "Starter Deck",
     "image": "/images/items/collectibles_251_starterdeck.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 252,
     "name": "Little Baggy",
     "image": "/images/items/collectibles_252_littlebaggy.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 253,
     "name": "Magic Scab",
     "image": "/images/items/collectibles_253_magicscab.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 254,
     "name": "Blood Clot",
     "image": "/images/items/collectibles_254_bloodclot.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 255,
     "name": "Screw",
     "image": "/images/items/collectibles_255_screw.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 256,
     "name": "Hot Bombs",
     "image": "/images/items/collectibles_256_hotbombs.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 257,
     "name": "Fire Mind",
     "image": "/images/items/collectibles_257_firemind.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 258,
     "name": "Missing No.",
     "image": "/images/items/collectibles_258_missingno.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 0,
+    "unlockable": true
   },
   {
     "id": 259,
     "name": "Dark Matter",
     "image": "/images/items/collectibles_259_darkmatter.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 260,
     "name": "Black Candle",
     "image": "/images/items/collectibles_260_blackcandle.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 261,
     "name": "Proptosis",
     "image": "/images/items/collectibles_261_proptosis.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
   },
   {
     "id": 262,
     "name": "Missing Page 2",
     "image": "/images/items/collectibles_262_missingpage2.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 264,
     "name": "Smart Fly",
     "image": "/images/items/collectibles_264_smartfly.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 265,
     "name": "Dry Baby",
     "image": "/images/items/collectibles_265_drybaby.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 266,
     "name": "Juicy Sack",
     "image": "/images/items/collectibles_266_juicysack.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 267,
     "name": "Robo-Baby 2.0",
     "image": "/images/items/collectibles_267_robobaby2.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 268,
     "name": "Rotten Baby",
     "image": "/images/items/collectibles_268_rottenbaby.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 269,
     "name": "Headless Baby",
     "image": "/images/items/collectibles_269_headlessbaby.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 270,
     "name": "Leech",
     "image": "/images/items/collectibles_270_leech.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 271,
     "name": "Mystery Sack",
     "image": "/images/items/collectibles_271_mysterysack.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 272,
     "name": "BBF",
     "image": "/images/items/collectibles_272_bff.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 273,
     "name": "Bob's Brain",
     "image": "/images/items/collectibles_273_bobsbrain.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 274,
     "name": "Best Bud",
     "image": "/images/items/collectibles_274_bestbud.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 275,
     "name": "Lil Brimstone",
     "image": "/images/items/collectibles_275_lilbrimstone.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 276,
     "name": "Isaac's Heart",
     "image": "/images/items/collectibles_276_isaacsheart.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Familiar",
+    "quality": 0,
+    "unlockable": true
   },
   {
     "id": 277,
     "name": "Lil Haunt",
     "image": "/images/items/collectibles_277_lilhaunt.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 278,
     "name": "Dark Bum",
     "image": "/images/items/collectibles_278_darkbum.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Familiar",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 279,
     "name": "Big Fan",
     "image": "/images/items/collectibles_279_bigfan.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 280,
     "name": "Sissy Longlegs",
     "image": "/images/items/collectibles_280_sissylonglegs.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 281,
     "name": "Punching Bag",
     "image": "/images/items/collectibles_281_punchingbag.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 282,
     "name": "How to Jump",
     "image": "/images/items/collectibles_282_howtojump.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 283,
     "name": "D100",
     "image": "/images/items/collectibles_283_d100.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 284,
     "name": "D4",
     "image": "/images/items/collectibles_284_d4.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 285,
     "name": "D10",
     "image": "/images/items/collectibles_285_d10.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 0,
+    "unlockable": false
   },
   {
     "id": 286,
     "name": "Blank Card",
     "image": "/images/items/collectibles_286_blankcard.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 287,
     "name": "Book of Secrets",
     "image": "/images/items/collectibles_287_bookofsecrets.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 288,
     "name": "Box of Spiders",
     "image": "/images/items/collectibles_288_boxofspiders.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 289,
     "name": "Red Candle",
     "image": "/images/items/collectibles_289_redcandle.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
   },
   {
     "id": 290,
     "name": "The Jar",
     "image": "/images/items/collectibles_290_thejar.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 291,
     "name": "Flush!",
     "image": "/images/items/collectibles_291_flush.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 292,
     "name": "Satanic Bible",
     "image": "/images/items/collectibles_292_satanicbible.png",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 4,
+    "unlockable": false
   },
   {
     "id": 293,
     "name": "Head of Krampus",
     "image": "/images/items/collectibles_293_headofkrampus.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 294,
     "name": "Butter Bean",
     "image": "/images/items/collectibles_294_butterbean.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 0,
+    "unlockable": false
   },
   {
     "id": 295,
     "name": "Magic Fingers",
     "image": "/images/items/collectibles_295_magicfingers.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 296,
     "name": "Converter",
     "image": "/images/items/collectibles_296_converter.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 297,
     "name": "Pandora's Box",
     "image": "/images/items/collectibles_297_bluebox.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 298,
     "name": "Unicorn Stump",
     "image": "/images/items/collectibles_298_unicornstump.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 299,
     "name": "Taurus",
     "image": "/images/items/collectibles_299_taurus.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 300,
     "name": "Aries",
     "image": "/images/items/collectibles_300_aries.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 301,
     "name": "Cancer",
     "image": "/images/items/collectibles_301_cancer.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 302,
     "name": "Leo",
     "image": "/images/items/collectibles_302_leo.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 303,
     "name": "Virgo",
     "image": "/images/items/collectibles_303_virgo.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 304,
     "name": "Libra",
     "image": "/images/items/collectibles_304_libra.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 305,
     "name": "Scorpio",
     "image": "/images/items/collectibles_305_scorpio.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 306,
     "name": "Sagittarius",
     "image": "/images/items/collectibles_306_sagittarius.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 307,
     "name": "Capricorn",
     "image": "/images/items/collectibles_307_capricorn.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
   },
   {
     "id": 308,
     "name": "Aquarius",
     "image": "/images/items/collectibles_308_aquarius.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 309,
     "name": "Pisces",
     "image": "/images/items/collectibles_309_pisces.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 310,
     "name": "Eve's Mascara",
     "image": "/images/items/collectibles_310_evesmascara.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 311,
     "name": "Judas' Shadow",
     "image": "/images/items/collectibles_311_judasshadow.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 312,
     "name": "Maggy's Bow",
     "image": "/images/items/collectibles_312_maggysbow.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 313,
     "name": "Holy Mantle",
     "image": "/images/items/collectibles_313_holymantle.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
   },
   {
     "id": 314,
     "name": "Thunder Thighs",
     "image": "/images/items/collectibles_314_thunderthighs.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 315,
     "name": "Strange Attractor",
     "image": "/images/items/collectibles_315_strangeattractor.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 316,
     "name": "Cursed Eye",
     "image": "/images/items/collectibles_316_cursedeye.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 317,
     "name": "Mysterious Liquid",
     "image": "/images/items/collectibles_317_mysteriousliquid.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 318,
     "name": "Gemini",
     "image": "/images/items/collectibles_318_gemini.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 319,
     "name": "Cain's Other Eye",
     "image": "/images/items/collectibles_319_cainseye.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Familiar",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 320,
     "name": "Blue Baby's Only Friend",
     "image": "/images/items/collectibles_320_bluebabysonlyfriend.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 321,
     "name": "Samson's Chains",
     "image": "/images/items/collectibles_321_samsonschains.png",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 322,
     "name": "Mongo Baby",
     "image": "/images/items/collectibles_322_mongobaby.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Familiar",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 323,
     "name": "Isaac's Tears",
     "image": "/images/items/collectibles_323_isaacstears.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 324,
     "name": "Undefined",
     "image": "/images/items/collectibles_324_undefined.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 325,
     "name": "Scissors",
     "image": "/images/items/collectibles_325_scissors.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 326,
     "name": "Breath of Life",
     "image": "/images/items/collectibles_326_breathoflife.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 327,
     "name": "The Polaroid",
     "image": "/images/items/collectibles_327_thepolaroid.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 328,
     "name": "The Negative",
     "image": "/images/items/collectibles_328_thenegative.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 329,
     "name": "The Ludovico Technique",
     "image": "/images/items/collectibles_329_theludovicotechnique.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 330,
     "name": "Soy Milk",
     "image": "/images/items/collectibles_330_soymilk.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
   },
   {
     "id": 331,
     "name": "Godhead",
     "image": "/images/items/collectibles_331_godhead.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
   },
   {
     "id": 332,
     "name": "Lazarus' Rags",
     "image": "/images/items/collectibles_332_lazarusrags.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 333,
     "name": "The Mind",
     "image": "/images/items/collectibles_333_mind.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
   },
   {
     "id": 334,
     "name": "The Body",
     "image": "/images/items/collectibles_334_body.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
   },
   {
     "id": 335,
     "name": "The Soul",
     "image": "/images/items/collectibles_335_soul.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
   },
   {
     "id": 336,
     "name": "Dead Onion",
     "image": "/images/items/collectibles_336_deadonion.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 337,
     "name": "Broken Watch",
     "image": "/images/items/collectibles_337_brokenwatch.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 338,
     "name": "The Boomerang",
     "image": "/images/items/collectibles_338_boomerang.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 339,
     "name": "Safety Pin",
     "image": "/images/items/collectibles_339_safetypin.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   },
   {
     "id": 340,
     "name": "Caffeine Pill",
     "image": "/images/items/collectibles_340_caffeinepill.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
   },
   {
     "id": 341,
     "name": "Torn Photo",
     "image": "/images/items/collectibles_341_tornphoto.png",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
   }
+
 
 ]
