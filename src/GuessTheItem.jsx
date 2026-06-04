@@ -284,6 +284,7 @@ useEffect(() => {
         result: 'win',
         attempts: attemptsMade,
       });
+      await new Promise(r => setTimeout(r, 300));
       await fetchStats();
 
       if (typeof window.gtag === 'function') {
@@ -311,6 +312,7 @@ useEffect(() => {
             result: 'loss',
             attempts: PIXEL_STEPS.length,
           });
+          await new Promise(r => setTimeout(r, 300));
           await fetchStats();
           if (typeof window.gtag === 'function') {
             window.gtag('event', 'game_completed', {
@@ -508,16 +510,21 @@ useEffect(() => {
           </div>
         )}
 
-        {(hasGuessedCorrectly || gameOver) && guessStats.total > 0 && (
-          <div className="guess-stats">
-            <p className="stats-line">
-               <strong style={{ color: '#ffffff' }}>
-                {Math.round((guessStats.wins / guessStats.total) * 100)}%
-              </strong> of {guessStats.total} players guessed today's item
-            </p>
-          </div>
-        )}
-
+      {(hasGuessedCorrectly || gameOver) && (
+  <div className="guess-stats">
+    <p style={{color:'gray', textAlign:'center', fontSize:'18px'}}>
+      {guessStats.total === 0 ? (
+        'No players have guessed yet'
+      ) : (
+        <>
+          <span style={{ color: '#ffffff' }}>
+            {Math.round((guessStats.wins / guessStats.total) * 100)}%
+          </span> of {guessStats.total} players guessed today's item
+        </>
+      )}
+    </p>
+  </div>
+)}
         {(hasGuessedCorrectly || gameOver) && (
           <p className="next-item-text" style={{ textAlign: "center" }}>
             Next item in <strong style={{ color: "#f0b840", letterSpacing: "1px" }}>{countdown}</strong>
