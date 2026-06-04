@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect, useRef } from 'react';
+import React, { useState, useMemo, useEffect, useRef, useCallback} from 'react';
 import "./GuessTheItem.css";
 import ITEMS_DATABASE from "./itemsData.json";
 import firegif from "./assets/fire.gif"
@@ -236,24 +236,27 @@ function GuessTheItem() {
   }, []);
 
   // Fetch today's guess stats from Supabase
-  useEffect(() => {
-    const fetchStats = async () => {
-      const { count: wins } = await supabase
-        .from('daily_guesses')
-        .select('*', { count: 'exact', head: true })
-        .eq('date', todayKey)
-        .eq('result', 'win');
+  
+    const fetchStats = useCallback(async () => {
+  const { count: wins } = await supabase
+    .from('daily_guesses')
+    .select('*', { count: 'exact', head: true })
+    .eq('date', todayKey)
+    .eq('result', 'win');
 
-      const { count: total } = await supabase
-        .from('daily_guesses')
-        .select('*', { count: 'exact', head: true })
-        .eq('date', todayKey);
+  const { count: total } = await supabase
+    .from('daily_guesses')
+    .select('*', { count: 'exact', head: true })
+    .eq('date', todayKey);
 
-      setGuessStats({ wins: wins || 0, total: total || 0 });
-    };
+  setGuessStats({ wins: wins || 0, total: total || 0 });
+}, [todayKey]);
 
-    fetchStats();
-  }, [hasGuessedCorrectly, gameOver]);
+useEffect(() => {
+  fetchStats();
+}, [hasGuessedCorrectly, stepIndex, fetchStats]);
+
+    
 
   const handleCheckGuess = async (overrideName) => {
     const trimmed = (overrideName ?? userGuess).trim();
@@ -281,6 +284,7 @@ function GuessTheItem() {
         result: 'win',
         attempts: attemptsMade,
       });
+      await fetchStats();
 
       if (typeof window.gtag === 'function') {
         window.gtag('event', 'game_completed', {
@@ -300,14 +304,14 @@ function GuessTheItem() {
         if (nextIndex === PIXEL_STEPS.length - 1) {
           saveStreak(streak, playedToday, false);
 
-          // ✅ insert loss only when last step reached
+         
           await supabase.from('daily_guesses').insert({
             item_name: dailyItem.name,
             date: todayKey,
             result: 'loss',
             attempts: PIXEL_STEPS.length,
           });
-
+          await fetchStats();
           if (typeof window.gtag === 'function') {
             window.gtag('event', 'game_completed', {
               result: 'loss',
@@ -317,11 +321,14 @@ function GuessTheItem() {
         }
       }
     }
+    
 
     setUserGuess("");
     setHighlightedIndex(-1);
     inputRef.current?.focus();
   };
+
+  
 
   const handleKeyDown = (e) => {
     if (suggestions.length === 0) {
