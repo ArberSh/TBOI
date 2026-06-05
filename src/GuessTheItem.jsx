@@ -41,33 +41,45 @@ function createParticles(W, H) {
   }));
 }
 
-function GuessTheItem() {
+function getTodayKey() {
   const now = new Date();
   const pad = n => String(n).padStart(2, '0');
-  const todayKey = `${now.getUTCFullYear()}-${pad(now.getUTCMonth() + 1)}-${pad(now.getUTCDate())}`;
+  return `${now.getUTCFullYear()}-${pad(now.getUTCMonth() + 1)}-${pad(now.getUTCDate())}`;
+}
 
-  const loadGameState = () => {
-    const saved = JSON.parse(localStorage.getItem('tboiGameState') || '{}');
-    if (saved.date === todayKey) return saved;
-    return null;
-  };
+function loadGameState(todayKey) {
+  const saved = JSON.parse(localStorage.getItem('tboiGameState') || '{}');
+  if (saved.date === todayKey) return saved;
+  return null;
+}
+
+
+function GuessTheItem() {
+
+  const todayKey = getTodayKey(); // ✅ add the ()
+
+  // ✅ remove the old loadGameState inside the component entirely
 
   const [userGuess, setUserGuess] = useState("");
-  const [hasGuessedCorrectly, setHasGuessedCorrectly] = useState(() => loadGameState()?.hasGuessedCorrectly ?? false);
-  const [stepIndex, setStepIndex] = useState(() => loadGameState()?.stepIndex ?? 0);
-  const [wrongGuesses, setWrongGuesses] = useState(() => loadGameState()?.wrongGuesses ?? []);
-  const [hintRevealed, setHintRevealed] = useState(() => loadGameState()?.hintRevealed ?? false);
+  const [hasGuessedCorrectly, setHasGuessedCorrectly] = useState(() => loadGameState(todayKey)?.hasGuessedCorrectly ?? false);
+  const [stepIndex, setStepIndex] = useState(() => loadGameState(todayKey)?.stepIndex ?? 0);
+  const [wrongGuesses, setWrongGuesses] = useState(() => loadGameState(todayKey)?.wrongGuesses ?? []);
+  const [hintRevealed, setHintRevealed] = useState(() => loadGameState(todayKey)?.hintRevealed ?? false);
   const [shake, setShake] = useState(false);
   const [highlightedIndex, setHighlightedIndex] = useState(-1);
-  const [showNameReveal, setShowNameReveal] = useState(() => loadGameState()?.hasGuessedCorrectly ?? false);
+  const [showNameReveal, setShowNameReveal] = useState(() => loadGameState(todayKey)?.hasGuessedCorrectly ?? false);
   const [streak, setStreak] = useState(() => {
     const stored = JSON.parse(localStorage.getItem('tboiStreak') || '{}');
     const { lastPlayedDate, streak: saved = 0 } = stored;
     if (lastPlayedDate === todayKey) return saved;
-    const yesterday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() - 1));
+    // ✅ use getTodayKey logic inline here instead of now/pad
+    const yesterday = new Date();
+    yesterday.setUTCDate(yesterday.getUTCDate() - 1);
+    const pad = n => String(n).padStart(2, '0');
     const yesterdayKey = `${yesterday.getUTCFullYear()}-${pad(yesterday.getUTCMonth() + 1)}-${pad(yesterday.getUTCDate())}`;
     return lastPlayedDate === yesterdayKey ? saved : 0;
   });
+
   const [playedToday, setPlayedToday] = useState(() => {
     const stored = JSON.parse(localStorage.getItem('tboiStreak') || '{}');
     return stored.lastPlayedDate === todayKey;
@@ -108,6 +120,7 @@ function GuessTheItem() {
   }, [userGuess, wrongGuesses]);
 
   const dailyItem = useMemo(() => {
+    const now = new Date(); // ✅ just add this line
     const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
     const startDate = Date.UTC(2024, 0, 1);
     const dayIndex = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
