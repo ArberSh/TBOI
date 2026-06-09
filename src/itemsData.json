@@ -1965,7 +1965,7 @@
     "id": 222,
     "name": "Anti-Gravity",
     "image": "/images/items/collectibles_222_antigravity.png",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "type": "Passive",
     "quality": 2,
     "unlockable": false

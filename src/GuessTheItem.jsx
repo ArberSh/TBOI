@@ -127,7 +127,7 @@ function GuessTheItem() {
 
     const todayIdx = dayIndex % ITEMS_DATABASE.length;
     const yesterdayIdx = (dayIndex - 1 + ITEMS_DATABASE.length) % ITEMS_DATABASE.length;
-
+ 
     if (ITEMS_DATABASE[todayIdx].name === ITEMS_DATABASE[yesterdayIdx].name) {
       return ITEMS_DATABASE[(todayIdx + 1) % ITEMS_DATABASE.length];
     }
@@ -414,6 +414,8 @@ useEffect(() => {
       setTimeout(() => setCopied(false), 2000);
     })
     .catch(() => {});
+
+    console.log('gameOver:', gameOver, 'stepIndex:', stepIndex, 'hasGuessedCorrectly:', hasGuessedCorrectly);
   };
 
   return (
