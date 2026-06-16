@@ -56,7 +56,7 @@ function loadGameState(todayKey) {
 
 function GuessTheItem() {
 
-  const todayKey = getTodayKey(); // ✅ add the ()
+  const [todayKey, setTodayKey] = useState(getTodayKey);
 
   // ✅ remove the old loadGameState inside the component entirely
 
@@ -132,10 +132,10 @@ function GuessTheItem() {
       return ITEMS_DATABASE[(todayIdx + 1) % ITEMS_DATABASE.length];
     }
     return ITEMS_DATABASE[todayIdx];
-  }, []);
+  }, [todayKey]);
 
   const currentPixelSize = PIXEL_STEPS[stepIndex];
-  const gameOver = stepIndex === PIXEL_STEPS.length - 1 && !hasGuessedCorrectly;
+  const gameOver = wrongGuesses.length >= PIXEL_STEPS.length - 1 && !hasGuessedCorrectly;
 
   // Item image rendering
   useEffect(() => {
@@ -170,6 +170,31 @@ function GuessTheItem() {
       }
     };
   }, [dailyItem, stepIndex, hasGuessedCorrectly, currentPixelSize]);
+
+  useEffect(() => {
+  const interval = setInterval(() => {
+    const newKey = getTodayKey();
+    setTodayKey(prev => {
+      if (prev !== newKey) return newKey;
+      return prev;
+    });
+  }, 30_000); // check every 30 seconds
+  return () => clearInterval(interval);
+}, []);
+
+useEffect(() => {
+  const saved = loadGameState(todayKey);
+  // If no saved state for today, it's a fresh day — reset everything
+  if (!saved) {
+    setHasGuessedCorrectly(false);
+    setStepIndex(0);
+    setWrongGuesses([]);
+    setHintRevealed(false);
+    setShowNameReveal(false);
+    setUserGuess("");
+    setHighlightedIndex(-1);
+  }
+}, [todayKey]);
 
   // Persist game state for today
   useEffect(() => {
