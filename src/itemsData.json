@@ -3022,7 +3022,1843 @@
     "type": "Passive",
     "quality": 3,
     "unlockable": false
+  },
+
+  {
+    "id": 342,
+    "name": "Blue Cap",
+    "image": "/images/items/collectibles_342_bluecap.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 343,
+    "name": "Latch Key",
+    "image": "/images/items/collectibles_343_latchkey.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 344,
+    "name": "Match Book",
+    "image": "/images/items/collectibles_344_matchbook.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 345,
+    "name": "Synthoil",
+    "image": "/images/items/collectibles_345_synthoil.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 346,
+    "name": "A Snack",
+    "image": "/images/items/collectibles_346_asnack.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 347,
+    "name": "Diplopia",
+    "image": "/images/items/collectibles_347_diplopia.png",
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 348,
+    "name": "Placebo",
+    "image": "/images/items/collectibles_348_placebo.png",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 349,
+    "name": "Wooden Nickel",
+    "image": "/images/items/collectibles_349_woodennickel.png",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 350,
+    "name": "Toxic Shock",
+    "image": "/images/items/collectibles_350_toxicshock.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 351,
+    "name": "Mega Bean",
+    "image": "/images/items/collectibles_351_megabean.png",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": true
+  },
+  {
+    "id": 352,
+    "name": "Glass Cannon",
+    "image": "/images/items/collectibles_352_glasscannon.png",
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 353,
+    "name": "Bomber Boy",
+    "image": "/images/items/collectibles_353_bomberboy.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 354,
+    "name": "Crack Jacks",
+    "image": "/images/items/collectibles_354_crackjacks.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 355,
+    "name": "Mom's Pearls",
+    "image": "/images/items/collectibles_355_momspearls.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 356,
+    "name": "Car Battery",
+    "image": "/images/items/collectibles_356_carbattery.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 357,
+    "name": "Pandora's Box",
+    "image": "/images/items/collectibles_357_pandorasbox.png",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 358,
+    "name": "The Wiz",
+    "image": "/images/items/collectibles_358_thewiz.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 359,
+    "name": "8 Inch Nails",
+    "image": "/images/items/collectibles_359_8inchnails.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 360,
+    "name": "Incubus",
+    "image": "/images/items/collectibles_360_incubus.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 361,
+    "name": "Fate's Reward",
+    "image": "/images/items/collectibles_361_fatesreward.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 362,
+    "name": "Lil' Chest",
+    "image": "/images/items/collectibles_362_lilchest.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 363,
+    "name": "Sworn Protector",
+    "image": "/images/items/collectibles_363_swornprotector.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 364,
+    "name": "Friend Zone",
+    "image": "/images/items/collectibles_364_friendzone.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 365,
+    "name": "Lost Fly",
+    "image": "/images/items/collectibles_365_lostfly.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 366,
+    "name": "Scatter Bombs",
+    "image": "/images/items/collectibles_366_scatterbombs.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 367,
+    "name": "Sticky Bombs",
+    "image": "/images/items/collectibles_367_stickybombs.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 368,
+    "name": "Epiphora",
+    "image": "/images/items/collectibles_368_epiphora.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 369,
+    "name": "Continuum",
+    "image": "/images/items/collectibles_369_continuum.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
+  },
+  {
+    "id": 370,
+    "name": "Mr. Dolly",
+    "image": "/images/items/collectibles_370_mrdolly.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 371,
+    "name": "Curse of the Tower",
+    "image": "/images/items/collectibles_371_curseofthetower.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
+  },
+  {
+    "id": 372,
+    "name": "Charged Baby",
+    "image": "/images/items/collectibles_372_chargedbaby.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 373,
+    "name": "Dead Eye",
+    "image": "/images/items/collectibles_373_deadeye.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
+  },
+  {
+    "id": 374,
+    "name": "Holy Light",
+    "image": "/images/items/collectibles_374_holylight.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
+  },
+  {
+    "id": 375,
+    "name": "Host Hat",
+    "image": "/images/items/collectibles_375_hosthat.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
+  },
+  {
+    "id": 376,
+    "name": "Restock",
+    "image": "/images/items/collectibles_376_restock.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
+  },
+  {
+    "id": 377,
+    "name": "Bursting Sack",
+    "image": "/images/items/collectibles_377_burstingsack.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 378,
+    "name": "Number Two",
+    "image": "/images/items/collectibles_378_numbertwo.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 379,
+    "name": "Pupula Duplex",
+    "image": "/images/items/collectibles_379_pupuladuplex.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 380,
+    "name": "Pay to Play",
+    "image": "/images/items/collectibles_380_paytoplay.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 381,
+    "name": "Eden's Blessing",
+    "image": "/images/items/collectibles_381_edensblessing.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 382,
+    "name": "Friendly Ball",
+    "image": "/images/items/collectibles_382_friendlyball.png",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 383,
+    "name": "Tear Detonator",
+    "image": "/images/items/collectibles_383_teardetonator.png",
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 384,
+    "name": "Lil' Gurdy",
+    "image": "/images/items/collectibles_384_lilgurdy.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 385,
+    "name": "Bumbo",
+    "image": "/images/items/collectibles_385_bumbo.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 386,
+    "name": "D12",
+    "image": "/images/items/collectibles_386_d12.png",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 387,
+    "name": "Censer",
+    "image": "/images/items/collectibles_387_censer.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 388,
+    "name": "Key Bum",
+    "image": "/images/items/collectibles_388_keybum.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 389,
+    "name": "Rune Bag",
+    "image": "/images/items/collectibles_389_runebag.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 390,
+    "name": "Seraphim",
+    "image": "/images/items/collectibles_390_seraphim.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 391,
+    "name": "Betrayal",
+    "image": "/images/items/collectibles_391_betrayal.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
+  },
+  {
+    "id": 392,
+    "name": "Zodiac",
+    "image": "/images/items/collectibles_392_zodiac.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 393,
+    "name": "Serpent's Kiss",
+    "image": "/images/items/collectibles_393_serpentskiss.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
+  },
+  {
+    "id": 394,
+    "name": "Marked",
+    "image": "/images/items/collectibles_394_marked.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
+  },
+  {
+    "id": 395,
+    "name": "Tech X",
+    "image": "/images/items/collectibles_395_techx.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
+  },
+  {
+    "id": 396,
+    "name": "Ventricle Razor",
+    "image": "/images/items/collectibles_396_ventriclerazor.png",
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 397,
+    "name": "Tractor Beam",
+    "image": "/images/items/collectibles_397_tractorbeam.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 398,
+    "name": "God's Flesh",
+    "image": "/images/items/collectibles_398_godsflesh.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 399,
+    "name": "Maw of the Void",
+    "image": "/images/items/collectibles_399_mawofthevoid.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
+  },
+  {
+    "id": 400,
+    "name": "Spear of Destiny",
+    "image": "/images/items/collectibles_400_spearofdestiny.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 401,
+    "name": "Explosivo",
+    "image": "/images/items/collectibles_401_explosivo.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 402,
+    "name": "Chaos",
+    "image": "/images/items/collectibles_402_chaos.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
+  },
+  {
+    "id": 403,
+    "name": "Spider Mod",
+    "image": "/images/items/collectibles_403_spidermod.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 404,
+    "name": "Fart Baby",
+    "image": "/images/items/collectibles_404_fartbaby.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+
+  {
+    "id": 405,
+    "name": "GB Bug",
+    "image": "/images/items/collectibles_405_gbbug.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 406,
+    "name": "D8",
+    "image": "/images/items/collectibles_406_d8.png",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 407,
+    "name": "Purity",
+    "image": "/images/items/collectibles_407_purity.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 408,
+    "name": "Athame",
+    "image": "/images/items/collectibles_408_athame.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 409,
+    "name": "Empty Vessel",
+    "image": "/images/items/collectibles_409_emptyvessel.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 410,
+    "name": "Evil Eye",
+    "image": "/images/items/collectibles_410_evileye.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 411,
+    "name": "Lusty Blood",
+    "image": "/images/items/collectibles_411_lustyblood.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 412,
+    "name": "Cambion Conception",
+    "image": "/images/items/collectibles_412_cambionconception.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 413,
+    "name": "Immaculate Conception",
+    "image": "/images/items/collectibles_413_immaculateconception.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 414,
+    "name": "More Options",
+    "image": "/images/items/collectibles_414_moreoptions.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 415,
+    "name": "Crown of Light",
+    "image": "/images/items/collectibles_415_crownoflight.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 416,
+    "name": "Deep Pockets",
+    "image": "/images/items/collectibles_416_deeppockets.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 417,
+    "name": "Succubus",
+    "image": "/images/items/collectibles_417_succubus.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 418,
+    "name": "Fruit Cake",
+    "image": "/images/items/collectibles_418_fruitcake.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 419,
+    "name": "Teleport 2.0",
+    "image": "/images/items/collectibles_419_teleport20.png",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 420,
+    "name": "Black Powder",
+    "image": "/images/items/collectibles_420_blackpowder.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 421,
+    "name": "Kidney Bean",
+    "image": "/images/items/collectibles_421_kidneybean.png",
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": true
+  },
+  {
+    "id": 422,
+    "name": "Glowing Hour Glass",
+    "image": "/images/items/collectibles_422_glowinghourglass.png",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 4,
+    "unlockable": false
+  },
+  {
+    "id": 423,
+    "name": "Circle of Protection",
+    "image": "/images/items/collectibles_423_circleofprotection.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 424,
+    "name": "Sack Head",
+    "image": "/images/items/collectibles_424_sackhead.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
+  },
+  {
+    "id": 425,
+    "name": "Night Light",
+    "image": "/images/items/collectibles_425_nightlight.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 426,
+    "name": "Obsessed Fan",
+    "image": "/images/items/collectibles_426_obsessedfan.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 427,
+    "name": "Mine Crafter",
+    "image": "/images/items/collectibles_427_minecrafter.png",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 428,
+    "name": "PJs",
+    "image": "/images/items/collectibles_428_pjs.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
+  },
+  {
+    "id": 429,
+    "name": "Head of the Keeper",
+    "image": "/images/items/collectibles_429_headofthekeeper.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 430,
+    "name": "Papa Fly",
+    "image": "/images/items/collectibles_430_papafly.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 431,
+    "name": "Multidimensional Baby",
+    "image": "/images/items/collectibles_431_multidimensionalbaby.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 432,
+    "name": "Glitter Bombs",
+    "image": "/images/items/collectibles_432_glitterbombs.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 433,
+    "name": "My Shadow",
+    "image": "/images/items/collectibles_433_myshadow.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 434,
+    "name": "Jar of Flies",
+    "image": "/images/items/collectibles_434_jarofflies.png",
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 435,
+    "name": "Lil' Loki",
+    "image": "/images/items/collectibles_435_lilloki.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 436,
+    "name": "Milk",
+    "image": "/images/items/collectibles_436_milk.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 437,
+    "name": "D7",
+    "image": "/images/items/collectibles_437_d7.png",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 438,
+    "name": "Binky",
+    "image": "/images/items/collectibles_438_binky.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 439,
+    "name": "Mom's Box",
+    "image": "/images/items/collectibles_439_momsbox.png",
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 440,
+    "name": "Kidney Stone",
+    "image": "/images/items/collectibles_440_kidneystone.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 441,
+    "name": "Mega Satan's Breath",
+    "image": "/images/items/collectibles_441_megasatansbreath.png",
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": true
+  },
+  {
+    "id": 442,
+    "name": "Dark Prince's Crown",
+    "image": "/images/items/collectibles_442_darkprincescrown.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
+  },
+  {
+    "id": 443,
+    "name": "Apple!",
+    "image": "/images/items/collectibles_443_apple.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 444,
+    "name": "Lead Pencil",
+    "image": "/images/items/collectibles_444_leadpencil.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 445,
+    "name": "Dog Tooth",
+    "image": "/images/items/collectibles_445_dogtooth.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 446,
+    "name": "Dead Tooth",
+    "image": "/images/items/collectibles_446_deadtooth.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 447,
+    "name": "Linger Bean",
+    "image": "/images/items/collectibles_447_lingerbean.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 448,
+    "name": "Shard of Glass",
+    "image": "/images/items/collectibles_448_shardofglass.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 449,
+    "name": "Metal Plate",
+    "image": "/images/items/collectibles_449_metalplate.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 450,
+    "name": "Eye of Greed",
+    "image": "/images/items/collectibles_450_eyeofgreed.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 451,
+    "name": "Tarot Cloth",
+    "image": "/images/items/collectibles_451_tarotcloth.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
+  },
+  {
+    "id": 452,
+    "name": "Varicose Veins",
+    "image": "/images/items/collectibles_452_varicoseveins.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 453,
+    "name": "Compound Fracture",
+    "image": "/images/items/collectibles_453_compoundfracture.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 454,
+    "name": "Polydactyly",
+    "image": "/images/items/collectibles_454_polydactyly.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 455,
+    "name": "Dad's Lost Coin",
+    "image": "/images/items/collectibles_455_dadslostcoin.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 456,
+    "name": "Moldy Bread",
+    "image": "/images/items/collectibles_456_moldybread.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 457,
+    "name": "Cone Head",
+    "image": "/images/items/collectibles_457_conehead.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 458,
+    "name": "Belly Button",
+    "image": "/images/items/collectibles_458_bellybutton.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 459,
+    "name": "Sinus Infection",
+    "image": "/images/items/collectibles_459_sinusinfection.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 460,
+    "name": "Glaucoma",
+    "image": "/images/items/collectibles_460_glaucoma.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 461,
+    "name": "Parasitoid",
+    "image": "/images/items/collectibles_461_parasitoid.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 462,
+    "name": "Eye of Belial",
+    "image": "/images/items/collectibles_462_eyeofbelial.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": false
+  },
+  {
+    "id": 463,
+    "name": "Sulfuric Acid",
+    "image": "/images/items/collectibles_463_sulfuricacid.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 464,
+    "name": "Glyph of Balance",
+    "image": "/images/items/collectibles_464_glyphofbalance.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 465,
+    "name": "Analog Stick",
+    "image": "/images/items/collectibles_465_analogstick.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 466,
+    "name": "Contagion",
+    "image": "/images/items/collectibles_466_contagion.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 467,
+    "name": "Finger!",
+    "image": "/images/items/collectibles_467_finger.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 468,
+    "name": "Shade",
+    "image": "/images/items/collectibles_468_shade.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 469,
+    "name": "Depression",
+    "image": "/images/items/collectibles_469_depression.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 470,
+    "name": "Hushy",
+    "image": "/images/items/collectibles_470_hushy.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 471,
+    "name": "Lil' Monstro",
+    "image": "/images/items/collectibles_471_lilmonstro.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 472,
+    "name": "King Baby",
+    "image": "/images/items/collectibles_472_kingbaby.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 473,
+    "name": "Big Chubby",
+    "image": "/images/items/collectibles_473_bigchubby.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 474,
+    "name": "Tonsil",
+    "image": "/images/items/collectibles_474_tonsil.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 475,
+    "name": "Plan C",
+    "image": "/images/items/collectibles_475_planc.png",
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 476,
+    "name": "D1",
+    "image": "/images/items/collectibles_476_d1.png",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 477,
+    "name": "Void",
+    "image": "/images/items/collectibles_477_void.png",
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 478,
+    "name": "Pause",
+    "image": "/images/items/collectibles_478_pause.png",
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 479,
+    "name": "Smelter",
+    "image": "/images/items/collectibles_479_smelter.png",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 480,
+    "name": "Compost",
+    "image": "/images/items/collectibles_480_compost.png",
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 481,
+    "name": "Dataminer",
+    "image": "/images/items/collectibles_481_dataminer.png",
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": true
+  },
+  {
+    "id": 482,
+    "name": "Clicker",
+    "image": "/images/items/collectibles_482_clicker.png",
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 483,
+    "name": "Mama Mega!",
+    "image": "/images/items/collectibles_483_mamamega.png",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 484,
+    "name": "Wait What?",
+    "image": "/images/items/collectibles_484_waitwhat.png",
+    "difficulty": "easy",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": true
+  },
+  {
+    "id": 485,
+    "name": "Crooked Penny",
+    "image": "/images/items/collectibles_485_crookedpenny.png",
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 486,
+    "name": "Dull Razor",
+    "image": "/images/items/collectibles_486_dullrazor.png",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 487,
+    "name": "Potato Peeler",
+    "image": "/images/items/collectibles_487_potatopeeler.png",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 488,
+    "name": "Metronome",
+    "image": "/images/items/collectibles_488_metronome.png",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+
+  {
+    "id": 489,
+    "name": "D Infinity",
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 490,
+    "name": "Eden's Soul",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 491,
+    "name": "Acid Baby",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 492,
+    "name": "Yo Listen!",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 493,
+    "name": "Adder's Fork",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 494,
+    "name": "Jacob's Ladder",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 495,
+    "name": "Ghost Pepper",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 496,
+    "name": "Euthanasia",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 497,
+    "name": "Camou Undies",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 498,
+    "name": "Duality",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 499,
+    "name": "Eucharist",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 500,
+    "name": "Sack of Sacks",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 501,
+    "name": "Greed's Gullet",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 502,
+    "name": "Large Zit",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 503,
+    "name": "Little Horn",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 504,
+    "name": "Brown Nugget",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 505,
+    "name": "Poke Go",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 506,
+    "name": "Backstabber",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 507,
+    "name": "Sharp Straw",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 508,
+    "name": "Mom's Razor",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 509,
+    "name": "Bloodshot Eye",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 510,
+    "name": "Delirious",
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 511,
+    "name": "Angry Fly",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 512,
+    "name": "Black Hole",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 513,
+    "name": "Bozo",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 514,
+    "name": "Broken Modem",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 515,
+    "name": "Mystery Gift",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 516,
+    "name": "Sprinkler",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 517,
+    "name": "Fast Bombs",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 518,
+    "name": "Buddy Box",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 519,
+    "name": "Lil' Delirium",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 520,
+    "name": "Jumper Cables",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 521,
+    "name": "Cereal Cutout",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 522,
+    "name": "Telekinesis",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 523,
+    "name": "Moving Box",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 524,
+    "name": "Technology Zero",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 525,
+    "name": "Leprosy",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 526,
+    "name": "7 Seals",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 527,
+    "name": "Mr. Me",
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 528,
+    "name": "Angelic Prism",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 529,
+    "name": "Pop!",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 530,
+    "name": "Death's List",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 531,
+    "name": "Haemolacria",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 532,
+    "name": "Lachryphagy",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 533,
+    "name": "Trisagion",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 534,
+    "name": "Schoolbag",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 535,
+    "name": "Blanket",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 536,
+    "name": "Sacrificial Altar",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 4,
+    "unlockable": true
+  },
+  {
+    "id": 537,
+    "name": "Lil' Spewer",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 538,
+    "name": "Marbles",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 539,
+    "name": "Mystery Egg",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 540,
+    "name": "Flat Stone",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 541,
+    "name": "Marrow",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 542,
+    "name": "Slipped Rib",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 543,
+    "name": "Hallowed Ground",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 544,
+    "name": "Pointy Rib",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 545,
+    "name": "Book of the Dead",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 546,
+    "name": "Dad's Ring",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 547,
+    "name": "Divorce Papers",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": true
+  },
+  {
+    "id": 548,
+    "name": "Jaw Bone",
+    "difficulty": "medium",
+    "type": "Active",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 549,
+    "name": "Brittle Bones",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 550,
+    "name": "Shovel Piece 1",
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": true
+  },
+  {
+    "id": 551,
+    "name": "Shovel Piece 2",
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 1,
+    "unlockable": true
+  },
+  {
+    "id": 552,
+    "name": "Mom's Shovel",
+    "difficulty": "hard",
+    "type": "Active",
+    "quality": 4,
+    "unlockable": true
   }
-
-
 ]
