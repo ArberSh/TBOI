@@ -56,6 +56,33 @@ function loadGameState(todayKey) {
 
 function GuessTheItem() {
 
+  const [loadProgress, setLoadProgress] = useState(0);
+  const [loadingVisible, setLoadingVisible] = useState(true);
+  const [loadingFading, setLoadingFading] = useState(false);
+
+  useEffect(() => {
+    const items = ITEMS_DATABASE.filter(item => item.image);
+    const total = items.length;
+    if (total === 0) {
+      setLoadingFading(true);
+      setTimeout(() => setLoadingVisible(false), 600);
+      return;
+    }
+    let loaded = 0;
+    items.forEach(item => {
+      const img = new Image();
+      img.onload = img.onerror = () => {
+        loaded++;
+        setLoadProgress(Math.round((loaded / total) * 100));
+        if (loaded === total) {
+          setLoadingFading(true);
+          setTimeout(() => setLoadingVisible(false), 600);
+        }
+      };
+      img.src = item.image;
+    });
+  }, []);
+
   const [todayKey, setTodayKey] = useState(getTodayKey);
 
   // ✅ remove the old loadGameState inside the component entirely
@@ -273,6 +300,28 @@ useEffect(() => {
     return () => clearInterval(timer);
   }, []);
 
+  // Record that this player started today's game
+  useEffect(() => {
+    const existingState = loadGameState(todayKey);
+    const alreadyDone = existingState?.hasGuessedCorrectly ||
+      (existingState?.wrongGuesses?.length >= PIXEL_STEPS.length - 1);
+    if (alreadyDone) return;
+
+    const session = JSON.parse(localStorage.getItem('tboiSession') || '{}');
+    if (session.date === todayKey) return;
+
+    (async () => {
+      const { data } = await supabase.from('daily_guesses').insert({
+        item_name: dailyItem.name,
+        date: todayKey,
+        result: 'started',
+      }).select('id').single();
+      if (data?.id) {
+        localStorage.setItem('tboiSession', JSON.stringify({ date: todayKey, rowId: data.id }));
+      }
+    })();
+  }, [todayKey, dailyItem]);
+
   // Fetch today's guess stats from Supabase
   
     const fetchStats = useCallback(async () => {
@@ -315,13 +364,12 @@ useEffect(() => {
       setHasGuessedCorrectly(true);
       saveStreak(streak, playedToday, true);
 
-      // ✅ insert win AFTER we know it's correct
-      await supabase.from('daily_guesses').insert({
-        item_name: dailyItem.name,
-        date: todayKey,
-        result: 'win',
-        attempts: attemptsMade,
-      });
+      const session = JSON.parse(localStorage.getItem('tboiSession') || '{}');
+      if (session.date === todayKey && session.rowId) {
+        await supabase.from('daily_guesses').update({ result: 'win', attempts: attemptsMade }).eq('id', session.rowId);
+      } else {
+        await supabase.from('daily_guesses').insert({ item_name: dailyItem.name, date: todayKey, result: 'win', attempts: attemptsMade });
+      }
       await new Promise(r => setTimeout(r, 300));
       await fetchStats();
 
@@ -343,13 +391,12 @@ useEffect(() => {
         if (nextIndex === PIXEL_STEPS.length - 1) {
           saveStreak(streak, playedToday, false);
 
-         
-          await supabase.from('daily_guesses').insert({
-            item_name: dailyItem.name,
-            date: todayKey,
-            result: 'loss',
-            attempts: PIXEL_STEPS.length,
-          });
+          const session = JSON.parse(localStorage.getItem('tboiSession') || '{}');
+          if (session.date === todayKey && session.rowId) {
+            await supabase.from('daily_guesses').update({ result: 'loss', attempts: PIXEL_STEPS.length }).eq('id', session.rowId);
+          } else {
+            await supabase.from('daily_guesses').insert({ item_name: dailyItem.name, date: todayKey, result: 'loss', attempts: PIXEL_STEPS.length });
+          }
           await new Promise(r => setTimeout(r, 300));
           await fetchStats();
           if (typeof window.gtag === 'function') {
@@ -445,6 +492,16 @@ useEffect(() => {
 
   return (
     <div className="page">
+      {loadingVisible && (
+        <div className={`loading-screen${loadingFading ? ' loading-fading' : ''}`}>
+          <img className="loading-logo" src="/logo.png" alt="logo" />
+          <div className="loading-bar-container">
+            <div className="loading-bar-fill" style={{ width: `${loadProgress}%` }} />
+          </div>
+          <p className="loading-text">Loading... {loadProgress}%</p>
+          <p className="loading-subtext">Preloading all item images for a smooth experience</p>
+        </div>
+      )}
       <div className='Top'>
         <div>
           <img className='logo' src="/logo.png" alt="logo" />
@@ -453,12 +510,13 @@ useEffect(() => {
           className={`streak-top ${streak === 0 || gameOver ? 'streak-zero' : ''}`}
           title="Daily streak"
         >
-          <img className='firepng' src={streak > 0 ? firegif : fireimg} alt="fire" style={{ width: '4rem', objectFit: 'contain' }} />
+          <img className='firepng' src={streak > 0 ? firegif : fireimg} alt="fire" style={{ width: '4.5rem', objectFit: 'contain' }} />
           <p className='centered'>{streak}</p>
         </div>
       </div>
       <canvas ref={confettiRef} className="confetti-canvas" />
 
+      <div className="card-wrapper">
       <div className="card">
         <h1 className="title">Guess the Item</h1>
         <p className="subtitle">Daily TBOI Challenge</p>
@@ -594,6 +652,7 @@ useEffect(() => {
           ))}
         </ul>
       )}
+      </div>
 
       <div className="Buttons_Container">
         <a href='https://ko-fi.com/E1E81M8I3S' target='_blank' rel='noopener noreferrer'>

@@ -18,6 +18,64 @@ html, body {
     url("./assets/7446.jpg") center / cover;
 }
 
+/* ── Loading Screen ── */
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.70)),
+    url("./assets/7446.jpg") center / cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+.loading-fading {
+  opacity: 0;
+}
+
+.loading-logo {
+  width: 12rem;
+  image-rendering: pixelated;
+}
+
+.loading-bar-container {
+  width: 280px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid #f0b840;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.loading-bar-fill {
+  height: 100%;
+  background: #f0b840;
+  box-shadow: 0 0 8px rgba(240, 184, 64, 0.5);
+  transition: width 0.15s ease;
+}
+
+.loading-text {
+  font-family: 'Upheaval', Arial, sans-serif;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.12em;
+}
+
+.loading-subtext {
+  font-family: 'Upheaval', Arial, sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.35);
+  letter-spacing: 0.08em;
+  margin-top: -1.2rem;
+  text-align: center;
+}
+
 .confetti-canvas {
   position: fixed;
   top: 0;
@@ -303,6 +361,12 @@ html, body {
   width: 100%;
 }
 
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .input-row {
   gap: 6px;
   display: flex;
@@ -314,7 +378,7 @@ html, body {
   border: 1px solid rgba(240, 184, 64, 0.35);
   border-radius: 8px;
   list-style: none;
-  margin:0 0 2rem 0 ;
+  margin: 0;
   padding: 0.3rem 0;
   z-index: 100;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);
@@ -649,7 +713,8 @@ html, body {
   .Buttons_Container{
     padding: 0 1.2rem;
   }
+
   .suggestions-list {
-    width: 80vw; /* matches your card width on mobile */
+    width: 80vw;
   }
 }
