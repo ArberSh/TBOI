@@ -68,15 +68,25 @@ function GuessTheItem() {
       setTimeout(() => setLoadingVisible(false), 600);
       return;
     }
+    const half = Math.ceil(total / 2);
+    const firstBatch = items.slice(0, half);
+    const secondBatch = items.slice(half);
+
     let loaded = 0;
-    items.forEach(item => {
+    firstBatch.forEach(item => {
       const img = new Image();
       img.onload = img.onerror = () => {
         loaded++;
-        setLoadProgress(Math.round((loaded / total) * 100));
-        if (loaded === total) {
+        setLoadProgress(Math.round((loaded / half) * 100));
+        if (loaded === half) {
           setLoadingFading(true);
-          setTimeout(() => setLoadingVisible(false), 600);
+          setTimeout(() => {
+            setLoadingVisible(false);
+            secondBatch.forEach(item2 => {
+              const img2 = new Image();
+              img2.src = item2.image;
+            });
+          }, 600);
         }
       };
       img.src = item.image;
