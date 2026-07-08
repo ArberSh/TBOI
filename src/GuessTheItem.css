@@ -230,8 +230,8 @@ html, body {
 .item-canvas {
   width: 192px;
   height: 192px;
-  image-rendering: pixelated;
   image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .shake {
