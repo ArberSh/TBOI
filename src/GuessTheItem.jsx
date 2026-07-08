@@ -220,18 +220,23 @@ function GuessTheItem() {
       const H = canvas.height;
       ctx.clearRect(0, 0, W, H);
 
-      // Normalize to 64×64 with smoothing first — makes downsampling deterministic
-      // across browsers/GPUs (averaged pixels, not arbitrary nearest-neighbor samples).
-      const base = document.createElement('canvas');
-      base.width = 64; base.height = 64;
-      const baseCtx = base.getContext('2d');
-      baseCtx.imageSmoothingEnabled = true;
-      baseCtx.drawImage(img, 0, 0, 64, 64);
-
-      if (hasGuessedCorrectly) {
+      if (hasGuessedCorrectly || gameOver) {
+        const off = document.createElement('canvas');
+        off.width = 64; off.height = 64;
+        const offCtx = off.getContext('2d');
+        offCtx.imageSmoothingEnabled = false;
+        offCtx.drawImage(img, 0, 0, 64, 64);
         ctx.imageSmoothingEnabled = false;
-        ctx.drawImage(base, 0, 0, 64, 64, 0, 0, W, H);
+        ctx.drawImage(off, 0, 0, 64, 64, 0, 0, W, H);
       } else {
+        // Normalize to 64×64 with smoothing first — makes downsampling deterministic
+        // across browsers/GPUs (averaged pixels, not arbitrary nearest-neighbor samples).
+        const base = document.createElement('canvas');
+        base.width = 64; base.height = 64;
+        const baseCtx = base.getContext('2d');
+        baseCtx.imageSmoothingEnabled = true;
+        baseCtx.drawImage(img, 0, 0, 64, 64);
+
         const res = currentPixelSize;
         const off = document.createElement('canvas');
         off.width = res; off.height = res;
@@ -244,7 +249,7 @@ function GuessTheItem() {
     };
 
     return () => { cancelled = true; };
-  }, [dailyItem, stepIndex, hasGuessedCorrectly, currentPixelSize, canvasSize]);
+  }, [dailyItem, stepIndex, hasGuessedCorrectly, gameOver, currentPixelSize, canvasSize]);
 
   useEffect(() => {
     const checkDate = () => {
