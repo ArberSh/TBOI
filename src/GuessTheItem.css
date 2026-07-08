@@ -585,6 +585,74 @@ html, body {
 .unlockable-yes { color: #5ddb6a; }
 .unlockable-no  { color: rgba(255, 255, 255, 0.4); }
 
+/* ── Archive navigation ── */
+.date-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: -0.4rem;
+}
+
+.date-nav-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.3rem;
+  line-height: 1;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, color 0.15s;
+  font-family: Arial, sans-serif;
+}
+
+.date-nav-btn:hover:not(:disabled) {
+  background: rgba(240, 184, 64, 0.15);
+  color: #f0b840;
+  border-color: rgba(240, 184, 64, 0.4);
+}
+
+.date-nav-btn:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.date-nav-label {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 0.08em;
+  min-width: 6rem;
+  text-align: center;
+}
+
+.back-to-today-btn {
+  font-family: 'Upheaval', Arial, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid rgba(240, 184, 64, 0.4);
+  background: rgba(240, 184, 64, 0.1);
+  color: #f0b840;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: -0.5rem;
+}
+
+.back-to-today-btn:hover {
+  background: rgba(240, 184, 64, 0.22);
+}
+
+@media (max-width: 480px) {
+  .date-nav-label { font-size: 0.72rem; min-width: 5rem; }
+  .date-nav-btn { width: 1.7rem; height: 1.7rem; font-size: 1.1rem; }
+  .back-to-today-btn { font-size: 0.68rem; padding: 0.25rem 0.7rem; }
+}
+
 @media (max-width: 480px) {
   .stat-label { font-size: 0.55rem; }
   .stat-value { font-size: 0.75rem; }

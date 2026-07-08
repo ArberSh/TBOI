@@ -1,0 +1,9 @@
+<metadata>
+	<name>Isaac Arcade Stats</name>
+	<directory>isaacarcade stats</directory>
+	<id></id>
+	<description>Anonymously counts which collectibles you pick up to power community stats on isaacarcade.com. No personal data is collected — only item IDs and counts, tied to a random anonymous ID. Uploading only happens if you opt in by adding the --luadebug launch option in Steam; otherwise stats stay on your PC.</description>
+	<version>1.0</version>
+	<visibility>Public</visibility>
+	<tag id="Tweaks"/>
+</metadata>

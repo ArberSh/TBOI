@@ -4213,8 +4213,8 @@
   },
   {
     "id": 474,
-    "name": "Tonsil",
-    "image": "/images/items/collectibles_474_tonsil.png",
+    "name": "Broken Glass Cannon",
+    "image": "/images/items/collectibles_474_brokenglasscannon.png",
     "difficulty": "hard",
     "type": "Passive",
     "quality": 2,
@@ -6272,6 +6272,1057 @@
     "image": "/images/items/collectibles_729_decapattack.png",
     "type": "Passive",
     "quality": 2,
+    "unlockable": true
+  },
+  {
+    "id": 730,
+    "name": "Glass Eye",
+    "image": "/images/items/collectibles_730_glasseye.png",
+    "difficulty": "medium",
+    "type": "Passive",
+    "quality": 2,
+    "unlockable": false
+  },
+  {
+    "id": 731,
+    "name": "Stye",
+    "image": "/images/items/collectibles_731_stye.png",
+    "difficulty": "hard",
+    "type": "Passive",
+    "quality": 1,
+    "unlockable": false
+  },
+  {
+    "id": 732,
+    "name": "Mom's Ring",
+    "image": "/images/items/collectibles_732_momsring.png",
+    "difficulty": "easy",
+    "type": "Passive",
+    "quality": 3,
+    "unlockable": false
+  },
+  {
+    "id": 733,
+    "name": "Swallowed Penny",
+    "image": "/images/items/trinket_001_swallowedpenny.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 734,
+    "name": "Petrified Poop",
+    "image": "/images/items/trinket_002_petrifiedpoop.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 735,
+    "name": "AAA Battery",
+    "image": "/images/items/trinket_003_aaabattery.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 736,
+    "name": "Broken Remote",
+    "image": "/images/items/trinket_004_brokenremote.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 737,
+    "name": "Purple Heart",
+    "image": "/images/items/trinket_005_purpleheart.png",
+    "difficulty": "easy",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 738,
+    "name": "Broken Magnet",
+    "image": "/images/items/trinket_006_brokenmagnet.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 739,
+    "name": "Rosary Bead",
+    "image": "/images/items/trinket_007_rosarybead.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 740,
+    "name": "Cartridge",
+    "image": "/images/items/trinket_008_cartridge.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 741,
+    "name": "Pulse Worm",
+    "image": "/images/items/trinket_009_pulseworm.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 742,
+    "name": "Wiggle Worm",
+    "image": "/images/items/trinket_010_wiggleworm.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 743,
+    "name": "Ring Worm",
+    "image": "/images/items/trinket_011_ringworm.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 744,
+    "name": "Flat Worm",
+    "image": "/images/items/trinket_012_flatworm.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 745,
+    "name": "Store Credit",
+    "image": "/images/items/trinket_013_storecredit.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 746,
+    "name": "Callus",
+    "image": "/images/items/trinket_014_callus.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 747,
+    "name": "Lucky Rock",
+    "image": "/images/items/trinket_015_luckyrock.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 748,
+    "name": "Mom's Toenail",
+    "image": "/images/items/trinket_016_momstoenail.png",
+    "difficulty": "easy",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 749,
+    "name": "Black Lipstick",
+    "image": "/images/items/trinket_017_blacklipstick.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 750,
+    "name": "Bible Tract",
+    "image": "/images/items/trinket_018_bibletract.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 751,
+    "name": "Paper Clip",
+    "image": "/images/items/trinket_019_paperclip.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 752,
+    "name": "Monkey Paw",
+    "image": "/images/items/trinket_020_monkeypaw.png",
+    "difficulty": "easy",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 753,
+    "name": "Mysterious Paper",
+    "image": "/images/items/trinket_021_mysteriouspaper.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 754,
+    "name": "Daemon's Tail",
+    "image": "/images/items/trinket_022_daemonstail.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 755,
+    "name": "Missing Poster",
+    "image": "/images/items/trinket_023_missingposter.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 756,
+    "name": "Butt Penny",
+    "image": "/images/items/trinket_024_buttpenny.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 757,
+    "name": "Mysterious Candy",
+    "image": "/images/items/trinket_025_mysteriouscandy.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 758,
+    "name": "Hook Worm",
+    "image": "/images/items/trinket_026_hookworm.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 759,
+    "name": "Whip Worm",
+    "image": "/images/items/trinket_027_whipworm.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 760,
+    "name": "Broken Ankh",
+    "image": "/images/items/trinket_028_brokenankh.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 761,
+    "name": "Fish Head",
+    "image": "/images/items/trinket_029_fishhead.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 762,
+    "name": "Pinky Eye",
+    "image": "/images/items/trinket_030_pinkyeye.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 763,
+    "name": "Push Pin",
+    "image": "/images/items/trinket_031_pushpin.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 764,
+    "name": "Liberty Cap",
+    "image": "/images/items/trinket_032_libertycap.png",
+    "difficulty": "easy",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 765,
+    "name": "Umbilical Cord",
+    "image": "/images/items/trinket_033_umbilicalcord.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 766,
+    "name": "Child's Heart",
+    "image": "/images/items/trinket_034_childsheart.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 767,
+    "name": "Curved Horn",
+    "image": "/images/items/trinket_035_curvedhorn.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 768,
+    "name": "Rusted Key",
+    "image": "/images/items/trinket_036_rustedkey.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 769,
+    "name": "Goat Hoof",
+    "image": "/images/items/trinket_037_goathoof.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 770,
+    "name": "Mom's Pearl",
+    "image": "/images/items/trinket_038_momspearl.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 771,
+    "name": "Cancer",
+    "image": "/images/items/trinket_039_cancer.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 772,
+    "name": "Red Patch",
+    "image": "/images/items/trinket_040_redpatch.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 773,
+    "name": "Match Stick",
+    "image": "/images/items/trinket_041_matchstick.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 774,
+    "name": "Lucky Toe",
+    "image": "/images/items/trinket_042_luckytoe.png",
+    "difficulty": "easy",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 775,
+    "name": "Cursed Skull",
+    "image": "/images/items/trinket_043_cursedskull.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 776,
+    "name": "Safety Cap",
+    "image": "/images/items/trinket_044_safetycap.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 777,
+    "name": "Ace of Spades",
+    "image": "/images/items/trinket_045_aceofspades.png",
+    "difficulty": "easy",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 778,
+    "name": "Isaac's Fork",
+    "image": "/images/items/trinket_046_isaacsfork.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 779,
+    "name": "The Polaroid",
+    "image": "/images/items/trinket_047_thepolaroid.png",
+    "difficulty": "easy",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 780,
+    "name": "A Missing Page",
+    "image": "/images/items/trinket_048_amissingpage.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 781,
+    "name": "Bloody Penny",
+    "image": "/images/items/trinket_049_bloodypenny.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 782,
+    "name": "Burnt Penny",
+    "image": "/images/items/trinket_050_burntpenny.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 783,
+    "name": "Flat Penny",
+    "image": "/images/items/trinket_051_flatpenny.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 784,
+    "name": "Counterfeit Penny",
+    "image": "/images/items/trinket_052_counterfeitpenny.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 785,
+    "name": "Tick",
+    "image": "/images/items/trinket_053_tick.png",
+    "difficulty": "easy",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 786,
+    "name": "Isaac's Head",
+    "image": "/images/items/trinket_054_isaacshead.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 787,
+    "name": "Maggy's Faith",
+    "image": "/images/items/trinket_055_maggysfaith.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 788,
+    "name": "Judas' Tongue",
+    "image": "/images/items/trinket_056_judastongue.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 789,
+    "name": "???'s Soul",
+    "image": "/images/items/trinket_057_qmarkssoul.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 790,
+    "name": "Samson's Lock",
+    "image": "/images/items/trinket_058_samsonslock.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 791,
+    "name": "Cain's Eye",
+    "image": "/images/items/trinket_059_cainseye.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 792,
+    "name": "Eve's Bird Foot",
+    "image": "/images/items/trinket_060_evesbirdfoot.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 793,
+    "name": "The Left Hand",
+    "image": "/images/items/trinket_061_thelefthand.png",
+    "difficulty": "easy",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 794,
+    "name": "Shiny Rock",
+    "image": "/images/items/trinket_062_shinyrock.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 795,
+    "name": "Safety Scissors",
+    "image": "/images/items/trinket_063_safetyscissors.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 796,
+    "name": "Rainbow Worm",
+    "image": "/images/items/trinket_064_rainbowworm.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 797,
+    "name": "Tapeworm",
+    "image": "/images/items/trinket_065_tapeworm.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 798,
+    "name": "Lazy Worm",
+    "image": "/images/items/trinket_066_lazyworm.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 799,
+    "name": "Cracked Dice",
+    "image": "/images/items/trinket_067_crackeddice.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 800,
+    "name": "Super Magnet",
+    "image": "/images/items/trinket_068_supermagnet.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 801,
+    "name": "Faded Polaroid",
+    "image": "/images/items/trinket_069_fadedpolaroid.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 802,
+    "name": "Louse",
+    "image": "/images/items/trinket_070_louse.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 803,
+    "name": "Bob's Bladder",
+    "image": "/images/items/trinket_071_bobsbladder.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 804,
+    "name": "Watch Battery",
+    "image": "/images/items/trinket_072_watchbattery.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 805,
+    "name": "Blasting Cap",
+    "image": "/images/items/trinket_073_blastingcap.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 806,
+    "name": "Stud Finder",
+    "image": "/images/items/trinket_074_studfinder.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 807,
+    "name": "Error",
+    "image": "/images/items/trinket_075_error.png",
+    "difficulty": "easy",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 808,
+    "name": "Poker Chip",
+    "image": "/images/items/trinket_076_pokerchip.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 809,
+    "name": "Blister",
+    "image": "/images/items/trinket_077_blister.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 810,
+    "name": "Second Hand",
+    "image": "/images/items/trinket_078_secondhand.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 811,
+    "name": "Endless Nameless",
+    "image": "/images/items/trinket_079_endlessnameless.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 812,
+    "name": "Black Feather",
+    "image": "/images/items/trinket_080_blackfeather.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 813,
+    "name": "Blind Rage",
+    "image": "/images/items/trinket_081_blindrage.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 814,
+    "name": "Golden Horseshoe",
+    "image": "/images/items/trinket_082_goldenhorseshoe.png",
+    "difficulty": "easy",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 815,
+    "name": "Store Key",
+    "image": "/images/items/trinket_083_storekey.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 816,
+    "name": "Rib of Greed",
+    "image": "/images/items/trinket_084_ribofgreed.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 817,
+    "name": "Karma",
+    "image": "/images/items/trinket_085_karma.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 818,
+    "name": "Lil Larva",
+    "image": "/images/items/trinket_086_lillarva.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 819,
+    "name": "Mom's Locket",
+    "image": "/images/items/trinket_087_momslocket.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 820,
+    "name": "NO!",
+    "image": "/images/items/trinket_088_no.png",
+    "difficulty": "easy",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 821,
+    "name": "Child Leash",
+    "image": "/images/items/trinket_089_childleash.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 822,
+    "name": "Brown Cap",
+    "image": "/images/items/trinket_090_browncap.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 823,
+    "name": "Meconium",
+    "image": "/images/items/trinket_091_meconium.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 824,
+    "name": "Cracked Crown",
+    "image": "/images/items/trinket_092_crackedcrown.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 825,
+    "name": "Used Diaper",
+    "image": "/images/items/trinket_093_useddiaper.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 826,
+    "name": "Fish Tail",
+    "image": "/images/items/trinket_094_fishtail.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 827,
+    "name": "Black Tooth",
+    "image": "/images/items/trinket_095_blacktooth.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 828,
+    "name": "Ouroboros Worm",
+    "image": "/images/items/trinket_096_ouroborosworm.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 829,
+    "name": "Tonsil",
+    "image": "/images/items/trinket_097_tonsil.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 830,
+    "name": "Nose Goblin",
+    "image": "/images/items/trinket_098_nosegoblin.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 831,
+    "name": "Super Ball",
+    "image": "/images/items/trinket_099_superball.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 832,
+    "name": "Vibrant Bulb",
+    "image": "/images/items/trinket_100_vibrantbulb.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 833,
+    "name": "Dim Bulb",
+    "image": "/images/items/trinket_101_dimbulb.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 834,
+    "name": "Fragmented Card",
+    "image": "/images/items/trinket_102_fragmentedcard.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 835,
+    "name": "Equality!",
+    "image": "/images/items/trinket_103_equality.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 836,
+    "name": "Wish Bone",
+    "image": "/images/items/trinket_104_wishbone.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 837,
+    "name": "Bag Lunch",
+    "image": "/images/items/trinket_105_baglunch.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 838,
+    "name": "Lost Cork",
+    "image": "/images/items/trinket_106_lostcork.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 839,
+    "name": "Crow Heart",
+    "image": "/images/items/trinket_107_crowheart.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 840,
+    "name": "Walnut",
+    "image": "/images/items/trinket_108_walnut.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 841,
+    "name": "Duct Tape",
+    "image": "/images/items/trinket_109_ducttape.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 842,
+    "name": "Silver Dollar",
+    "image": "/images/items/trinket_110_silverdollar.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 843,
+    "name": "Bloody Crown",
+    "image": "/images/items/trinket_111_bloodycrown.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 844,
+    "name": "Pay to Win",
+    "image": "/images/items/trinket_112_paytowin.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": false
+  },
+  {
+    "id": 845,
+    "name": "Locust of Wrath",
+    "image": "/images/items/trinket_113_locustofwrath.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 846,
+    "name": "Locust of Pestilence",
+    "image": "/images/items/trinket_114_locustofpestilence.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 847,
+    "name": "Locust of Famine",
+    "image": "/images/items/trinket_115_locustoffamine.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 848,
+    "name": "Locust of Death",
+    "image": "/images/items/trinket_116_locustofdeath.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 849,
+    "name": "Locust of Conquest",
+    "image": "/images/items/trinket_117_locustofconquest.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 850,
+    "name": "Bat Wing",
+    "image": "/images/items/trinket_118_batwing.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 851,
+    "name": "Stem Cell",
+    "image": "/images/items/trinket_119_stemcell.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 852,
+    "name": "Hairpin",
+    "image": "/images/items/trinket_120_hairpin.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 853,
+    "name": "Wooden Cross",
+    "image": "/images/items/trinket_121_woodencross.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 854,
+    "name": "Butter!",
+    "image": "/images/items/trinket_122_butter.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 855,
+    "name": "Filigree Feather",
+    "image": "/images/items/trinket_123_filigreefeather.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 856,
+    "name": "Wooden Doorstop",
+    "image": "/images/items/trinket_124_woodendoorstop.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 857,
+    "name": "Extension Cord",
+    "image": "/images/items/trinket_125_extensioncord.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 858,
+    "name": "Rotten Penny",
+    "image": "/images/items/trinket_126_rottenpenny.png",
+    "difficulty": "hard",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 859,
+    "name": "Baby Bender",
+    "image": "/images/items/trinket_127_babybender.png",
+    "difficulty": "medium",
+    "type": "Trinket",
+    "unlockable": true
+  },
+  {
+    "id": 860,
+    "name": "Fingerbone",
+    "image": "/images/items/trinket_128_fingerbone.png",
+    "difficulty": "medium",
+    "type": "Trinket",
     "unlockable": true
   }
 ]

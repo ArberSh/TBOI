@@ -47,9 +47,32 @@ function getTodayKey() {
   return `${now.getUTCFullYear()}-${pad(now.getUTCMonth() + 1)}-${pad(now.getUTCDate())}`;
 }
 
-function loadGameState(todayKey) {
-  const saved = JSON.parse(localStorage.getItem('tboiGameState') || '{}');
-  if (saved.date === todayKey) return saved;
+function getDayIndex(dateKey) {
+  const [y, m, d] = dateKey.split('-').map(Number);
+  const target = Date.UTC(y, m - 1, d);
+  const startDate = Date.UTC(2024, 0, 1);
+  return Math.floor((target - startDate) / (1000 * 60 * 60 * 24));
+}
+
+function getItemForDay(dayIndex) {
+  const todayIdx = dayIndex % ITEMS_DATABASE.length;
+  const yesterdayIdx = (dayIndex - 1 + ITEMS_DATABASE.length) % ITEMS_DATABASE.length;
+  if (ITEMS_DATABASE[todayIdx].name === ITEMS_DATABASE[yesterdayIdx].name) {
+    return ITEMS_DATABASE[(todayIdx + 1) % ITEMS_DATABASE.length];
+  }
+  return ITEMS_DATABASE[todayIdx];
+}
+
+function loadGameState(dateKey) {
+  const perDateKey = `tboiGameState_${dateKey}`;
+  const perDate = JSON.parse(localStorage.getItem(perDateKey) || '{}');
+  if (perDate.date === dateKey) return perDate;
+  // migrate legacy key for today
+  const legacy = JSON.parse(localStorage.getItem('tboiGameState') || '{}');
+  if (legacy.date === dateKey) {
+    localStorage.setItem(perDateKey, JSON.stringify(legacy));
+    return legacy;
+  }
   return null;
 }
 
@@ -94,17 +117,17 @@ function GuessTheItem() {
   }, []);
 
   const [todayKey, setTodayKey] = useState(getTodayKey);
-
-  // ✅ remove the old loadGameState inside the component entirely
+  const [selectedDateKey, setSelectedDateKey] = useState(getTodayKey);
 
   const [userGuess, setUserGuess] = useState("");
-  const [hasGuessedCorrectly, setHasGuessedCorrectly] = useState(() => loadGameState(todayKey)?.hasGuessedCorrectly ?? false);
-  const [stepIndex, setStepIndex] = useState(() => loadGameState(todayKey)?.stepIndex ?? 0);
-  const [wrongGuesses, setWrongGuesses] = useState(() => loadGameState(todayKey)?.wrongGuesses ?? []);
-  const [hintRevealed, setHintRevealed] = useState(() => loadGameState(todayKey)?.hintRevealed ?? false);
+  const [hasGuessedCorrectly, setHasGuessedCorrectly] = useState(() => loadGameState(getTodayKey())?.hasGuessedCorrectly ?? false);
+  const [stepIndex, setStepIndex] = useState(() => loadGameState(getTodayKey())?.stepIndex ?? 0);
+  const [wrongGuesses, setWrongGuesses] = useState(() => loadGameState(getTodayKey())?.wrongGuesses ?? []);
+  const [hintRevealed, setHintRevealed] = useState(() => loadGameState(getTodayKey())?.hintRevealed ?? false);
+  const [showConfetti, setShowConfetti] = useState(false);
   const [shake, setShake] = useState(false);
   const [highlightedIndex, setHighlightedIndex] = useState(-1);
-  const [showNameReveal, setShowNameReveal] = useState(() => loadGameState(todayKey)?.hasGuessedCorrectly ?? false);
+  const [showNameReveal, setShowNameReveal] = useState(() => loadGameState(getTodayKey())?.hasGuessedCorrectly ?? false);
   const [streak, setStreak] = useState(() => {
     const stored = JSON.parse(localStorage.getItem('tboiStreak') || '{}');
     const { lastPlayedDate, streak: saved = 0 } = stored;
@@ -157,31 +180,41 @@ function GuessTheItem() {
   }, [userGuess, wrongGuesses]);
 
   const dailyItem = useMemo(() => {
-    const now = new Date(); // ✅ just add this line
-    const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
-    const startDate = Date.UTC(2024, 0, 1);
-    const dayIndex = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+    return getItemForDay(getDayIndex(selectedDateKey));
+  }, [selectedDateKey]);
 
-    const todayIdx = dayIndex % ITEMS_DATABASE.length;
-    const yesterdayIdx = (dayIndex - 1 + ITEMS_DATABASE.length) % ITEMS_DATABASE.length;
- 
-    if (ITEMS_DATABASE[todayIdx].name === ITEMS_DATABASE[yesterdayIdx].name) {
-      return ITEMS_DATABASE[(todayIdx + 1) % ITEMS_DATABASE.length];
-    }
-    return ITEMS_DATABASE[todayIdx];
+  const isToday = selectedDateKey === todayKey;
+
+  const earliestKey = useMemo(() => {
+    const [y, m, d] = todayKey.split('-').map(Number);
+    const date = new Date(Date.UTC(y, m - 1, d - 15));
+    const pad = n => String(n).padStart(2, '0');
+    return `${date.getUTCFullYear()}-${pad(date.getUTCMonth() + 1)}-${pad(date.getUTCDate())}`;
   }, [todayKey]);
+
+  const navigateDay = (delta) => {
+    const [y, m, d] = selectedDateKey.split('-').map(Number);
+    const next = new Date(Date.UTC(y, m - 1, d + delta));
+    const pad = n => String(n).padStart(2, '0');
+    const nextKey = `${next.getUTCFullYear()}-${pad(next.getUTCMonth() + 1)}-${pad(next.getUTCDate())}`;
+    if (nextKey >= earliestKey && nextKey <= todayKey) setSelectedDateKey(nextKey);
+  };
 
   const currentPixelSize = PIXEL_STEPS[stepIndex];
   const gameOver = wrongGuesses.length >= PIXEL_STEPS.length - 1 && !hasGuessedCorrectly;
+  const [canvasSize, setCanvasSize] = useState(0);
 
   // Item image rendering
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas || !dailyItem) return;
 
+    let cancelled = false;
+
     const img = new Image();
     img.src = dailyItem.image;
     img.onload = () => {
+      if (cancelled) return;
       const ctx = canvas.getContext('2d');
       const W = canvas.width;
       const H = canvas.height;
@@ -206,47 +239,65 @@ function GuessTheItem() {
         ctx.drawImage(off, 0, 0, res, res, 0, 0, W, H);
       }
     };
-  }, [dailyItem, stepIndex, hasGuessedCorrectly, currentPixelSize]);
+
+    return () => { cancelled = true; };
+  }, [dailyItem, stepIndex, hasGuessedCorrectly, currentPixelSize, canvasSize]);
 
   useEffect(() => {
-  const interval = setInterval(() => {
-    const newKey = getTodayKey();
-    setTodayKey(prev => {
-      if (prev !== newKey) return newKey;
-      return prev;
-    });
-  }, 30_000); // check every 30 seconds
-  return () => clearInterval(interval);
-}, []);
+    const checkDate = () => {
+      const newKey = getTodayKey();
+      setTodayKey(prev => (prev !== newKey ? newKey : prev));
+    };
 
+    const interval = setInterval(checkDate, 30_000);
+    document.addEventListener('visibilitychange', checkDate);
+
+    return () => {
+      clearInterval(interval);
+      document.removeEventListener('visibilitychange', checkDate);
+    };
+  }, []);
+
+// When the calendar day rolls over, jump to the new today
 useEffect(() => {
-  const saved = loadGameState(todayKey);
-  // If no saved state for today, it's a fresh day — reset everything
-  if (!saved) {
+  setSelectedDateKey(todayKey);
+}, [todayKey]);
+
+// Reload all game state whenever the viewed date changes
+useEffect(() => {
+  const saved = loadGameState(selectedDateKey);
+  if (saved) {
+    setHasGuessedCorrectly(saved.hasGuessedCorrectly ?? false);
+    setStepIndex(saved.stepIndex ?? 0);
+    setWrongGuesses(saved.wrongGuesses ?? []);
+    setHintRevealed(saved.hintRevealed ?? false);
+    setShowNameReveal(saved.hasGuessedCorrectly ?? false);
+  } else {
     setHasGuessedCorrectly(false);
     setStepIndex(0);
     setWrongGuesses([]);
     setHintRevealed(false);
     setShowNameReveal(false);
-    setUserGuess("");
-    setHighlightedIndex(-1);
   }
-}, [todayKey]);
+  setShowConfetti(false);
+  setUserGuess("");
+  setHighlightedIndex(-1);
+}, [selectedDateKey]);
 
-  // Persist game state for today
+  // Persist game state per date
   useEffect(() => {
-    localStorage.setItem('tboiGameState', JSON.stringify({
-      date: todayKey,
+    localStorage.setItem(`tboiGameState_${selectedDateKey}`, JSON.stringify({
+      date: selectedDateKey,
       hasGuessedCorrectly,
       stepIndex,
       wrongGuesses,
       hintRevealed,
     }));
-  }, [hasGuessedCorrectly, stepIndex, wrongGuesses, hintRevealed, todayKey]);
+  }, [hasGuessedCorrectly, stepIndex, wrongGuesses, hintRevealed, selectedDateKey]);
 
-  // Confetti animation
+  // Confetti animation (only on a fresh win, not when loading an already-won archive)
   useEffect(() => {
-    if (!hasGuessedCorrectly) return;
+    if (!showConfetti) return;
     const canvas = confettiRef.current;
     if (!canvas) return;
 
@@ -284,7 +335,7 @@ useEffect(() => {
 
     rafRef.current = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(rafRef.current);
-  }, [hasGuessedCorrectly]);
+  }, [showConfetti]);
 
   // Trigger the name-reveal animation shortly after winning
   useEffect(() => {
@@ -293,13 +344,19 @@ useEffect(() => {
     return () => clearTimeout(t);
   }, [hasGuessedCorrectly]);
 
-  // Sync canvas resolution to its CSS display size
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-    const size = canvas.offsetWidth;
-    canvas.width = size;
-    canvas.height = size;
+    const ro = new ResizeObserver(() => {
+      const size = canvas.offsetWidth;
+      if (size > 0 && canvas.width !== size) {
+        canvas.width = size;
+        canvas.height = size;
+        setCanvasSize(size);
+      }
+    });
+    ro.observe(canvas);
+    return () => ro.disconnect();
   }, []);
 
   // Countdown timer
@@ -310,8 +367,9 @@ useEffect(() => {
     return () => clearInterval(timer);
   }, []);
 
-  // Record that this player started today's game
+  // Record that this player started today's game (only for today, not archive)
   useEffect(() => {
+    if (!isToday) return;
     const existingState = loadGameState(todayKey);
     const alreadyDone = existingState?.hasGuessedCorrectly ||
       (existingState?.wrongGuesses?.length >= PIXEL_STEPS.length - 1);
@@ -330,7 +388,7 @@ useEffect(() => {
         localStorage.setItem('tboiSession', JSON.stringify({ date: todayKey, rowId: data.id }));
       }
     })();
-  }, [todayKey, dailyItem]);
+  }, [isToday, todayKey, dailyItem]);
 
   // Fetch today's guess stats from Supabase
   
@@ -338,16 +396,16 @@ useEffect(() => {
   const { count: wins } = await supabase
     .from('daily_guesses')
     .select('*', { count: 'exact', head: true })
-    .eq('date', todayKey)
+    .eq('date', selectedDateKey)
     .eq('result', 'win');
 
   const { count: total } = await supabase
     .from('daily_guesses')
     .select('*', { count: 'exact', head: true })
-    .eq('date', todayKey);
+    .eq('date', selectedDateKey);
 
   setGuessStats({ wins: wins || 0, total: total || 0 });
-}, [todayKey]);
+}, [selectedDateKey]);
 
 useEffect(() => {
   fetchStats();
@@ -372,22 +430,20 @@ useEffect(() => {
 
     if (trimmed.toLowerCase() === dailyItem.name.toLowerCase()) {
       setHasGuessedCorrectly(true);
-      saveStreak(streak, playedToday, true);
-
-      const session = JSON.parse(localStorage.getItem('tboiSession') || '{}');
-      if (session.date === todayKey && session.rowId) {
-        await supabase.from('daily_guesses').update({ result: 'win', attempts: attemptsMade }).eq('id', session.rowId);
-      } else {
-        await supabase.from('daily_guesses').insert({ item_name: dailyItem.name, date: todayKey, result: 'win', attempts: attemptsMade });
-      }
-      await new Promise(r => setTimeout(r, 300));
-      await fetchStats();
-
-      if (typeof window.gtag === 'function') {
-        window.gtag('event', 'game_completed', {
-          result: 'win',
-          attempts: attemptsMade,
-        });
+      setShowConfetti(true);
+      if (isToday) {
+        saveStreak(streak, playedToday, true);
+        const session = JSON.parse(localStorage.getItem('tboiSession') || '{}');
+        if (session.date === todayKey && session.rowId) {
+          await supabase.from('daily_guesses').update({ result: 'win', attempts: attemptsMade }).eq('id', session.rowId);
+        } else {
+          await supabase.from('daily_guesses').insert({ item_name: dailyItem.name, date: todayKey, result: 'win', attempts: attemptsMade });
+        }
+        await new Promise(r => setTimeout(r, 300));
+        await fetchStats();
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'game_completed', { result: 'win', attempts: attemptsMade });
+        }
       }
     } else {
       setWrongGuesses(prev => [...prev, trimmed]);
@@ -399,21 +455,19 @@ useEffect(() => {
         setStepIndex(nextIndex);
 
         if (nextIndex === PIXEL_STEPS.length - 1) {
-          saveStreak(streak, playedToday, false);
-
-          const session = JSON.parse(localStorage.getItem('tboiSession') || '{}');
-          if (session.date === todayKey && session.rowId) {
-            await supabase.from('daily_guesses').update({ result: 'loss', attempts: PIXEL_STEPS.length }).eq('id', session.rowId);
-          } else {
-            await supabase.from('daily_guesses').insert({ item_name: dailyItem.name, date: todayKey, result: 'loss', attempts: PIXEL_STEPS.length });
-          }
-          await new Promise(r => setTimeout(r, 300));
-          await fetchStats();
-          if (typeof window.gtag === 'function') {
-            window.gtag('event', 'game_completed', {
-              result: 'loss',
-              attempts: PIXEL_STEPS.length,
-            });
+          if (isToday) {
+            saveStreak(streak, playedToday, false);
+            const session = JSON.parse(localStorage.getItem('tboiSession') || '{}');
+            if (session.date === todayKey && session.rowId) {
+              await supabase.from('daily_guesses').update({ result: 'loss', attempts: PIXEL_STEPS.length }).eq('id', session.rowId);
+            } else {
+              await supabase.from('daily_guesses').insert({ item_name: dailyItem.name, date: todayKey, result: 'loss', attempts: PIXEL_STEPS.length });
+            }
+            await new Promise(r => setTimeout(r, 300));
+            await fetchStats();
+            if (typeof window.gtag === 'function') {
+              window.gtag('event', 'game_completed', { result: 'loss', attempts: PIXEL_STEPS.length });
+            }
           }
         }
       }
@@ -531,6 +585,28 @@ useEffect(() => {
         <h1 className="title">Guess the Item</h1>
         <p className="subtitle">Daily TBOI Challenge</p>
 
+        <div className="date-nav">
+          <button
+            className="date-nav-btn"
+            onClick={() => navigateDay(-1)}
+            disabled={selectedDateKey <= earliestKey}
+          >‹</button>
+          <span className="date-nav-label">
+            {isToday ? 'Today' : selectedDateKey}
+          </span>
+          <button
+            className="date-nav-btn"
+            onClick={() => navigateDay(1)}
+            disabled={isToday}
+          >›</button>
+        </div>
+
+        {!isToday && (
+          <button className="back-to-today-btn" onClick={() => setSelectedDateKey(todayKey)}>
+            ▶ Play Today
+          </button>
+        )}
+
         <div className="top-row">
           <span className={`difficulty-badge diff-${dailyItem.difficulty}`}>{dailyItem.difficulty}</span>
         </div>
@@ -627,13 +703,13 @@ useEffect(() => {
         <>
           <span style={{ color: '#ffffff' }}>
             {Math.round((guessStats.wins / guessStats.total) * 100)}%
-          </span> of {guessStats.total} players guessed today's item
+          </span> of {guessStats.total} players guessed {isToday ? "today's" : "that day's"} item
         </>
       )}
     </p>
   </div>
 )}
-        {(hasGuessedCorrectly || gameOver) && (
+        {(hasGuessedCorrectly || gameOver) && isToday && (
           <p className="next-item-text" style={{ textAlign: "center" }}>
             Next item in <strong style={{ color: "#f0b840", letterSpacing: "1px" }}>{countdown}</strong>
           </p>
