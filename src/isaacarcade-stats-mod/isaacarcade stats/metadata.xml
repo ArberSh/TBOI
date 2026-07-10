@@ -2,7 +2,24 @@
 	<name>Isaac Arcade Stats</name>
 	<directory>isaacarcade stats</directory>
 	<id></id>
-	<description>Anonymously counts which collectibles you pick up to power community stats on isaacarcade.com. No personal data is collected — only item IDs and counts, tied to a random anonymous ID. Uploading only happens if you opt in by adding the --luadebug launch option in Steam; otherwise stats stay on your PC.</description>
+	<description>Help build live community item statistics for isaacarcade.com!
+
+This mod anonymously counts which collectibles you pick up during your runs. The data powers community stats and games on Isaac Arcade, the daily item-guessing game.
+
+WHAT IS COLLECTED:
+- Item IDs and pickup counts only
+- Tied to a random anonymous ID
+- No Steam ID, no username, no personal data, nothing else
+
+HOW TO ENABLE UPLOADING (opt-in):
+1. Right-click the game in Steam
+2. Properties, then Launch Options
+3. Type: --luadebug
+4. Restart the game
+
+Without --luadebug the mod stays fully offline and does nothing. Note: --luadebug gives ALL your installed mods file access, so only use it with mods you trust. The source code of this mod is plain Lua, feel free to read exactly what it does.
+
+See the stats live at isaacarcade.com</description>
 	<version>1.0</version>
 	<visibility>Public</visibility>
 	<tag id="Tweaks"/>

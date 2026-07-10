@@ -5,7 +5,7 @@ import firegif from "./assets/fire.gif"
 import fireimg from "./assets/fireimg.png"
 import { supabase } from './supabase';
 
-const PIXEL_STEPS = [8, 12, 16, 16, 24, 32, 64];
+const PIXEL_STEPS = [4, 8, 12, 16, 24, 32, 64];
 
 const CONFETTI_COLORS = [
   '#f0b840', '#5ddb6a', '#e05c5c', '#60c8f0', '#c86af0',
@@ -91,17 +91,26 @@ function GuessTheItem() {
       setTimeout(() => setLoadingVisible(false), 600);
       return;
     }
-    const half = Math.ceil(total / 2);
-    const firstBatch = items.slice(0, half);
-    const secondBatch = items.slice(half);
+
+    // Always preload today's daily item first so the canvas is ready immediately.
+    const todayItem = getItemForDay(getDayIndex(getTodayKey()));
+    const tenPercent = Math.max(1, Math.ceil(total * 0.1));
+    const firstBatch = items.slice(0, tenPercent);
+    // Ensure today's item is in the first batch
+    if (todayItem?.image && !firstBatch.find(i => i.image === todayItem.image)) {
+      firstBatch.push(todayItem);
+    }
+    const firstSet = new Set(firstBatch.map(i => i.image));
+    const secondBatch = items.filter(i => !firstSet.has(i.image));
 
     let loaded = 0;
+    const batchSize = firstBatch.length;
     firstBatch.forEach(item => {
       const img = new Image();
       img.onload = img.onerror = () => {
         loaded++;
-        setLoadProgress(Math.round((loaded / half) * 100));
-        if (loaded === half) {
+        setLoadProgress(Math.round((loaded / batchSize) * 100));
+        if (loaded === batchSize) {
           setLoadingFading(true);
           setTimeout(() => {
             setLoadingVisible(false);
@@ -124,6 +133,7 @@ function GuessTheItem() {
   const [stepIndex, setStepIndex] = useState(() => loadGameState(getTodayKey())?.stepIndex ?? 0);
   const [wrongGuesses, setWrongGuesses] = useState(() => loadGameState(getTodayKey())?.wrongGuesses ?? []);
   const [hintRevealed, setHintRevealed] = useState(() => loadGameState(getTodayKey())?.hintRevealed ?? false);
+  const [hardMode, setHardMode] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
   const [shake, setShake] = useState(false);
   const [highlightedIndex, setHighlightedIndex] = useState(-1);
@@ -531,15 +541,17 @@ useEffect(() => {
     ? `day 1. don't get excited.`
     : `💀 streak: DEAD. embarrassing.`;
 
+  const hardTag = hardMode ? ` [BLACK & WHITE — certified nerd 🧠]` : ``;
+
   const resultLine = hasGuessedCorrectly
     ? totalAttempts === 1
-      ? `1/${maxAttempts-1} — recognized it fully pixelated. actual isaac nerd.`
+      ? `1/${maxAttempts-1} — recognized it fully pixelated. actual isaac nerd.${hardTag}`
       : totalAttempts === 2
-      ? `2/${maxAttempts-1} — needed one hint. respectable i guess.`
+      ? `2/${maxAttempts-1} — needed one hint. respectable i guess.${hardTag}`
       : totalAttempts <= 4
-      ? `${totalAttempts}/${maxAttempts} — needed it half unblurred. casual detected.`
-      : `${totalAttempts}/${maxAttempts} — waited until it was basically a photo. embarrassing.`
-   : `X/${maxAttempts} — fully revealed and still clueless. do you even play this game?`;
+      ? `${totalAttempts}/${maxAttempts} — needed it half unblurred. casual detected.${hardTag}`
+      : `${totalAttempts}/${maxAttempts} — waited until it was basically a photo. embarrassing.${hardTag}`
+   : `X/${maxAttempts} — fully revealed and still clueless. do you even play this game?${hardTag}`;
 
   const text = [
     `🎮 Guess the TBOI Item — Daily Challenge`,
@@ -631,7 +643,7 @@ useEffect(() => {
         </div>
 
         <div className={`image-wrapper ${shake ? 'shake' : ''} ${hasGuessedCorrectly ? 'glow-correct' : ''}`}>
-          <canvas ref={canvasRef} className="item-canvas" />
+          <canvas ref={canvasRef} className={`item-canvas ${hardMode ? 'item-canvas--bw' : ''}`} />
         </div>
 
         {hasGuessedCorrectly && (
@@ -675,6 +687,20 @@ useEffect(() => {
     )}
   </div>
 )}
+
+        <div className="hard-mode-row">
+          <span className="hard-mode-label">Hard Mode</span>
+          <button
+            className={`hard-mode-toggle ${hardMode ? 'hard-mode-toggle--on' : ''}`}
+            onClick={() => setHardMode(v => !v)}
+            aria-pressed={hardMode}
+          >
+            <span className="hard-mode-toggle-thumb" />
+          </button>
+        </div>
+        <p className="hard-mode-desc">
+          {hardMode ? 'image is black & white' : 'removes all color from the image'}
+        </p>
 
         {wrongGuesses.length > 0 && (
           <div className="wrong-guesses">

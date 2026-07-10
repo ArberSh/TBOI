@@ -314,6 +314,72 @@ html, body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.hard-mode-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 0.4rem;
+  margin-bottom: -0.3rem;
+}
+
+.hard-mode-label {
+  font-size: 0.92rem;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.hard-mode-toggle {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.hard-mode-toggle--on {
+  background: #f5c518;
+}
+
+.hard-mode-toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 0.2s;
+  display: block;
+}
+
+.hard-mode-toggle--on .hard-mode-toggle-thumb {
+  transform: translateX(18px);
+  background: #7a5f00;
+}
+
+.hard-mode-desc {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.35);
+  margin: 0 0 0.4rem;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.hard-mode-desc:has(+ *) {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.item-canvas--bw {
+  filter: grayscale(100%);
+}
+
 .difficulty-badge {
   font-size: 1.4rem;
   font-weight: bold;
