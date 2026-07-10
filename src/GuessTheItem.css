@@ -367,7 +367,8 @@ html, body {
 .hard-mode-desc {
   font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.35);
-  margin: 0 0 0.4rem;
+  margin: 0 auto 0.4rem;
+  max-width: 200px;
   text-align: center;
   transition: color 0.2s;
 }
@@ -728,7 +729,7 @@ html, body {
 @media (max-width: 600px) {
   .card {
     width: 80vw;
-    max-height: 92vh;
+    max-height: 85vh;
     padding: 1rem 1.2rem;
     gap: 0.6rem;
     
@@ -755,9 +756,13 @@ html, body {
     max-height: 100vh;
     padding: 0;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1.5rem 0 4rem;
     justify-content: space-between;
     overflow-x: hidden;
+  }
+
+  .card-wrapper {
+    margin: 1rem 0;
   }
 
   .card::-webkit-scrollbar {
