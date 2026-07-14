@@ -146,6 +146,10 @@ html, body {
 }
 
 .firepng{
+  width: 7rem;
+}
+
+.streak-zero .firepng {
   width: 4.2rem;
 }
 

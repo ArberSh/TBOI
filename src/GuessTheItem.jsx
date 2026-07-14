@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect, useRef, useCallback} from 'react';
 import "./GuessTheItem.css";
 import ITEMS_DATABASE from "./itemsData.json";
-import firegif from "./assets/fire.gif"
+import firegif from "./assets/fire.webp"
 import fireimg from "./assets/fireimg.png"
 import { supabase } from './supabase';
 
@@ -163,6 +163,7 @@ function GuessTheItem() {
   const inputRef = useRef(null);
   const rafRef = useRef(null);
   const suggestionsRef = useRef(null);
+  const endRef = useRef(null);
 
   const saveStreak = (currentStreak, alreadyPlayed, won = true) => {
     if (alreadyPlayed) return;
@@ -313,6 +314,13 @@ useEffect(() => {
     }));
   }, [hasGuessedCorrectly, stepIndex, wrongGuesses, hintRevealed, selectedDateKey]);
 
+  useEffect(() => {
+    if (!hasGuessedCorrectly && !gameOver) return;
+    setTimeout(() => {
+      endRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 300);
+  }, [hasGuessedCorrectly, gameOver]);
+
   // Confetti animation (only on a fresh win, not when loading an already-won archive)
   useEffect(() => {
     if (!showConfetti) return;
@@ -418,12 +426,13 @@ useEffect(() => {
     .eq('date', selectedDateKey)
     .eq('result', 'win');
 
-  const { count: total } = await supabase
+  const { count: tried } = await supabase
     .from('daily_guesses')
     .select('*', { count: 'exact', head: true })
-    .eq('date', selectedDateKey);
+    .eq('date', selectedDateKey)
+    .in('result', ['win', 'loss']);
 
-  setGuessStats({ wins: wins || 0, total: total || 0 });
+  setGuessStats({ wins: wins || 0, total: tried || 0 });
 }, [selectedDateKey]);
 
 useEffect(() => {
@@ -595,7 +604,7 @@ useEffect(() => {
           className={`streak-top ${streak === 0 || gameOver ? 'streak-zero' : ''}`}
           title="Daily streak"
         >
-          <img className='firepng' src={streak > 0 ? firegif : fireimg} alt="fire" style={{ width: '4.5rem', objectFit: 'contain' }} />
+          <img className='firepng' src={streak > 0 ? firegif : fireimg} alt="fire" />
           <p className='centered'>{streak}</p>
         </div>
       </div>
@@ -733,12 +742,12 @@ useEffect(() => {
   <div className="guess-stats">
     <p style={{color:'gray', textAlign:'center', fontSize:'18px'}}>
       {guessStats.total === 0 ? (
-        'No players have guessed yet'
+        'No players have tried yet'
       ) : (
         <>
           <span style={{ color: '#ffffff' }}>
             {Math.round((guessStats.wins / guessStats.total) * 100)}%
-          </span> of {guessStats.total} players guessed {isToday ? "today's" : "that day's"} item
+          </span> of {guessStats.total} players who tried solved {isToday ? "today's" : "that day's"} item
         </>
       )}
     </p>
@@ -751,7 +760,7 @@ useEffect(() => {
         )}
 
         {(hasGuessedCorrectly || gameOver) && (
-          <button className="share-btn" onClick={handleShare}>
+          <button ref={endRef} className="share-btn" onClick={handleShare}>
             {copied ? '✅ Copied!' : '📋 Share Result'}
           </button>
         )}
