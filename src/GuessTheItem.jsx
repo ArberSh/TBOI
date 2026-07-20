@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect, useRef, useCallback} from 'react';
+import { Link } from 'react-router-dom';
 import "./GuessTheItem.css";
 import ITEMS_DATABASE from "./itemsData.json";
 import firegif from "./assets/fire.webp"
@@ -600,6 +601,10 @@ useEffect(() => {
         <div>
           <img className='logo' src="/logo.png" alt="logo" />
         </div>
+        <nav className="gti-nav">
+          <span className="gti-nav-current">Guess The Item</span>
+          <Link className="gti-nav-link" to="/boss-preview-x7k2m9">Boss Finder</Link>
+        </nav>
         <div
           className={`streak-top ${streak === 0 || gameOver ? 'streak-zero' : ''}`}
           title="Daily streak"
