@@ -256,7 +256,7 @@ export default function BossFinder() {
       : `X/${MAX_GUESSES} — fully revealed and still clueless.`;
     const streakLine = streak > 0 ? `🔥 ${streak} day streak.` : '';
     navigator.clipboard.writeText(
-      [`👹 TBOI Boss Finder — ${selectedDateKey}`, '', resultLine, ...(streakLine ? [streakLine] : []), '', grid, '', 'isaacarcade.com'].join('\n')
+      [`👹 TBOI Boss Finder — ${selectedDateKey}`, '', resultLine, ...(streakLine ? [streakLine] : []), '', grid, '', 'https://isaacarcade.com'].join('\n')
     ).then(() => { setCopied(true); setTimeout(() => setCopied(false), 2000); });
   };
 
