@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Upheaval';
+  src: url('./assets/upheavtt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.dp-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  width: 100%;
+  max-width: 520px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.dp-heading {
+  font-family: 'Upheaval', Arial, sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.dp-cards {
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* base card */
+.dp-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 1rem 0.55rem;
+  background: rgba(10, 6, 18, 0.6);
+  border: 2px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
+  min-width: 110px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* hover only on link (non-active) cards */
+a.dp-card:hover {
+  border-color: rgba(240,184,64,0.35);
+  background: rgba(10, 6, 18, 0.6);
+}
+
+/* active page */
+.dp-card--active {
+  border-color: #f0b840;
+  background: rgba(240,184,64,0.1);
+  box-shadow: 0 0 18px rgba(240,184,64,0.2), inset 0 0 10px rgba(240,184,64,0.05);
+  cursor: default;
+}
+
+/* icon frame (mimics Isaac item box) */
+.dp-icon-frame {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dp-card--active .dp-icon-frame {
+  border-color: rgba(240,184,64,0.3);
+  box-shadow: 0 0 8px rgba(240,184,64,0.15);
+}
+
+.dp-icon-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+/* won / lost badge */
+.dp-badge {
+  position: absolute;
+  bottom: -7px;
+  right: -7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 900;
+  border: 2px solid rgba(10,6,18,0.9);
+  line-height: 1;
+}
+
+.dp-badge--won  { background: #5ddb6a; color: #051a08; }
+.dp-badge--lost { background: #e05c5c; color: #1a0505; }
+
+.dp-label {
+  font-family: 'Upheaval', Arial, sans-serif;
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.05em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.dp-card--active .dp-label {
+  color: #f0b840;
+}
+
+.dp-count {
+  font-family: 'Upheaval', Arial, sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.1em;
+  margin: 1rem 0 0;
+}
+
+@media (max-width: 600px) {
+  .dp-card {
+    min-width: 90px;
+    padding: 0.55rem 0.7rem 0.45rem;
+  }
+
+  .dp-icon-frame {
+    width: 52px;
+    height: 52px;
+  }
+
+  .dp-icon-img {
+    width: 40px;
+    height: 40px;
+  }
+}

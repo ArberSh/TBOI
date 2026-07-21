@@ -5,6 +5,7 @@ import ITEMS_DATABASE from "./itemsData.json";
 import firegif from "./assets/fire.webp"
 import fireimg from "./assets/fireimg.png"
 import { supabase } from './supabase';
+import DailyProgress from './DailyProgress';
 
 const PIXEL_STEPS = [4, 8, 12, 16, 24, 32, 64];
 
@@ -597,21 +598,23 @@ useEffect(() => {
           <p className="loading-subtext">Preloading all item images for a smooth experience</p>
         </div>
       )}
-      <div className='Top'>
-        <div>
-          <img className='logo' src="/logo.png" alt="logo" />
+      <div className="gti-header">
+        <div className='Top'>
+          <div>
+            <Link to="/"><img className='logo' src="/logo.png" alt="logo" /></Link>
+          </div>
+          <div
+            className={`streak-top ${streak === 0 || gameOver ? 'streak-zero' : ''}`}
+            title="Daily streak"
+          >
+            <img className='firepng' src={streak > 0 ? firegif : fireimg} alt="fire" />
+            <p className='centered'>{streak}</p>
+          </div>
         </div>
-        <nav className="gti-nav">
-          <span className="gti-nav-current">Guess The Item</span>
-          <Link className="gti-nav-link" to="/boss-preview-x7k2m9">Boss Finder</Link>
-        </nav>
-        <div
-          className={`streak-top ${streak === 0 || gameOver ? 'streak-zero' : ''}`}
-          title="Daily streak"
-        >
-          <img className='firepng' src={streak > 0 ? firegif : fireimg} alt="fire" />
-          <p className='centered'>{streak}</p>
-        </div>
+        <DailyProgress
+          currentPage="gti"
+          gtiOverride={{ done: hasGuessedCorrectly || gameOver, won: hasGuessedCorrectly }}
+        />
       </div>
       <canvas ref={confettiRef} className="confetti-canvas" />
 

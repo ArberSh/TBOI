@@ -29,53 +29,31 @@
   font-family: 'Upheaval', Arial, sans-serif;
 }
 
-/* ── Top bar ── */
+/* ── Header (top bar + daily progress) ── */
+.bf-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  width: 100%;
+}
+
 .bf-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 0 1.4rem;
+  box-sizing: border-box;
 }
 
 .bf-logo {
   width: 7rem;
+  display: block;
 }
 
-.bf-nav {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  background: rgba(0,0,0,0.35);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 8px;
-  padding: 3px;
-}
-
-.bf-nav-link,
-.bf-nav-current {
-  font-family: 'Upheaval', Arial, sans-serif;
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
-  padding: 0.3rem 0.8rem;
-  border-radius: 6px;
-  white-space: nowrap;
-}
-
-.bf-nav-link {
-  color: rgba(255,255,255,0.4);
-  text-decoration: none;
-  transition: background 0.15s, color 0.15s;
-}
-
-.bf-nav-link:hover {
-  background: rgba(255,255,255,0.08);
-  color: rgba(255,255,255,0.75);
-}
-
-.bf-nav-current {
-  background: #f0b840;
-  color: #1a1a1e;
+a:has(.bf-logo) {
+  line-height: 0;
 }
 
 /* ── Streak fire (mirrors GuessTheItem) ── */
@@ -511,6 +489,7 @@
 /* ── Ko-fi ── */
 .bf-buttons-container {
   padding: 0 2rem;
+  margin-top: 1.5rem;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -531,11 +510,17 @@
   }
 
   .bf-top {
-    padding: 0 0.6rem;
+    padding: 0 0.75rem;
   }
 
   .bf-logo {
     width: 5.6rem;
+  }
+
+  .bf-card-wrapper {
+    padding: 0 0.85rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .bf-card {

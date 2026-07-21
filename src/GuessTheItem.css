@@ -102,10 +102,20 @@ html, body {
 
 .Buttons_Container{
   padding: 0 2rem;
+  margin-top: 1.5rem;
   width: 100%;
   display: flex;
   justify-content: end;
   align-items: end;
+}
+
+.gti-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .Top{
@@ -114,46 +124,16 @@ html, body {
   align-items: center;
   width: 100%;
   padding: 0 1.4rem;
-}
-
-.gti-nav {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  background: rgba(0,0,0,0.35);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 8px;
-  padding: 3px;
-}
-
-.gti-nav-link,
-.gti-nav-current {
-  font-family: 'Upheaval', Arial, sans-serif;
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
-  padding: 0.3rem 0.8rem;
-  border-radius: 6px;
-  white-space: nowrap;
-}
-
-.gti-nav-link {
-  color: rgba(255,255,255,0.4);
-  text-decoration: none;
-  transition: background 0.15s, color 0.15s;
-}
-
-.gti-nav-link:hover {
-  background: rgba(255,255,255,0.08);
-  color: rgba(255,255,255,0.75);
-}
-
-.gti-nav-current {
-  background: #f0b840;
-  color: #1a1a1e;
+  box-sizing: border-box;
 }
 
 .logo{
   width: 7rem;
+  display: block;
+}
+
+a:has(.logo) {
+  line-height: 0;
 }
 
 .streak-top {
@@ -776,7 +756,7 @@ html, body {
   }
 
   .Top{
-    padding: 0 0.6rem;
+    padding: 0 0.75rem;
   }
 
   .title{

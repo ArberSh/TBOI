@@ -1,0 +1,185 @@
+@font-face {
+  font-family: 'Upheaval';
+  src: url('./assets/upheavtt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.60)),
+    url('./assets/7446.jpg') center / cover;
+  background-attachment: fixed;
+  font-family: 'Upheaval', Arial, sans-serif;
+  padding: 2.5rem 1rem 2rem;
+  box-sizing: border-box;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 480px;
+}
+
+.home-logo {
+  width: 9rem;
+  margin-bottom: 0.35rem;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0 0 1.75rem;
+}
+
+/* ── Game cards ── */
+.home-games {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.home-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.1rem;
+  background: rgba(10, 6, 18, 0.75);
+  border: 2px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.home-card:hover {
+  border-color: rgba(240,184,64,0.5);
+  background: rgba(10, 6, 18, 0.75);
+  box-shadow: 0 0 20px rgba(240,184,64,0.15);
+}
+
+.home-card--won  { border-color: rgba(93,219,106,0.35); }
+.home-card--lost { border-color: rgba(220,92,92,0.3); }
+
+/* ── Icon box ── */
+.home-card-icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-card-img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+/* ── Completion badge ── */
+.home-badge {
+  position: absolute;
+  bottom: -7px;
+  right: -7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 900;
+  border: 2px solid rgba(10,6,18,0.9);
+  line-height: 1;
+}
+
+.home-badge--won  { background: #5ddb6a; color: #051a08; }
+.home-badge--lost { background: #e05c5c; color: #1a0505; }
+
+/* ── Card text ── */
+.home-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.home-card-name {
+  font-size: 1.4rem;
+  color: #f0b840;
+  letter-spacing: 0.05em;
+}
+
+.home-card-desc {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+}
+
+/* ── Counter ── */
+.home-count {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.1em;
+  margin: 2.5rem 0 0;
+}
+
+/* ── Ko-fi ── */
+.home-kofi {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  align-self: stretch;
+  padding: 0 2rem;
+  margin-top: 1.5rem;
+  box-sizing: border-box;
+}
+
+.home-kofi-img {
+  height: 40px;
+  border: 0;
+}
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  .home-page {
+    padding: 1.75rem 1rem 2rem;
+  }
+
+  .home-logo {
+    width: 7rem;
+  }
+
+  .home-card-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .home-card-img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .home-card-name {
+    font-size: 1.2rem;
+  }
+}

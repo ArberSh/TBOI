@@ -4,6 +4,7 @@ import { HINT_ICONS } from './BossHintIcons';
 import ALL_BOSSES from './bosses.json';
 import firegif from './assets/fire.webp';
 import fireimg from './assets/fireimg.png';
+import DailyProgress from './DailyProgress';
 import './BossFinder.css';
 
 const CONFETTI_COLORS = [
@@ -264,17 +265,19 @@ export default function BossFinder() {
 
       <canvas ref={confettiRef} className="bf-confetti-canvas" />
 
-      {/* ── Top: logo · nav · streak ── */}
-      <div className="bf-top">
-        <img className="bf-logo" src="/logo.png" alt="Isaac Arcade" />
-        <nav className="bf-nav">
-          <Link className="bf-nav-link" to="/">Guess The Item</Link>
-          <span className="bf-nav-current">Boss Finder</span>
-        </nav>
-        <div className={`bf-streak-top${streak === 0 ? ' bf-streak-zero' : ''}`} title="Daily streak">
-          <img className="bf-fire" src={streak > 0 ? firegif : fireimg} alt="fire" />
-          <p className="bf-streak-num">{streak}</p>
+      {/* ── Header: logo + streak + daily progress ── */}
+      <div className="bf-header">
+        <div className="bf-top">
+          <Link to="/"><img className="bf-logo" src="/logo.png" alt="Isaac Arcade" /></Link>
+          <div className={`bf-streak-top${streak === 0 ? ' bf-streak-zero' : ''}`} title="Daily streak">
+            <img className="bf-fire" src={streak > 0 ? firegif : fireimg} alt="fire" />
+            <p className="bf-streak-num">{streak}</p>
+          </div>
         </div>
+        <DailyProgress
+          currentPage="bf"
+          bfOverride={{ done: gameOver, won }}
+        />
       </div>
 
       {/* ── Card ── */}
