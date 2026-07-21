@@ -16,6 +16,11 @@
 }
 
 /* ── Page ── */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .bf-page {
   min-height: 100vh;
   display: flex;
@@ -27,6 +32,9 @@
     url('./assets/7446.jpg') center / cover;
   background-attachment: fixed;
   font-family: 'Upheaval', Arial, sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* ── Header (top bar + daily progress) ── */

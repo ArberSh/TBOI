@@ -17,7 +17,7 @@ const GAMES = [
   {
     id: 'bf',
     label: 'Boss Finder',
-    to: '/boss-preview-x7k2m9',
+    to: '/boss-finder',
     icon: '/images/items/boss-portraits/boss-portraits/monstro.png',
   },
 ];

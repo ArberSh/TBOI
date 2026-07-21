@@ -2,7 +2,7 @@ import { lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 
-const BOSS_ROUTE = '/boss-preview-x7k2m9'
+const BOSS_ROUTE = '/boss-finder'
 const Home         = lazy(() => import('./Home'))
 const GuessTheItem = lazy(() => import('./GuessTheItem'))
 const BossFinder   = lazy(() => import('./BossFinder'))

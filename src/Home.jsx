@@ -37,7 +37,7 @@ const GAMES = [
   },
   {
     id: 'bf',
-    to: '/boss-preview-x7k2m9',
+    to: '/boss-finder',
     icon: '/images/items/boss-portraits/boss-portraits/monstro.png',
     name: 'Boss Finder',
     desc: 'Figure out the daily Isaac boss from a series of hints',
