@@ -239,15 +239,18 @@ a:has(.bf-logo) {
 
 .bf-input-wrap {
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .bf-input {
   width: 100%;
+  box-sizing: border-box;
   background: rgba(255,255,255,0.07);
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: 6px;
-  padding: 0.65rem 0.9rem;
-  font-size: 1.05rem;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.95rem;
   font-family: 'Upheaval', Arial, sans-serif;
   color: #fff;
   outline: none;
