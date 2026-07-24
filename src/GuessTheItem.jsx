@@ -793,6 +793,7 @@ useEffect(() => {
       </div>
 
       <div className="Buttons_Container">
+        <Link className="gti-footer-link" to="/privacy">Privacy Policy</Link>
         <a href='https://ko-fi.com/E1E81M8I3S' target='_blank' rel='noopener noreferrer'>
           <img className='logoko-fi' src='https://storage.ko-fi.com/cdn/kofi5.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' />
         </a>

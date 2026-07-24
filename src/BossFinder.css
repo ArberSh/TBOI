@@ -497,14 +497,28 @@ a:has(.bf-logo) {
   color: #f0b840;
 }
 
-/* ── Ko-fi ── */
+/* ── Ko-fi / footer ── */
 .bf-buttons-container {
   padding: 0 2rem;
   margin-top: 1.5rem;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-end;
+}
+
+.bf-footer-link {
+  font-family: 'Upheaval', Arial, sans-serif;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.28);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  padding-bottom: 2px;
+  transition: color 0.15s;
+}
+
+.bf-footer-link:hover {
+  color: rgba(240,184,64,0.7);
 }
 
 .bf-kofi {

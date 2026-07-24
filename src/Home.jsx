@@ -87,6 +87,7 @@ export default function Home() {
       </div>
 
       <div className="home-kofi">
+        <Link className="home-footer-link" to="/privacy">Privacy Policy</Link>
         <a href="https://ko-fi.com/E1E81M8I3S" target="_blank" rel="noopener noreferrer">
           <img
             className="home-kofi-img"

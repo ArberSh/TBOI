@@ -2,10 +2,11 @@ import { lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 
-const BOSS_ROUTE = '/boss-finder'
-const Home         = lazy(() => import('./Home'))
-const GuessTheItem = lazy(() => import('./GuessTheItem'))
-const BossFinder   = lazy(() => import('./BossFinder'))
+const BOSS_ROUTE    = '/boss-finder'
+const Home          = lazy(() => import('./Home'))
+const GuessTheItem  = lazy(() => import('./GuessTheItem'))
+const BossFinder    = lazy(() => import('./BossFinder'))
+const PrivacyPolicy = lazy(() => import('./PrivacyPolicy'))
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           path={BOSS_ROUTE}
           element={<Suspense fallback={null}><BossFinder /></Suspense>}
         />
+        <Route path="/privacy" element={<Suspense fallback={null}><PrivacyPolicy /></Suspense>} />
       </Routes>
     </BrowserRouter>
   )

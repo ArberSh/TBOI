@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "monstro",
     "name": "Monstro",
@@ -8,12 +8,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Monstro",
     "dlc": "rebirth",
     "hints": [
-      { "type": "jump",        "text": "Launches into the air and crashes down on the player's position" },
-      { "type": "tears_burst", "text": "The landing releases a spread of projectiles fanning outward" },
       { "type": "chase",       "text": "Between big leaps, makes small hops toward the player to close distance" },
-      { "type": "tears_burst", "text": "Standing behind the landing point after its jump avoids the burst entirely" },
+      { "type": "jump",        "text": "Launches into the air and crashes down on the player's position" },
       { "type": "jump",        "text": "Its entire moveset: small hops to close in, then an off-screen leap aimed at the player — nothing else" },
-      { "type": "chase",       "text": "A grotesque mouth-shaped creature; one of the first bosses of the Basement" }
+      { "type": "tears_burst", "text": "The landing releases a spread of projectiles fanning outward" },
+      { "type": "tears_burst", "text": "Standing behind the landing point after its jump avoids the burst entirely" },
+      { "type": "chase",       "text": "A grotesque mouth-shaped creature; one of the first bosses of the Basement" },
+      { "type": "multi_phase", "text": "Sometimes attacks with two consecutive off-screen leaps in rapid succession — the double-jump variant leaves no recovery window between the two landings" },
+      { "type": "tears_aimed", "text": "The projectile spread from each landing fires in a fixed forward-facing arc — standing behind the impact point avoids the entire burst" }
     ]
   },
   {
@@ -25,12 +27,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Larry_Jr.",
     "dlc": "rebirth",
     "hints": [
-      { "type": "chase",        "text": "Chases the player around the room with no projectile attacks" },
-      { "type": "floor_hazard", "text": "Randomly drops poop while moving, cluttering the room with obstacles" },
       { "type": "splits",       "text": "Its body is composed of multiple segments, each with its own HP" },
       { "type": "splits",       "text": "Hitting the body at the right junction can split it into two independent enemies" },
+      { "type": "floor_hazard", "text": "Randomly drops poop while moving, cluttering the room with obstacles" },
+      { "type": "chase",        "text": "Chases the player around the room with no projectile attacks" },
       { "type": "chase",        "text": "Each split-off piece continues chasing independently — one threat becomes several" },
-      { "type": "splits",       "text": "A segmented worm from the Basement; multiple copies can be present in a fight from the start" }
+      { "type": "splits",       "text": "A segmented worm from the Basement; multiple copies can be present in a fight from the start" },
+      { "type": "floor_hazard", "text": "Each dropped poop pile is permanent — repeated splits compound the clutter, progressively shrinking navigable space" },
+      { "type": "multi_phase",  "text": "Body segments trailing the head all deal contact damage — the entire chain is a threat, not just the leading piece" }
     ]
   },
   {
@@ -42,12 +46,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Duke_of_Flies",
     "dlc": "rebirth",
     "hints": [
-      { "type": "flight",  "text": "Hovers diagonally around the room, never touching the floor" },
-      { "type": "summons", "text": "Periodically coughs up Attack Flies" },
       { "type": "orbit",   "text": "The spawned flies orbit around it, physically blocking the player's shots" },
-      { "type": "summons", "text": "Once enough flies accumulate, sends them all out to chase the player" },
+      { "type": "flight",  "text": "Hovers diagonally around the room, never touching the floor" },
       { "type": "flight",  "text": "Has no direct attacks — relies entirely on its fly entourage for offense" },
-      { "type": "orbit",   "text": "A bloated fly-boss from the Basement; its living projectile-shield makes safe targeting difficult" }
+      { "type": "summons", "text": "Periodically coughs up Attack Flies" },
+      { "type": "summons", "text": "Once enough flies accumulate, sends them all out to chase the player" },
+      { "type": "orbit",   "text": "A bloated fly-boss from the Basement; its living projectile-shield makes safe targeting difficult" },
+      { "type": "multi_phase", "text": "The orbiting fly shield replenishes automatically — killing individual flies provides only a brief gap before new ones replace them" },
+      { "type": "homing",      "text": "Once the fly shield collapses, the released swarm actively homes in on the player — the transition from shield to chase swarm is the most dangerous moment of the fight" }
     ]
   },
   {
@@ -60,12 +66,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Gemini",
     "dlc": "rebirth",
     "hints": [
-      { "type": "chase",       "text": "One body pursues the player and periodically rushes at increased speed" },
       { "type": "tears_aimed", "text": "A smaller second body fires projectiles at the player while tethered" },
-      { "type": "multi_phase", "text": "The fight changes based on which of the two bodies is killed first" },
-      { "type": "charge",      "text": "If the small body detaches, it charges furiously with high momentum" },
       { "type": "tears_aimed", "text": "Killing the large body first leaves only the fast-charging small body" },
-      { "type": "charge",      "text": "A conjoined twin boss from the Basement — two bodies, one fight" }
+      { "type": "chase",       "text": "One body pursues the player and periodically rushes at increased speed" },
+      { "type": "charge",      "text": "If the small body detaches, it charges furiously with high momentum" },
+      { "type": "multi_phase", "text": "The fight changes based on which of the two bodies is killed first" },
+      { "type": "charge",      "text": "A conjoined twin boss from the Basement — two bodies, one fight" },
+      { "type": "multi_phase", "text": "Staying near the large body keeps the tether taut, preventing the small body from gaining the slack needed to begin charging independently" },
+      { "type": "chase",       "text": "The small body's momentum during a charge carries it into walls and back — its ricochet trajectory can catch players who dodge into corners" }
     ]
   },
   {
@@ -77,12 +85,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Pin",
     "dlc": "rebirth",
     "hints": [
+      { "type": "explosive",    "text": "Can partially surface to fire a single red Ipecac shot before diving back under" },
       { "type": "floor_hazard", "text": "Spends most of the fight underground, surfacing only to strike" },
+      { "type": "floor_hazard", "text": "Only briefly vulnerable during and immediately after surfacing" },
       { "type": "jump",         "text": "Launches toward the player's position when leaping out of the ground" },
       { "type": "tears_burst",  "text": "Longer leaps fire diagonal projectiles on takeoff and mid-air" },
-      { "type": "explosive",    "text": "Can partially surface to fire a single red Ipecac shot before diving back under" },
-      { "type": "floor_hazard", "text": "Only briefly vulnerable during and immediately after surfacing" },
-      { "type": "jump",         "text": "A worm-like boss that stays burrowed between attacks; one of the most widely-distributed bosses in the game" }
+      { "type": "jump",         "text": "A worm-like boss that stays burrowed between attacks; one of the most widely-distributed bosses in the game" },
+      { "type": "tears_aimed",  "text": "Targets the player's current position at the moment of launching from underground — moving immediately after hearing the burrowing sound shifts the surface point" },
+      { "type": "explosive",    "text": "The Ipecac shot has a pronounced arc; it always detonates ahead of and below the player's position at firing time, not at the player's feet" }
     ]
   },
   {
@@ -95,12 +105,14 @@
     "dlc": "rebirth",
     "is_harbinger": true,
     "hints": [
-      { "type": "charge",      "text": "Charges across the room at high speed" },
-      { "type": "summons",     "text": "Spawns flies throughout the fight" },
-      { "type": "multi_phase", "text": "Loses its lower body at half health, fundamentally changing how it moves" },
-      { "type": "charge",      "text": "In phase two the severed head makes repeated horizontal charge passes" },
       { "type": "tears_aimed", "text": "The charging head also spits shots at the player during its passes" },
-      { "type": "multi_phase", "text": "First of the four Horsemen — a gaunt rider whose horse is destroyed midway through the fight" }
+      { "type": "charge",      "text": "Charges across the room at high speed" },
+      { "type": "charge",      "text": "In phase two the severed head makes repeated horizontal charge passes" },
+      { "type": "multi_phase", "text": "Loses its lower body at half health, fundamentally changing how it moves" },
+      { "type": "summons",     "text": "Spawns flies throughout the fight" },
+      { "type": "multi_phase", "text": "First of the four Horsemen — a gaunt rider whose horse is destroyed midway through the fight" },
+      { "type": "chase",       "text": "The horizontal charges always run the full room width — Famine never curves, angles, or cuts short the charge path" },
+      { "type": "summons",     "text": "Fly spawns continue through both phases; the severed head must still be dodged while clearing persistent minions at the same time" }
     ]
   },
   {
@@ -112,12 +124,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Peep",
     "dlc": "rebirth",
     "hints": [
-      { "type": "spawns_creep", "text": "Periodically oozes yellow creep puddles that deal contact damage" },
-      { "type": "tears_ring",   "text": "Fires a burst of 8 projectiles outward in all directions" },
-      { "type": "jump",         "text": "Leaps toward the player and fires a ring of 12 projectiles on landing" },
-      { "type": "multi_phase",  "text": "Loses a body part at two-thirds and one-third HP — gone permanently" },
       { "type": "orbit",        "text": "Detached parts bounce diagonally off walls forever, invulnerable, dealing contact damage — they do not fire" },
-      { "type": "spawns_creep", "text": "A bloated creature from the Caves; its popping eyes and floor creep make the arena increasingly hazardous" }
+      { "type": "spawns_creep", "text": "Periodically oozes yellow creep puddles that deal contact damage" },
+      { "type": "jump",         "text": "Leaps toward the player and fires a ring of 12 projectiles on landing" },
+      { "type": "tears_ring",   "text": "Fires a burst of 8 projectiles outward in all directions" },
+      { "type": "multi_phase",  "text": "Loses a body part at two-thirds and one-third HP — gone permanently" },
+      { "type": "spawns_creep", "text": "A bloated creature from the Caves; its popping eyes and floor creep make the arena increasingly hazardous" },
+      { "type": "orbit",        "text": "Both bouncing eyes are added permanently — the maximum of two invulnerable obstacles creates sustained blockades that don't diminish as HP drops" },
+      { "type": "jump",         "text": "The jump-landing ring fires 12 shots; the stationary burst fires 8 — two distinct counts depending on which attack Peep uses" }
     ]
   },
   {
@@ -130,11 +144,13 @@
     "dlc": "rebirth",
     "hints": [
       { "type": "charge",  "text": "Charges in a straight line when aligned cardinally with the player" },
-      { "type": "summons", "text": "Spawns Charger enemies throughout the fight" },
       { "type": "charge",  "text": "Her own charges can run over and kill the Chargers she spawned" },
-      { "type": "summons", "text": "Up to five Chargers can be alive simultaneously" },
       { "type": "charge",  "text": "Eats bombs placed in her charge path, briefly stunning herself" },
-      { "type": "summons", "text": "A large segmented grub from the Caves; charges and spawned Chargers are her entire toolkit" }
+      { "type": "summons", "text": "Spawns Charger enemies throughout the fight" },
+      { "type": "summons", "text": "Up to five Chargers can be alive simultaneously" },
+      { "type": "summons", "text": "A large segmented grub from the Caves; charges and spawned Chargers are her entire toolkit" },
+      { "type": "multi_phase", "text": "The charge always travels the full room length — positioning behind Chub as she finishes a pass gives the safest window to deal damage" },
+      { "type": "explosive",   "text": "Bomb placement in her path triggers an eat-and-stun even while Chargers are active — the stun is the primary opening for sustained damage" }
     ]
   },
   {
@@ -146,12 +162,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Widow",
     "dlc": "rebirth",
     "hints": [
-      { "type": "jump",         "text": "Makes large leaps across the room toward the player" },
       { "type": "spawns_creep", "text": "Leaves a white creep puddle at each landing point" },
+      { "type": "jump",         "text": "Makes large leaps across the room toward the player" },
+      { "type": "jump",         "text": "Every landing simultaneously deposits creep and a new minion — hazards accumulate fast" },
       { "type": "summons",      "text": "Spawns a Sack on each landing; up to three alive at once" },
       { "type": "summons",      "text": "Can spit spiders directly at the player" },
-      { "type": "jump",         "text": "Every landing simultaneously deposits creep and a new minion — hazards accumulate fast" },
-      { "type": "spawns_creep", "text": "A spider-like boss; white creep and persistent Sacks define the late-fight arena" }
+      { "type": "spawns_creep", "text": "A spider-like boss; white creep and persistent Sacks define the late-fight arena" },
+      { "type": "floor_hazard", "text": "Creep puddles from each landing are permanent — the arena shrinks progressively as each jump deposits another contaminated zone" },
+      { "type": "splits",       "text": "Killing Sacks releases additional spiders — the minions themselves compound the hazard on death" }
     ]
   },
   {
@@ -164,11 +182,13 @@
     "dlc": "rebirth",
     "hints": [
       { "type": "tears_burst", "text": "Fires a spread of 5 projectiles in a wide arc" },
+      { "type": "tears_burst", "text": "Can direct the spread in multiple directions — but never directly behind herself" },
       { "type": "summons",     "text": "Spawns Pooters during the fight" },
       { "type": "summons",     "text": "Spawns pairs of weak Attack Flies behind herself" },
-      { "type": "tears_burst", "text": "Can direct the spread in multiple directions — but never directly behind herself" },
       { "type": "summons",     "text": "Also summons pairs of Boils in front of herself" },
-      { "type": "tears_burst", "text": "A large stationary creature anchored to the top of the Caves room — the only boss that never moves" }
+      { "type": "tears_burst", "text": "A large stationary creature anchored to the top of the Caves room — the only boss that never moves" },
+      { "type": "tears_aimed", "text": "Positioning directly below Gurdy along the bottom wall is safer — the spread fires from her mouth and cannot reach directly behind her" },
+      { "type": "multi_phase", "text": "The Pooters, Attack Flies, and Boils each behave differently after spawn — managing three simultaneous enemy types with different movement patterns defines the late-fight challenge" }
     ]
   },
   {
@@ -182,10 +202,12 @@
     "hints": [
       { "type": "charge",     "text": "Charges at the player, bouncing off walls and obstacles until losing momentum" },
       { "type": "jump",       "text": "Jumps and fires a ring of 8 tears in all directions on landing" },
-      { "type": "summons",    "text": "Spawns a Pooter during the fight" },
       { "type": "charge",     "text": "The charge has high momentum — wall ricochets make the path unpredictable" },
       { "type": "tears_ring", "text": "The jump-and-ring-fire on landing fires 8 simultaneous outward projectiles" },
-      { "type": "charge",     "text": "A smaller, mobile version of a Caves boss; trades immobility for charge-and-leap aggression" }
+      { "type": "summons",    "text": "Spawns a Pooter during the fight" },
+      { "type": "charge",     "text": "A smaller, mobile version of a Caves boss; trades immobility for charge-and-leap aggression" },
+      { "type": "tears_ring",  "text": "The 8-projectile ring is tied to the landing, not a stationary cooldown — the jump arc is the reliable telegraph for when to dodge outward" },
+      { "type": "multi_phase", "text": "Charge momentum varies with room size — in smaller rooms, wall ricochets are more frequent and the path becomes significantly harder to predict" }
     ]
   },
   {
@@ -198,11 +220,13 @@
     "dlc": "rebirth",
     "hints": [
       { "type": "charge",      "text": "Charges in a straight line when aligned cardinally with the player" },
-      { "type": "summons",     "text": "Spawns Suckers to assist in the fight" },
-      { "type": "multi_phase", "text": "Shrinks continuously as it takes damage — no HP thresholds, just constant escalation" },
       { "type": "charge",      "text": "The smaller it gets, the faster and more frequent its charges become" },
       { "type": "charge",      "text": "Eats bombs placed in its charge path, briefly stunning itself" },
-      { "type": "multi_phase", "text": "A large creature from the Caves similar to another boss; uniquely, dealing damage actively makes it more dangerous" }
+      { "type": "multi_phase", "text": "Shrinks continuously as it takes damage — no HP thresholds, just constant escalation" },
+      { "type": "summons",     "text": "Spawns Suckers to assist in the fight" },
+      { "type": "multi_phase", "text": "A large creature from the Caves similar to another boss; uniquely, dealing damage actively makes it more dangerous" },
+      { "type": "chase",       "text": "At minimum size, C.H.A.D. moves almost continuously with near-zero pause between attacks — the fight shifts from clear dodge-windows to near-constant pressure" },
+      { "type": "summons",     "text": "Suckers fire single aimed projectiles; managing them while continuously dodging charges requires staying in motion and never committing to a corner" }
     ]
   },
   {
@@ -215,11 +239,13 @@
     "dlc": "rebirth",
     "hints": [
       { "type": "flight",       "text": "Flies diagonally around the room, bouncing off walls" },
-      { "type": "floor_hazard", "text": "Occasionally drops poop while moving, cluttering the arena" },
       { "type": "splits",       "text": "Splits into smaller copies when its segments take damage" },
       { "type": "flight",       "text": "Multiple independent copies can be active in a single fight" },
       { "type": "splits",       "text": "No projectile attacks — all danger is contact with an accumulating number of flying worms" },
-      { "type": "flight",       "text": "A skeletal flying worm — the undead counterpart of a Basement boss, found in the Catacombs" }
+      { "type": "floor_hazard", "text": "Occasionally drops poop while moving, cluttering the arena" },
+      { "type": "flight",       "text": "A skeletal flying worm — the undead counterpart of a Basement boss, found in the Catacombs" },
+      { "type": "multi_phase",  "text": "As more copies accumulate, their crossing trajectories create unavoidable collision zones — the fight escalates purely through numbers" },
+      { "type": "summons",      "text": "Splitting triggers automatically when any segment is destroyed — a few rapid hits can escalate from one worm to four nearly simultaneously" }
     ]
   },
   {
@@ -231,12 +257,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Monstro_II",
     "dlc": "rebirth",
     "hints": [
+      { "type": "chase",      "text": "Also hops toward the player between off-screen leaps" },
       { "type": "laser",      "text": "Fires a horizontal Brimstone beam when the player is to its left or right" },
       { "type": "jump",       "text": "Leaps off-screen and lands on the player's position twice in a row" },
       { "type": "tears_ring", "text": "First landing fires 8 projectiles outward in all directions" },
       { "type": "summons",    "text": "Second landing spawns Suckers" },
-      { "type": "chase",      "text": "Also hops toward the player between off-screen leaps" },
-      { "type": "laser",      "text": "A larger, angrier version of a Basement boss — same leap pattern, now with a Brimstone laser, found in the Depths" }
+      { "type": "laser",      "text": "A larger, angrier version of a Basement boss — same leap pattern, now with a Brimstone laser, found in the Depths" },
+      { "type": "tears_aimed", "text": "The Brimstone beam fires with very little charge-up time — the brief visual glow is the only warning before the horizontal beam activates" },
+      { "type": "jump",        "text": "Both landings aim for the player's current position — moving between the two jumps shifts where the Suckers spawn after the second landing" }
     ]
   },
   {
@@ -249,11 +277,13 @@
     "dlc": "rebirth",
     "hints": [
       { "type": "explosive",    "text": "Fires an arcing black Ipecac shot that leaves a large black creep puddle on impact" },
-      { "type": "jump",         "text": "Leaps off-screen and lands on the player's position twice in a row" },
       { "type": "spawns_creep", "text": "First landing creates a large black creep puddle that persists for the entire fight" },
-      { "type": "summons",      "text": "Second landing spawns Clots" },
       { "type": "chase",        "text": "Also makes short hops toward the player between off-screen leaps" },
-      { "type": "spawns_creep", "text": "A tar-like creature from the Depths; covers the floor with permanent black creep, making the arena shrink over time" }
+      { "type": "jump",         "text": "Leaps off-screen and lands on the player's position twice in a row" },
+      { "type": "summons",      "text": "Second landing spawns Clots" },
+      { "type": "spawns_creep", "text": "A tar-like creature from the Depths; covers the floor with permanent black creep, making the arena shrink over time" },
+      { "type": "summons",      "text": "Clots spawned on the second landing leave additional creep puddles when they die — minion deaths compound the creep coverage throughout the fight" },
+      { "type": "jump",         "text": "Both landings target the player's position — repositioning between the two jumps shifts where the second cluster of Clots appears" }
     ]
   },
   {
@@ -265,12 +295,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Mom",
     "dlc": "rebirth",
     "hints": [
-      { "type": "stomp",   "text": "A giant foot descends from the ceiling and slams down on the player's position" },
-      { "type": "swipe",   "text": "A hand reaches in from a doorway to deal contact damage" },
-      { "type": "swipe",   "text": "An eye pokes out from a doorway — it does not fire, but deals contact damage" },
-      { "type": "summons", "text": "A piece of flesh extends from a doorway and spawns an enemy into the room" },
-      { "type": "stomp",   "text": "Foot, hand, eye, and flesh attacks can arrive from different walls in rapid succession" },
-      { "type": "stomp",   "text": "Only her limbs and eye are ever visible — she operates the entire room as her arena" }
+      { "type": "swipe",       "text": "A hand reaches in from a doorway to deal contact damage" },
+      { "type": "swipe",       "text": "An eye pokes out from a doorway — it does not fire, but deals contact damage" },
+      { "type": "stomp",       "text": "A giant foot descends from the ceiling and slams down on the player's position" },
+      { "type": "multi_phase", "text": "Foot, hand, eye, and flesh attacks can arrive from different walls in rapid succession" },
+      { "type": "summons",     "text": "A piece of flesh extends from a doorway and spawns an enemy into the room" },
+      { "type": "stomp",       "text": "Only her limbs and eye are ever visible — she operates the entire room as her arena" },
+      { "type": "chase",       "text": "Each limb attack independently targets Isaac's current position when it initiates — foot, hand, and eye each track separately before striking" },
+      { "type": "summons",     "text": "The flesh tendril from a doorway deposits a random floor enemy native to the current chapter — the spawned type is not fixed between attempts" }
     ]
   },
   {
@@ -282,12 +314,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Mega_Satan",
     "dlc": "rebirth",
     "hints": [
-      { "type": "summons",      "text": "Periodically summons waves of powerful minions and becomes invulnerable until every one is killed" },
       { "type": "invincible",   "text": "Three separate invulnerable summon phases trigger as its HP depletes" },
       { "type": "floor_hazard", "text": "Slams its fists into the ground to create expanding rings of fissures" },
       { "type": "tears_burst",  "text": "Slams its head down to launch a wide barrage of mortar-style tears" },
       { "type": "multi_phase",  "text": "Once its full HP pool is gone, transforms into a skull that vomits flames, zigzagging tears, and splitting projectiles" },
-      { "type": "multi_phase",  "text": "The secret final boss — requires a specific key to open the giant golden door at the end of The Chest or The Dark Room" }
+      { "type": "summons",      "text": "Periodically summons waves of powerful minions and becomes invulnerable until every one is killed" },
+      { "type": "multi_phase",  "text": "The secret final boss — requires a specific key to open the giant golden door at the end of The Chest or The Dark Room" },
+      { "type": "floor_hazard", "text": "The fist slams create expanding rock fissures that travel outward in multiple lines from the impact point — distinct from a single ground-stomp" },
+      { "type": "tears_burst",  "text": "The second form fires splitting projectiles that divide into additional shots mid-travel, compounding projectile density as they cross the room" }
     ]
   },
   {
@@ -300,12 +334,14 @@
     "dlc": "rebirth",
     "is_harbinger": true,
     "hints": [
-      { "type": "spawns_creep", "text": "Floats around the room leaving a continuous trail of damaging green creep" },
       { "type": "explosive",    "text": "Fires Ipecac-style shots that leave additional green creep puddles on impact" },
-      { "type": "summons",      "text": "Summons Chargers and Spitties during the fight (up to four at once)" },
+      { "type": "spawns_creep", "text": "Floats around the room leaving a continuous trail of damaging green creep" },
       { "type": "multi_phase",  "text": "The fight changes at half health — movement slows but projectile rate increases" },
+      { "type": "summons",      "text": "Summons Chargers and Spitties during the fight (up to four at once)" },
       { "type": "summons",      "text": "Second phase spawns Attack Flies instead of ground-based enemies" },
-      { "type": "spawns_creep", "text": "Second of the four Horsemen — a plague rider whose entire offense revolves around green creep and disease, found in Chapter 2" }
+      { "type": "spawns_creep", "text": "Second of the four Horsemen — a plague rider whose entire offense revolves around green creep and disease, found in Chapter 2" },
+      { "type": "multi_phase",  "text": "The phase transition occurs at exactly half health with no visual animation — movement speed halves and fire rate doubles in the same instant" },
+      { "type": "tears_burst",  "text": "Phase 2 Spitties fire projectiles in short rapid bursts, contrasting with the contact-charge behavior of the Chargers they replace" }
     ]
   },
   {
@@ -318,12 +354,14 @@
     "dlc": "rebirth",
     "is_harbinger": true,
     "hints": [
-      { "type": "charge",      "text": "Charges horizontally across the entire room three times in succession" },
-      { "type": "tears_ring",  "text": "Fires 8 projectiles outward in all directions" },
       { "type": "explosive",   "text": "Flies off-screen and drops five Troll Bombs before returning from the side" },
-      { "type": "multi_phase", "text": "The mount is destroyed at half health, completely changing how the boss moves" },
+      { "type": "charge",      "text": "Charges horizontally across the entire room three times in succession" },
       { "type": "charge",      "text": "After losing the horse, charges directly at Isaac with increasing speed and ever-tighter turns" },
-      { "type": "multi_phase", "text": "Third of the four Horsemen — an armored rider whose horse explodes when it falls, found in Chapter 3" }
+      { "type": "tears_ring",  "text": "Fires 8 projectiles outward in all directions" },
+      { "type": "multi_phase", "text": "The mount is destroyed at half health, completely changing how the boss moves" },
+      { "type": "multi_phase", "text": "Third of the four Horsemen — an armored rider whose horse explodes when it falls, found in Chapter 3" },
+      { "type": "tears_ring",  "text": "The 8-directional ring fires while War is briefly stationary — one of the only moments in the fight where he stops to attack in place" },
+      { "type": "chase",       "text": "Phase-2 charges track Isaac's position more tightly — the path bends mid-charge rather than running a fixed horizontal line" }
     ]
   },
   {
@@ -336,12 +374,14 @@
     "dlc": "rebirth",
     "is_harbinger": true,
     "hints": [
-      { "type": "summons",     "text": "Spawns large projectile weapons along the walls that accelerate toward the player after a brief delay" },
-      { "type": "homing",      "text": "Also spawns a pair of these weapons that immediately home in on the player" },
       { "type": "effect",      "text": "Uses a time-slowing ability that reduces the player's movement speed for a brief window" },
+      { "type": "homing",      "text": "Also spawns a pair of these weapons that immediately home in on the player" },
       { "type": "multi_phase", "text": "Dismounts at half health; the horse then continuously charges across the room at three different heights" },
+      { "type": "homing",      "text": "Spawns large projectile weapons along the walls that accelerate toward the player after a brief delay" },
       { "type": "summons",     "text": "After dismounting, occasionally spawns armored enemies — the horse keeps charging even after the rider is defeated" },
-      { "type": "summons",     "text": "Fourth and final Horseman — death personified; his scythes and horse remain threats even after he falls, found in Chapter 4" }
+      { "type": "summons",     "text": "Fourth and final Horseman — death personified; his scythes and horse remain threats even after he falls, found in Chapter 4" },
+      { "type": "effect",      "text": "The time-slow creates a distinctive screen vignette alongside the movement penalty — one of the few boss abilities that alters both visual presentation and physics simultaneously" },
+      { "type": "multi_phase", "text": "After dismounting, the horse charges at three distinct heights — low, mid, and high — each pass targeting a different vertical lane" }
     ]
   },
   {
@@ -353,12 +393,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Fallen",
     "dlc": "rebirth",
     "hints": [
-      { "type": "tears_burst", "text": "Fires a spread of projectiles in succession toward the player" },
       { "type": "chase",       "text": "Moves in cardinal directions, pursuing the player between attacks" },
       { "type": "laser",       "text": "After taking damage, fires Brimstone lasers in all four cardinal directions simultaneously" },
-      { "type": "multi_phase", "text": "At half health, permanently splits into two independent copies" },
       { "type": "laser",       "text": "Both copies after the split are fully functional with the same Brimstone and spread attacks" },
-      { "type": "multi_phase", "text": "A demonic winged creature that can appear as a special boss in any chapter — its split at half health is its defining trait" }
+      { "type": "tears_burst", "text": "Fires a spread of projectiles in succession toward the player" },
+      { "type": "multi_phase", "text": "At half health, permanently splits into two independent copies" },
+      { "type": "multi_phase", "text": "A demonic winged creature that can appear as a special boss in any chapter — its split at half health is its defining trait" },
+      { "type": "flight",      "text": "Moves only in four cardinal directions, never diagonally — the structured movement pattern is more predictable than most flying bosses" },
+      { "type": "splits",      "text": "The split into two copies is permanent and irreversible — the fight always ends as a two-body encounter once the split threshold is crossed" }
     ]
   },
   {
@@ -371,11 +413,12 @@
     "dlc": "rebirth",
     "hints": [
       { "type": "tears_burst", "text": "Fires disorganized bursts of red projectiles outward, similar to an early-game boss" },
-      { "type": "tears_ring",  "text": "Releases expanding rings of fire projectiles that rotate as they spread outward" },
-      { "type": "summons",     "text": "Spits out a Hopper enemy below itself" },
-      { "type": "tears_ring",  "text": "Can release two rings simultaneously rotating in opposite directions, or a single larger ring" },
       { "type": "tears_burst", "text": "Has no phase changes — the same attacks throughout, with no HP-based escalation" },
-      { "type": "tears_ring",  "text": "A large stationary creature from the Depths; combines burst fire, rotating flame rings, and a minion" }
+      { "type": "tears_ring",  "text": "Releases expanding rings of fire projectiles that rotate as they spread outward" },
+      { "type": "multi_phase", "text": "Can release two rings simultaneously rotating in opposite directions, or a single larger ring" },
+      { "type": "summons",     "text": "Spits out a Hopper enemy below itself" },
+      { "type": "tears_ring",  "text": "A large stationary creature from the Depths; combines burst fire, rotating flame rings, and a minion" },
+      { "type": "summons",     "text": "The Hopper it spawns appears directly below Mega Maw's fixed position and begins jumping erratically around the room immediately" }
     ]
   },
   {
@@ -387,12 +430,13 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Gate",
     "dlc": "rebirth",
     "hints": [
-      { "type": "tears_ring", "text": "Fires expanding rings of projectiles that rotate clockwise or counter-clockwise" },
-      { "type": "summons",    "text": "Spawns Leaper enemies that land anywhere in the room and immediately attack" },
-      { "type": "tears_ring", "text": "Can fire a ring of 11 projectiles straight outward in all directions simultaneously" },
-      { "type": "summons",    "text": "Up to four Leapers can be alive at once" },
-      { "type": "laser",      "text": "When two or more Leapers are alive, charges up and fires a Brimstone laser that bends to connect through each one" },
-      { "type": "laser",      "text": "A large stationary posthumous creature from the Necropolis — its signature laser hunts the player through its own minions" }
+      { "type": "laser",       "text": "When two or more Leapers are alive, charges up and fires a Brimstone laser that bends to connect through each one" },
+      { "type": "tears_ring",  "text": "Fires expanding rings of projectiles that rotate clockwise or counter-clockwise" },
+      { "type": "tears_ring",  "text": "Can fire a ring of 11 projectiles straight outward in all directions simultaneously" },
+      { "type": "summons",     "text": "Spawns Leaper enemies that land anywhere in the room and immediately attack" },
+      { "type": "summons",     "text": "Up to four Leapers can be alive at once" },
+      { "type": "laser",       "text": "A large stationary posthumous creature from the Necropolis — its signature laser hunts the player through its own minions" },
+      { "type": "multi_phase", "text": "The fight has no HP-based escalation — The Gate fires at the same rate and speed at low HP as at full HP; difficulty is determined by Leaper count, not damage phases" }
     ]
   },
   {
@@ -404,12 +448,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Cage",
     "dlc": "rebirth",
     "hints": [
-      { "type": "jump",         "text": "Leaps off-screen and tries to land near the player, predicting their movement" },
       { "type": "spawns_creep", "text": "Landing creates a grey creep puddle and sends out lines of rock waves" },
-      { "type": "tears_burst",  "text": "Fires multiple streams of projectiles in a spiral pattern" },
+      { "type": "jump",         "text": "Leaps off-screen and tries to land near the player, predicting their movement" },
       { "type": "charge",       "text": "Curls into a ball and charges at the player, bouncing off walls" },
+      { "type": "tears_burst",  "text": "Fires multiple streams of projectiles in a spiral pattern" },
       { "type": "summons",      "text": "Spawns a Vis that fires Brimstone lasers" },
-      { "type": "jump",         "text": "A large rolling creature from the Depths; its predictive leap, spiral fire, and Vis minion combine for a chaotic fight" }
+      { "type": "jump",         "text": "A large rolling creature from the Depths; its predictive leap, spiral fire, and Vis minion combine for a chaotic fight" },
+      { "type": "floor_hazard", "text": "Rock waves from each landing travel outward in four cardinal directions and briefly persist — they layer on top of the creep puddle to make the impact point temporarily impassable from multiple angles" },
+      { "type": "tears_burst",  "text": "The spiral fire pattern rotates continuously as shots expand outward — the outer ring moves faster than the inner, creating a weaving spread rather than a static pattern" }
     ]
   },
   {
@@ -421,12 +467,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Adversary",
     "dlc": "rebirth",
     "hints": [
+      { "type": "effect", "text": "Temporarily dims the room during the fight — a localized darkness effect, not a permanent run curse" },
       { "type": "laser",  "text": "Fires a Brimstone laser toward the player in any cardinal direction" },
       { "type": "jump",   "text": "Flies off-screen and plummets down on the player's position, creating an expanding ring of rock waves on impact" },
-      { "type": "summons","text": "Summons spiders during the fight" },
       { "type": "laser",  "text": "The laser bends slightly to follow the player's movement as it fires — harder to dodge at distance" },
-      { "type": "effect", "text": "Temporarily dims the room during the fight — a localized darkness effect, not a permanent run curse" },
-      { "type": "jump",   "text": "A flying demon from the Necropolis — dive-bombing, a tracking laser, and room-darkening define its fight" }
+      { "type": "summons","text": "Summons spiders during the fight" },
+      { "type": "jump",   "text": "A flying demon from the Necropolis — dive-bombing, a tracking laser, and room-darkening define its fight" },
+      { "type": "flight", "text": "Hovers diagonally around the room at medium speed before dropping into a dive — the abrupt change from drift to plummet distinguishes the attack from general movement" },
+      { "type": "effect", "text": "The room-darkening is a fight-specific condition rather than a run curse — it lifts immediately on the boss's death, distinguishing it from Curse of Darkness" }
     ]
   },
   {
@@ -439,11 +487,13 @@
     "dlc": "rebirth",
     "hints": [
       { "type": "flight",      "text": "Floats around the room like a flying boss, but considerably faster" },
-      { "type": "summons",     "text": "Spawns Attack Flies that orbit it loosely, blocking the player's projectiles" },
       { "type": "tears_burst", "text": "Fires a spray of projectiles outward, similar to a well-known early boss" },
-      { "type": "summons",     "text": "Also spawns spiders during the fight" },
       { "type": "tears_ring",  "text": "Fires blood shots in all 8 directions simultaneously, releasing its orbiting flies to chase the player" },
-      { "type": "flight",      "text": "A decayed, skeletal flying boss from the Catacombs — the posthumous counterpart of a Chapter 1 boss" }
+      { "type": "summons",     "text": "Spawns Attack Flies that orbit it loosely, blocking the player's projectiles" },
+      { "type": "summons",     "text": "Also spawns spiders during the fight" },
+      { "type": "flight",      "text": "A decayed, skeletal flying boss from the Catacombs — the posthumous counterpart of a Chapter 1 boss" },
+      { "type": "orbit",       "text": "The orbiting flies drift in loose, variable paths rather than maintaining a tight ring — the shot-blocking coverage is irregular rather than uniform" },
+      { "type": "tears_burst", "text": "The spray pattern is visually identical to the Duke of Flies' burst attack — an intentional identifier that The Husk is that boss's posthumous counterpart" }
     ]
   },
   {
@@ -455,12 +505,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Wretched",
     "dlc": "rebirth",
     "hints": [
-      { "type": "jump",         "text": "Makes large leaps across the room toward the player" },
       { "type": "spawns_creep", "text": "Leaves a large white creep puddle at each landing point" },
+      { "type": "jump",         "text": "Makes large leaps across the room toward the player" },
+      { "type": "jump",         "text": "Every landing simultaneously creates creep, fires a projectile ring, and spawns minions" },
       { "type": "tears_ring",   "text": "Fires a ring of 8 projectiles outward on each landing — unlike its Chapter 2 counterpart" },
       { "type": "summons",      "text": "Spawns spiders and larger spider enemies on landing" },
-      { "type": "jump",         "text": "Every landing simultaneously creates creep, fires a projectile ring, and spawns minions" },
-      { "type": "spawns_creep", "text": "A skeletal spider-like boss from the Catacombs — a deadlier version of a Chapter 1 alternate boss" }
+      { "type": "spawns_creep", "text": "A skeletal spider-like boss from the Catacombs — a deadlier version of a Chapter 1 alternate boss" },
+      { "type": "summons",      "text": "Spawns full spiders and Trites rather than Widow's Sacks — the minion type is a direct distinguishing marker from its Chapter 1 counterpart" },
+      { "type": "tears_ring",   "text": "The projectile ring on each landing is unique to this version — Widow deposits only creep and Sacks at landing points, never a direct projectile burst" }
     ]
   },
   {
@@ -472,12 +524,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Teratoma",
     "dlc": "rebirth",
     "hints": [
-      { "type": "chase",  "text": "Slowly bounces off walls, pursuing the player by contact" },
-      { "type": "splits", "text": "Splits into smaller copies when damaged" },
-      { "type": "splits", "text": "Undergoes three splitting stages — large into medium, medium into small" },
-      { "type": "chase",  "text": "Each smaller form moves noticeably faster than the last" },
-      { "type": "splits", "text": "The smallest fragments spawn spiders on death, adding persistent hazards at the end of the fight" },
-      { "type": "summons","text": "A blob-like creature from the Womb with no projectile attacks at all — pure contact pressure and spider spawns" }
+      { "type": "splits",       "text": "Splits into smaller copies when damaged" },
+      { "type": "splits",       "text": "Undergoes three splitting stages — large into medium, medium into small" },
+      { "type": "summons",      "text": "The smallest fragments spawn spiders on death, adding persistent hazards at the end of the fight" },
+      { "type": "chase",        "text": "Slowly bounces off walls, pursuing the player by contact" },
+      { "type": "chase",        "text": "Each smaller form moves noticeably faster than the last" },
+      { "type": "summons",      "text": "A blob-like creature from the Womb with no projectile attacks at all — pure contact pressure and spider spawns" },
+      { "type": "floor_hazard", "text": "The smallest fragments bounce rapidly off walls at sharp angles — by the final stage the room is filled with fast-moving collision threats from multiple directions simultaneously" },
+      { "type": "multi_phase",  "text": "Each of the three splitting stages moves noticeably faster than the last — the fight's pace escalates continuously from the opening split through to the final fragments" }
     ]
   },
   {
@@ -490,11 +544,13 @@
     "dlc": "rebirth",
     "hints": [
       { "type": "teleport",    "text": "Teleports to random positions around the room" },
+      { "type": "teleport",    "text": "Consists of two completely independent halves — both act simultaneously, effectively doubling every attack" },
       { "type": "tears_aimed", "text": "Fires coordinated bursts of projectiles in cardinal then diagonal directions" },
       { "type": "tears_ring",  "text": "Fires 8 projectiles outward in all directions" },
       { "type": "summons",     "text": "Spawns a Red Boom Fly during the fight (only one alive at once)" },
-      { "type": "teleport",    "text": "Consists of two completely independent halves — both act simultaneously, effectively doubling every attack" },
-      { "type": "tears_aimed", "text": "A twin-form boss from the Womb; killing one half does not affect the other" }
+      { "type": "tears_aimed", "text": "A twin-form boss from the Womb; killing one half does not affect the other" },
+      { "type": "tears_ring",  "text": "The ring fires from both halves simultaneously — two origin points spread projectile coverage across nearly the entire room at once" },
+      { "type": "multi_phase", "text": "Killing one half has no effect on the other's attack pattern or speed — destroying half the boss does not ease the fight" }
     ]
   },
   {
@@ -505,14 +561,15 @@
     "image": "/images/items/boss-portraits/boss-portraits/the_bloat.png",
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Bloat",
     "dlc": "rebirth",
-    "needs_review": true,
     "hints": [
-      { "type": "tears_ring",  "text": "Fires a ring of 8 projectiles outward in all directions" },
-      { "type": "laser",       "text": "Fires Brimstone lasers from its eye sockets at the player" },
-      { "type": "jump",        "text": "Leaps toward the player, leaving red creep and a ring of 8 projectiles on landing" },
-      { "type": "spawns_creep","text": "Creates pools of red creep throughout the fight" },
-      { "type": "orbit",       "text": "Has detached eyeballs that bounce diagonally around the room, blocking shots and dealing contact damage" },
-      { "type": "laser",       "text": "A bloated eyeball-like boss from the Depths and Womb chapters — shares the eye-detachment mechanic of a Chapter 2 boss but adds lasers and red creep" }
+      { "type": "orbit",        "text": "Two eyeballs are already bouncing around the room at fight-start — unlike similar bosses, they were never attached during combat" },
+      { "type": "spawns_creep", "text": "Creates pools of red creep throughout the fight" },
+      { "type": "jump",         "text": "Leaps toward the player, leaving red creep and a ring of 8 projectiles on landing" },
+      { "type": "laser",        "text": "Fires Brimstone lasers from its eye sockets at the player" },
+      { "type": "tears_ring",   "text": "Fires a ring of 8 projectiles outward in all directions" },
+      { "type": "laser",        "text": "A bloated eyeball-like boss from the Depths and Womb chapters — shares the eye-detachment aesthetic of a Chapter 2 boss but its eyes bounce from the very start" },
+      { "type": "orbit",        "text": "The bouncing eyes are invulnerable and never despawn — they permanently divide the room into shrinking safe corridors as the fight continues" },
+      { "type": "tears_aimed",  "text": "Brimstone beams fire toward the player's horizontal or vertical axis relative to the eye sockets — the direction is determined by the player's alignment at the moment of firing" }
     ]
   },
   {
@@ -524,12 +581,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Mama_Gurdy",
     "dlc": "rebirth",
     "hints": [
-      { "type": "floor_hazard","text": "Creates temporary spikes that appear in random locations around the room" },
-      { "type": "tears_burst", "text": "Fires waves of spread projectiles toward the player's position" },
-      { "type": "spawns_creep","text": "Spews large projectiles that leave slowing orange creep on impact" },
-      { "type": "floor_hazard","text": "Retreats off-screen periodically, then returns immediately with another attack" },
-      { "type": "tears_burst", "text": "The spread-fire comes in 3, 4, or 7 waves — the count varies, making the pattern unpredictable" },
-      { "type": "tears_burst", "text": "A large stationary creature at the top of the Womb room — the largest of a family of Caves bosses, now with spikes and slowing creep" }
+      { "type": "floor_hazard", "text": "Creates temporary spikes that appear in random locations around the room" },
+      { "type": "spawns_creep", "text": "Spews large projectiles that leave slowing orange creep on impact" },
+      { "type": "floor_hazard", "text": "Retreats off-screen periodically, then returns immediately with another attack" },
+      { "type": "tears_aimed",  "text": "Fires waves of spread projectiles toward the player's position" },
+      { "type": "tears_burst",  "text": "The spread-fire comes in 3, 4, or 7 waves — the count varies, making the pattern unpredictable" },
+      { "type": "tears_burst",  "text": "A large stationary creature at the top of the Womb room — the largest of a family of Caves bosses, now with spikes and slowing creep" },
+      { "type": "invincible",   "text": "While retreated off-screen, completely invulnerable — the only stationary-family boss that enforces damage pauses through disappearance" },
+      { "type": "spawns_creep", "text": "The slowing orange creep from Mama Gurdy's secondary projectiles accumulates throughout the fight — each volley adds more to the arena, progressively reducing safe movement options" }
     ]
   },
   {
@@ -541,12 +600,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Mom%27s_Heart",
     "dlc": "rebirth",
     "hints": [
-      { "type": "tears_ring",  "text": "Fires expanding rings of projectiles outward" },
-      { "type": "summons",     "text": "Spawns waves of standard floor enemies — Eyes, Hosts, Globins, and Swingers" },
-      { "type": "multi_phase", "text": "Escalates through four distinct phases as its HP is depleted, each adding new attacks" },
       { "type": "invincible",  "text": "Periodically retreats upward and becomes invulnerable, firing diagonal rotating projectile lines while out of reach" },
       { "type": "laser",       "text": "In its final phase, fires four diagonal Brimstone lasers that rotate around the room" },
-      { "type": "multi_phase", "text": "The beating heart encountered at the end of the Womb — one of the game's iconic multi-phase final bosses" }
+      { "type": "tears_ring",  "text": "Fires expanding rings of projectiles outward" },
+      { "type": "multi_phase", "text": "Escalates through four distinct phases as its HP is depleted, each adding new attacks" },
+      { "type": "summons",     "text": "Spawns waves of standard floor enemies — Eyes, Hosts, Globins, and Swingers" },
+      { "type": "multi_phase", "text": "The beating heart encountered at the end of the Womb — one of the game's iconic multi-phase final bosses" },
+      { "type": "laser",       "text": "The four diagonal Brimstone beams in the final phase rotate around the room's center at a fixed angular speed — the safe zone moves with the rotation" },
+      { "type": "invincible",  "text": "Each invulnerable retreat fires four diagonal rotating projectile lines simultaneously — the retreat is an attack, not a rest window" }
     ]
   },
   {
@@ -558,12 +619,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/It_Lives",
     "dlc": "rebirth",
     "hints": [
-      { "type": "tears_ring",  "text": "Fires expanding rings of projectiles outward" },
-      { "type": "summons",     "text": "From the very first phase, spawns multi-headed creatures and segmented worms not native to this floor — Polycephalus and Fistula" },
-      { "type": "multi_phase", "text": "Escalates through four distinct phases, each adding new attacks as HP drops" },
       { "type": "invincible",  "text": "Retreats upward periodically, becoming invulnerable, and fires four rotating diagonal lines of red projectiles while hidden" },
+      { "type": "tears_ring",  "text": "Fires expanding rings of projectiles outward" },
+      { "type": "multi_phase", "text": "Escalates through four distinct phases, each adding new attacks as HP drops" },
+      { "type": "summons",     "text": "From the very first phase, spawns multi-headed creatures and segmented worms not native to this floor — Polycephalus and Fistula" },
       { "type": "summons",     "text": "Later phases spawn boss-tier enemies — a segmented worm, a splitting blob, and armored knights" },
-      { "type": "multi_phase", "text": "The evolved form of Mom's Heart — appears in the same room only after 11+ victories over its predecessor" }
+      { "type": "multi_phase", "text": "The evolved form of Mom's Heart — appears in the same room only after 11+ victories over its predecessor" },
+      { "type": "laser",       "text": "Fires a Brimstone beam toward Isaac's position in later phases — an attack not present in its predecessor that differentiates the two fights" },
+      { "type": "invincible",  "text": "The invulnerable retreat fires the same rotating diagonal projectile lines as its predecessor, but the minion pool during those windows includes boss-tier enemies" }
     ]
   },
   {
@@ -575,12 +638,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Satan",
     "dlc": "rebirth",
     "hints": [
-      { "type": "multi_phase", "text": "The fight begins by spawning a lesser demon flanked by Kamikaze Leeches that must be killed before the main boss descends" },
-      { "type": "tears_burst", "text": "Fires two rapid consecutive projectile spreads toward the player in quick succession" },
+      { "type": "stomp",       "text": "A later flying form slams the ground at the player's last position — stomps arrive sequentially and persist briefly" },
       { "type": "laser",       "text": "Fires two Brimstone lasers simultaneously that curve apart, leaving a navigable gap between them" },
       { "type": "laser",       "text": "Also fires a single downward Brimstone beam from its mouth" },
-      { "type": "stomp",       "text": "A later flying form slams the ground at the player's last position — stomps arrive sequentially and persist briefly" },
-      { "type": "multi_phase", "text": "The lord of Sheol — a three-stage fight: a demonic herald, a descending statue, and a final flying form" }
+      { "type": "tears_burst", "text": "Fires two rapid consecutive projectile spreads toward the player in quick succession" },
+      { "type": "multi_phase", "text": "The fight begins by spawning a lesser demon flanked by Kamikaze Leeches that must be killed before the main boss descends" },
+      { "type": "multi_phase", "text": "The lord of Sheol — a three-stage fight: a demonic herald, a descending statue, and a final flying form" },
+      { "type": "summons",     "text": "The Phase 1 herald is flanked by two Kamikaze Leeches that rush Isaac immediately on spawn — they must be dealt with before the main descent begins" },
+      { "type": "flight",      "text": "The third form abandons the ground entirely, hovering and sweeping across the room — a stark contrast to the grounded statue form that preceded it" }
     ]
   },
   {
@@ -592,12 +657,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Isaac_(Boss)",
     "dlc": "rebirth",
     "hints": [
-      { "type": "tears_ring",  "text": "Fires many lines of projectiles outward in all directions simultaneously" },
       { "type": "homing",      "text": "Some projectile groups curve back toward the boss after their initial outward travel, creating a double-pass threat" },
-      { "type": "summons",     "text": "Summons Angelic Babies in pairs during the fight" },
-      { "type": "laser",       "text": "Calls down diagonal beam strikes at random positions around the room" },
       { "type": "flight",      "text": "Grows angelic wings in the final phase and begins dashing toward the player's position" },
-      { "type": "multi_phase", "text": "A weeping child in the Cathedral — the penultimate boss of the divine path, reached only with the Polaroid" }
+      { "type": "laser",       "text": "Calls down diagonal beam strikes at random positions around the room" },
+      { "type": "tears_ring",  "text": "Fires many lines of projectiles outward in all directions simultaneously" },
+      { "type": "summons",     "text": "Summons Angelic Babies in pairs during the fight" },
+      { "type": "multi_phase", "text": "A weeping child in the Cathedral — the penultimate boss of the divine path, reached only with the Polaroid" },
+      { "type": "tears_ring",  "text": "The projectile lines in later phases number in the dozens simultaneously — the safe gaps between them become very narrow at a distance from the origin" },
+      { "type": "homing",      "text": "Some projectile groups curve back inward after their initial outward travel — a double-pass pattern that catches players who repositioned to one side to dodge the first wave" }
     ]
   },
   {
@@ -610,12 +677,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/%3F%3F%3F_(Boss)",
     "dlc": "rebirth",
     "hints": [
-      { "type": "tears_ring",  "text": "Fires many rapid lines of projectiles outward that curve as they travel" },
-      { "type": "homing",      "text": "Fires pairs of projectile lines — one straight, one homing — expanding outward together" },
-      { "type": "orbit",       "text": "Summons flies that orbit it, blocking the player's shots and limiting safe approach angles" },
-      { "type": "homing",      "text": "Fires repeated volleys of homing projectiles throughout all phases — notably more homing-focused than a similar fight in the Cathedral" },
-      { "type": "flight",      "text": "Grows wings in the final phase and drifts toward the player while teleporting to intercept movement" },
-      { "type": "homing",      "text": "A ghostly form in The Chest — the alternate endgame boss to a visually similar fight in the Cathedral" }
+      { "type": "orbit",      "text": "Summons flies that orbit it, blocking the player's shots and limiting safe approach angles" },
+      { "type": "tears_burst","text": "Fires pairs of projectile lines — one straight, one homing — expanding outward together" },
+      { "type": "homing",     "text": "Fires repeated volleys of homing projectiles throughout all phases — notably more homing-focused than a similar fight in the Cathedral" },
+      { "type": "flight",     "text": "Grows wings in the final phase and drifts toward the player while teleporting to intercept movement" },
+      { "type": "tears_ring", "text": "Fires many rapid lines of projectiles outward that curve as they travel" },
+      { "type": "homing",     "text": "A ghostly form in The Chest — the alternate endgame boss to a visually similar fight in the Cathedral" },
+      { "type": "orbit",      "text": "The orbital flies persist through all phases and are never released as a chase swarm — they function as a permanent passive defense rather than an active attack" },
+      { "type": "tears_ring", "text": "The outward projectile lines curve as they travel, bending away from center — the curvature distinguishes the fire pattern from its Cathedral counterpart's straight lines" }
     ]
   },
   {
@@ -627,12 +696,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Lamb",
     "dlc": "rebirth",
     "hints": [
+      { "type": "splits",      "text": "At half health, permanently splits into a head and a body — each half then acts completely independently" },
+      { "type": "explosive",   "text": "Unleashes Ipecac-style bursts of projectiles in random directions throughout the fight" },
+      { "type": "charge",      "text": "After splitting, the head charges directly and repeatedly at the player" },
       { "type": "tears_ring",  "text": "Fires rings of projectiles with one deliberately aimed at the player's current position" },
       { "type": "tears_ring",  "text": "Also fires rotating waves of projectiles that split into additional projectiles on contact" },
-      { "type": "explosive",   "text": "Unleashes Ipecac-style bursts of projectiles in random directions throughout the fight" },
-      { "type": "splits",      "text": "At half health, permanently splits into a head and a body — each half then acts completely independently" },
-      { "type": "charge",      "text": "After splitting, the head charges directly and repeatedly at the player" },
-      { "type": "laser",       "text": "The severed head fires Brimstone lasers in all cardinal directions, rotating 90° between shots" }
+      { "type": "laser",       "text": "The severed head fires Brimstone lasers in all cardinal directions, rotating 90° between shots" },
+      { "type": "multi_phase", "text": "After the split, head and body deal completely different attacks — Brimstone and charging from the head, Ipecac-style bursts from the body" },
+      { "type": "laser",       "text": "The final boss of the Dark Room, reached by completing a run with the Negative — the only sixth-chapter boss that permanently splits mid-fight" }
     ]
   },
   {
@@ -644,12 +715,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Hush",
     "dlc": "afterbirth",
     "hints": [
-      { "type": "tears_ring",  "text": "Fires rotating rings of projectiles with varying gaps and spacing" },
-      { "type": "summons",     "text": "Spawns specialized Hush Flies in geometric formations that orbit it, launch at the player, or actively chase" },
-      { "type": "tears_ring",  "text": "Later phases add dense interlocking rings with specific safe gaps and spiral patterns" },
-      { "type": "summons",     "text": "Also spawns Blue Gapers and Boils that add persistent floor pressure to an already crowded arena" },
-      { "type": "laser",       "text": "In its final sub-phase, fires laser beams from its eyes that leave trails of blue creep along the floor" },
-      { "type": "multi_phase", "text": "An ancient entity with an enormous health pool — found in a secret floor accessible only by defeating the Womb boss in under 30 minutes" }
+      { "type": "laser",        "text": "In its final sub-phase, fires laser beams from its eyes that leave trails of blue creep along the floor" },
+      { "type": "tears_ring",   "text": "Fires rotating rings of projectiles with varying gaps and spacing" },
+      { "type": "tears_ring",   "text": "Later phases add dense interlocking rings with specific safe gaps and spiral patterns" },
+      { "type": "summons",      "text": "Spawns specialized Hush Flies in geometric formations that orbit it, launch at the player, or actively chase" },
+      { "type": "summons",      "text": "Also spawns Blue Gapers and Boils that add persistent floor pressure to an already crowded arena" },
+      { "type": "multi_phase",  "text": "An ancient entity with an enormous health pool — found in a secret floor accessible only by defeating the Womb boss in under 30 minutes" },
+      { "type": "floor_hazard", "text": "The final phase's laser beams leave persistent blue creep traces along every path they sweep — floor contamination accumulates as the fight extends" },
+      { "type": "homing",       "text": "Some Hush Fly formations break their geometric patterns to home in directly on Isaac's position — distinguishing them from the orbiting and launching formation variants" }
     ]
   },
   {
@@ -661,12 +734,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Delirium",
     "dlc": "afterbirth+",
     "hints": [
-      { "type": "tears_ring",  "text": "In its base form, fires rings of projectiles in slow expanding rotations" },
-      { "type": "explosive",   "text": "Also fires Ipecac-style projectiles in all directions from its base form" },
-      { "type": "multi_phase", "text": "Periodically transforms into other bosses encountered during the run, fully inheriting their attack patterns" },
       { "type": "teleport",    "text": "Teleports more frequently and attacks faster as its health decreases" },
-      { "type": "multi_phase", "text": "The transformation pool draws from most bosses defeated during the current run — but not all categories of bosses are included" },
-      { "type": "multi_phase", "text": "A shapeshifting abomination in The Void — the post-endgame boss requiring completion of two separate chapter-6 endings" }
+      { "type": "explosive",   "text": "Also fires Ipecac-style projectiles in all directions from its base form" },
+      { "type": "tears_ring",  "text": "In its base form, fires rings of projectiles in slow expanding rotations" },
+      { "type": "multi_phase", "text": "Periodically transforms into other bosses encountered during the run, fully inheriting their attack patterns" },
+      { "type": "summons",     "text": "The transformation pool draws from most bosses defeated during the current run — not all categories of bosses are included" },
+      { "type": "multi_phase", "text": "A shapeshifting abomination in The Void — the post-endgame boss requiring completion of two separate chapter-6 endings" },
+      { "type": "teleport",    "text": "Teleports after every transformation before the inherited attacks begin — the next boss form is not revealed until after the repositioning teleport completes" },
+      { "type": "explosive",   "text": "The base form fires Ipecac shots in four cardinal directions rather than a random scatter — the angles are fixed, though the arcs still produce creep on impact" }
     ]
   },
   {
@@ -678,12 +753,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Dogma",
     "dlc": "repentance",
     "hints": [
-      { "type": "tears_ring",  "text": "Fires radial bursts of 8 projectiles; lingering in their auras triggers additional beam strikes" },
       { "type": "laser",       "text": "Fires rays that appear harmless for a moment before snapping into lethal lasers — timing the dodge window is key" },
       { "type": "laser",       "text": "Also fires a static Brimstone beam that bends to track the player's position" },
       { "type": "charge",      "text": "In its second form, charges across the room repeatedly while releasing radial bursts of feather projectiles" },
+      { "type": "tears_ring",  "text": "Fires radial bursts of 8 projectiles; lingering in their auras triggers additional beam strikes" },
       { "type": "multi_phase", "text": "Transforms from a TV-attached form into a winged orb resembling an Ophanim when its first form is destroyed" },
-      { "type": "charge",      "text": "A divine entity in the Home floor — Phase 1 is anchored to a television that must be targeted directly; Phase 2 takes flight" }
+      { "type": "charge",      "text": "A divine entity in the Home floor — Phase 1 is anchored to a television that must be targeted directly; Phase 2 takes flight" },
+      { "type": "tears_ring",  "text": "The 8-projectile radial burst in Phase 2 is preceded by a brief bright flash — approximately one second of warning before the burst expands" },
+      { "type": "invincible",  "text": "In Phase 1, only the television the boss is attached to can be damaged — the body itself is fully invulnerable until the TV is destroyed" }
     ]
   },
   {
@@ -696,12 +773,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Beast",
     "dlc": "repentance",
     "hints": [
-      { "type": "charge",       "text": "Charges across the side-scrolling arena at the player, pushing the screen forward while stalagmites and stalactites advance from both sides" },
-      { "type": "laser",        "text": "After inhaling rings of fire, fires a massive Brimstone-like beam covering the bottom and middle portions of the screen" },
-      { "type": "multi_phase",  "text": "Between charges, releases large rings of fire — each ring has exactly one gap to pass through safely" },
-      { "type": "summons",      "text": "In Phase 2, roars to summon Beast Souls — spectral forms that chase and charge at the player" },
-      { "type": "charge",       "text": "In Phase 3, charges indefinitely while stalagmites and stalactites spawn behind every pass" },
-      { "type": "charge",       "text": "The true final boss of Isaac — fought in a unique side-scrolling lava arena; flight is automatically granted before this encounter begins" }
+      { "type": "charge",      "text": "Charges across the side-scrolling arena at the player, pushing the screen forward while stalagmites and stalactites advance from both sides" },
+      { "type": "laser",       "text": "After inhaling rings of fire, fires a massive Brimstone-like beam covering the bottom and middle portions of the screen" },
+      { "type": "floor_hazard","text": "In Phase 3, charges indefinitely while stalagmites and stalactites spawn behind every pass" },
+      { "type": "multi_phase", "text": "Between charges, releases large rings of fire — each ring has exactly one gap to pass through safely" },
+      { "type": "summons",     "text": "In Phase 2, roars to summon Beast Souls — spectral forms that chase and charge at the player" },
+      { "type": "charge",      "text": "The true final boss of Isaac — fought in a unique side-scrolling lava arena; flight is automatically granted before this encounter begins" },
+      { "type": "multi_phase", "text": "Phases progress by charge-cycle count rather than HP thresholds — Phase 2 and 3 each trigger after a set number of completed passes" },
+      { "type": "tears_ring",  "text": "The fire rings emitted between charges each have exactly one navigable gap — later phases emit multiple rings simultaneously with overlapping rotation speeds" }
     ]
   },
   {
@@ -715,10 +794,12 @@
     "hints": [
       { "type": "homing",      "text": "Fires trailing waves of projectiles that weave across the arena and eventually home in on the player" },
       { "type": "invincible",  "text": "Retreats upward periodically, becoming invulnerable, and summons a massive horde of walking enemies that march toward her position" },
+      { "type": "charge",      "text": "The second phase makes her mobile — she breaks free of the ceiling to actively charge and reposition across the arena" },
       { "type": "tears_burst", "text": "Throws a knife downward that emits horizontal projectiles while traveling, then bursts into a radial spray on hitting the wall" },
       { "type": "summons",     "text": "Ground slams simultaneously release projectile streams and spawn Small Maggots" },
-      { "type": "charge",      "text": "The second phase makes her mobile — she breaks free of the ceiling to actively charge and reposition across the arena" },
-      { "type": "multi_phase", "text": "A massive maternal boss from the Corpse — Phase 1 pins her to the ceiling; Phase 2 tears her loose to pursue the player" }
+      { "type": "multi_phase", "text": "A massive maternal boss from the Corpse — Phase 1 pins her to the ceiling; Phase 2 tears her loose to pursue the player" },
+      { "type": "invincible",  "text": "In Phase 1, Mother clings to the ceiling — only upward-angled shots can reach her suspended form; standard horizontal fire passes underneath" },
+      { "type": "homing",      "text": "The wave projectiles don't home immediately — they travel in loose arcs that gradually bend toward Isaac's position over their full flight distance" }
     ]
   },
   {
@@ -730,12 +811,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Lil_Blub",
     "dlc": "repentance",
     "hints": [
-      { "type": "summons",   "text": "Spits out Small Leeches that orbit it, physically blocking the player's projectiles" },
-      { "type": "tears_ring","text": "Fires 6 streams of projectiles outward simultaneously in a radial burst" },
-      { "type": "summons",   "text": "If 6 or more leeches are alive in the room, the boss cannot use any of its attacks — clearing minions is the primary safety tool" },
-      { "type": "jump",      "text": "Once damaged sufficiently, starts leaping toward the player and firing bursts of arcing projectiles on landing" },
-      { "type": "jump",      "text": "Below 25% HP, chains 3–5 consecutive jumps while firing in all cardinal and diagonal directions on each landing" },
-      { "type": "summons",   "text": "A small blue creature from the alt-Chapter 1 floors — accumulating its own minions can paradoxically protect the player" }
+      { "type": "jump",        "text": "Once damaged sufficiently, starts leaping toward the player and firing bursts of arcing projectiles on landing" },
+      { "type": "jump",        "text": "Below 25% HP, chains 3–5 consecutive jumps while firing in all cardinal and diagonal directions on each landing" },
+      { "type": "tears_ring",  "text": "Fires 6 streams of projectiles outward simultaneously in a radial burst" },
+      { "type": "summons",     "text": "Spits out Small Leeches that orbit it, physically blocking the player's projectiles" },
+      { "type": "orbit",       "text": "If enough leeches are alive in the room, the boss cannot use any of its attacks — clearing minions is the primary safety tool" },
+      { "type": "summons",     "text": "A small blue creature from the alt-Chapter 1 floors — accumulating its own minions can paradoxically protect the player" },
+      { "type": "multi_phase", "text": "The jump chain only triggers below 25% HP — before that threshold, Lil Blub never chains jumps, making the low-HP window the most dangerous phase" },
+      { "type": "tears_ring",  "text": "The 6-stream radial burst fires at regular intervals throughout the fight — it appears even at full health and is not tied to any HP threshold" }
     ]
   },
   {
@@ -748,11 +831,13 @@
     "dlc": "repentance",
     "hints": [
       { "type": "floor_hazard", "text": "Spends most of the fight in pits underground, surfacing only to attack" },
+      { "type": "multi_phase",  "text": "At 33% HP, repeatedly stabs the ground at the player's position 3–6 times, permanently creating new pits that shrink the safe arena" },
+      { "type": "jump",         "text": "Lunges from a pit directly toward the player, releasing projectiles in the cardinal directions at the apex of its leap" },
+      { "type": "charge",       "text": "After the tail strikes, charges horizontally from the wall while spawning Small Leeches" },
       { "type": "tears_burst",  "text": "Partially emerges from a pit to fire a disorganized spray of projectiles, then submerges again" },
-      { "type": "jump",         "text": "Lunges from a pit directly toward the player, releasing 4 projectiles in the cardinal directions at the apex of its leap" },
-      { "type": "floor_hazard", "text": "At 33% HP, repeatedly stabs the ground at the player's position 3–6 times, permanently creating new pits that shrink the safe arena" },
-      { "type": "charge",       "text": "After the tail strikes, charges horizontally from the wall while spawning 3 Small Leeches" },
-      { "type": "floor_hazard", "text": "An aquatic worm from the alt-Chapter 1 floors — at low health it permanently digs pits, shrinking the safe arena" }
+      { "type": "floor_hazard", "text": "An aquatic worm from the alt-Chapter 1 floors — at low health it permanently digs pits, shrinking the safe arena" },
+      { "type": "invincible",   "text": "While submerged between attacks, completely untargetable — Wormwood can only take damage during its brief active surface windows" },
+      { "type": "summons",      "text": "The Small Leeches from its charge attack persist for the entire fight — repeated charges accumulate them progressively, making the arena more crowded over time" }
     ]
   },
   {
@@ -764,12 +849,14 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Reap_Creep",
     "dlc": "repentance",
     "hints": [
-      { "type": "summons",      "text": "In its starting form, summons Wall Creep enemies on the room walls that fire at the player while following them vertically" },
-      { "type": "tears_burst",  "text": "After losing a third of its HP, transitions to large disorganized projectile bursts similar to Monstro, plus spawning 3–4 Spiders or a Trite" },
       { "type": "floor_hazard", "text": "In the final form, slams against the walls to dislodge rock projectiles and spiders from the ceiling" },
       { "type": "laser",        "text": "Final form also fires a single wide Brimstone laser with a moderate charge-up time" },
       { "type": "laser",        "text": "Can additionally fire four diagonal Brimstone beams simultaneously that converge inward, leaving a safe gap at the center" },
-      { "type": "multi_phase",  "text": "A giant spider from the Depths — transforms through three named forms (Wall Creep, Blind Creep, Rage Creep), each with a completely different attack set" }
+      { "type": "tears_burst",  "text": "After losing a third of its HP, transitions to large disorganized projectile bursts similar to Monstro, plus spawning 3–4 Spiders or a Trite" },
+      { "type": "summons",      "text": "In its starting form, summons Wall Creep enemies on the room walls that fire at the player while following them vertically" },
+      { "type": "multi_phase",  "text": "A giant spider from the Depths — transforms through three named forms (Wall Creep, Blind Creep, Rage Creep), each with a completely different attack set" },
+      { "type": "tears_burst",  "text": "The disorganized burst in the second form is visually similar to a Chapter 1 boss's landing spread — rapid projectiles in a wide chaotic arc" },
+      { "type": "summons",      "text": "The Wall Creep enemies in the starting form fire only vertically — they track Isaac's up-down position but cannot aim horizontally" }
     ]
   },
   {
@@ -782,11 +869,13 @@
     "dlc": "repentance",
     "hints": [
       { "type": "invincible",   "text": "Armored head segments are immune to all non-explosive damage — only explosives can destroy the rock casing" },
-      { "type": "summons",      "text": "Armored heads spit Ink projectiles; once armor is destroyed they switch to spitting Suckers instead" },
-      { "type": "tears_burst",  "text": "Exposed body segments fire bloody projectiles at the player" },
       { "type": "chase",        "text": "Roams the room randomly like a segmented worm; becomes progressively faster as more armor is destroyed" },
+      { "type": "tears_burst",  "text": "Exposed body segments fire bloody projectiles at the player" },
+      { "type": "summons",      "text": "Armored heads spit Ink projectiles; once armor is destroyed they switch to spitting Suckers instead" },
       { "type": "summons",      "text": "Releases small ink-like enemies that clutter the room while the bosses are still shielded" },
-      { "type": "invincible",   "text": "A pair of armored worms from the Mines — their rock armor blocks most damage; only explosives and a handful of special item effects can bypass it" }
+      { "type": "invincible",   "text": "A pair of armored worms from the Mines — their rock armor blocks most damage; only explosives and a handful of special item effects can bypass it" },
+      { "type": "chase",        "text": "Two Tuff Twins are always present simultaneously — unlike other segmented-worm bosses, this encounter always starts as a paired double fight with independent movement paths" },
+      { "type": "multi_phase",  "text": "As armor segments are destroyed the fight opens up from explosive-only damage to any damage source — the transition from shielded to exposed is the key phase boundary" }
     ]
   },
   {
@@ -798,12 +887,886 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Rainmaker",
     "dlc": "repentance",
     "hints": [
+      { "type": "effect",      "text": "Defeating it stops rain that was falling throughout the entire fight" },
+      { "type": "chase",       "text": "Follows the player while twirling and accumulating hovering projectiles, then releases them in an 8-way radial burst" },
+      { "type": "tears_burst", "text": "Summons a large overhead water projectile that pops into a burst of shots in random directions" },
       { "type": "tears_ring",  "text": "Creates a ring of 12 projectiles around itself and fires them in staggered sequence starting from two opposite ends of the ring" },
       { "type": "tears_ring",  "text": "Also creates two horizontal lines of 6 projectiles each on both sides, firing from the outer edges inward at intervals" },
-      { "type": "tears_burst", "text": "Summons a large overhead water projectile that pops into a burst of shots in random directions" },
-      { "type": "chase",       "text": "Follows the player while twirling and accumulating hovering projectiles, then releases them in an 8-way radial burst" },
-      { "type": "effect",      "text": "Defeating it stops rain that was falling throughout the entire fight" },
-      { "type": "chase",       "text": "A fluid creature from the alt-Chapter 1 floors — every attack pattern converges on or follows the player's position" }
+      { "type": "chase",       "text": "A fluid creature from the alt-Chapter 1 floors — every attack pattern converges on or follows the player's position" },
+      { "type": "effect",      "text": "Rain falls continuously throughout the entire fight — a persistent ambient condition not present in any other encounter on the same floors" },
+      { "type": "tears_burst", "text": "The large overhead water projectile pops into a scatter of shots in random directions on impact — the burst directions are randomized at the moment of detonation, not fixed during the arc" }
+    ]
+  },
+  {
+    "id": "blighted_ovum",
+    "name": "Blighted Ovum",
+    "chapters": [4],
+    "location": ["Womb", "Utero", "Scarred Womb"],
+    "image": "/images/items/boss-portraits/boss-portraits/blighted_ovum.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Blighted_Ovum",
+    "dlc": "rebirth",
+    "hints": [
+      { "type": "invincible",   "text": "Suture, the ghost half, is completely invulnerable throughout — it can only die when its physical counterpart Contusion is defeated first" },
+      { "type": "laser",        "text": "Suture fires a horizontal Brimstone laser whenever Isaac is to its left or right" },
+      { "type": "spawns_creep", "text": "Contusion constantly trails red creep as it chases Isaac through the room" },
+      { "type": "charge",       "text": "Contusion periodically surges toward Isaac at increased speed between its standard chase movement" },
+      { "type": "tears_ring",   "text": "Defeating Contusion triggers a burst of tears from both bodies simultaneously before Suture expires" },
+      { "type": "chase",        "text": "Contusion does not fully pause between attacks — it slows to base speed rather than stopping, keeping pressure continuous" },
+      { "type": "laser",        "text": "Suture's laser fires strictly horizontally — vertical separation from the ghost is the reliable safe position while hunting Contusion" },
+      { "type": "multi_phase",  "text": "A two-bodied Womb boss: Suture is a floating invulnerable ghost with a Brimstone laser; Contusion is its physical creep-trailing chaser — the ghost can't be targeted directly" }
+    ]
+  },
+  {
+    "id": "fistula",
+    "name": "Fistula",
+    "chapters": [4],
+    "location": ["Womb", "Utero", "Scarred Womb"],
+    "image": "/images/items/boss-portraits/boss-portraits/fistula.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Fistula",
+    "dlc": "rebirth",
+    "hints": [
+      { "type": "splits",      "text": "The large form splits into four medium copies on death — not two, making the first split the most sudden escalation in the fight" },
+      { "type": "multi_phase", "text": "Each medium form in turn splits into two small forms — the fight can escalate from one body to eight active pieces across two splitting stages" },
+      { "type": "summons",     "text": "Each small form spawns a Charger enemy when killed, unless it dies over a pit" },
+      { "type": "chase",       "text": "Has no projectile attacks at any size — all danger is contact with a growing number of bouncing forms" },
+      { "type": "splits",      "text": "Each successive size tier moves noticeably faster than the last — the small forms are difficult to track individually in a crowded room" },
+      { "type": "summons",     "text": "Chargers spawned on small-form death persist after all Fistula pieces are gone — the encounter extends if they aren't cleared alongside the final fragments" },
+      { "type": "multi_phase", "text": "All forms deal one full heart of contact damage regardless of size — a small fragment is as punishing as the original large body" },
+      { "type": "chase",       "text": "A giant Womb blob that fragments across three splitting stages (1 → 4 → up to 8); no ranged attacks at any stage makes it a pure crowd-navigation fight" }
+    ]
+  },
+  {
+    "id": "polycephalus",
+    "name": "Polycephalus",
+    "chapters": [4],
+    "location": ["Womb", "Utero", "Scarred Womb"],
+    "image": "/images/items/boss-portraits/boss-portraits/polycephalus.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Polycephalus",
+    "dlc": "rebirth",
+    "hints": [
+      { "type": "invincible",  "text": "Completely invulnerable while underground — only briefly vulnerable during and immediately after surfacing to attack" },
+      { "type": "floor_hazard","text": "Burrows and follows the player's position underground before choosing where to surface — moving after hearing the burrow sound shifts the emergence point" },
+      { "type": "tears_burst", "text": "One surface attack fires a wide cluster of projectiles toward Isaac, similar to a Chapter 1 boss's landing burst but more drawn out" },
+      { "type": "tears_ring",  "text": "Another surface attack fires 8 projectiles outward in all directions simultaneously" },
+      { "type": "summons",     "text": "Can surface to summon a Round Worm rather than firing projectiles — the worm persists in the room after re-burrowing" },
+      { "type": "invincible",  "text": "The post-attack vulnerability window is brief and collapses quickly — pre-aimed shots are more reliable than reactive ones" },
+      { "type": "tears_aimed", "text": "The spread-of-3 surface attack aims at Isaac's position at the moment of emergence — moving between the burrow sound and the surface shifts the spread direction" },
+      { "type": "floor_hazard","text": "A multi-headed burrowing worm from the Womb; its four distinct surface attacks — cluster, spread, 8-way ring, or Round Worm summon — are chosen at random each emergence" }
+    ]
+  },
+  {
+    "id": "loki",
+    "name": "Loki",
+    "chapters": [3],
+    "location": ["Depths", "Necropolis", "Dank Depths"],
+    "image": "/images/items/boss-portraits/boss-portraits/loki.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Loki",
+    "dlc": "rebirth",
+    "hints": [
+      { "type": "teleport",    "text": "Teleports to a new position before each attack — never charges or chases; repositioning is its only form of movement" },
+      { "type": "tears_aimed", "text": "Fires three consecutive 4-shot volleys: first cardinal, then diagonal, then cardinal again — the three-volley sequence is fixed, not random" },
+      { "type": "tears_ring",  "text": "Also fires a full 8-way ring of projectiles outward in all directions as its alternate attack" },
+      { "type": "summons",     "text": "Spawns Boom Flies during the fight, up to four alive at once" },
+      { "type": "summons",     "text": "In Repentance, four Stone Grimaces occupy the room corners at fight-start, blocking movement and shots throughout the entire encounter" },
+      { "type": "tears_aimed", "text": "The cardinal and diagonal volleys create overlapping + and × spread patterns — the safe gap depends on which of the three volleys just fired" },
+      { "type": "tears_ring",  "text": "The 8-way ring fires from a stationary post-teleport position — the brief standstill makes it more predictable than the alternating volleys" },
+      { "type": "teleport",    "text": "A demonic figure from the Depths — its fixed cardinal→diagonal→cardinal three-volley firing sequence and Boom Fly spawns are its most recognizable traits" }
+    ]
+  },
+  {
+    "id": "mask_of_infamy",
+    "name": "Mask of Infamy",
+    "chapters": [3],
+    "location": ["Depths", "Necropolis", "Dank Depths"],
+    "image": "/images/items/boss-portraits/boss-portraits/mask_of_infamy.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Mask_of_Infamy",
+    "dlc": "rebirth",
+    "hints": [
+      { "type": "invincible",  "text": "The mask is completely invulnerable in Phase 1 — only the Heart of Infamy can take damage" },
+      { "type": "charge",      "text": "When Isaac crosses the mask's cardinal axis, it charges directly at him — the Heart actively retreats while the mask actively pursues" },
+      { "type": "tears_ring",  "text": "The Heart fires 8 projectiles in all directions if Isaac gets too close to it" },
+      { "type": "multi_phase", "text": "Defeating the Heart triggers Phase 2 — the mask accelerates and a crack on its back becomes the new damage target" },
+      { "type": "invincible",  "text": "In Phase 2, the crack on the mask's back is the only stated damage target — the fight's Phase 2 challenge is staying behind the mask as it moves faster" },
+      { "type": "chase",       "text": "The Heart actively moves away from Isaac while the mask moves toward him — the two halves work in opposition, making it difficult to isolate the Heart" },
+      { "type": "charge",      "text": "In Phase 2, the mask charges more aggressively without the Heart to coordinate around — the fight becomes a pure back-targeting exercise" },
+      { "type": "multi_phase", "text": "A two-component boss from the Depths: an indestructible front-facing mask escorts a shootable Heart — destroying the Heart exposes a crack on the mask's back" }
+    ]
+  },
+  {
+    "id": "daddy_long_legs",
+    "name": "Daddy Long Legs",
+    "chapters": [3],
+    "location": ["Depths", "Necropolis", "Dank Depths"],
+    "image": "/images/items/boss-portraits/boss-portraits/daddy_long_legs.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Daddy_Long_Legs",
+    "dlc": "rebirth",
+    "hints": [
+      { "type": "stomp",       "text": "Raises its head off-screen and stomps the ground 4 times at Isaac's position in succession, then slams the head down firing 8 projectiles outward in all directions" },
+      { "type": "invincible",  "text": "The head hangs stationary and invulnerable during most of the fight — the 4 limbs (2 hands, 2 legs) used for stomps are the primary damage targets" },
+      { "type": "stomp",       "text": "Also performs a mass stomp: raises the head making it invulnerable, then stomps 4 random room locations; in Repentance, one stomp always targets Isaac's position" },
+      { "type": "summons",     "text": "Spits out 2–3 Spiders during the fight — its own stomp and slam attacks can kill them" },
+      { "type": "tears_ring",  "text": "The head-slam at the end of the targeted stomp sequence fires 8 projectiles outward in all directions" },
+      { "type": "tears_aimed", "text": "The targeted stomp sequence aims at Isaac's position at each individual stomp — moving between stomps shifts subsequent landing points" },
+      { "type": "summons",     "text": "Has 2 hands and 2 legs; each limb is used exactly once per stomp sequence — tracking which limbs have struck indicates when the slam is coming" },
+      { "type": "invincible",  "text": "A massive spider boss from the Depths whose body hangs suspended and can only slam horizontally at the room's center — the dangling limbs are the primary damage targets throughout" }
+    ]
+  },
+  {
+    "id": "carrion_queen",
+    "name": "Carrion Queen",
+    "chapters": [2],
+    "location": ["Catacombs"],
+    "image": "/images/items/boss-portraits/boss-portraits/carrion_queen.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Carrion_Queen",
+    "dlc": "rebirth",
+    "hints": [
+      { "type": "invincible",  "text": "Only the flesh segment on its behind is vulnerable — all other contact points are invulnerable, requiring positional play to deal any damage" },
+      { "type": "charge",      "text": "Charges in a straight line when Isaac aligns with it cardinally — destroys its own Red Poop obstacles during charges" },
+      { "type": "floor_hazard","text": "Spawns Red Poop during Phase 1, up to a maximum of 5 — the obstacles persist and progressively restrict movement" },
+      { "type": "explosive",   "text": "Eats bombs placed in its charge path, briefly stunning itself and taking considerable damage — one of few bosses where bomb placement is a primary strategy" },
+      { "type": "multi_phase", "text": "Below half health, abandons cardinal movement and Red Poop spawning entirely — switches to diagonal bouncing movement" },
+      { "type": "charge",      "text": "In Phase 1, charges travel the full room length along a cardinal axis — the predictable path is complicated by accumulated Red Poop from prior spawns" },
+      { "type": "invincible",  "text": "Phase 2 diagonal movement brings no new attacks — the fight becomes a pure positional-tracking exercise with no projectiles and rear-only vulnerability" },
+      { "type": "multi_phase", "text": "A pink-shelled creature from the Catacombs whose rear-only vulnerability — the inverse of a front-shield boss — defines the entire fight's movement requirement" }
+    ]
+  },
+  {
+    "id": "triachnid",
+    "name": "Triachnid",
+    "chapters": [3],
+    "location": ["Depths", "Necropolis", "Dank Depths"],
+    "image": "/images/items/boss-portraits/boss-portraits/triachnid.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Triachnid",
+    "dlc": "rebirth",
+    "hints": [
+      { "type": "spawns_creep", "text": "Every stomp landing deposits a permanent white creep puddle — both attack types progressively coat the arena with slowing hazards" },
+      { "type": "stomp",        "text": "Stomps the ground 3 times at Isaac's position in succession, each leaving white creep, then slams its head down to the room center firing 8 white projectiles outward" },
+      { "type": "stomp",        "text": "Also performs a mass stomp: strikes 3 random room locations each leaving white creep; in Repentance one stomp always targets Isaac's position" },
+      { "type": "tears_ring",   "text": "The head-slam fires 8 white projectiles outward; occasionally fires only 4 cardinal projectiles with a larger creep puddle instead" },
+      { "type": "invincible",   "text": "The head hangs stationary and invulnerable between attacks — the limbs used for stomping are the primary damage targets throughout" },
+      { "type": "spawns_creep", "text": "Unlike its cousin, stomps 3 times (not 4) in the targeted attack, and slams its head to the room center rather than along a horizontal plane" },
+      { "type": "tears_aimed",  "text": "The targeted stomp sequence aims at Isaac's position at each individual stomp — moving between stomps shifts subsequent landing points, but each creep puddle stays permanently" },
+      { "type": "summons",      "text": "A cousin of a Depths spider-boss — same stomp-and-slam structure but every attack leaves white slowing creep, the head slams center (not horizontal), and Trites replace Spiders" }
+    ]
+  },
+  {
+    "id": "dark_one",
+    "name": "Dark One",
+    "chapters": [2],
+    "location": ["Catacombs", "Caves", "Flooded Caves"],
+    "image": "/images/items/boss-portraits/boss-portraits/dark_one.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Dark_One",
+    "dlc": "afterbirth",
+    "hints": [
+      { "type": "effect",      "text": "Temporarily dims the room, applying the Curse of Darkness effect for a period — a fight-specific condition, not a run curse" },
+      { "type": "laser",       "text": "Fires a Brimstone laser directly downward when Isaac is positioned below it" },
+      { "type": "tears_ring",  "text": "Fires a ring of 12 projectiles outward in all directions" },
+      { "type": "charge",      "text": "Charges twice across the screen in rapid succession, slowly veering toward Isaac's position during each pass" },
+      { "type": "effect",      "text": "The darkness persists for multiple attack cycles — it reduces spatial awareness during both the ring-fire and charge windows simultaneously" },
+      { "type": "laser",       "text": "The downward Brimstone only fires when Isaac is directly below — staying to the sides during ring-fire windows eliminates this attack entirely" },
+      { "type": "charge",      "text": "Each charge travels off one screen edge and reappears from the opposite side — the gradual veer keeps the path from being fully predictable mid-pass" },
+      { "type": "tears_ring",  "text": "A dark winged figure from the Chapter 2 floors — its room-dimming ability, position-conditional downward Brimstone, and 12-shot ring are its defining traits" }
+    ]
+  },
+  {
+    "id": "scolex",
+    "name": "Scolex",
+    "chapters": [2],
+    "location": ["Flooded Caves"],
+    "image": "/images/items/boss-portraits/boss-portraits/scolex.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Scolex",
+    "dlc": "rebirth",
+    "hints": [
+      { "type": "invincible",  "text": "Only the blinking tail segment can take damage — all other body parts are invulnerable, requiring precise targeting during the brief surface windows" },
+      { "type": "jump",        "text": "Leaps toward Isaac from underground, dealing contact damage, then immediately re-burrows at the landing point" },
+      { "type": "tears_burst", "text": "Surfaces head-first to fire a wide cluster of projectiles toward Isaac — similar to a Chapter 1 boss's landing burst but with a wider spread" },
+      { "type": "explosive",   "text": "Surfaces tail-first to fire 3 red Ipecac shots toward Isaac, then re-enters from the same emergence point" },
+      { "type": "summons",     "text": "Can be accompanied at fight-start by Lumps, Guts, Para-Bites, or Round Worms" },
+      { "type": "invincible",  "text": "After most attacks, re-enters underground from the same spot it emerged — tracking the entry point predicts the next surface location" },
+      { "type": "jump",        "text": "Explosions hitting Scolex while airborne deflect it backward — the deflection can redirect the landing point or briefly extend the surface window" },
+      { "type": "explosive",   "text": "A burrowing worm whose only vulnerable point is its blinking tail — the tail-first Ipecac surface is its most distinctive attack, shared with no other burrowing boss" }
+    ]
+  },
+  {
+    "id": "the_haunt",
+    "name": "The Haunt",
+    "chapters": [3],
+    "location": ["Depths", "Necropolis", "Dank Depths"],
+    "image": "/images/items/boss-portraits/boss-portraits/the_haunt.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Haunt",
+    "dlc": "afterbirth",
+    "hints": [
+      { "type": "invincible",  "text": "Completely invulnerable in Phase 1 — can only be harmed after all three accompanying Lil' Haunts are defeated" },
+      { "type": "summons",     "text": "Three Lil' Haunts orbit it initially; they go corporeal and chase Isaac one at a time in sequence, never all at once" },
+      { "type": "multi_phase", "text": "After all three Lil' Haunts are eliminated, the boss dashes to the upper wall and begins moving left and right along it for the rest of the fight" },
+      { "type": "laser",       "text": "In Phase 2, fires a straight Brimstone laser directly downward" },
+      { "type": "tears_aimed", "text": "Also fires a spread of 5 blood shots downward in Phase 2" },
+      { "type": "summons",     "text": "The three Lil' Haunts activate sequentially — only after each is defeated does the next go corporeal, compressing the fight into three distinct minion-clearance windows" },
+      { "type": "charge",      "text": "If Isaac stands near the upper wall in Phase 2, the boss dashes horizontally toward him — an incentive to attack from below rather than the same elevation" },
+      { "type": "invincible",  "text": "A ghost-like boss that hides behind three sequentially-corporeal minions; once the last Lil' Haunt falls, it retreats to hug the ceiling and attacks from above with lasers and spreads" }
+    ]
+  },
+  {
+    "id": "dingle",
+    "name": "Dingle",
+    "chapters": [2],
+    "location": ["Caves", "Flooded Caves"],
+    "image": "/images/items/boss-portraits/boss-portraits/dingle.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Dingle",
+    "dlc": "afterbirth",
+    "hints": [
+      { "type": "charge",      "text": "Performs 3 long dashes toward Isaac in rapid succession, bouncing off walls and obstacles, then pauses to catch its breath" },
+      { "type": "summons",     "text": "Whistles before summoning 1–3 Dip enemies, then immediately fires 3 projectiles — the whistle is the telegraph for both incoming threats" },
+      { "type": "tears_aimed", "text": "Fires 3 projectiles directly at Isaac as a standalone attack and after each summon sequence" },
+      { "type": "charge",      "text": "The 3-dash sequence is fixed — the brief recovery pause after the third dash is the most reliable damage window" },
+      { "type": "summons",     "text": "Dips knocked back by dashes deal contact damage — accumulated Dips from multiple summon cycles compound the hazard progressively" },
+      { "type": "floor_hazard","text": "Occasionally leaves poop behind during its dashes, cluttering the arena with persistent obstacles" },
+      { "type": "tears_aimed", "text": "Both the standalone fire and the post-summon fire aim at Isaac's current position when triggered — neither has spread or randomization" },
+      { "type": "floor_hazard","text": "A poop-themed boss distinguished by a fixed three-dash sequence and a whistle-before-summon telegraph — the whistle warns simultaneously of incoming Dips and a follow-up projectile burst" }
+    ]
+  },
+  {
+    "id": "dangle",
+    "name": "Dangle",
+    "chapters": [2],
+    "location": ["Mines", "Ashpit"],
+    "image": "/images/items/boss-portraits/boss-portraits/dangle.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Dangle",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "floor_hazard", "text": "Leaves a trail of slippery brown creep during each dash — the creep persists and alters player movement in affected areas" },
+      { "type": "charge",       "text": "Performs 2 long dashes toward Isaac (one fewer than its Chapter 2 counterpart), bouncing off walls, then pauses to recover" },
+      { "type": "spawns_creep", "text": "When poisoned during a dash, leaves green damaging creep instead of the standard brown slippery variety — the color marks the hazard type change" },
+      { "type": "summons",      "text": "Whistles before summoning 1–3 Brownie Corns, then fires 3 projectiles — the same whistle-summon-fire sequence as its counterpart, with different summons" },
+      { "type": "explosive",    "text": "Occasionally spawns a Corn Mine at the start of a dash; the mine detonates, poisoning Dangle and triggering the green creep behavior for that pass" },
+      { "type": "charge",       "text": "The slippery brown creep lingers post-dash — both boss and Isaac slide on it, making subsequent movement in that area unpredictable" },
+      { "type": "tears_aimed",  "text": "The 3-shot fire after summoning aims directly at Isaac's position when triggered — identical firing mechanic to its Chapter 2 counterpart" },
+      { "type": "floor_hazard", "text": "The alt-Chapter 2 counterpart of a poop-themed boss — distinguished by slippery brown creep, 2-dash attacks instead of 3, and a self-poisoning Corn Mine mechanic that switches creep to green" }
+    ]
+  },
+  {
+    "id": "rag_man",
+    "name": "Rag Man",
+    "chapters": [1],
+    "location": ["Basement", "Cellar", "Burning Basement"],
+    "image": "/images/items/boss-portraits/boss-portraits/rag_man.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Rag_Man",
+    "dlc": "afterbirth",
+    "hints": [
+      { "type": "summons",     "text": "Throws its own head at Isaac; the head rolls across the floor and transforms into a Ragling enemy, up to 4 alive at once" },
+      { "type": "homing",      "text": "Fires 1, 3, or 5 homing projectiles at Isaac in quick succession — the count varies between volleys" },
+      { "type": "multi_phase", "text": "The thrown head has its own HP and can be damaged before it transforms — destroying the head mid-roll prevents a Ragling from spawning" },
+      { "type": "summons",     "text": "Can revive all nearby Raglings simultaneously, healing itself in the process — it can overheal above its base HP maximum through repeated resurrections" },
+      { "type": "homing",      "text": "While headless after a throw, the body continues to fire a homing projectile in a random direction — the head-throw does not pause its attacks" },
+      { "type": "chase",       "text": "Chases Isaac when no Raglings are alive; follows one of its own Raglings when any are present — Ragling removal shifts the boss from passive to active pursuit" },
+      { "type": "multi_phase", "text": "Spacing Ragling kills apart from each other can deny the resurrection — if no Raglings are nearby when one dies, the revival trigger has no targets" },
+      { "type": "chase",       "text": "A rag-doll boss that detaches its own head as a Ragling-spawning projectile and can self-resurrect its minions to heal — the most dangerous window is immediately after clearing all Raglings" }
+    ]
+  },
+  {
+    "id": "gurglings",
+    "name": "Gurglings",
+    "chapters": [4],
+    "location": ["Womb", "Utero", "Scarred Womb"],
+    "image": "/images/items/boss-portraits/boss-portraits/gurglings.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Gurglings",
+    "dlc": "afterbirth",
+    "hints": [
+      { "type": "charge",       "text": "Each rushes toward Isaac when aligned cardinally, leaving a trail of red creep until hitting a wall" },
+      { "type": "spawns_creep", "text": "The red creep trail from each rush persists — repeated dashes from two independent bodies progressively contaminate the room" },
+      { "type": "summons",      "text": "After each wall impact, both pause briefly then spawn 0–2 Attack Flies before resuming" },
+      { "type": "charge",       "text": "A Gurgling's dash can be interrupted if it collides with an Attack Fly mid-rush — the spawned flies can physically impede the boss's own attacks" },
+      { "type": "spawns_creep", "text": "No projectile attacks — all offense is contact damage during dashes and from accumulated flies" },
+      { "type": "summons",      "text": "Attack Flies persist between wall impacts and cluster in areas frequently struck by Gurgling dashes" },
+      { "type": "chase",        "text": "Between dashes, both wander the room independently — their uncorrelated paths mean they can approach from opposite directions simultaneously" },
+      { "type": "floor_hazard", "text": "A pair of small gurgling creatures from the Womb — always fought together, launching simultaneous independent cardinal dashes that trail red creep and spawn flies on wall impact" }
+    ]
+  },
+  {
+    "id": "brownie",
+    "name": "Brownie",
+    "chapters": [2],
+    "location": ["Mines", "Ashpit"],
+    "image": "/images/items/boss-portraits/boss-portraits/brownie.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Brownie",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "multi_phase",   "text": "At approximately 25% health, degrades into a fully functional Dangle with separate HP — the fight isn't over when Brownie looks nearly dead" },
+      { "type": "summons",       "text": "Spawns Brownie Corns when taking damage — a single Corn each hit, or occasionally a group at once from larger damage events" },
+      { "type": "floor_hazard",  "text": "Crushes Brownie Corns it moves over, healing itself per corn — its own spawns become a sustain mechanic if left alive in the arena" },
+      { "type": "spawns_creep",  "text": "The sliding attack leaves a persistent trail of slippery brown creep across the room — when poisoned by a Corn Mine during the slide, the creep switches to green damaging creep instead" },
+      { "type": "jump",          "text": "Twirls and jumps 4–6 times around the room, creating a brown creep puddle at each landing and tossing projectiles randomly between jumps" },
+      { "type": "charge",        "text": "The spinning dash bounces off walls and finishes with a fart that pushes Isaac back — sometimes leaves brown creep and spawns Corn Mines during the spin" },
+      { "type": "summons",       "text": "Corn Mines spawned during the sliding attack can detonate and poison Brownie mid-pass, causing it to leave damaging green creep for the rest of that slide" },
+      { "type": "multi_phase",   "text": "A poop boss from the alt-Chapter 2 floors — self-heals by running over its own Brownie Corn spawns, and ends its life as a Dangle when near death" }
+    ]
+  },
+  {
+    "id": "little_horn",
+    "name": "Little Horn",
+    "chapters": [3],
+    "location": ["Depths", "Necropolis", "Dank Depths"],
+    "image": "/images/items/boss-portraits/boss-portraits/little_horn.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Little_Horn",
+    "dlc": "afterbirth",
+    "hints": [
+      { "type": "floor_hazard",  "text": "Creates pitfalls beneath itself to reposition around the room — the pitfalls persist briefly and deal damage if Isaac steps in them" },
+      { "type": "explosive",     "text": "Throws troll bombs or mega troll bombs into created pitfalls — the bombs pop up near Isaac's current position rather than where they were thrown" },
+      { "type": "teleport",      "text": "Repositions by jumping through its own pitfalls, maintaining distance from Isaac throughout the fight" },
+      { "type": "chase",         "text": "Constantly moves away from Isaac rather than pursuing him — an unusual boss whose default behavior is active evasion" },
+      { "type": "floor_hazard",  "text": "Also generates 3–5 moving pitfalls that travel outward from its position during the fight" },
+      { "type": "explosive",     "text": "Leaves troll bombs in pitfalls as it jumps through them in sequence, repeating 3–5 times — each bomb emerges near Isaac when the pitfall closes" },
+      { "type": "tears_aimed",   "text": "Spawns dark balls during the fight alongside its bomb-and-pitfall attacks" },
+      { "type": "teleport",      "text": "A tiny demonic figure that actively moves away from Isaac rather than pursuing him — its entire combat style is pitfall-based repositioning and bomb delivery, using the floor itself as a transit system" }
+    ]
+  },
+  {
+    "id": "mr_fred",
+    "name": "Mr. Fred",
+    "chapters": [4],
+    "location": ["Womb", "Utero"],
+    "image": "/images/items/boss-portraits/boss-portraits/mr_fred.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Mr._Fred",
+    "dlc": "afterbirth",
+    "hints": [
+      { "type": "summons",      "text": "Begins the fight with 4 chained Homunculi; periodically breaks one chain to release a Homunculus into the room — only one is released at a time" },
+      { "type": "tears_aimed",  "text": "Fires 4 large blood projectiles in the cardinal directions — each leaves a red creep trail and bursts into a larger creep pool at the end of its range" },
+      { "type": "tears_ring",   "text": "Briefly burrows underground and resurfaces in its original position, then fires 8 projectiles outward in all directions" },
+      { "type": "spawns_creep", "text": "The cardinal blood shots leave red creep as they travel and create an additional creep burst where they stop — a single volley can cover significant floor area" },
+      { "type": "summons",      "text": "Also spawns a Fred enemy at its position, which immediately burrows underground and attacks from below" },
+      { "type": "floor_hazard", "text": "Always occupies the center of a 1×2 or 2×1 shaped room — the elongated room shape is the first identifier that Mr. Fred is the boss" },
+      { "type": "tears_aimed",  "text": "The cardinal shots always travel their full fixed range before bursting, regardless of walls — the creep burst zone at maximum range is a predictable persistent hazard" },
+      { "type": "tears_ring",   "text": "A large stationary creature that never leaves the room center — its elongated room, 4 chained Homunculi, and creep-bursting blood shots identify it among Womb stationary bosses" }
+    ]
+  },
+  {
+    "id": "conquest",
+    "name": "Conquest",
+    "chapters": [4],
+    "location": ["Womb", "Utero", "Scarred Womb"],
+    "image": "/images/items/boss-portraits/boss-portraits/conquest.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Conquest",
+    "dlc": "rebirth",
+    "hints": [
+      { "type": "charge",      "text": "Charges horizontally off-screen and reappears alongside 7–8 copies of itself from the opposite end — all copies share a single health bar" },
+      { "type": "homing",      "text": "Fires 4 homing projectiles in the cardinal directions" },
+      { "type": "laser",       "text": "Ascends off-screen and summons 8–10 staggered Crack the Sky beams in random room locations, then returns from the side" },
+      { "type": "charge",      "text": "During the charge, copies are randomly dispersed across most of the room width — the spread makes purely vertical movement the primary dodge" },
+      { "type": "homing",      "text": "Charges more frequently when Isaac is to its left or right — lateral positioning triggers the charge more often than being directly in front or behind" },
+      { "type": "flight",      "text": "Ascends completely off-screen for the aerial attack — the pre-attack departure is the only warning that Crack the Sky beams are incoming" },
+      { "type": "laser",       "text": "The Crack the Sky beams arrive in staggered sequence rather than simultaneously — individual markers can be tracked since each fires slightly after the last" },
+      { "type": "multi_phase", "text": "A white horseman from the Womb, classified as a Harbinger and alternate boss for Death — its 7–8-copy charge fills the room simultaneously; all copies share one health bar" }
+    ]
+  },
+  {
+    "id": "mega_fatty",
+    "name": "Mega Fatty",
+    "chapters": [2],
+    "location": ["Caves", "Catacombs", "Flooded Caves"],
+    "image": "/images/items/boss-portraits/boss-portraits/mega_fatty.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Mega_Fatty",
+    "dlc": "afterbirth",
+    "hints": [
+      { "type": "jump",        "text": "Leaps off-screen and crashes down on Isaac's position, leaving a large red creep puddle on landing" },
+      { "type": "tears_aimed", "text": "Inhales, drawing Isaac and any room enemies toward it, then vomits upward — the launched projectiles rain down continuously following Isaac's movements for a short duration" },
+      { "type": "spawns_creep","text": "Also performs a short slide toward Isaac followed by a small hop, leaving red creep on both landings" },
+      { "type": "summons",     "text": "The flatulence attack has two possible outcomes: summons 1–3 Dips, or unleashes a cluster of projectiles — the outcome is not signaled in advance" },
+      { "type": "jump",        "text": "Both jump attacks target Isaac's position at the moment of launch — the off-screen leap's landing zone is harder to predict than the visible short-range hop" },
+      { "type": "spawns_creep","text": "Red creep from both jump attacks persists — accumulated puddles from repeated jump sequences progressively constrain the arena" },
+      { "type": "tears_aimed", "text": "The vomit projectiles follow Isaac's movement during their airborne phase — moving erratically during the rain is more effective than committing to one direction" },
+      { "type": "summons",     "text": "A large rotund creature from the Caves with a suction-vomit attack that draws in the player before raining projectiles; its flatulence randomly produces either minions or a projectile burst" }
+    ]
+  },
+  {
+    "id": "the_frail",
+    "name": "The Frail",
+    "chapters": [2],
+    "location": ["Ashpit"],
+    "image": "/images/items/boss-portraits/boss-portraits/the_frail.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Frail",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "multi_phase",  "text": "Phase 1 mimics Pin's burrowing behavior but with reduced accuracy — it generally overshoots or undershoots Isaac's position rather than landing precisely" },
+      { "type": "invincible",   "text": "Invulnerable while underground in both phases — only damageable during and immediately after surfacing to attack" },
+      { "type": "multi_phase",  "text": "Phase 2 (with entirely separate HP) transforms it into a skeletal form with new attacks: rotating Brimstone lasers, splitting projectiles, and white creep" },
+      { "type": "laser",        "text": "In Phase 2, surfaces head-first to fire a rotating Brimstone laser that follows Isaac's position, or alternatively fires 2 non-moving Brimstone beams" },
+      { "type": "tears_burst",  "text": "The jump attack in Phase 2 fires 4 diagonal projectiles that each split into 4 more mid-travel — short jumps spawn no projectiles; long jumps produce a double burst" },
+      { "type": "spawns_creep", "text": "The tail-first Phase 2 attack releases a burst of white projectiles in all directions, each leaving small white creep puddles where they land" },
+      { "type": "invincible",   "text": "Like its counterpart, re-enters underground from the same spot it emerged after most Phase 2 attacks — tracking the entry point narrows the search for the blinking vulnerable segment" },
+      { "type": "laser",        "text": "A two-phase burrowing worm from the alt-Chapter 2 floors — Phase 1 is an inaccurate Pin-imitation; Phase 2 reveals a skeletal form with Brimstone lasers and splitting projectiles" }
+    ]
+  },
+  {
+    "id": "hornfel",
+    "name": "Hornfel",
+    "chapters": [2],
+    "location": ["Mines"],
+    "image": "/images/items/boss-portraits/boss-portraits/hornfel.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Hornfel",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "multi_phase",  "text": "Rides a minecart along tracks connecting all four boss doors, appearing from a random door each attack — movement is confined to the track system" },
+      { "type": "explosive",    "text": "Throws 1–2 bombs during passes; occasionally throws 3 Brimstone Bombs that resemble mines with delayed detonation" },
+      { "type": "summons",      "text": "Sends out 1–2 decoy dummies riding separate minecarts on other tracks — each dummy bursts into 6 troll bombs if killed or walked into" },
+      { "type": "multi_phase",  "text": "In Phase 2, falls off its minecart and attempts to escape the room through one of the doors — makes no further attacks but still deals contact damage" },
+      { "type": "explosive",    "text": "At high speed, throws bombs rapidly then fires a fireball that releases fire trails in all four cardinal directions on impact" },
+      { "type": "summons",      "text": "Independent minecarts on the tracks can carry Fire Places, TNT, or enemies — the track system is hazardous even between Hornfel's own passes" },
+      { "type": "floor_hazard", "text": "The track network defines the fight — all attacks originate from Hornfel's position on the tracks, and crossing carts from multiple doors create layered timing hazards" },
+      { "type": "floor_hazard", "text": "A mine boss from the alt-Chapter 2 floors who attacks exclusively from a minecart track system — the only boss whose Phase 2 is a flee attempt rather than an escalation" }
+    ]
+  },
+  {
+    "id": "singe",
+    "name": "Singe",
+    "chapters": [2],
+    "location": ["Ashpit"],
+    "image": "/images/items/boss-portraits/boss-portraits/singe.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Singe",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "explosive",    "text": "Charges erratically toward Isaac or toward a spiked rock, creating an explosion on impact — short jumps help it close distance before detonating" },
+      { "type": "floor_hazard", "text": "The large explosion attack — which occurs exactly twice during the fight after hitting HP thresholds — creates a cross-shaped pit on landing and spawns an additional spiked rock" },
+      { "type": "explosive",    "text": "Releases explosive gas clouds that propel its spiked rocks outward — the rocks bounce off walls and obstacles before settling" },
+      { "type": "laser",        "text": "After both large explosions, unlocks a flame stream attack: lights a matchstick and produces a continuous fire stream that follows Isaac's exact movement path" },
+      { "type": "multi_phase",  "text": "The fight escalates in two stages triggered by HP thresholds — each large explosion is a one-time event; after both occur, the flame stream becomes available for the remainder" },
+      { "type": "floor_hazard", "text": "Starts with 4 Singe's Balls (damaging spiked rocks) in the arena — rocks respawn one at a time after being blown into pits; they are both hazards and tactical tools" },
+      { "type": "laser",        "text": "The flame stream follows Isaac's exact movement path with a slight delay — changing direction causes the stream to curve with the path, making erratic movement more effective than straight running" },
+      { "type": "multi_phase",  "text": "A salamander-like boss from the alt-Chapter 2 floors — two staged HP-threshold explosions gate its escalation, and its spiked-rock gas-slingshot attacks are unique among Repentance bosses" }
+    ]
+  },
+  {
+    "id": "sisters_vis",
+    "name": "Sisters Vis",
+    "chapters": [5],
+    "location": ["Sheol"],
+    "image": "/images/items/boss-portraits/boss-portraits/sisters_vis.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Sisters_Vis",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "laser",        "text": "After each rolling attack, fires a Mega Blast laser in the cardinal direction closest to Isaac — the laser occasionally sweeps back and forth in a wide arc" },
+      { "type": "spawns_creep", "text": "The two sisters leave different creep trails during rolls: one leaves green, the other leaves brown — the trail color identifies which sister is rolling" },
+      { "type": "laser",        "text": "The signature jump attack has both sisters land on opposite sides of Isaac and fire Mega Blast lasers toward each other — the beams collide in the middle of the room" },
+      { "type": "summons",      "text": "Together they spawn either two Vis or two Begottens during the fight — spawned enemies can be eliminated by the sisters' own rolling and laser attacks" },
+      { "type": "multi_phase",  "text": "When one sister dies, the other becomes enraged — she moves faster, no longer performs jump attacks, and always fires Mega Blast or projectile attacks after each roll" },
+      { "type": "spawns_creep", "text": "If one sister takes disproportionately more damage quickly, she enrages early — balancing damage between both sisters delays the enrage trigger" },
+      { "type": "tears_aimed",  "text": "Fires 2–4 lines of 3–5 projectiles in the cardinal direction closest to Isaac's position — directional targeting makes movement direction as important as arena positioning" },
+      { "type": "multi_phase",  "text": "A two-sister boss — green-creep and brown-creep rolling attacks, coordinated colliding Mega Blast lasers, and an enrage mechanic triggered by imbalanced damage or one sister's death" }
+    ]
+  },
+  {
+    "id": "the_heretic",
+    "name": "The Heretic",
+    "chapters": [3],
+    "location": ["Gehenna"],
+    "image": "/images/items/boss-portraits/boss-portraits/the_heretic.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Heretic",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "invincible",  "text": "Completely invulnerable in Phase 1 while incorporeal — only becomes vulnerable after all summoned Fanatics and their resulting Pacers and Gushers are defeated" },
+      { "type": "summons",     "text": "Five shielded Exorcists summon The Heretic from a pentagram and then transform into Fanatics — the Exorcists must be cleared before The Heretic can be engaged at all" },
+      { "type": "laser",       "text": "Lights 5–6 fire places in the arena, then fires a purple Brimstone laser connecting all lit fires in sequence — explosions can extinguish fires to prevent the laser from reaching them" },
+      { "type": "explosive",   "text": "Lobs 7 projectiles whose landing positions are marked on the ground — each lands and bursts into 6 fires that spread outward in a radial pattern" },
+      { "type": "tears_ring",  "text": "After the projectile throw, launches itself toward Isaac and creates a radial burst of 8 lines of fire at the landing point" },
+      { "type": "charge",      "text": "Becomes invisible and charges from off-screen 4 times in succession from alternating sides, predicting Isaac's movement — occasionally adds a fifth charge from the opposite side" },
+      { "type": "invincible",  "text": "Contact damage is possible even while The Heretic is incorporeal in Phase 1 — clearing Fanatics quickly is safer than trying to avoid the boss itself during the wait" },
+      { "type": "summons",     "text": "A late-game boss whose invulnerable Phase 1 requires full Fanatic clearance, and whose Phase 2 fire-place-connected Brimstone laser is among the most mechanically distinctive attacks in Repentance" }
+    ]
+  },
+  {
+    "id": "the_visage",
+    "name": "The Visage",
+    "chapters": [2],
+    "location": ["Mines", "Ashpit"],
+    "image": "/images/items/boss-portraits/boss-portraits/the_visage.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Visage",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "multi_phase",  "text": "The chain connecting the mask and heart must be destroyed first — severing it separates both components and changes each one's behavior entirely for the rest of the fight" },
+      { "type": "invincible",   "text": "In Phase 2, the freed mask can only be damaged by explosions, piercing shots, or direct hits to its exposed back — conventional frontal attacks have no effect" },
+      { "type": "laser",        "text": "The heart fires a horizontal Brimstone helix with knockback when pulling the mask inward — the helix rotation creates sweeping horizontal coverage" },
+      { "type": "multi_phase",  "text": "At 50% heart HP, Phase 3 begins: the heart moves faster and fires Visage Plasma balls that bounce around the arena and trigger Brimstone fire from the mask on contact" },
+      { "type": "tears_ring",   "text": "In Phase 3, fires a ring of 16 red projectiles — one of the denser projectile rings in the game" },
+      { "type": "charge",       "text": "The mask charges at Isaac from cardinal directions during Phase 1, predicting movement — after hitting a wall, fires a spray of rock projectiles before being pulled back by the chain" },
+      { "type": "laser",        "text": "When Phase 3 Plasma balls are absorbed (healing the heart per ball), the heart releases 4 tight fire rings plus 4 short-range diagonal Brimstone lasers simultaneously" },
+      { "type": "invincible",   "text": "A two-component Repentance boss across three escalating phases: chain → unbound mask and heart → exposed vulnerable heart; the mask's explosion-or-back-only Phase 2 vulnerability is the fight's mechanical centerpiece" }
+    ]
+  },
+  {
+    "id": "the_pile",
+    "name": "The Pile",
+    "chapters": [2, 3, 4],
+    "location": ["Caves", "Depths", "Womb"],
+    "image": "/images/items/boss-portraits/boss-portraits/the_pile.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Pile",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "tears_burst",  "text": "Burrows underground, reappears rapidly near Isaac, and fires a spread of 5 bone projectiles — this sequence repeats 3 times consecutively before any other attack" },
+      { "type": "summons",      "text": "Generates spike walls in all four cardinal directions that start at the room's edges and move inward toward The Pile — summoned obstacles, not fired projectiles" },
+      { "type": "charge",       "text": "Charges toward Isaac until hitting a wall, creating two diagonal lines of rock waves from the impact point and firing a spray of bone projectiles — knockback resistance is greatly increased during the charge" },
+      { "type": "floor_hazard", "text": "The 3-consecutive burrow sequence always fires from close range — three rapid pop-up spreads before any other attack cycle resumes" },
+      { "type": "summons",      "text": "Summons Bony enemies during the fight, up to 2 alive at once" },
+      { "type": "charge",       "text": "The charge destroys obstacles within a small radius on impact — in rooms with obstacle clusters, the charge can clear navigation paths as a side effect" },
+      { "type": "tears_burst",  "text": "The bone projectile spray after a charge fires outward from the wall impact point, not toward Isaac — direction is determined by which wall was struck" },
+      { "type": "floor_hazard", "text": "A skeletal creature found across multiple game chapters — its cardinal spike walls converging inward and triple consecutive burrow-spread are its most distinctive mechanical signatures" }
+    ]
+  },
+  {
+    "id": "the_shell",
+    "name": "The Shell",
+    "chapters": [2],
+    "location": ["Mines"],
+    "image": "/images/items/boss-portraits/boss-portraits/the_shell.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Shell",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "invincible",  "text": "Normally invulnerable — only explosives can damage armor segments; each segment requires 15 explosive damage to strip its bony exterior" },
+      { "type": "flight",      "text": "Flies diagonally around the room identically to The Hollow; if Isaac is near the head, the trajectory veers slightly toward him" },
+      { "type": "explosive",   "text": "The encounter provides Bomb Grimaces that continuously dispense throwable bombs — the fight's entire damage model is designed around explosive access" },
+      { "type": "invincible",  "text": "The head itself cannot be damaged at all and only dies after all attached segments are destroyed — it is the primary target but not a damage point" },
+      { "type": "tears_aimed", "text": "Exposed middle segments fire a volley of 3 shots at Isaac; exposed end segments spawn Fly Bombs instead of projectiles" },
+      { "type": "splits",      "text": "When split unevenly, the side with 3 or more segments including at least one armored end segment becomes an independent new boss — the shorter side's armor is automatically destroyed" },
+      { "type": "explosive",   "text": "Spawns as a pair — coordinating bomb use between two simultaneously active armored forms is the central challenge of the encounter" },
+      { "type": "flight",      "text": "A pair of armored worm-like creatures from the alt-Chapter 2 floors — bomb-only armor stripping and a head that cannot be targeted directly define the encounter" }
+    ]
+  },
+  {
+    "id": "turdlings",
+    "name": "Turdlings",
+    "chapters": [2],
+    "location": ["Mines", "Ashpit"],
+    "image": "/images/items/boss-portraits/boss-portraits/turdlings.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Turdlings",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "charge",       "text": "Each rushes toward Isaac when aligned cardinally, leaving a trail of slippery brown creep until hitting a wall" },
+      { "type": "spawns_creep", "text": "The slippery brown creep persists after each rush — two independent bodies launching repeated dashes progressively cover the floor" },
+      { "type": "summons",      "text": "After each wall impact, spawns 4 Brownie Corns that launch out in the four cardinal directions" },
+      { "type": "charge",       "text": "The dash can be interrupted if a Turdling collides with one of its own Brownie Corns mid-rush — the spawned corns physically impede the boss's own attacks" },
+      { "type": "spawns_creep", "text": "Occasionally farts after a wall impact, knocking back Isaac and any nearby Brownie Corns — the knockback can push Isaac into accumulated creep zones" },
+      { "type": "summons",      "text": "Spawns as a pair — two independent rush cycles mean two separate Brownie Corn scatters from each wall impact, rapidly populating the arena" },
+      { "type": "floor_hazard", "text": "Brownie Corns from wall impacts scatter in the cardinal directions and persist — accumulated corns from multiple rush cycles make subsequent dashes increasingly likely to self-interrupt" },
+      { "type": "floor_hazard", "text": "A pair of poop creatures — always two, independent cardinal dashes with brown creep trails, 4-corn scatter on wall impact, and occasional knockback farts after each crash" }
+    ]
+  },
+  {
+    "id": "rag_mega",
+    "name": "Rag Mega",
+    "chapters": [2],
+    "location": ["Caves", "Catacombs", "Flooded Caves"],
+    "image": "/images/items/boss-portraits/boss-portraits/rag_mega.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Rag_Mega",
+    "dlc": "afterbirth",
+    "hints": [
+      { "type": "orbit",       "text": "Spawns with 3 immune Purple Balls that orbit it as a protective shield — the balls block shots and cannot be damaged by normal means" },
+      { "type": "multi_phase", "text": "Each time Rag Mega loses approximately 25% of its HP, one orbiting Purple Ball breaks off and begins chasing Isaac — this happens up to 3 times" },
+      { "type": "invincible",  "text": "Periodically wraps itself in bandages and becomes fully immune to damage — a recurring invincibility window throughout the fight" },
+      { "type": "laser",       "text": "Fires 3 beams from the sky that travel outward from a point — if a beam hits the remains of a defeated Ragling, it revives that Ragling" },
+      { "type": "summons",     "text": "Spawns Rag Man's Raglings as minions, whose remains persist in the arena and can be reanimated by the beam attack" },
+      { "type": "homing",      "text": "The detached Purple Balls independently chase Isaac — up to 3 can be active simultaneously if HP is lost rapidly" },
+      { "type": "orbit",       "text": "The initial orbiting balls block incoming shots while intact — taking HP damage at the right time opens a window without orbital defenses" },
+      { "type": "multi_phase", "text": "An evolved variant of Rag Man from the Caves — its orbiting immune shield, HP-threshold ball detachments, and Ragling-reviving sky beams are mechanics Rag Man itself lacks" }
+    ]
+  },
+  {
+    "id": "the_stain",
+    "name": "The Stain",
+    "chapters": [3],
+    "location": ["Depths", "Necropolis", "Dank Depths"],
+    "image": "/images/items/boss-portraits/boss-portraits/the_stain.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Stain",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "invincible",   "text": "Burrows underground whenever Isaac is out of range — invulnerable while submerged, and continues tracking Isaac's movements underground before surfacing to attack" },
+      { "type": "tears_ring",   "text": "Fires two successive volleys in all directions: the first starts fast and slows down; the second starts slow and speeds up — both volleys from the same surface window" },
+      { "type": "spawns_creep", "text": "Sends tendrils left and right upon surfacing, leaving small puddles of damaging red creep in the area directly around The Stain and to either side" },
+      { "type": "summons",      "text": "Spawns Chargers as minions, up to a maximum of 3 alive at once" },
+      { "type": "invincible",   "text": "Only vulnerable for a brief window immediately after performing an attack — the rest of the fight it is either burrowed and invincible or mid-transition" },
+      { "type": "floor_hazard", "text": "Tracks Isaac's position underground before choosing a surface point — emergence is not random but follows the player's movement while submerged" },
+      { "type": "tears_ring",   "text": "The two speed-opposing volleys require different dodging approaches — the slow-then-fast second volley becomes more dangerous at close range as it accelerates after passing" },
+      { "type": "summons",      "text": "A burrowing boss from the Depths — its two-speed all-directional volley pair, tendrils leaving red creep, and movement-tracking underground behavior distinguish it from simpler burrowing bosses" }
+    ]
+  },
+  {
+    "id": "the_forsaken",
+    "name": "The Forsaken",
+    "chapters": [2],
+    "location": ["Catacombs", "Flooded Caves"],
+    "image": "/images/items/boss-portraits/boss-portraits/the_forsaken.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Forsaken",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "invincible",  "text": "Completely incorporeal while any Bony is alive — Isaac's tears pass straight through it in this state, making direct fire useless until Bonies are eliminated" },
+      { "type": "laser",       "text": "Fires 3 Brimstone lasers in triangular directions with one laser always pointing opposite to Isaac's position, then rotates all three just over 180 degrees" },
+      { "type": "summons",     "text": "Spawns one Bony at battle start, then spawns an additional Bony after each Brimstone attack cycle — eliminating Bonies is the only reliable sustained damage window" },
+      { "type": "multi_phase", "text": "At approximately 30% HP, begins spawning 2 Bonies instead of 1 after each attack cycle — minion pressure escalates as the boss approaches death" },
+      { "type": "invincible",  "text": "Walking into The Forsaken during its incorporeal phase spawns another Bony and briefly makes it vulnerable — an intentional contact trade available to aggressive players" },
+      { "type": "laser",       "text": "If Isaac contacts The Forsaken up to 4 times without clearing Bonies, it fires a modified Brimstone attack with greatly increased speed and duration — this also kills all current Bonies simultaneously" },
+      { "type": "summons",     "text": "A skull-like boss from the Catacombs — alternates between an untouchable incorporeal state and a brief Brimstone window; Bony clearance is the fight's central loop" }
+    ]
+  },
+  {
+    "id": "rotgut",
+    "name": "Rotgut",
+    "chapters": [3],
+    "location": ["Mausoleum", "Gehenna"],
+    "image": "/images/items/boss-portraits/boss-portraits/rotgut.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Rotgut",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "multi_phase",  "text": "Three completely separate phases: a stationary face, an interior crawl-space maggot, and a floating heart — each phase has different attacks and mechanics with no overlap" },
+      { "type": "tears_ring",   "text": "Phase 1 fires expanding rings of 8 projectiles rotating clockwise and counterclockwise alternately, along with a constant fanning wave alternating above and below the boss" },
+      { "type": "multi_phase",  "text": "Phase 2 takes place inside the boss in a crawl-space-like interior with platforms — different attacks trigger depending on whether Isaac is on the platforms above or the ground below" },
+      { "type": "laser",        "text": "Phase 2 ground-level position triggers a Brimstone laser attack; platform position triggers cluster projectiles with green poison coverage and Ipecac-burst shots" },
+      { "type": "summons",      "text": "Phase 1 vomit attack launches projectiles, bones, and enemy goo (Globins) plus Small Maggots across a large area; Phase 3 upward retreats spawn Leeches" },
+      { "type": "tears_ring",   "text": "Phase 3 alternates between: half-rings of green projectiles pulsing below the heart each beat, and three yellow projectiles that each split into two arcing shots on ground impact" },
+      { "type": "tears_aimed",  "text": "Phase 1 also fires triple-wave radial patterns (tight slow, spaced fast, randomly hovering) and horizontal burst salvos from both sides simultaneously" },
+      { "type": "summons",      "text": "A colossal Repentance boss with over 1800 HP across three entirely distinct phases — Phase 2's interior crawl-space setting is unique to this encounter" }
+    ]
+  },
+  {
+    "id": "baby_plum",
+    "name": "Baby Plum",
+    "chapters": [1],
+    "location": ["Basement", "Cellar", "Burning Basement"],
+    "image": "/images/items/boss-portraits/boss-portraits/baby_plum.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Baby_Plum",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "orbit",        "text": "Floats slowly toward Isaac and tries to maintain a specific orbiting distance around him throughout the fight" },
+      { "type": "tears_burst",  "text": "Spits projectiles diagonally while propelling herself backward and bouncing off walls — takes increased knockback from all sources during this attack; contains scattered larger projectiles dealing a full heart of damage" },
+      { "type": "tears_ring",   "text": "Ground Slam fires two concentric rings: an inner ring of 14 slow-moving shots with random spread and an outer ring of 8 fast shots in cardinal and ordinal directions; leaves red creep on landing" },
+      { "type": "spawns_creep", "text": "The ground slam leaves a persistent red creep pool — close-range positioning when the slam lands creates an immediate lingering hazard" },
+      { "type": "tears_ring",   "text": "Upon defeat, releases a ring of 10 projectiles outward — the death burst must be dodged immediately after the kill shot lands" },
+      { "type": "orbit",        "text": "The spiral attack starts pointing downward, then makes a full rotation beginning toward Isaac's current direction — the predictable downward start allows pre-positioning" },
+      { "type": "flight",       "text": "If Baby Plum takes no damage for 30 seconds, she waves and flies away, ending the fight without dying — the spare timer resets on any damage; only works in her dedicated boss room" },
+      { "type": "tears_burst",  "text": "A Chapter 1 airborne boss with a spare mechanic — her backward-propelling diagonal spit, two-ring ground slam, and post-death projectile ring each require different positioning" }
+    ]
+  },
+  {
+    "id": "big_horn",
+    "name": "Big Horn",
+    "chapters": [2],
+    "location": ["Caves", "Catacombs", "Flooded Caves"],
+    "image": "/images/items/boss-portraits/boss-portraits/big_horn.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Big_Horn",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "floor_hazard", "text": "Spawns 2–3 holes in the floor from which its arms emerge to attack — arm attacks and head attacks alternate throughout the fight" },
+      { "type": "explosive",    "text": "Arms throw single or triple Troll Bombs at Isaac; the echo attack sends bombs into empty holes, causing hands to re-emerge from those holes throwing the same bomb type" },
+      { "type": "homing",       "text": "Head attacks include a single large homing Dark Ball beneath itself, or a mix of 2 homing plus 1 non-homing Dark Ball fired simultaneously" },
+      { "type": "tears_aimed",  "text": "Also fires a pair of large Dark Balls diagonally that bounce off walls rather than homing — wall bounces make their final positions less predictable than the homing variants" },
+      { "type": "explosive",    "text": "A brief window exists to kick a bomb into its open mouth during head attacks — this stuns Big Horn and causes it to take 20% increased damage while stunned" },
+      { "type": "multi_phase",  "text": "If Big Horn dies while performing a Dark Ball attack, Little Horn hops off its hand and continues the fight independently with low health" },
+      { "type": "floor_hazard", "text": "The ground slap arm attack strikes 3 times quickly while moving toward Isaac — it destroys any Dark Balls it contacts, inadvertently clearing the boss's own projectiles" },
+      { "type": "homing",       "text": "A large underground boss from the Caves that alternates arm-from-hole and floating-head attacks — the bomb-into-mouth stun window and potential Little Horn continuation are its most distinctive mechanics" }
+    ]
+  },
+  {
+    "id": "chimera",
+    "name": "Chimera",
+    "chapters": [4],
+    "location": ["Corpse"],
+    "image": "/images/items/boss-portraits/boss-portraits/chimera.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Chimera",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "multi_phase",  "text": "At approximately 50% HP, makes a final charge then permanently separates into two independent entities — a head and a body — each with distinct attack patterns" },
+      { "type": "spawns_creep", "text": "Phase 1: as Chimera builds speed, it leaves a persistent green creep trail — the faster it moves, the more of the arena it covers" },
+      { "type": "laser",        "text": "The body in Phase 2 fires a Brimstone beam downward when Isaac is positioned directly above or below it — vertical positioning relative to the body determines laser exposure" },
+      { "type": "explosive",    "text": "In Phase 1, fires 8 Ipecac shots toward Isaac's predicted position with landing spots marked on the ground — the markers give brief pre-dodge warning" },
+      { "type": "multi_phase",  "text": "If one component dies first, the other adapts: the head switches to continuous wall-bouncing charges, the body switches to continuous rolling — killing both simultaneously is the safer approach" },
+      { "type": "charge",       "text": "Gradually builds momentum in Phase 1; once fast enough, wide turns from momentum become a navigation hazard as significant as the attacks themselves" },
+      { "type": "jump",         "text": "Phase 1 double jump: the first landing fires 8 tears outward in a ring; the second fires 4 diagonal rock waves — both triggers are a single jump sequence" },
+      { "type": "spawns_creep", "text": "A Repentance boss from the Corpse that builds speed leaving green creep, then splits into a head and body at half HP — both halves have conditional behavior based on which survives the other" }
+    ]
+  },
+  {
+    "id": "clutch",
+    "name": "Clutch",
+    "chapters": [2],
+    "location": ["Ashpit"],
+    "image": "/images/items/boss-portraits/boss-portraits/clutch.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Clutch",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "invincible",  "text": "Completely immune to damage while possessing a Clickety Clack — only vulnerable during the brief window when switching hosts or when all Clickety Clacks are eliminated and it is ejected" },
+      { "type": "summons",     "text": "Spawns with 3 Clickety Clacks as possession vessels; non-possessed ones are shielded; a dead Clickety Clack leaves a purple fire that periodically fires bone projectiles" },
+      { "type": "multi_phase", "text": "When all 3 Clickety Clacks are destroyed, Clutch is ejected and stunned — after sufficient damage it revives all 3 Clickety Clacks and the possession cycle restarts" },
+      { "type": "multi_phase", "text": "At 25% HP, Clutch destroys all Clickety Clacks itself, leaving indestructible purple fires, and enters solo Phase 2 with bone orbitals blocking shots" },
+      { "type": "orbit",       "text": "In Phase 2, acquires bone orbitals that circle it and block tears — the orbital defense replaces the Phase 1 Clickety Clack immunity mechanic" },
+      { "type": "tears_ring",  "text": "Phase 2 attack: rushes to Isaac's position, stops, and fires six volleys of six purple flames each in an alternating directional pattern — repeats until death" },
+      { "type": "invincible",  "text": "The possessed Clickety Clack fires 8 bone shots in all cardinal and ordinal directions at moment of possession — the initial burst fires before resuming pursuit behavior" },
+      { "type": "summons",     "text": "An Ashpit boss that possesses Clickety Clack vessels for immunity, revives them after full clearance, then goes solo with bone orbitals at 25% HP — the possession-swap mechanic is its most distinctive trait" }
+    ]
+  },
+  {
+    "id": "colostomia",
+    "name": "Colostomia",
+    "chapters": [1],
+    "location": ["Dross"],
+    "image": "/images/items/boss-portraits/boss-portraits/colostomia.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Colostomia",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "explosive",    "text": "Phase 1 slide attack leaves trails of explosive gas — the slide repeats until approximately 40% of the room floor is covered" },
+      { "type": "floor_hazard", "text": "Butt Bomb detonations ignite gas clouds, causing chain explosions across covered floor area — the bombs and accumulated gas form a combined mine system" },
+      { "type": "multi_phase",  "text": "At 50% HP, the containing bag explodes, creating explosive clouds and leaving Colostomia permanently adhered to the floor — Phase 2 attacks are entirely different from Phase 1" },
+      { "type": "tears_ring",   "text": "In Phase 2, jumps to a nearby location and fires 8 projectiles in a radial burst on landing, creating a brown creep puddle — only 2 creep puddles persist simultaneously" },
+      { "type": "spawns_creep", "text": "Phase 2 brown creep puddles accumulate from jump landings with a 2-puddle cap, limiting floor contamination from that attack type" },
+      { "type": "floor_hazard", "text": "Phase 2 also generates a ring of explosive gas around her position as a standalone fart attack — combined with any remaining Phase 1 gas, late-fight floor coverage can be extensive" },
+      { "type": "explosive",    "text": "Phase 2 twin-bomb spit launches 2 Butt Bombs at Isaac with throw range dependent on Isaac's proximity — closer positioning produces shorter-range, harder-to-dodge throws" },
+      { "type": "multi_phase",  "text": "An alt-Chapter 1 poop boss that mines the room with chained explosive gas in Phase 1, then adheres to the floor in Phase 2 — on death, her body diffuses into the arena water, turning it from green to brown" }
+    ]
+  },
+  {
+    "id": "clog",
+    "name": "Clog",
+    "chapters": [1],
+    "location": ["Dross"],
+    "image": "/images/items/boss-portraits/boss-portraits/clog.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Clog",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "floor_hazard", "text": "Spins to cause the room's water to circulate clockwise or counterclockwise — Isaac, Drips, Bombs, and Pickups are all caught in the current; negated by flight ability" },
+      { "type": "tears_ring",   "text": "Fires 4 spiraling projectile lines in two variants: slow with small gaps or fast with large gaps — gap size inversely relates to speed" },
+      { "type": "floor_hazard", "text": "The spiraling projectiles pass over poop for 1 second after firing, then are blocked by poop — the fight's poop obstacles can shield specific positions from the spirals" },
+      { "type": "summons",      "text": "Periodically spits out Drip enemies, stopping once 4 are alive; the water circulation attack only activates when at least 2 Drips are present" },
+      { "type": "tears_ring",   "text": "Always stationary in the room center — all attacks fire outward from a fixed point, making diagonal positioning relative to Clog consistently the lowest-threat zone" },
+      { "type": "summons",      "text": "The fart attack creates 3 spreading lines of knockback farts; each fart may spawn Poop, up to 3 total active Poops in the room" },
+      { "type": "tears_burst",  "text": "The fart lines spread across the room in 3 directions — the knockback can displace Isaac into Drip clusters or accumulated Poop obstacles" },
+      { "type": "tears_burst",  "text": "A stationary toilet-like boss from the alt-Chapter 1 floors — its room-water circulation current, poop-blocking spiral projectiles, and Flush!-style death are its most distinctive mechanics" }
+    ]
+  },
+  {
+    "id": "great_gideon",
+    "name": "Great Gideon",
+    "chapters": [2],
+    "location": ["Mines"],
+    "image": "/images/items/boss-portraits/boss-portraits/great_gideon.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Great_Gideon",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "multi_phase",  "text": "Has no health bar — the fight consists of 6 enemy waves that must each be fully cleared; Great Gideon deactivates like a Stone Grimace after all waves are defeated" },
+      { "type": "chase",        "text": "Periodically performs a vacuum that pulls Isaac, all enemies, and projectiles toward it — touching Great Gideon while the vacuum is active deals damage to Isaac" },
+      { "type": "tears_burst",  "text": "Fires 5 projectiles in a cone shape; the center projectile is larger and splits into 8 projectiles in a radial burst upon impact with anything" },
+      { "type": "floor_hazard", "text": "Starting from Wave 4, charges up and releases a rock wave down the arena center that breaks the floor creating gaps — always leaves at least 1 gap between created holes to prevent fully trapping Isaac" },
+      { "type": "laser",        "text": "Spits large flame projectiles down the center of the arena; flames occasionally leave small fires behind and can transform enemies they hit into flaming variants" },
+      { "type": "multi_phase",  "text": "Never progresses a new enemy wave mid-attack — waves only begin after Great Gideon finishes its current attack cycle, creating reliable timing for wave transitions" },
+      { "type": "summons",      "text": "Each of the 6 waves adds different enemy compositions; the enemies are the primary combat challenge while Great Gideon's own attacks create environmental pressure" },
+      { "type": "floor_hazard", "text": "A massive stone boss fought in a vertical double-size room — wave-based victory condition with no HP bar, vacuum pull, and a floor-breaking rock wave from Wave 4 onward define the encounter" }
+    ]
+  },
+  {
+    "id": "min_min",
+    "name": "Min-Min",
+    "chapters": [3],
+    "location": ["Mausoleum"],
+    "image": "/images/items/boss-portraits/boss-portraits/min_min.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Min-Min",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "orbit",        "text": "Builds an orbital ring of up to 4 Willos in Phase 1; once at capacity, the Willos periodically fire 3 projectiles outward in a coordinated burst" },
+      { "type": "summons",      "text": "Continuously spits out individual Willos to replenish the ring — the coordinated burst fires continuously even if individual Willos have been killed" },
+      { "type": "multi_phase",  "text": "In Phase 2, sheds her corpse husk and increases maximum orbital Willo capacity from 4 to 7 — ring density roughly doubles" },
+      { "type": "orbit",        "text": "Phase 2 introduces a chase attack where the entire orbiting Willo ring is sent to pursue Isaac for several seconds before returning" },
+      { "type": "tears_aimed",  "text": "Phase 2 spawning attack: disappears and creates ground light clusters; Willos appear from each cluster, fire projectiles at Isaac, and vanish" },
+      { "type": "summons",      "text": "Phase 2 can spawn up to 4 new Willos at once around herself, then causes all orbiting Willos to fire 3 projectiles outward simultaneously" },
+      { "type": "chase",        "text": "Floats slowly and persistently toward Isaac throughout both phases — orbital reach compensates for her slow direct approach" },
+      { "type": "multi_phase",  "text": "A boss that builds an orbital Willo ring — Phase 2 doubles ring capacity to 7, adds a ring-chase attack, and introduces ground-spawn Willo ambushes" }
+    ]
+  },
+  {
+    "id": "the_matriarch",
+    "name": "The Matriarch",
+    "chapters": [2],
+    "location": ["Caves", "Catacombs"],
+    "image": "/images/items/boss-portraits/boss-portraits/the_matriarch.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Matriarch",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "multi_phase",  "text": "Four distinct phases: Phase 1 spawns Fistulas from damage thresholds, Phase 2 rapidly spawns short-lived Fistuloids, Phase 3 uses only direct attacks, Phase 4 transforms into a charging Chub" },
+      { "type": "summons",      "text": "Continuously spawns Fistuloids up to 4 at once — only 1 chases Isaac at a time; others orbit and occasionally fire; a large blood projectile can kill the active chaser" },
+      { "type": "orbit",        "text": "In Phase 4, her Chub form is permanently orbited by Fistuloids that were orbiting before the transformation — the orbital ring carries over into the Chub fight" },
+      { "type": "multi_phase",  "text": "After taking 340 damage, Phase 2 triggers a rapid wave of short-lived Fistuloids with 20 HP — they lose health quickly on their own and shoot maggots almost immediately before dying" },
+      { "type": "tears_ring",   "text": "The Chubber jump attack launches 8 Chubber projectiles in all directions, which then rebound back toward The Matriarch — the returning shots create hazard in the space between Isaac and the boss" },
+      { "type": "summons",      "text": "Phase 1 spawns 2 small Fistulas after 140 damage, then 2 more every 100 damage afterward — the Fistula count in the arena grows throughout Phase 1" },
+      { "type": "spawns_creep", "text": "A large blood projectile fires toward Isaac leaving red creep — can kill the actively chasing Fistuloid if it is in the path" },
+      { "type": "tears_aimed",  "text": "A multi-phase cave boss that spawns Fistulas on taking damage, fires Fistuloid swarms in Phase 2, and transforms into a Chub in Phase 4 — the Chubber orbit-back mechanic distinguishes her from other summon bosses" }
+    ]
+  },
+  {
+    "id": "the_scourge",
+    "name": "The Scourge",
+    "chapters": [4],
+    "location": ["Corpse"],
+    "image": "/images/items/boss-portraits/boss-portraits/the_scourge.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Scourge",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "homing",       "text": "Primary attack is a large fast cluster projectile that homes slightly on Isaac — on wall impact it explodes into projectiles, green creep, and maggots; below 50% HP fires 3 smaller clusters instead" },
+      { "type": "floor_hazard", "text": "Embeds a single tendril into a wall, then drags it along the wall surface, shooting projectiles, creep, and maggots out of the wall as it sweeps" },
+      { "type": "tears_ring",   "text": "The dual-tendril attack embeds 2 tendrils and rotates them while firing 2 simultaneous rings of 12 projectiles outward" },
+      { "type": "floor_hazard", "text": "The triangle trap fires 2 tendrils to either side of Isaac, trapping him in a triangle-shaped area — the attack cancels automatically if Isaac escapes before the follow-up projectile walls fire" },
+      { "type": "tears_aimed",  "text": "Inside the triangle trap, fires walls of tight projectiles with navigable gaps plus faster direct shots at Isaac's current position" },
+      { "type": "homing",       "text": "Floats quickly and attempts to stay above Isaac's position — the aerial positioning preference means the triangle trap is frequently deployed from above" },
+      { "type": "tears_burst",  "text": "Moves to the center and creates a spiral suction that pulls 2 tight projectile streams inward in a spiral pattern — direction switches randomly with additional projectiles filling gaps" },
+      { "type": "tears_ring",   "text": "A Corpse boss with tendril wall-embedding attacks — the dual-tendril ring rotation, triangle trap, and spiral suction define its encounter; instantly killed by Meat Cleaver" }
+    ]
+  },
+  {
+    "id": "the_siren",
+    "name": "The Siren",
+    "chapters": [3],
+    "location": ["Mausoleum"],
+    "image": "/images/items/boss-portraits/boss-portraits/the_siren.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Siren",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "summons",      "text": "Charms up to 3 of Isaac's familiars, turning them against him — charmed familiars retain 60 HP and return to Isaac only when defeated" },
+      { "type": "invincible",   "text": "Sinks into the floor to chase Isaac while invulnerable, leaving a trail of slowing black creep — reappears with a swipe that fires 5 projectiles" },
+      { "type": "tears_ring",   "text": "Shockwave Scream emits 9 pulsating rings of projectiles expanding outward — each ring has an opening facing Isaac's current position, but the outward shockwave push complicates maintaining that alignment" },
+      { "type": "spawns_creep", "text": "The underground chase leaves a persistent slowing black creep trail — accumulated creep from multiple underground passes restricts movement throughout the fight" },
+      { "type": "summons",      "text": "When fewer than 3 familiars are charmed, spawns Siren Minions and swipes them as a cluster toward Isaac — cluster wall collision kills the minions and releases a radial burst plus disorganized projectiles" },
+      { "type": "swipe",        "text": "Direct swipe attack fires 5 projectiles toward Isaac; the same spread fires on resurfacing from underground — two swipe-triggered spreads in quick succession are possible during the emerge sequence" },
+      { "type": "invincible",   "text": "Death burns away the body, leaving a skull behind — bombing the skull unlocks the Forgotten Lullaby trinket" },
+      { "type": "tears_ring",   "text": "An alt-Chapter 3 boss from the Mausoleum — familiar-charming and 9-ring shockwave are her most distinctive mechanics; defeating her leaves a bombable skull that unlocks the Forgotten Lullaby trinket" }
+    ]
+  },
+  {
+    "id": "turdlet",
+    "name": "Turdlet",
+    "chapters": [1],
+    "location": ["Dross"],
+    "image": "/images/items/boss-portraits/boss-portraits/turdlet.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Turdlet",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "spawns_creep", "text": "Constantly leaves a trail of slippery brown creep everywhere it moves — the entire fight area accumulates creep progressively throughout the encounter" },
+      { "type": "charge",       "text": "After 7 seconds of normal movement, huddles its body and launches tail-first toward Isaac, straightening out mid-launch — transitions immediately into the spinning wall-bounce phase" },
+      { "type": "orbit",        "text": "After the tail-first launch, the head end spins around the tail while bouncing off walls at high speed before gradually decelerating to a stop" },
+      { "type": "splits",       "text": "At 30 HP or less, splits into two 2-segment parts; each inherits the HP Turdlet had at split plus a 15 HP bonus — total HP increases rather than decreases at the transition" },
+      { "type": "chase",        "text": "Moves with loose wall-bouncing chase behavior between launch attacks — the 7-second movement window between launches is the primary damage opportunity" },
+      { "type": "spawns_creep", "text": "After splitting, both halves continue leaving brown creep independently — two bodies moving between launch cycles can cover most of the arena" },
+      { "type": "multi_phase",  "text": "A 5-segment worm from the alt-Chapter 1 floors with a tail-first bouncing launch attack and a split Phase 2 that increases total HP rather than decreasing it" }
+    ]
+  },
+  {
+    "id": "the_horny_boys",
+    "name": "The Horny Boys",
+    "chapters": [3],
+    "location": ["Gehenna"],
+    "image": "/images/items/boss-portraits/boss-portraits/the_horny_boys.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/The_Horny_Boys",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "summons",     "text": "First attack in the fixed 5-attack cycle summons a Boom Fly orbited by 3 pink Eternal Fly Bombs" },
+      { "type": "explosive",   "text": "Second attack juggles 3 bombs and throws them toward Isaac — can have Hot Bombs or Sad Bombs effects" },
+      { "type": "tears_ring",  "text": "Third attack is an extended tear barrage escalating through many pattern stages — cardinal, diagonal, omnidirectional, rotating clusters, and spread volleys — ending with 3 cardinal fireballs" },
+      { "type": "teleport",    "text": "Fourth attack: teleports 3 times, throwing a short-delay Brimstone Bomb each time it repositions" },
+      { "type": "teleport",    "text": "Fifth attack: throws a Sad Bomb to create a smokescreen, then teleports 5 times while throwing Brimstone Bombs each time — the smokescreen delays visual tracking of the repositions" },
+      { "type": "orbit",       "text": "The Boom Fly from the first-cycle summon is orbited by 3 pink Eternal Fly Bombs — the orbital cluster moves with the Boom Fly as it roams the arena" },
+      { "type": "multi_phase", "text": "Using Meat Cleaver splits The Horny Boys into a Hornfel and a Loki entity that each fight independently in their own attack patterns" },
+      { "type": "summons",     "text": "An alt-Chapter 3 boss with a fixed, non-random 5-attack cycle — the extended tear barrage (attack 3) is the most complex sustained projectile sequence of any single boss attack in Repentance" }
     ]
   }
 ]

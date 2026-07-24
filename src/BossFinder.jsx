@@ -48,6 +48,48 @@ function shiftDate(dateKey, delta) {
   return `${next.getUTCFullYear()}-${pad(next.getUTCMonth() + 1)}-${pad(next.getUTCDate())}`;
 }
 
+function hashStr(str) {
+  let h = 5381;
+  for (let i = 0; i < str.length; i++) h = ((h << 5) + h + str.charCodeAt(i)) | 0;
+  return h >>> 0;
+}
+
+function mulberry32(seed) {
+  let s = seed;
+  return () => {
+    s |= 0; s = s + 0x6D2B79F5 | 0;
+    let t = Math.imul(s ^ (s >>> 15), 1 | s);
+    t = t + Math.imul(t ^ (t >>> 7), 61 | t) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+// Returns exactly 6 hints: 5 from pool (type-capped at 2, order-preserved) + flavor last.
+function selectDailyHints(hints, dateKey) {
+  const pool   = hints.slice(0, -1);
+  const flavor = hints[hints.length - 1];
+  if (pool.length <= 5) return hints;
+
+  const rng   = mulberry32(hashStr(dateKey + '|hints'));
+  const order = pool.map((_, i) => i);
+  for (let i = order.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+
+  const typeCounts = {};
+  const picks = [];
+  for (const idx of order) {
+    if (picks.length >= 5) break;
+    const h = pool[idx];
+    const n = typeCounts[h.type] ?? 0;
+    if (n < 2) { picks.push({ h, idx }); typeCounts[h.type] = n + 1; }
+  }
+
+  picks.sort((a, b) => a.idx - b.idx);
+  return [...picks.map(p => p.h), flavor];
+}
+
 function getTimeUntilMidnightUTC() {
   const now = new Date();
   const midnight = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1));
@@ -85,6 +127,11 @@ export default function BossFinder() {
 
   const boss = BOSS_POOL[getDayIndex(selectedDateKey) % BOSS_POOL.length];
   const isToday = selectedDateKey === todayKey;
+
+  const selectedHints = useMemo(
+    () => selectDailyHints(boss.hints, selectedDateKey),
+    [boss, selectedDateKey]
+  );
   const earliestKey = useMemo(() => shiftDate(todayKey, -15), [todayKey]);
 
   useEffect(() => {
@@ -134,7 +181,7 @@ export default function BossFinder() {
     return () => clearInterval(timer);
   }, []);
 
-  const hintsRevealed = Math.min(wrongGuesses.length + 1, boss.hints.length);
+  const hintsRevealed = Math.min(wrongGuesses.length + 1, selectedHints.length);
   const lost    = !won && wrongGuesses.length >= MAX_GUESSES;
   const gameOver = won || lost;
 
@@ -302,7 +349,7 @@ export default function BossFinder() {
 
           {/* Hints */}
           <section className="bf-hints">
-            {boss.hints.slice(0, hintsRevealed).map((hint, i) => {
+            {selectedHints.slice(0, hintsRevealed).map((hint, i) => {
               const icon = HINT_ICONS[hint.type] ?? { label: hint.type, color: '#666' };
               return (
                 <div key={i} className="bf-hint bf-hint-in">
@@ -414,6 +461,7 @@ export default function BossFinder() {
 
       {/* ── Ko-fi ── */}
       <div className="bf-buttons-container">
+        <Link className="bf-footer-link" to="/privacy">Privacy Policy</Link>
         <a href="https://ko-fi.com/E1E81M8I3S" target="_blank" rel="noopener noreferrer">
           <img className="bf-kofi" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" border="0" alt="Buy Me a Coffee at ko-fi.com" />
         </a>

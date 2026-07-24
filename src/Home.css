@@ -142,16 +142,31 @@
   margin: 2.5rem 0 0;
 }
 
-/* ── Ko-fi ── */
+/* ── Ko-fi / footer ── */
 .home-kofi {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-end;
   width: 100%;
   align-self: stretch;
   padding: 0 2rem;
   margin-top: 1.5rem;
   box-sizing: border-box;
+}
+
+.home-footer-link {
+  font-family: 'Upheaval', Arial, sans-serif;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.28);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  align-self: flex-end;
+  padding-bottom: 2px;
+  transition: color 0.15s;
+}
+
+.home-footer-link:hover {
+  color: rgba(240,184,64,0.7);
 }
 
 .home-kofi-img {
