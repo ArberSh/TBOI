@@ -111,7 +111,7 @@
       { "type": "multi_phase", "text": "Loses its lower body at half health, fundamentally changing how it moves" },
       { "type": "summons",     "text": "Spawns flies throughout the fight" },
       { "type": "multi_phase", "text": "First of the four Horsemen — a gaunt rider whose horse is destroyed midway through the fight" },
-      { "type": "chase",       "text": "The horizontal charges always run the full room width — Famine never curves, angles, or cuts short the charge path" },
+      { "type": "chase",       "text": "The horizontal charges always run the full room width — never curving, angling, or cutting the path short" },
       { "type": "summons",     "text": "Fly spawns continue through both phases; the severed head must still be dodged while clearing persistent minions at the same time" }
     ]
   },
@@ -149,7 +149,7 @@
       { "type": "summons", "text": "Spawns Charger enemies throughout the fight" },
       { "type": "summons", "text": "Up to five Chargers can be alive simultaneously" },
       { "type": "summons", "text": "A large segmented grub from the Caves; charges and spawned Chargers are her entire toolkit" },
-      { "type": "multi_phase", "text": "The charge always travels the full room length — positioning behind Chub as she finishes a pass gives the safest window to deal damage" },
+      { "type": "multi_phase", "text": "The charge always travels the full room length — positioning behind the boss as it finishes a pass gives the safest window to deal damage" },
       { "type": "explosive",   "text": "Bomb placement in her path triggers an eat-and-stun even while Chargers are active — the stun is the primary opening for sustained damage" }
     ]
   },
@@ -187,7 +187,7 @@
       { "type": "summons",     "text": "Spawns pairs of weak Attack Flies behind herself" },
       { "type": "summons",     "text": "Also summons pairs of Boils in front of herself" },
       { "type": "tears_burst", "text": "A large stationary creature anchored to the top of the Caves room — the only boss that never moves" },
-      { "type": "tears_aimed", "text": "Positioning directly below Gurdy along the bottom wall is safer — the spread fires from her mouth and cannot reach directly behind her" },
+      { "type": "tears_aimed", "text": "Positioning directly along the bottom wall is safer — the spread fires from its mouth and cannot reach directly behind it" },
       { "type": "multi_phase", "text": "The Pooters, Attack Flies, and Boils each behave differently after spawn — managing three simultaneous enemy types with different movement patterns defines the late-fight challenge" }
     ]
   },
@@ -225,7 +225,7 @@
       { "type": "multi_phase", "text": "Shrinks continuously as it takes damage — no HP thresholds, just constant escalation" },
       { "type": "summons",     "text": "Spawns Suckers to assist in the fight" },
       { "type": "multi_phase", "text": "A large creature from the Caves similar to another boss; uniquely, dealing damage actively makes it more dangerous" },
-      { "type": "chase",       "text": "At minimum size, C.H.A.D. moves almost continuously with near-zero pause between attacks — the fight shifts from clear dodge-windows to near-constant pressure" },
+      { "type": "chase",       "text": "At minimum size, it moves almost continuously with near-zero pause between attacks — the fight shifts from clear dodge-windows to near-constant pressure" },
       { "type": "summons",     "text": "Suckers fire single aimed projectiles; managing them while continuously dodging charges requires staying in motion and never committing to a corner" }
     ]
   },
@@ -360,7 +360,7 @@
       { "type": "tears_ring",  "text": "Fires 8 projectiles outward in all directions" },
       { "type": "multi_phase", "text": "The mount is destroyed at half health, completely changing how the boss moves" },
       { "type": "multi_phase", "text": "Third of the four Horsemen — an armored rider whose horse explodes when it falls, found in Chapter 3" },
-      { "type": "tears_ring",  "text": "The 8-directional ring fires while War is briefly stationary — one of the only moments in the fight where he stops to attack in place" },
+      { "type": "tears_ring",  "text": "The 8-directional ring fires from a briefly stationary position — one of the only moments in the fight where it stops to attack in place" },
       { "type": "chase",       "text": "Phase-2 charges track Isaac's position more tightly — the path bends mid-charge rather than running a fixed horizontal line" }
     ]
   },
@@ -379,7 +379,7 @@
       { "type": "multi_phase", "text": "Dismounts at half health; the horse then continuously charges across the room at three different heights" },
       { "type": "homing",      "text": "Spawns large projectile weapons along the walls that accelerate toward the player after a brief delay" },
       { "type": "summons",     "text": "After dismounting, occasionally spawns armored enemies — the horse keeps charging even after the rider is defeated" },
-      { "type": "summons",     "text": "Fourth and final Horseman — death personified; his scythes and horse remain threats even after he falls, found in Chapter 4" },
+      { "type": "summons",     "text": "Fourth and final Horseman — a grim reaper figure; his scythes and horse remain threats even after he falls, found in Chapter 4" },
       { "type": "effect",      "text": "The time-slow creates a distinctive screen vignette alongside the movement penalty — one of the few boss abilities that alters both visual presentation and physics simultaneously" },
       { "type": "multi_phase", "text": "After dismounting, the horse charges at three distinct heights — low, mid, and high — each pass targeting a different vertical lane" }
     ]
@@ -718,7 +718,7 @@
       { "type": "laser",        "text": "In its final sub-phase, fires laser beams from its eyes that leave trails of blue creep along the floor" },
       { "type": "tears_ring",   "text": "Fires rotating rings of projectiles with varying gaps and spacing" },
       { "type": "tears_ring",   "text": "Later phases add dense interlocking rings with specific safe gaps and spiral patterns" },
-      { "type": "summons",      "text": "Spawns specialized Hush Flies in geometric formations that orbit it, launch at the player, or actively chase" },
+      { "type": "summons",      "text": "Spawns specialized blue spectral flies in geometric formations that orbit it, launch at the player, or actively chase" },
       { "type": "summons",      "text": "Also spawns Blue Gapers and Boils that add persistent floor pressure to an already crowded arena" },
       { "type": "multi_phase",  "text": "An ancient entity with an enormous health pool — found in a secret floor accessible only by defeating the Womb boss in under 30 minutes" },
       { "type": "floor_hazard", "text": "The final phase's laser beams leave persistent blue creep traces along every path they sweep — floor contamination accumulates as the fight extends" },
@@ -798,7 +798,7 @@
       { "type": "tears_burst", "text": "Throws a knife downward that emits horizontal projectiles while traveling, then bursts into a radial spray on hitting the wall" },
       { "type": "summons",     "text": "Ground slams simultaneously release projectile streams and spawn Small Maggots" },
       { "type": "multi_phase", "text": "A massive maternal boss from the Corpse — Phase 1 pins her to the ceiling; Phase 2 tears her loose to pursue the player" },
-      { "type": "invincible",  "text": "In Phase 1, Mother clings to the ceiling — only upward-angled shots can reach her suspended form; standard horizontal fire passes underneath" },
+      { "type": "invincible",  "text": "In Phase 1, it clings to the ceiling — only upward-angled shots can reach the suspended form; standard horizontal fire passes underneath" },
       { "type": "homing",      "text": "The wave projectiles don't home immediately — they travel in loose arcs that gradually bend toward Isaac's position over their full flight distance" }
     ]
   },
@@ -817,7 +817,7 @@
       { "type": "summons",     "text": "Spits out Small Leeches that orbit it, physically blocking the player's projectiles" },
       { "type": "orbit",       "text": "If enough leeches are alive in the room, the boss cannot use any of its attacks — clearing minions is the primary safety tool" },
       { "type": "summons",     "text": "A small blue creature from the alt-Chapter 1 floors — accumulating its own minions can paradoxically protect the player" },
-      { "type": "multi_phase", "text": "The jump chain only triggers below 25% HP — before that threshold, Lil Blub never chains jumps, making the low-HP window the most dangerous phase" },
+      { "type": "multi_phase", "text": "The jump chain only triggers below 25% HP — before that threshold it never chains jumps, making the low-HP window the most dangerous phase" },
       { "type": "tears_ring",  "text": "The 6-stream radial burst fires at regular intervals throughout the fight — it appears even at full health and is not tied to any HP threshold" }
     ]
   },
@@ -836,7 +836,7 @@
       { "type": "charge",       "text": "After the tail strikes, charges horizontally from the wall while spawning Small Leeches" },
       { "type": "tears_burst",  "text": "Partially emerges from a pit to fire a disorganized spray of projectiles, then submerges again" },
       { "type": "floor_hazard", "text": "An aquatic worm from the alt-Chapter 1 floors — at low health it permanently digs pits, shrinking the safe arena" },
-      { "type": "invincible",   "text": "While submerged between attacks, completely untargetable — Wormwood can only take damage during its brief active surface windows" },
+      { "type": "invincible",   "text": "While submerged between attacks, completely untargetable — it can only take damage during the brief active surface windows" },
       { "type": "summons",      "text": "The Small Leeches from its charge attack persist for the entire fight — repeated charges accumulate them progressively, making the arena more crowded over time" }
     ]
   },
@@ -874,7 +874,7 @@
       { "type": "summons",      "text": "Armored heads spit Ink projectiles; once armor is destroyed they switch to spitting Suckers instead" },
       { "type": "summons",      "text": "Releases small ink-like enemies that clutter the room while the bosses are still shielded" },
       { "type": "invincible",   "text": "A pair of armored worms from the Mines — their rock armor blocks most damage; only explosives and a handful of special item effects can bypass it" },
-      { "type": "chase",        "text": "Two Tuff Twins are always present simultaneously — unlike other segmented-worm bosses, this encounter always starts as a paired double fight with independent movement paths" },
+      { "type": "chase",        "text": "Always present as a pair simultaneously — unlike other segmented-worm bosses, this encounter always starts as a double fight with independent movement paths" },
       { "type": "multi_phase",  "text": "As armor segments are destroyed the fight opens up from explosive-only damage to any damage source — the transition from shielded to exposed is the key phase boundary" }
     ]
   },
@@ -930,7 +930,7 @@
       { "type": "summons",     "text": "Each small form spawns a Charger enemy when killed, unless it dies over a pit" },
       { "type": "chase",       "text": "Has no projectile attacks at any size — all danger is contact with a growing number of bouncing forms" },
       { "type": "splits",      "text": "Each successive size tier moves noticeably faster than the last — the small forms are difficult to track individually in a crowded room" },
-      { "type": "summons",     "text": "Chargers spawned on small-form death persist after all Fistula pieces are gone — the encounter extends if they aren't cleared alongside the final fragments" },
+      { "type": "summons",     "text": "Chargers spawned on small-form death persist after all pieces are gone — the encounter extends if they aren't cleared alongside the final fragments" },
       { "type": "multi_phase", "text": "All forms deal one full heart of contact damage regardless of size — a small fragment is as punishing as the original large body" },
       { "type": "chase",       "text": "A giant Womb blob that fragments across three splitting stages (1 → 4 → up to 8); no ranged attacks at any stage makes it a pure crowd-navigation fight" }
     ]
@@ -1083,7 +1083,7 @@
       { "type": "explosive",   "text": "Surfaces tail-first to fire 3 red Ipecac shots toward Isaac, then re-enters from the same emergence point" },
       { "type": "summons",     "text": "Can be accompanied at fight-start by Lumps, Guts, Para-Bites, or Round Worms" },
       { "type": "invincible",  "text": "After most attacks, re-enters underground from the same spot it emerged — tracking the entry point predicts the next surface location" },
-      { "type": "jump",        "text": "Explosions hitting Scolex while airborne deflect it backward — the deflection can redirect the landing point or briefly extend the surface window" },
+      { "type": "jump",        "text": "Explosions hitting it while airborne deflect the body backward — the deflection can redirect the landing point or briefly extend the surface window" },
       { "type": "explosive",   "text": "A burrowing worm whose only vulnerable point is its blinking tail — the tail-first Ipecac surface is its most distinctive attack, shared with no other burrowing boss" }
     ]
   },
@@ -1138,7 +1138,7 @@
       { "type": "charge",       "text": "Performs 2 long dashes toward Isaac (one fewer than its Chapter 2 counterpart), bouncing off walls, then pauses to recover" },
       { "type": "spawns_creep", "text": "When poisoned during a dash, leaves green damaging creep instead of the standard brown slippery variety — the color marks the hazard type change" },
       { "type": "summons",      "text": "Whistles before summoning 1–3 Brownie Corns, then fires 3 projectiles — the same whistle-summon-fire sequence as its counterpart, with different summons" },
-      { "type": "explosive",    "text": "Occasionally spawns a Corn Mine at the start of a dash; the mine detonates, poisoning Dangle and triggering the green creep behavior for that pass" },
+      { "type": "explosive",    "text": "Occasionally spawns a Corn Mine at the start of a dash; the mine detonates, poisoning it and triggering the green creep behavior for that pass" },
       { "type": "charge",       "text": "The slippery brown creep lingers post-dash — both boss and Isaac slide on it, making subsequent movement in that area unpredictable" },
       { "type": "tears_aimed",  "text": "The 3-shot fire after summoning aims directly at Isaac's position when triggered — identical firing mechanic to its Chapter 2 counterpart" },
       { "type": "floor_hazard", "text": "The alt-Chapter 2 counterpart of a poop-themed boss — distinguished by slippery brown creep, 2-dash attacks instead of 3, and a self-poisoning Corn Mine mechanic that switches creep to green" }
@@ -1191,13 +1191,13 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Brownie",
     "dlc": "repentance",
     "hints": [
-      { "type": "multi_phase",   "text": "At approximately 25% health, degrades into a fully functional Dangle with separate HP — the fight isn't over when Brownie looks nearly dead" },
-      { "type": "summons",       "text": "Spawns Brownie Corns when taking damage — a single Corn each hit, or occasionally a group at once from larger damage events" },
-      { "type": "floor_hazard",  "text": "Crushes Brownie Corns it moves over, healing itself per corn — its own spawns become a sustain mechanic if left alive in the arena" },
+      { "type": "multi_phase",   "text": "At approximately 25% health, degrades into a fully functional Dangle with separate HP — the fight isn't over when it looks nearly dead" },
+      { "type": "summons",       "text": "Spawns Corns when taking damage — a single Corn each hit, or occasionally a group at once from larger damage events" },
+      { "type": "floor_hazard",  "text": "Crushes its own Corns when moving over them, healing itself per corn — the spawned Corns become a sustain mechanic if left alive in the arena" },
       { "type": "spawns_creep",  "text": "The sliding attack leaves a persistent trail of slippery brown creep across the room — when poisoned by a Corn Mine during the slide, the creep switches to green damaging creep instead" },
       { "type": "jump",          "text": "Twirls and jumps 4–6 times around the room, creating a brown creep puddle at each landing and tossing projectiles randomly between jumps" },
       { "type": "charge",        "text": "The spinning dash bounces off walls and finishes with a fart that pushes Isaac back — sometimes leaves brown creep and spawns Corn Mines during the spin" },
-      { "type": "summons",       "text": "Corn Mines spawned during the sliding attack can detonate and poison Brownie mid-pass, causing it to leave damaging green creep for the rest of that slide" },
+      { "type": "summons",       "text": "Corn Mines spawned during the sliding attack can detonate and poison it mid-pass, causing it to leave damaging green creep for the rest of that slide" },
       { "type": "multi_phase",   "text": "A poop boss from the alt-Chapter 2 floors — self-heals by running over its own Brownie Corn spawns, and ends its life as a Dangle when near death" }
     ]
   },
@@ -1234,7 +1234,7 @@
       { "type": "tears_ring",   "text": "Briefly burrows underground and resurfaces in its original position, then fires 8 projectiles outward in all directions" },
       { "type": "spawns_creep", "text": "The cardinal blood shots leave red creep as they travel and create an additional creep burst where they stop — a single volley can cover significant floor area" },
       { "type": "summons",      "text": "Also spawns a Fred enemy at its position, which immediately burrows underground and attacks from below" },
-      { "type": "floor_hazard", "text": "Always occupies the center of a 1×2 or 2×1 shaped room — the elongated room shape is the first identifier that Mr. Fred is the boss" },
+      { "type": "floor_hazard", "text": "Always occupies the center of a 1×2 or 2×1 shaped room — the elongated room shape is the first identifier of this boss" },
       { "type": "tears_aimed",  "text": "The cardinal shots always travel their full fixed range before bursting, regardless of walls — the creep burst zone at maximum range is a predictable persistent hazard" },
       { "type": "tears_ring",   "text": "A large stationary creature that never leaves the room center — its elongated room, 4 chained Homunculi, and creep-bursting blood shots identify it among Womb stationary bosses" }
     ]
@@ -1310,8 +1310,8 @@
       { "type": "summons",      "text": "Sends out 1–2 decoy dummies riding separate minecarts on other tracks — each dummy bursts into 6 troll bombs if killed or walked into" },
       { "type": "multi_phase",  "text": "In Phase 2, falls off its minecart and attempts to escape the room through one of the doors — makes no further attacks but still deals contact damage" },
       { "type": "explosive",    "text": "At high speed, throws bombs rapidly then fires a fireball that releases fire trails in all four cardinal directions on impact" },
-      { "type": "summons",      "text": "Independent minecarts on the tracks can carry Fire Places, TNT, or enemies — the track system is hazardous even between Hornfel's own passes" },
-      { "type": "floor_hazard", "text": "The track network defines the fight — all attacks originate from Hornfel's position on the tracks, and crossing carts from multiple doors create layered timing hazards" },
+      { "type": "summons",      "text": "Independent minecarts on the tracks can carry Fire Places, TNT, or enemies — the track system is hazardous even between its own passes" },
+      { "type": "floor_hazard", "text": "The track network defines the fight — all attacks originate from its position on the tracks, and crossing carts from multiple doors create layered timing hazards" },
       { "type": "floor_hazard", "text": "A mine boss from the alt-Chapter 2 floors who attacks exclusively from a minecart track system — the only boss whose Phase 2 is a flee attempt rather than an escalation" }
     ]
   },
@@ -1329,7 +1329,7 @@
       { "type": "explosive",    "text": "Releases explosive gas clouds that propel its spiked rocks outward — the rocks bounce off walls and obstacles before settling" },
       { "type": "laser",        "text": "After both large explosions, unlocks a flame stream attack: lights a matchstick and produces a continuous fire stream that follows Isaac's exact movement path" },
       { "type": "multi_phase",  "text": "The fight escalates in two stages triggered by HP thresholds — each large explosion is a one-time event; after both occur, the flame stream becomes available for the remainder" },
-      { "type": "floor_hazard", "text": "Starts with 4 Singe's Balls (damaging spiked rocks) in the arena — rocks respawn one at a time after being blown into pits; they are both hazards and tactical tools" },
+      { "type": "floor_hazard", "text": "Starts with 4 spiked rock hazards in the arena — rocks respawn one at a time after being blown into pits; they are both obstacles and tactical tools" },
       { "type": "laser",        "text": "The flame stream follows Isaac's exact movement path with a slight delay — changing direction causes the stream to curve with the path, making erratic movement more effective than straight running" },
       { "type": "multi_phase",  "text": "A salamander-like boss from the alt-Chapter 2 floors — two staged HP-threshold explosions gate its escalation, and its spiked-rock gas-slingshot attacks are unique among Repentance bosses" }
     ]
@@ -1363,12 +1363,12 @@
     "dlc": "repentance",
     "hints": [
       { "type": "invincible",  "text": "Completely invulnerable in Phase 1 while incorporeal — only becomes vulnerable after all summoned Fanatics and their resulting Pacers and Gushers are defeated" },
-      { "type": "summons",     "text": "Five shielded Exorcists summon The Heretic from a pentagram and then transform into Fanatics — the Exorcists must be cleared before The Heretic can be engaged at all" },
+      { "type": "summons",     "text": "Five shielded Exorcists summon the boss from a pentagram and then transform into Fanatics — the Exorcists must be cleared before the boss can be engaged at all" },
       { "type": "laser",       "text": "Lights 5–6 fire places in the arena, then fires a purple Brimstone laser connecting all lit fires in sequence — explosions can extinguish fires to prevent the laser from reaching them" },
       { "type": "explosive",   "text": "Lobs 7 projectiles whose landing positions are marked on the ground — each lands and bursts into 6 fires that spread outward in a radial pattern" },
       { "type": "tears_ring",  "text": "After the projectile throw, launches itself toward Isaac and creates a radial burst of 8 lines of fire at the landing point" },
       { "type": "charge",      "text": "Becomes invisible and charges from off-screen 4 times in succession from alternating sides, predicting Isaac's movement — occasionally adds a fifth charge from the opposite side" },
-      { "type": "invincible",  "text": "Contact damage is possible even while The Heretic is incorporeal in Phase 1 — clearing Fanatics quickly is safer than trying to avoid the boss itself during the wait" },
+      { "type": "invincible",  "text": "Contact damage is possible even during the Phase 1 incorporeal state — clearing Fanatics quickly is safer than trying to avoid the boss during the wait" },
       { "type": "summons",     "text": "A late-game boss whose invulnerable Phase 1 requires full Fanatic clearance, and whose Phase 2 fire-place-connected Brimstone laser is among the most mechanically distinctive attacks in Repentance" }
     ]
   },
@@ -1401,7 +1401,7 @@
     "dlc": "repentance",
     "hints": [
       { "type": "tears_burst",  "text": "Burrows underground, reappears rapidly near Isaac, and fires a spread of 5 bone projectiles — this sequence repeats 3 times consecutively before any other attack" },
-      { "type": "summons",      "text": "Generates spike walls in all four cardinal directions that start at the room's edges and move inward toward The Pile — summoned obstacles, not fired projectiles" },
+      { "type": "summons",      "text": "Generates spike walls in all four cardinal directions that start at the room's edges and move inward toward the boss — summoned obstacles, not fired projectiles" },
       { "type": "charge",       "text": "Charges toward Isaac until hitting a wall, creating two diagonal lines of rock waves from the impact point and firing a spray of bone projectiles — knockback resistance is greatly increased during the charge" },
       { "type": "floor_hazard", "text": "The 3-consecutive burrow sequence always fires from close range — three rapid pop-up spreads before any other attack cycle resumes" },
       { "type": "summons",      "text": "Summons Bony enemies during the fight, up to 2 alive at once" },
@@ -1458,7 +1458,7 @@
     "dlc": "afterbirth",
     "hints": [
       { "type": "orbit",       "text": "Spawns with 3 immune Purple Balls that orbit it as a protective shield — the balls block shots and cannot be damaged by normal means" },
-      { "type": "multi_phase", "text": "Each time Rag Mega loses approximately 25% of its HP, one orbiting Purple Ball breaks off and begins chasing Isaac — this happens up to 3 times" },
+      { "type": "multi_phase", "text": "Each time approximately 25% of its HP is lost, one orbiting Purple Ball breaks off and begins chasing Isaac — this happens up to 3 times" },
       { "type": "invincible",  "text": "Periodically wraps itself in bandages and becomes fully immune to damage — a recurring invincibility window throughout the fight" },
       { "type": "laser",       "text": "Fires 3 beams from the sky that travel outward from a point — if a beam hits the remains of a defeated Ragling, it revives that Ragling" },
       { "type": "summons",     "text": "Spawns Rag Man's Raglings as minions, whose remains persist in the arena and can be reanimated by the beam attack" },
@@ -1478,7 +1478,7 @@
     "hints": [
       { "type": "invincible",   "text": "Burrows underground whenever Isaac is out of range — invulnerable while submerged, and continues tracking Isaac's movements underground before surfacing to attack" },
       { "type": "tears_ring",   "text": "Fires two successive volleys in all directions: the first starts fast and slows down; the second starts slow and speeds up — both volleys from the same surface window" },
-      { "type": "spawns_creep", "text": "Sends tendrils left and right upon surfacing, leaving small puddles of damaging red creep in the area directly around The Stain and to either side" },
+      { "type": "spawns_creep", "text": "Sends tendrils left and right upon surfacing, leaving small puddles of damaging red creep directly around its body and to either side" },
       { "type": "summons",      "text": "Spawns Chargers as minions, up to a maximum of 3 alive at once" },
       { "type": "invincible",   "text": "Only vulnerable for a brief window immediately after performing an attack — the rest of the fight it is either burrowed and invincible or mid-transition" },
       { "type": "floor_hazard", "text": "Tracks Isaac's position underground before choosing a surface point — emergence is not random but follows the player's movement while submerged" },
@@ -1499,8 +1499,8 @@
       { "type": "laser",       "text": "Fires 3 Brimstone lasers in triangular directions with one laser always pointing opposite to Isaac's position, then rotates all three just over 180 degrees" },
       { "type": "summons",     "text": "Spawns one Bony at battle start, then spawns an additional Bony after each Brimstone attack cycle — eliminating Bonies is the only reliable sustained damage window" },
       { "type": "multi_phase", "text": "At approximately 30% HP, begins spawning 2 Bonies instead of 1 after each attack cycle — minion pressure escalates as the boss approaches death" },
-      { "type": "invincible",  "text": "Walking into The Forsaken during its incorporeal phase spawns another Bony and briefly makes it vulnerable — an intentional contact trade available to aggressive players" },
-      { "type": "laser",       "text": "If Isaac contacts The Forsaken up to 4 times without clearing Bonies, it fires a modified Brimstone attack with greatly increased speed and duration — this also kills all current Bonies simultaneously" },
+      { "type": "invincible",  "text": "Walking into it during the incorporeal phase spawns another Bony and briefly makes it vulnerable — an intentional contact trade available to aggressive players" },
+      { "type": "laser",       "text": "If Isaac makes contact up to 4 times without clearing Bonies, it fires a modified Brimstone attack with greatly increased speed and duration — this also kills all current Bonies simultaneously" },
       { "type": "summons",     "text": "A skull-like boss from the Catacombs — alternates between an untouchable incorporeal state and a brief Brimstone window; Bony clearance is the fight's central loop" }
     ]
   },
@@ -1538,7 +1538,7 @@
       { "type": "spawns_creep", "text": "The ground slam leaves a persistent red creep pool — close-range positioning when the slam lands creates an immediate lingering hazard" },
       { "type": "tears_ring",   "text": "Upon defeat, releases a ring of 10 projectiles outward — the death burst must be dodged immediately after the kill shot lands" },
       { "type": "orbit",        "text": "The spiral attack starts pointing downward, then makes a full rotation beginning toward Isaac's current direction — the predictable downward start allows pre-positioning" },
-      { "type": "flight",       "text": "If Baby Plum takes no damage for 30 seconds, she waves and flies away, ending the fight without dying — the spare timer resets on any damage; only works in her dedicated boss room" },
+      { "type": "flight",       "text": "If no damage is dealt for 30 seconds, she waves and flies away, ending the fight without dying — the spare timer resets on any damage; only works in her dedicated boss room" },
       { "type": "tears_burst",  "text": "A Chapter 1 airborne boss with a spare mechanic — her backward-propelling diagonal spit, two-ring ground slam, and post-death projectile ring each require different positioning" }
     ]
   },
@@ -1555,8 +1555,8 @@
       { "type": "explosive",    "text": "Arms throw single or triple Troll Bombs at Isaac; the echo attack sends bombs into empty holes, causing hands to re-emerge from those holes throwing the same bomb type" },
       { "type": "homing",       "text": "Head attacks include a single large homing Dark Ball beneath itself, or a mix of 2 homing plus 1 non-homing Dark Ball fired simultaneously" },
       { "type": "tears_aimed",  "text": "Also fires a pair of large Dark Balls diagonally that bounce off walls rather than homing — wall bounces make their final positions less predictable than the homing variants" },
-      { "type": "explosive",    "text": "A brief window exists to kick a bomb into its open mouth during head attacks — this stuns Big Horn and causes it to take 20% increased damage while stunned" },
-      { "type": "multi_phase",  "text": "If Big Horn dies while performing a Dark Ball attack, Little Horn hops off its hand and continues the fight independently with low health" },
+      { "type": "explosive",    "text": "A brief window exists to kick a bomb into its open mouth during head attacks — this stuns it and causes 20% increased damage while stunned" },
+      { "type": "multi_phase",  "text": "If it dies while performing a Dark Ball attack, Little Horn hops off its hand and continues the fight independently with low health" },
       { "type": "floor_hazard", "text": "The ground slap arm attack strikes 3 times quickly while moving toward Isaac — it destroys any Dark Balls it contacts, inadvertently clearing the boss's own projectiles" },
       { "type": "homing",       "text": "A large underground boss from the Caves that alternates arm-from-hole and floating-head attacks — the bomb-into-mouth stun window and potential Little Horn continuation are its most distinctive mechanics" }
     ]
@@ -1571,7 +1571,7 @@
     "dlc": "repentance",
     "hints": [
       { "type": "multi_phase",  "text": "At approximately 50% HP, makes a final charge then permanently separates into two independent entities — a head and a body — each with distinct attack patterns" },
-      { "type": "spawns_creep", "text": "Phase 1: as Chimera builds speed, it leaves a persistent green creep trail — the faster it moves, the more of the arena it covers" },
+      { "type": "spawns_creep", "text": "Phase 1: as it builds speed, a persistent green creep trail forms — the faster it moves, the more of the arena it covers" },
       { "type": "laser",        "text": "The body in Phase 2 fires a Brimstone beam downward when Isaac is positioned directly above or below it — vertical positioning relative to the body determines laser exposure" },
       { "type": "explosive",    "text": "In Phase 1, fires 8 Ipecac shots toward Isaac's predicted position with landing spots marked on the ground — the markers give brief pre-dodge warning" },
       { "type": "multi_phase",  "text": "If one component dies first, the other adapts: the head switches to continuous wall-bouncing charges, the body switches to continuous rolling — killing both simultaneously is the safer approach" },
@@ -1591,8 +1591,8 @@
     "hints": [
       { "type": "invincible",  "text": "Completely immune to damage while possessing a Clickety Clack — only vulnerable during the brief window when switching hosts or when all Clickety Clacks are eliminated and it is ejected" },
       { "type": "summons",     "text": "Spawns with 3 Clickety Clacks as possession vessels; non-possessed ones are shielded; a dead Clickety Clack leaves a purple fire that periodically fires bone projectiles" },
-      { "type": "multi_phase", "text": "When all 3 Clickety Clacks are destroyed, Clutch is ejected and stunned — after sufficient damage it revives all 3 Clickety Clacks and the possession cycle restarts" },
-      { "type": "multi_phase", "text": "At 25% HP, Clutch destroys all Clickety Clacks itself, leaving indestructible purple fires, and enters solo Phase 2 with bone orbitals blocking shots" },
+      { "type": "multi_phase", "text": "When all 3 Clickety Clacks are destroyed, the possessor is ejected and stunned — after sufficient damage it revives all 3 Clickety Clacks and the possession cycle restarts" },
+      { "type": "multi_phase", "text": "At 25% HP, it destroys all Clickety Clacks itself, leaving indestructible purple fires, and enters solo Phase 2 with bone orbitals blocking shots" },
       { "type": "orbit",       "text": "In Phase 2, acquires bone orbitals that circle it and block tears — the orbital defense replaces the Phase 1 Clickety Clack immunity mechanic" },
       { "type": "tears_ring",  "text": "Phase 2 attack: rushes to Isaac's position, stops, and fires six volleys of six purple flames each in an alternating directional pattern — repeats until death" },
       { "type": "invincible",  "text": "The possessed Clickety Clack fires 8 bone shots in all cardinal and ordinal directions at moment of possession — the initial burst fires before resuming pursuit behavior" },
@@ -1610,7 +1610,7 @@
     "hints": [
       { "type": "explosive",    "text": "Phase 1 slide attack leaves trails of explosive gas — the slide repeats until approximately 40% of the room floor is covered" },
       { "type": "floor_hazard", "text": "Butt Bomb detonations ignite gas clouds, causing chain explosions across covered floor area — the bombs and accumulated gas form a combined mine system" },
-      { "type": "multi_phase",  "text": "At 50% HP, the containing bag explodes, creating explosive clouds and leaving Colostomia permanently adhered to the floor — Phase 2 attacks are entirely different from Phase 1" },
+      { "type": "multi_phase",  "text": "At 50% HP, the containing bag explodes, creating explosive clouds and leaving the boss permanently adhered to the floor — Phase 2 attacks are entirely different from Phase 1" },
       { "type": "tears_ring",   "text": "In Phase 2, jumps to a nearby location and fires 8 projectiles in a radial burst on landing, creating a brown creep puddle — only 2 creep puddles persist simultaneously" },
       { "type": "spawns_creep", "text": "Phase 2 brown creep puddles accumulate from jump landings with a 2-puddle cap, limiting floor contamination from that attack type" },
       { "type": "floor_hazard", "text": "Phase 2 also generates a ring of explosive gas around her position as a standalone fart attack — combined with any remaining Phase 1 gas, late-fight floor coverage can be extensive" },
@@ -1631,7 +1631,7 @@
       { "type": "tears_ring",   "text": "Fires 4 spiraling projectile lines in two variants: slow with small gaps or fast with large gaps — gap size inversely relates to speed" },
       { "type": "floor_hazard", "text": "The spiraling projectiles pass over poop for 1 second after firing, then are blocked by poop — the fight's poop obstacles can shield specific positions from the spirals" },
       { "type": "summons",      "text": "Periodically spits out Drip enemies, stopping once 4 are alive; the water circulation attack only activates when at least 2 Drips are present" },
-      { "type": "tears_ring",   "text": "Always stationary in the room center — all attacks fire outward from a fixed point, making diagonal positioning relative to Clog consistently the lowest-threat zone" },
+      { "type": "tears_ring",   "text": "Always stationary in the room center — all attacks fire outward from a fixed point, making diagonal positioning consistently the lowest-threat zone" },
       { "type": "summons",      "text": "The fart attack creates 3 spreading lines of knockback farts; each fart may spawn Poop, up to 3 total active Poops in the room" },
       { "type": "tears_burst",  "text": "The fart lines spread across the room in 3 directions — the knockback can displace Isaac into Drip clusters or accumulated Poop obstacles" },
       { "type": "tears_burst",  "text": "A stationary toilet-like boss from the alt-Chapter 1 floors — its room-water circulation current, poop-blocking spiral projectiles, and Flush!-style death are its most distinctive mechanics" }
@@ -1646,13 +1646,13 @@
     "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Great_Gideon",
     "dlc": "repentance",
     "hints": [
-      { "type": "multi_phase",  "text": "Has no health bar — the fight consists of 6 enemy waves that must each be fully cleared; Great Gideon deactivates like a Stone Grimace after all waves are defeated" },
-      { "type": "chase",        "text": "Periodically performs a vacuum that pulls Isaac, all enemies, and projectiles toward it — touching Great Gideon while the vacuum is active deals damage to Isaac" },
+      { "type": "multi_phase",  "text": "Has no health bar — the fight consists of 6 enemy waves that must each be fully cleared; the boss deactivates like a Stone Grimace after all waves are defeated" },
+      { "type": "chase",        "text": "Periodically performs a vacuum that pulls Isaac, all enemies, and projectiles toward it — contact during the vacuum deals damage to Isaac" },
       { "type": "tears_burst",  "text": "Fires 5 projectiles in a cone shape; the center projectile is larger and splits into 8 projectiles in a radial burst upon impact with anything" },
       { "type": "floor_hazard", "text": "Starting from Wave 4, charges up and releases a rock wave down the arena center that breaks the floor creating gaps — always leaves at least 1 gap between created holes to prevent fully trapping Isaac" },
       { "type": "laser",        "text": "Spits large flame projectiles down the center of the arena; flames occasionally leave small fires behind and can transform enemies they hit into flaming variants" },
-      { "type": "multi_phase",  "text": "Never progresses a new enemy wave mid-attack — waves only begin after Great Gideon finishes its current attack cycle, creating reliable timing for wave transitions" },
-      { "type": "summons",      "text": "Each of the 6 waves adds different enemy compositions; the enemies are the primary combat challenge while Great Gideon's own attacks create environmental pressure" },
+      { "type": "multi_phase",  "text": "Never progresses a new enemy wave mid-attack — waves only begin after the current attack cycle finishes, creating reliable timing for wave transitions" },
+      { "type": "summons",      "text": "Each of the 6 waves adds different enemy compositions; the enemies are the primary combat challenge while the boss's own attacks create environmental pressure" },
       { "type": "floor_hazard", "text": "A massive stone boss fought in a vertical double-size room — wave-based victory condition with no HP bar, vacuum pull, and a floor-breaking rock wave from Wave 4 onward define the encounter" }
     ]
   },
@@ -1688,7 +1688,7 @@
       { "type": "summons",      "text": "Continuously spawns Fistuloids up to 4 at once — only 1 chases Isaac at a time; others orbit and occasionally fire; a large blood projectile can kill the active chaser" },
       { "type": "orbit",        "text": "In Phase 4, her Chub form is permanently orbited by Fistuloids that were orbiting before the transformation — the orbital ring carries over into the Chub fight" },
       { "type": "multi_phase",  "text": "After taking 340 damage, Phase 2 triggers a rapid wave of short-lived Fistuloids with 20 HP — they lose health quickly on their own and shoot maggots almost immediately before dying" },
-      { "type": "tears_ring",   "text": "The Chubber jump attack launches 8 Chubber projectiles in all directions, which then rebound back toward The Matriarch — the returning shots create hazard in the space between Isaac and the boss" },
+      { "type": "tears_ring",   "text": "The Chubber jump attack launches 8 Chubber projectiles in all directions, which then rebound back toward the boss — the returning shots create hazard in the space between Isaac and the boss" },
       { "type": "summons",      "text": "Phase 1 spawns 2 small Fistulas after 140 damage, then 2 more every 100 damage afterward — the Fistula count in the arena grows throughout Phase 1" },
       { "type": "spawns_creep", "text": "A large blood projectile fires toward Isaac leaving red creep — can kill the actively chasing Fistuloid if it is in the path" },
       { "type": "tears_aimed",  "text": "A multi-phase cave boss that spawns Fistulas on taking damage, fires Fistuloid swarms in Phase 2, and transforms into a Chub in Phase 4 — the Chubber orbit-back mechanic distinguishes her from other summon bosses" }
@@ -1744,7 +1744,7 @@
       { "type": "spawns_creep", "text": "Constantly leaves a trail of slippery brown creep everywhere it moves — the entire fight area accumulates creep progressively throughout the encounter" },
       { "type": "charge",       "text": "After 7 seconds of normal movement, huddles its body and launches tail-first toward Isaac, straightening out mid-launch — transitions immediately into the spinning wall-bounce phase" },
       { "type": "orbit",        "text": "After the tail-first launch, the head end spins around the tail while bouncing off walls at high speed before gradually decelerating to a stop" },
-      { "type": "splits",       "text": "At 30 HP or less, splits into two 2-segment parts; each inherits the HP Turdlet had at split plus a 15 HP bonus — total HP increases rather than decreases at the transition" },
+      { "type": "splits",       "text": "At 30 HP or less, splits into two 2-segment parts; each inherits the boss's HP at the moment of split plus a 15 HP bonus — total HP increases rather than decreases at the transition" },
       { "type": "chase",        "text": "Moves with loose wall-bouncing chase behavior between launch attacks — the 7-second movement window between launches is the primary damage opportunity" },
       { "type": "spawns_creep", "text": "After splitting, both halves continue leaving brown creep independently — two bodies moving between launch cycles can cover most of the arena" },
       { "type": "multi_phase",  "text": "A 5-segment worm from the alt-Chapter 1 floors with a tail-first bouncing launch attack and a split Phase 2 that increases total HP rather than decreasing it" }
@@ -1765,7 +1765,7 @@
       { "type": "teleport",    "text": "Fourth attack: teleports 3 times, throwing a short-delay Brimstone Bomb each time it repositions" },
       { "type": "teleport",    "text": "Fifth attack: throws a Sad Bomb to create a smokescreen, then teleports 5 times while throwing Brimstone Bombs each time — the smokescreen delays visual tracking of the repositions" },
       { "type": "orbit",       "text": "The Boom Fly from the first-cycle summon is orbited by 3 pink Eternal Fly Bombs — the orbital cluster moves with the Boom Fly as it roams the arena" },
-      { "type": "multi_phase", "text": "Using Meat Cleaver splits The Horny Boys into a Hornfel and a Loki entity that each fight independently in their own attack patterns" },
+      { "type": "multi_phase", "text": "Using Meat Cleaver splits this boss into a Hornfel and a Loki entity that each fight independently in their own attack patterns" },
       { "type": "summons",     "text": "An alt-Chapter 3 boss with a fixed, non-random 5-attack cycle — the extended tear barrage (attack 3) is the most complex sustained projectile sequence of any single boss attack in Repentance" }
     ]
   }
