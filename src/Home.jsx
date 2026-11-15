@@ -56,6 +56,11 @@ export default function Home() {
       <div className="home-content">
         <img className="home-logo" src="/logo.png" alt="Isaac Arcade" />
         <p className="home-subtitle">Daily Isaac Challenges</p>
+        <p className="home-intro">
+          Two free daily puzzles for <em>The Binding of Isaac</em> fans — a new
+          item and a new boss to identify every day, reset at midnight UTC.
+          Miss a day? The last two weeks are always in the archive.
+        </p>
 
         <div className="home-games">
           {GAMES.map(game => {
@@ -87,7 +92,10 @@ export default function Home() {
       </div>
 
       <div className="home-kofi">
-        <Link className="home-footer-link" to="/privacy">Privacy Policy</Link>
+        <div className="home-footer-links">
+          <Link className="home-footer-link" to="/about">About</Link>
+          <Link className="home-footer-link" to="/privacy">Privacy Policy</Link>
+        </div>
         <a href="https://ko-fi.com/E1E81M8I3S" target="_blank" rel="noopener noreferrer">
           <img
             className="home-kofi-img"

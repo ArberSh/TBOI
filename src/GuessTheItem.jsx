@@ -6,6 +6,7 @@ import firegif from "./assets/fire.webp"
 import fireimg from "./assets/fireimg.png"
 import { supabase } from './supabase';
 import DailyProgress from './DailyProgress';
+import GtiIntroModal from './GtiIntroModal';
 
 const PIXEL_STEPS = [4, 8, 12, 16, 24, 32, 64];
 
@@ -588,6 +589,7 @@ useEffect(() => {
 
   return (
     <div className="page">
+      <GtiIntroModal />
       {loadingVisible && (
         <div className={`loading-screen${loadingFading ? ' loading-fading' : ''}`}>
           <img className="loading-logo" src="/logo.png" alt="logo" />
@@ -793,7 +795,10 @@ useEffect(() => {
       </div>
 
       <div className="Buttons_Container">
-        <Link className="gti-footer-link" to="/privacy">Privacy Policy</Link>
+        <div className="gti-footer-links">
+          <Link className="gti-footer-link" to="/about">About</Link>
+          <Link className="gti-footer-link" to="/privacy">Privacy Policy</Link>
+        </div>
         <a href='https://ko-fi.com/E1E81M8I3S' target='_blank' rel='noopener noreferrer'>
           <img className='logoko-fi' src='https://storage.ko-fi.com/cdn/kofi5.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' />
         </a>

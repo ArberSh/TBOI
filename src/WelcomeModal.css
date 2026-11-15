@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Upheaval';
+  src: url('./assets/upheavtt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  z-index: 1000;
+  animation: wm-fade-in 0.2s ease-out;
+}
+
+@keyframes wm-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.wm-card {
+  position: relative;
+  background: rgba(15, 10, 20, 0.96);
+  border: 3px solid #f0b840;
+  border-radius: 12px;
+  padding: 2rem 1.75rem 1.75rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(240, 184, 64, 0.15);
+  font-family: 'Upheaval', Arial, sans-serif;
+  color: #d8d0c0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.wm-close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  transition: color 0.15s;
+}
+
+.wm-close:hover {
+  color: #f0b840;
+}
+
+.wm-title {
+  font-size: 1.5rem;
+  color: #f0b840;
+  letter-spacing: 0.05em;
+  margin: 0 0 1rem;
+  text-shadow: 0 0 16px rgba(240, 184, 64, 0.35);
+}
+
+.wm-text {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0 0 1rem;
+}
+
+.wm-list {
+  text-align: left;
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+  font-size: 0.97rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.wm-list li {
+  margin-bottom: 0.5rem;
+}
+
+.wm-list strong {
+  color: #f0b840;
+}
+
+.wm-btn {
+  font-family: 'Upheaval', Arial, sans-serif;
+  background: rgba(240, 184, 64, 0.12);
+  border: 1px solid rgba(240, 184, 64, 0.5);
+  color: #f0b840;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  padding: 0.6rem 1.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  display: block;
+  margin: 0 auto 0.75rem;
+}
+
+.wm-btn:hover {
+  background: rgba(240, 184, 64, 0.22);
+  box-shadow: 0 0 16px rgba(240, 184, 64, 0.25);
+}
+
+.wm-link {
+  display: inline-block;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: color 0.15s;
+}
+
+.wm-link:hover {
+  color: rgba(240, 184, 64, 0.7);
+}
+
+@media (max-width: 480px) {
+  .wm-card {
+    padding: 1.6rem 1.25rem 1.5rem;
+  }
+
+  .wm-title {
+    font-size: 1.3rem;
+  }
+}

@@ -507,6 +507,12 @@ a:has(.bf-logo) {
   align-items: flex-end;
 }
 
+.bf-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
 .bf-footer-link {
   font-family: 'Upheaval', Arial, sans-serif;
   font-size: 0.72rem;

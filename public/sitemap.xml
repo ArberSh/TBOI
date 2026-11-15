@@ -1,30 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Primary SEO -->
-  <title>Guess the TBOI Item — Daily Challenge</title>
-  <meta name="description" content="A daily Binding of Isaac guessing game. A new pixelated item every day — can you guess it?" />
-  <meta name="keywords" content="binding of isaac, TBOI, daily game, guess the item, isaac puzzle, repentance" />
-  <meta name="author" content="YOUR NAME" />
-  <link rel="canonical" href="https://YOURSITE.com" />
-
-  <!-- Open Graph (Discord, Facebook, WhatsApp previews) -->
-  <meta property="og:title" content="Guess the TBOI Item — Daily Challenge" />
-  <meta property="og:description" content="A new pixelated Binding of Isaac item every day. How fast can you guess it?" />
-  <meta property="og:image" content="https://YOURSITE.com/preview.png" />
-  <meta property="og:url" content="https://YOURSITE.com" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter/X card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Guess the TBOI Item — Daily Challenge" />
-  <meta name="twitter:description" content="A new pixelated Binding of Isaac item every day. How fast can you guess it?" />
-  <meta name="twitter:image" content="https://YOURSITE.com/preview.png" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/favicon.png" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-</head>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://isaacarcade.com/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://isaacarcade.com/guess-the-item</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://isaacarcade.com/boss-finder</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://isaacarcade.com/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://isaacarcade.com/privacy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

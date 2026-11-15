@@ -5,6 +5,7 @@ import ALL_BOSSES from './bosses.json';
 import firegif from './assets/fire.webp';
 import fireimg from './assets/fireimg.png';
 import DailyProgress from './DailyProgress';
+import BfIntroModal from './BfIntroModal';
 import './BossFinder.css';
 
 const CONFETTI_COLORS = [
@@ -135,13 +136,9 @@ export default function BossFinder() {
   const earliestKey = useMemo(() => shiftDate(todayKey, -15), [todayKey]);
 
   useEffect(() => {
-    const meta = document.createElement('meta');
-    meta.name = 'robots';
-    meta.content = 'noindex, nofollow';
-    document.head.appendChild(meta);
     const prev = document.title;
-    document.title = 'Boss Finder';
-    return () => { document.head.removeChild(meta); document.title = prev; };
+    document.title = 'Boss Finder — Isaac Arcade';
+    return () => { document.title = prev; };
   }, []);
 
   const init = loadState(todayKey);
@@ -310,6 +307,7 @@ export default function BossFinder() {
   return (
     <div className="bf-page">
 
+      <BfIntroModal />
       <canvas ref={confettiRef} className="bf-confetti-canvas" />
 
       {/* ── Header: logo + streak + daily progress ── */}
@@ -461,7 +459,10 @@ export default function BossFinder() {
 
       {/* ── Ko-fi ── */}
       <div className="bf-buttons-container">
-        <Link className="bf-footer-link" to="/privacy">Privacy Policy</Link>
+        <div className="bf-footer-links">
+          <Link className="bf-footer-link" to="/about">About</Link>
+          <Link className="bf-footer-link" to="/privacy">Privacy Policy</Link>
+        </div>
         <a href="https://ko-fi.com/E1E81M8I3S" target="_blank" rel="noopener noreferrer">
           <img className="bf-kofi" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" border="0" alt="Buy Me a Coffee at ko-fi.com" />
         </a>

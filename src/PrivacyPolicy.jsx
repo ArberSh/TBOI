@@ -4,6 +4,10 @@ import './PrivacyPolicy.css';
 export default function PrivacyPolicy() {
   return (
     <div className="pp-page">
+      <Link to="/" className="pp-logo-link">
+        <img className="pp-logo" src="/logo.png" alt="Isaac Arcade" />
+      </Link>
+
       <div className="pp-card">
         <Link to="/" className="pp-back">← Back to Isaac Arcade</Link>
 
@@ -56,6 +60,21 @@ export default function PrivacyPolicy() {
           <h2 className="pp-heading">Contact</h2>
           <p>If you have questions about this Privacy Policy, you can reach us at <a className="pp-link" href="mailto:arbershaska2@gmail.com">arbershaska2@gmail.com</a>.</p>
         </section>
+      </div>
+
+      <div className="pp-footer">
+        <div className="pp-footer-links">
+          <Link className="pp-footer-link" to="/about">About</Link>
+          <Link className="pp-footer-link" to="/privacy">Privacy Policy</Link>
+        </div>
+        <a href="https://ko-fi.com/E1E81M8I3S" target="_blank" rel="noopener noreferrer">
+          <img
+            className="pp-kofi-img"
+            src="https://storage.ko-fi.com/cdn/kofi5.png?v=6"
+            border="0"
+            alt="Buy Me a Coffee at ko-fi.com"
+          />
+        </a>
       </div>
     </div>
   );

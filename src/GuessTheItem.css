@@ -109,6 +109,14 @@ html, body {
   align-items: flex-end;
 }
 
+.gti-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 8px;
+  margin-left: 10px;
+}
+
 .gti-footer-link {
   font-family: 'Upheaval', Arial, sans-serif;
   font-size: 0.72rem;
@@ -116,8 +124,6 @@ html, body {
   text-decoration: none;
   letter-spacing: 0.06em;
   padding-bottom: 2px;
-  margin-bottom: 8px;
-  margin-left: 10px;
   transition: color 0.15s;
 }
 

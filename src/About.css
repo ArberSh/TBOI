@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Upheaval';
+  src: url('./assets/upheavtt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ab-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:
+    linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.65)),
+    url('./assets/7446.jpg') center / cover;
+  background-attachment: fixed;
+  padding: 2.5rem 1rem;
+  box-sizing: border-box;
+}
+
+.ab-card {
+  background: rgba(15, 10, 20, 0.88);
+  border: 3px solid #f0b840;
+  border-radius: 10px;
+  padding: 2rem 2rem 2.5rem;
+  width: 100%;
+  max-width: 680px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.7);
+  backdrop-filter: blur(6px);
+  color: #d8d0c0;
+  font-family: 'Upheaval', Arial, sans-serif;
+  font-size: 0.93rem;
+  line-height: 1.65;
+}
+
+.ab-logo-link {
+  display: block;
+  align-self: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.ab-logo {
+  width: 7rem;
+}
+
+.ab-back {
+  display: inline-block;
+  font-family: 'Upheaval', Arial, sans-serif;
+  font-size: 0.8rem;
+  color: rgba(240,184,64,0.6);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+  transition: color 0.15s;
+}
+
+.ab-back:hover {
+  color: #f0b840;
+}
+
+.ab-title {
+  font-family: 'Upheaval', Arial, sans-serif;
+  font-size: 2rem;
+  color: #f0b840;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.25rem;
+}
+
+.ab-updated {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.3);
+  margin: 0 0 2rem;
+}
+
+.ab-section {
+  margin-bottom: 1.75rem;
+}
+
+.ab-heading {
+  font-family: 'Upheaval', Arial, sans-serif;
+  font-size: 1.05rem;
+  color: #f0b840;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.6rem;
+}
+
+.ab-section p {
+  margin: 0 0 0.65rem;
+}
+
+.ab-link {
+  color: rgba(240,184,64,0.75);
+  text-decoration: underline;
+  transition: color 0.15s;
+}
+
+.ab-link:hover {
+  color: #f0b840;
+}
+
+.ab-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.ab-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.ab-footer-link {
+  font-family: 'Upheaval', Arial, sans-serif;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.28);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  transition: color 0.15s;
+}
+
+.ab-footer-link:hover {
+  color: rgba(240,184,64,0.7);
+}
+
+.ab-kofi-img {
+  height: 40px;
+  border: 0;
+}
+
+@media (max-width: 600px) {
+  .ab-page {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .ab-card {
+    padding: 1.5rem 1.25rem 2rem;
+  }
+
+  .ab-title {
+    font-size: 1.6rem;
+  }
+}
