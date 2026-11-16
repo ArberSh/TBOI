@@ -1768,5 +1768,24 @@
       { "type": "multi_phase", "text": "Using Meat Cleaver splits this boss into a Hornfel and a Loki entity that each fight independently in their own attack patterns" },
       { "type": "summons",     "text": "An alt-Chapter 3 boss with a fixed, non-random 5-attack cycle — the extended tear barrage (attack 3) is the most complex sustained projectile sequence of any single boss attack in Repentance" }
     ]
+  },
+  {
+    "id": "blastocyst",
+    "name": "Blastocyst",
+    "chapters": [4],
+    "location": ["Womb", "Utero", "Scarred Womb"],
+    "image": "/images/items/boss-portraits/boss-portraits/blastocyst.png",
+    "wiki": "https://bindingofisaacrebirth.wiki.gg/wiki/Blastocyst",
+    "dlc": "repentance",
+    "hints": [
+      { "type": "jump",        "text": "When the player is close, it hops in place and the instant it lands sends a disorganized burst of large projectiles in every direction" },
+      { "type": "jump",        "text": "When the player is far away, it leaps off-screen entirely and crashes straight down onto their position" },
+      { "type": "tears_burst", "text": "Every single landing, near or far, ends with a spray of projectiles radiating outward — there's no safe landing to punish" },
+      { "type": "splits",      "text": "Enough damage causes it to divide into two smaller copies that keep hopping and firing independently" },
+      { "type": "splits",      "text": "Each of those smaller copies eventually divides again into an even tinier third generation before any of them actually die" },
+      { "type": "chase",       "text": "The largest and medium forms will hop toward the player if they're within range; the smallest ones give up chasing entirely and just hop at random" },
+      { "type": "effect",      "text": "Every one of the smallest copies drops a pickup when it finally dies, rewarding clearing out every last piece" },
+      { "type": "multi_phase", "text": "A pale, segmented blob found deep in the Womb that fights as three shrinking generations at once — the fight isn't over until every piece it splits into is gone" }
+    ]
   }
 ]

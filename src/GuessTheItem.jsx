@@ -206,12 +206,40 @@ function GuessTheItem() {
     return `${date.getUTCFullYear()}-${pad(date.getUTCMonth() + 1)}-${pad(date.getUTCDate())}`;
   }, [todayKey]);
 
+  // Applies saved state for a date in the same batch as the date switch itself,
+  // so a render never pairs a new day's item with a stale guessed/game-over flag
+  // (that mismatch is what caused the full image to flash for a frame on day change).
+  const applyDateState = (dateKey) => {
+    const saved = loadGameState(dateKey);
+    if (saved) {
+      setHasGuessedCorrectly(saved.hasGuessedCorrectly ?? false);
+      setStepIndex(saved.stepIndex ?? 0);
+      setWrongGuesses(saved.wrongGuesses ?? []);
+      setHintRevealed(saved.hintRevealed ?? false);
+      setShowNameReveal(saved.hasGuessedCorrectly ?? false);
+    } else {
+      setHasGuessedCorrectly(false);
+      setStepIndex(0);
+      setWrongGuesses([]);
+      setHintRevealed(false);
+      setShowNameReveal(false);
+    }
+    setShowConfetti(false);
+    setUserGuess("");
+    setHighlightedIndex(-1);
+  };
+
+  const goToDate = (dateKey) => {
+    applyDateState(dateKey);
+    setSelectedDateKey(dateKey);
+  };
+
   const navigateDay = (delta) => {
     const [y, m, d] = selectedDateKey.split('-').map(Number);
     const next = new Date(Date.UTC(y, m - 1, d + delta));
     const pad = n => String(n).padStart(2, '0');
     const nextKey = `${next.getUTCFullYear()}-${pad(next.getUTCMonth() + 1)}-${pad(next.getUTCDate())}`;
-    if (nextKey >= earliestKey && nextKey <= todayKey) setSelectedDateKey(nextKey);
+    if (nextKey >= earliestKey && nextKey <= todayKey) goToDate(nextKey);
   };
 
   const currentPixelSize = PIXEL_STEPS[stepIndex];
@@ -280,31 +308,13 @@ function GuessTheItem() {
     };
   }, []);
 
-// When the calendar day rolls over, jump to the new today
+// When the calendar day rolls over, jump to the new today.
+// applyDateState runs in the same effect so the item and its guessed/game-over
+// state always update together in one render — never a stale combination.
 useEffect(() => {
+  applyDateState(todayKey);
   setSelectedDateKey(todayKey);
 }, [todayKey]);
-
-// Reload all game state whenever the viewed date changes
-useEffect(() => {
-  const saved = loadGameState(selectedDateKey);
-  if (saved) {
-    setHasGuessedCorrectly(saved.hasGuessedCorrectly ?? false);
-    setStepIndex(saved.stepIndex ?? 0);
-    setWrongGuesses(saved.wrongGuesses ?? []);
-    setHintRevealed(saved.hintRevealed ?? false);
-    setShowNameReveal(saved.hasGuessedCorrectly ?? false);
-  } else {
-    setHasGuessedCorrectly(false);
-    setStepIndex(0);
-    setWrongGuesses([]);
-    setHintRevealed(false);
-    setShowNameReveal(false);
-  }
-  setShowConfetti(false);
-  setUserGuess("");
-  setHighlightedIndex(-1);
-}, [selectedDateKey]);
 
   // Persist game state per date
   useEffect(() => {
@@ -642,7 +652,7 @@ useEffect(() => {
         </div>
 
         {!isToday && (
-          <button className="back-to-today-btn" onClick={() => setSelectedDateKey(todayKey)}>
+          <button className="back-to-today-btn" onClick={() => goToDate(todayKey)}>
             ▶ Play Today
           </button>
         )}
